@@ -1,0 +1,207 @@
+{
+  "state_code": "FL",
+  "state_name": "Florida",
+  "total_districts": 28,
+  "delegation_composition": {
+    "democrat": 8,
+    "republican": 20
+  },
+  "districts": [
+    {
+      "district_id": "FL-01",
+      "representative": "Jimmy Patronis",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 98
+    },
+    {
+      "district_id": "FL-02",
+      "representative": "Neal Dunn",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 93
+    },
+    {
+      "district_id": "FL-03",
+      "representative": "Kat Cammack",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 121
+    },
+    {
+      "district_id": "FL-04",
+      "representative": "Aaron Bean",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 100
+    },
+    {
+      "district_id": "FL-05",
+      "representative": "John Rutherford",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 109
+    },
+    {
+      "district_id": "FL-06",
+      "representative": "Randy Fine",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 140
+    },
+    {
+      "district_id": "FL-07",
+      "representative": "Cory Mills",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 111
+    },
+    {
+      "district_id": "FL-08",
+      "representative": "Mike Haridopolos",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 128
+    },
+    {
+      "district_id": "FL-09",
+      "representative": "Darren Soto",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 80
+    },
+    {
+      "district_id": "FL-10",
+      "representative": "Maxwell Frost",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 88
+    },
+    {
+      "district_id": "FL-11",
+      "representative": "Daniel Webster",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 121
+    },
+    {
+      "district_id": "FL-12",
+      "representative": "Gus Bilirakis",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 128
+    },
+    {
+      "district_id": "FL-13",
+      "representative": "Anna Luna",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 138
+    },
+    {
+      "district_id": "FL-14",
+      "representative": "Kathy Castor",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 74
+    },
+    {
+      "district_id": "FL-15",
+      "representative": "Laurel Lee",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 100
+    },
+    {
+      "district_id": "FL-16",
+      "representative": "Vern Buchanan",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 109
+    },
+    {
+      "district_id": "FL-17",
+      "representative": "W. Steube",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 135
+    },
+    {
+      "district_id": "FL-18",
+      "representative": "C. Franklin",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 95
+    },
+    {
+      "district_id": "FL-19",
+      "representative": "Byron Donalds",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 98
+    },
+    {
+      "district_id": "FL-20",
+      "representative": "Sheila Cherfilus-McCormick",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 82
+    },
+    {
+      "district_id": "FL-21",
+      "representative": "Brian Mast",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 106
+    },
+    {
+      "district_id": "FL-22",
+      "representative": "Lois Frankel",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 73
+    },
+    {
+      "district_id": "FL-23",
+      "representative": "Jared Moskowitz",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 87
+    },
+    {
+      "district_id": "FL-24",
+      "representative": "Frederica Wilson",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 46
+    },
+    {
+      "district_id": "FL-25",
+      "representative": "Debbie Wasserman Schultz",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 56
+    },
+    {
+      "district_id": "FL-26",
+      "representative": "Mario Diaz-Balart",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 53
+    },
+    {
+      "district_id": "FL-27",
+      "representative": "Maria Salazar",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 42
+    },
+    {
+      "district_id": "FL-28",
+      "representative": "Carlos Gimenez",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 50
+    }
+  ]
+}

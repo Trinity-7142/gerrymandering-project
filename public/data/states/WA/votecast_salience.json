@@ -1,0 +1,54 @@
+{
+  "state_code": "WA",
+  "source": "AP VoteCast 2024",
+  "sample_size": 2443,
+  "question": "Which one of the following would you say is the most important issue facing the country?",
+  "salience": [
+    {
+      "issue_id": "economy",
+      "pct": 0.343,
+      "rank": 1
+    },
+    {
+      "issue_id": "immigration",
+      "pct": 0.144,
+      "rank": 2
+    },
+    {
+      "issue_id": "abortion",
+      "pct": 0.138,
+      "rank": 3
+    },
+    {
+      "issue_id": "environment",
+      "pct": 0.108,
+      "rank": 4
+    },
+    {
+      "issue_id": "healthcare",
+      "pct": 0.097,
+      "rank": 5
+    },
+    {
+      "issue_id": "foreign_policy",
+      "pct": 0.05,
+      "rank": 6
+    },
+    {
+      "issue_id": "criminal_justice",
+      "pct": 0.044,
+      "rank": 7
+    },
+    {
+      "issue_id": "voting_rights",
+      "pct": 0.039,
+      "rank": 8
+    },
+    {
+      "issue_id": "guns",
+      "pct": 0.036,
+      "rank": 9
+    }
+  ],
+  "methodology_note": "Percentages based on weighted responses of registered voters in WA from AP VoteCast 2024 general election survey. Weights: FINALVOTE_STATE_WEIGHT. Filtered to LIKELYVOTER==1 (likely voters). ISSUES2024 mapped to contract issue taxonomy; excluded DK/Refused (code 99); renormalized to sum to 1."
+}

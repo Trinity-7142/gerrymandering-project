@@ -1,0 +1,39 @@
+{
+  "state_code": "IA",
+  "state_name": "Iowa",
+  "total_districts": 4,
+  "delegation_composition": {
+    "democrat": 0,
+    "republican": 4
+  },
+  "districts": [
+    {
+      "district_id": "IA-01",
+      "representative": "Mariannette Miller-Meeks",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 110
+    },
+    {
+      "district_id": "IA-02",
+      "representative": "Ashley Hinson",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 120
+    },
+    {
+      "district_id": "IA-03",
+      "representative": "Zachary (Zach) Nunn",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 112
+    },
+    {
+      "district_id": "IA-04",
+      "representative": "Randy Feenstra",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 98
+    }
+  ]
+}

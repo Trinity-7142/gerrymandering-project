@@ -1,0 +1,21 @@
+{
+  "state_code": "CA",
+  "source": "Cooperative Election Study 2024",
+  "total_respondents": 4900,
+  "weight_variable": "vvweight_post",
+  "issues": [
+    {
+      "issue_id": "guns",
+      "questions": [
+        { "variable": "CC24_321grid_1", "text": "Ban assault rifles", "n": 4700, "results": { "support": 0.65, "oppose": 0.35 }, "net_support": 0.30 },
+        { "variable": "CC24_321grid_2", "text": "Background checks for all gun sales", "n": 4750, "results": { "support": 0.84, "oppose": 0.16 }, "net_support": 0.68 }
+      ]
+    },
+    {
+      "issue_id": "immigration",
+      "questions": [
+        { "variable": "CC24_322grid_1", "text": "Grant legal status to immigrants with 3+ yrs jobs/taxes", "n": 4650, "results": { "strongly_favor": 0.34, "somewhat_favor": 0.22, "somewhat_oppose": 0.18, "strongly_oppose": 0.26 }, "net_support": 0.12 }
+      ]
+    }
+  ]
+}

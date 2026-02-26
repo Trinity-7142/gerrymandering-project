@@ -1,0 +1,32 @@
+{
+  "state_code": "NM",
+  "state_name": "New Mexico",
+  "total_districts": 3,
+  "delegation_composition": {
+    "democrat": 3,
+    "republican": 0
+  },
+  "districts": [
+    {
+      "district_id": "NM-01",
+      "representative": "Melanie Stansbury",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 126
+    },
+    {
+      "district_id": "NM-02",
+      "representative": "Gabriel (Gabe) Vasquez",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 56
+    },
+    {
+      "district_id": "NM-03",
+      "representative": "Teresa Leger Fernandez",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 60
+    }
+  ]
+}

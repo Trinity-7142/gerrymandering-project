@@ -1,0 +1,39 @@
+{
+  "state_code": "UT",
+  "state_name": "Utah",
+  "total_districts": 4,
+  "delegation_composition": {
+    "democrat": 0,
+    "republican": 4
+  },
+  "districts": [
+    {
+      "district_id": "UT-01",
+      "representative": "Blake Moore",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 31
+    },
+    {
+      "district_id": "UT-02",
+      "representative": "Celeste Maloy",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 43
+    },
+    {
+      "district_id": "UT-03",
+      "representative": "Mike Kennedy",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 41
+    },
+    {
+      "district_id": "UT-04",
+      "representative": "Burgess Owens",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 37
+    }
+  ]
+}

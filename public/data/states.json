@@ -1,0 +1,18 @@
+{
+  "available_states": [
+    {
+      "state_code": "CA",
+      "state_name": "California",
+      "district_count": 52,
+      "ces_sample_size": 2756
+    },
+    {
+      "state_code": "TX",
+      "state_name": "Texas",
+      "district_count": 38,
+      "ces_sample_size": 2562
+    }
+  ],
+  "coming_soon": ["MI", "OH", "WI"],
+  "last_updated": "2026-02-23"
+}

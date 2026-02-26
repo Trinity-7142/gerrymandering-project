@@ -1,0 +1,27 @@
+{
+  "district_id": "CA-11",
+  "representative": "Nancy Pelosi",
+  "party": "D",
+  "congress": 118,
+  "votes_by_issue": [
+    {
+      "issue_id": "guns",
+      "votes": [
+        { "bill": "H.R. 8", "title": "Bipartisan Background Checks Act", "date": "2023-06-15", "vote": "yea", "bill_direction": "pro_regulation", "source_url": "https://clerk.house.gov/" },
+        { "bill": "H.R. 1808", "title": "Assault Weapons Ban of 2023", "date": "2023-07-29", "vote": "yea", "bill_direction": "pro_regulation", "source_url": "https://clerk.house.gov/" }
+      ],
+      "summary": { "total_votes": 2, "pro_regulation": 2, "anti_regulation": 0, "absent": 0 }
+    },
+    {
+      "issue_id": "immigration",
+      "votes": [
+        { "bill": "H.R. 2", "title": "Secure the Border Act", "date": "2023-05-11", "vote": "nay", "bill_direction": "pro_restriction", "source_url": "https://clerk.house.gov/" }
+      ],
+      "summary": { "total_votes": 1, "pro_restriction": 0, "anti_restriction": 1, "absent": 0 }
+    }
+  ],
+  "overall_voting_stats": {
+    "total_tracked_votes": 3,
+    "attendance_rate": 0.95
+  }
+}

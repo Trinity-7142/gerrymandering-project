@@ -1,0 +1,25 @@
+{
+  "state_code": "MT",
+  "state_name": "Montana",
+  "total_districts": 2,
+  "delegation_composition": {
+    "democrat": 0,
+    "republican": 2
+  },
+  "districts": [
+    {
+      "district_id": "MT-01",
+      "representative": "Ryan Zinke",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 81
+    },
+    {
+      "district_id": "MT-02",
+      "representative": "Troy Downing",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 86
+    }
+  ]
+}

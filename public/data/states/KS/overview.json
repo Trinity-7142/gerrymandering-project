@@ -1,0 +1,39 @@
+{
+  "state_code": "KS",
+  "state_name": "Kansas",
+  "total_districts": 4,
+  "delegation_composition": {
+    "democrat": 1,
+    "republican": 3
+  },
+  "districts": [
+    {
+      "district_id": "KS-01",
+      "representative": "Tracey Mann",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 88
+    },
+    {
+      "district_id": "KS-02",
+      "representative": "Derek Schmidt",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 83
+    },
+    {
+      "district_id": "KS-03",
+      "representative": "Sharice Davids",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 84
+    },
+    {
+      "district_id": "KS-04",
+      "representative": "Ron Estes",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 75
+    }
+  ]
+}

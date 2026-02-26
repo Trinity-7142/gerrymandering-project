@@ -1,0 +1,67 @@
+{
+  "state_code": "MO",
+  "state_name": "Missouri",
+  "total_districts": 8,
+  "delegation_composition": {
+    "democrat": 2,
+    "republican": 6
+  },
+  "districts": [
+    {
+      "district_id": "MO-01",
+      "representative": "Wesley Bell",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 110
+    },
+    {
+      "district_id": "MO-02",
+      "representative": "Ann Wagner",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 97
+    },
+    {
+      "district_id": "MO-03",
+      "representative": "Robert Onder",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 116
+    },
+    {
+      "district_id": "MO-04",
+      "representative": "Mark Alford",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 115
+    },
+    {
+      "district_id": "MO-05",
+      "representative": "Emanuel Cleaver",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 125
+    },
+    {
+      "district_id": "MO-06",
+      "representative": "Sam Graves",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 93
+    },
+    {
+      "district_id": "MO-07",
+      "representative": "Eric Burlison",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 122
+    },
+    {
+      "district_id": "MO-08",
+      "representative": "Jason Smith",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 119
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "state_code": "AL",
+  "state_name": "Alabama",
+  "total_districts": 7,
+  "delegation_composition": {
+    "democrat": 2,
+    "republican": 5
+  },
+  "districts": [
+    {
+      "district_id": "AL-01",
+      "representative": "Barry Moore",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 70
+    },
+    {
+      "district_id": "AL-02",
+      "representative": "Shomari Figures",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 71
+    },
+    {
+      "district_id": "AL-03",
+      "representative": "Mike Rogers",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 84
+    },
+    {
+      "district_id": "AL-04",
+      "representative": "Robert Aderholt",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 79
+    },
+    {
+      "district_id": "AL-05",
+      "representative": "Dale Strong",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 73
+    },
+    {
+      "district_id": "AL-06",
+      "representative": "Gary Palmer",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 73
+    },
+    {
+      "district_id": "AL-07",
+      "representative": "Terri Sewell",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 57
+    }
+  ]
+}

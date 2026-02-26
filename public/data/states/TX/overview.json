@@ -1,0 +1,277 @@
+{
+  "state_code": "TX",
+  "state_name": "Texas",
+  "total_districts": 38,
+  "delegation_composition": {
+    "democrat": 13,
+    "republican": 25
+  },
+  "districts": [
+    {
+      "district_id": "TX-01",
+      "representative": "Nathaniel Moran",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 89
+    },
+    {
+      "district_id": "TX-02",
+      "representative": "Dan Crenshaw",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 55
+    },
+    {
+      "district_id": "TX-03",
+      "representative": "Keith Self",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 74
+    },
+    {
+      "district_id": "TX-04",
+      "representative": "Pat Fallon",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 61
+    },
+    {
+      "district_id": "TX-05",
+      "representative": "Lance Gooden",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 74
+    },
+    {
+      "district_id": "TX-06",
+      "representative": "Jake Ellzey",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 70
+    },
+    {
+      "district_id": "TX-07",
+      "representative": "Lizzie Fletcher",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 57
+    },
+    {
+      "district_id": "TX-08",
+      "representative": "Morgan Luttrell",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 56
+    },
+    {
+      "district_id": "TX-09",
+      "representative": "Al Green",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 55
+    },
+    {
+      "district_id": "TX-10",
+      "representative": "Michael McCaul",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 60
+    },
+    {
+      "district_id": "TX-11",
+      "representative": "August Pfluger",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 66
+    },
+    {
+      "district_id": "TX-12",
+      "representative": "Craig Goldman",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 100
+    },
+    {
+      "district_id": "TX-13",
+      "representative": "Ronny Jackson",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 58
+    },
+    {
+      "district_id": "TX-14",
+      "representative": "Randy Weber",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 70
+    },
+    {
+      "district_id": "TX-15",
+      "representative": "Mónica De La Cruz",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 36
+    },
+    {
+      "district_id": "TX-16",
+      "representative": "Veronica Escobar",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 64
+    },
+    {
+      "district_id": "TX-17",
+      "representative": "Pete Sessions",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 78
+    },
+    {
+      "district_id": "TX-18",
+      "representative": "Christian Menefee",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 31
+    },
+    {
+      "district_id": "TX-19",
+      "representative": "Jodey Arrington",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 75
+    },
+    {
+      "district_id": "TX-20",
+      "representative": "Joaquin Castro",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 68
+    },
+    {
+      "district_id": "TX-21",
+      "representative": "Chip Roy",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 119
+    },
+    {
+      "district_id": "TX-22",
+      "representative": "Troy Nehls",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 70
+    },
+    {
+      "district_id": "TX-23",
+      "representative": "Tony Gonzales",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 55
+    },
+    {
+      "district_id": "TX-24",
+      "representative": "Beth Van Duyne",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 67
+    },
+    {
+      "district_id": "TX-25",
+      "representative": "Roger Williams",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 89
+    },
+    {
+      "district_id": "TX-26",
+      "representative": "Brandon Gill",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 88
+    },
+    {
+      "district_id": "TX-27",
+      "representative": "Michael Cloud",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 84
+    },
+    {
+      "district_id": "TX-28",
+      "representative": "Henry Cuellar",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 58
+    },
+    {
+      "district_id": "TX-29",
+      "representative": "Sylvia Garcia",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 48
+    },
+    {
+      "district_id": "TX-30",
+      "representative": "Jasmine Crockett",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 52
+    },
+    {
+      "district_id": "TX-31",
+      "representative": "John Carter",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 95
+    },
+    {
+      "district_id": "TX-32",
+      "representative": "Julie Johnson",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 63
+    },
+    {
+      "district_id": "TX-33",
+      "representative": "Marc Veasey",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 34
+    },
+    {
+      "district_id": "TX-34",
+      "representative": "Vicente Gonzalez",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 47
+    },
+    {
+      "district_id": "TX-35",
+      "representative": "Gregorio Casar",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 68
+    },
+    {
+      "district_id": "TX-36",
+      "representative": "Brian Babin",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 69
+    },
+    {
+      "district_id": "TX-37",
+      "representative": "Lloyd Doggett",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 96
+    },
+    {
+      "district_id": "TX-38",
+      "representative": "Wesley Hunt",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 63
+    }
+  ]
+}

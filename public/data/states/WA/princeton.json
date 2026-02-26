@@ -1,0 +1,22 @@
+{
+  "state_code": "WA",
+  "source": "Princeton Gerrymandering Project",
+  "source_url": "https://gerrymander.princeton.edu/redistricting-report-card/",
+  "report_year": 2022,
+  "overall_grade": "A",
+  "metrics": {
+    "partisan_fairness": {
+      "grade": "A",
+      "description": "Map does not significantly favor either party"
+    },
+    "geographic_features": {
+      "grade": "A",
+      "description": "Districts are compact and respect county/city boundaries"
+    },
+    "competitiveness": {
+      "grade": "A",
+      "description": "More competitive districts than expected given state geography"
+    }
+  },
+  "methodology_note": "Grades from Princeton Gerrymandering Project redistricting report card. Based on ensemble analysis of ~1M simulated maps compared to the enacted plan. Methodology at gerrymander.princeton.edu."
+}

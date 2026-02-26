@@ -1,0 +1,18 @@
+{
+  "state_code": "VT",
+  "state_name": "Vermont",
+  "total_districts": 1,
+  "delegation_composition": {
+    "democrat": 1,
+    "republican": 0
+  },
+  "districts": [
+    {
+      "district_id": "VT-AL",
+      "representative": "Becca Balint",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 88
+    }
+  ]
+}

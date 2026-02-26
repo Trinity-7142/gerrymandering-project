@@ -1,0 +1,18 @@
+{
+  "state_code": "DC",
+  "state_name": "District of Columbia",
+  "total_districts": 1,
+  "delegation_composition": {
+    "democrat": 1,
+    "republican": 0
+  },
+  "districts": [
+    {
+      "district_id": "DC-AL",
+      "representative": "Eleanor Norton",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 87
+    }
+  ]
+}

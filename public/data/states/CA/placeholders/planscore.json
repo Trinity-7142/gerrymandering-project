@@ -1,0 +1,12 @@
+{
+  "state_code": "CA",
+  "source": "PlanScore",
+  "source_url": "https://planscore.campaignlegal.org",
+  "plan_name": "2022 Congressional Plan",
+  "metrics": {
+    "efficiency_gap": { "value": -0.02, "description": "Fraction of votes wasted disproportionately", "favors": "neither" },
+    "partisan_bias": { "value": 0.01, "description": "Expected seat share deviation from vote share", "favors": "D" },
+    "mean_median_difference": { "value": -0.005, "description": "Difference between mean and median district vote share" },
+    "declination": { "value": 0.03, "description": "Geometric measure of partisan asymmetry" }
+  }
+}

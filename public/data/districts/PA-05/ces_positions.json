@@ -1,0 +1,714 @@
+{
+  "district_id": "PA-05",
+  "source": "Cooperative Election Study 2024",
+  "n_respondents": 107,
+  "weight_variable": "vvweight_post",
+  "issues": [
+    {
+      "issue_id": "guns",
+      "questions": [
+        {
+          "variable": "CC24_321a",
+          "text": "Ban assault rifles",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.734,
+            "oppose": 0.266
+          },
+          "binary_direction": {
+            "liberal_pct": 0.734,
+            "conservative_pct": 0.266
+          }
+        },
+        {
+          "variable": "CC24_321b",
+          "text": "Make it easier to obtain concealed-carry permit",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.337,
+            "oppose": 0.663
+          },
+          "binary_direction": {
+            "liberal_pct": 0.663,
+            "conservative_pct": 0.337
+          }
+        },
+        {
+          "variable": "CC24_321c",
+          "text": "Require background checks on all gun sales",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.956,
+            "oppose": 0.044
+          },
+          "binary_direction": {
+            "liberal_pct": 0.956,
+            "conservative_pct": 0.044
+          }
+        },
+        {
+          "variable": "CC24_321f",
+          "text": "Gun safety package: mental health spending, confiscate from dangerous, domestic violence ban, minor background checks",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.948,
+            "oppose": 0.052
+          },
+          "binary_direction": {
+            "liberal_pct": 0.948,
+            "conservative_pct": 0.052
+          }
+        }
+      ]
+    },
+    {
+      "issue_id": "immigration",
+      "questions": [
+        {
+          "variable": "CC24_323a",
+          "text": "Grant legal status to immigrants with 3+ years jobs/taxes, no felonies",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.731,
+            "oppose": 0.269
+          },
+          "binary_direction": {
+            "liberal_pct": 0.731,
+            "conservative_pct": 0.269
+          }
+        },
+        {
+          "variable": "CC24_323b",
+          "text": "Increase border patrols on US-Mexico border",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.866,
+            "oppose": 0.134
+          },
+          "binary_direction": {
+            "liberal_pct": 0.134,
+            "conservative_pct": 0.866
+          }
+        },
+        {
+          "variable": "CC24_323c",
+          "text": "Build a wall between the U.S. and Mexico",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.521,
+            "oppose": 0.479
+          },
+          "binary_direction": {
+            "liberal_pct": 0.479,
+            "conservative_pct": 0.521
+          }
+        },
+        {
+          "variable": "CC24_323d",
+          "text": "Permanent resident status for Dreamers with pathway to citizenship",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.822,
+            "oppose": 0.178
+          },
+          "binary_direction": {
+            "liberal_pct": 0.822,
+            "conservative_pct": 0.178
+          }
+        },
+        {
+          "variable": "CC24_340f",
+          "text": "Deny asylum access for immigrants who cross border illegally",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 106,
+          "results": {
+            "support": 0.511,
+            "oppose": 0.489
+          },
+          "binary_direction": {
+            "liberal_pct": 0.489,
+            "conservative_pct": 0.511
+          }
+        }
+      ]
+    },
+    {
+      "issue_id": "abortion",
+      "questions": [
+        {
+          "variable": "CC24_324a",
+          "text": "Always allow abortion as a matter of choice",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.674,
+            "oppose": 0.326
+          },
+          "binary_direction": {
+            "liberal_pct": 0.674,
+            "conservative_pct": 0.326
+          }
+        },
+        {
+          "variable": "CC24_324b",
+          "text": "Permit abortion only in cases of rape, incest, or life danger",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.476,
+            "oppose": 0.524
+          },
+          "binary_direction": {
+            "liberal_pct": 0.524,
+            "conservative_pct": 0.476
+          }
+        },
+        {
+          "variable": "CC24_324c",
+          "text": "Make abortions illegal in all circumstances",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.078,
+            "oppose": 0.922
+          },
+          "binary_direction": {
+            "liberal_pct": 0.922,
+            "conservative_pct": 0.078
+          }
+        },
+        {
+          "variable": "CC24_324d",
+          "text": "Expand abortion access, affordability, provider types, clinic protections",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.691,
+            "oppose": 0.309
+          },
+          "binary_direction": {
+            "liberal_pct": 0.691,
+            "conservative_pct": 0.309
+          }
+        },
+        {
+          "variable": "CC24_340a",
+          "text": "Prohibit government restrictions on contraceptives",
+          "scale": "support_oppose",
+          "category": "supplementary",
+          "n": 107,
+          "results": {
+            "support": 0.741,
+            "oppose": 0.259
+          },
+          "binary_direction": {
+            "liberal_pct": 0.741,
+            "conservative_pct": 0.259
+          }
+        },
+        {
+          "variable": "CC24_340b",
+          "text": "Prohibit government restrictions on abortion services",
+          "scale": "support_oppose",
+          "category": "supplementary",
+          "n": 106,
+          "results": {
+            "support": 0.781,
+            "oppose": 0.219
+          },
+          "binary_direction": {
+            "liberal_pct": 0.781,
+            "conservative_pct": 0.219
+          }
+        },
+        {
+          "variable": "CC24_444c",
+          "text": "Prohibit receiving abortion-inducing drugs through the mail",
+          "scale": "support_oppose",
+          "category": "supplementary",
+          "n": 107,
+          "results": {
+            "support": 0.323,
+            "oppose": 0.677
+          },
+          "binary_direction": {
+            "liberal_pct": 0.677,
+            "conservative_pct": 0.323
+          }
+        },
+        {
+          "variable": "CC24_444d",
+          "text": "Prohibit women from traveling to another state for an abortion",
+          "scale": "support_oppose",
+          "category": "supplementary",
+          "n": 107,
+          "results": {
+            "support": 0.078,
+            "oppose": 0.922
+          },
+          "binary_direction": {
+            "liberal_pct": 0.922,
+            "conservative_pct": 0.078
+          }
+        },
+        {
+          "variable": "CC24_445b",
+          "text": "Roe v. Wade is overruled; states can outlaw abortion",
+          "scale": "agree_disagree",
+          "category": "supplementary",
+          "n": 107,
+          "results": {
+            "agree": 0.565,
+            "disagree": 0.435
+          },
+          "binary_direction": {
+            "liberal_pct": 0.435,
+            "conservative_pct": 0.565
+          }
+        }
+      ]
+    },
+    {
+      "issue_id": "environment",
+      "questions": [
+        {
+          "variable": "CC24_326a",
+          "text": "Give EPA power to regulate carbon dioxide emissions",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.784,
+            "oppose": 0.216
+          },
+          "binary_direction": {
+            "liberal_pct": 0.784,
+            "conservative_pct": 0.216
+          }
+        },
+        {
+          "variable": "CC24_326b",
+          "text": "Require 20% of electricity from renewable sources",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.723,
+            "oppose": 0.277
+          },
+          "binary_direction": {
+            "liberal_pct": 0.723,
+            "conservative_pct": 0.277
+          }
+        },
+        {
+          "variable": "CC24_326c",
+          "text": "Strengthen EPA enforcement of Clean Air/Water Acts even if it costs jobs",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.631,
+            "oppose": 0.369
+          },
+          "binary_direction": {
+            "liberal_pct": 0.631,
+            "conservative_pct": 0.369
+          }
+        },
+        {
+          "variable": "CC24_326d",
+          "text": "Increase fossil fuel production in the U.S.",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.624,
+            "oppose": 0.376
+          },
+          "binary_direction": {
+            "liberal_pct": 0.376,
+            "conservative_pct": 0.624
+          }
+        },
+        {
+          "variable": "CC24_326e",
+          "text": "Halt new oil and gas leases on federal lands",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.527,
+            "oppose": 0.473
+          },
+          "binary_direction": {
+            "liberal_pct": 0.527,
+            "conservative_pct": 0.473
+          }
+        },
+        {
+          "variable": "CC24_326f",
+          "text": "Prevent the government from banning gas stoves",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.523,
+            "oppose": 0.477
+          },
+          "binary_direction": {
+            "liberal_pct": 0.477,
+            "conservative_pct": 0.523
+          }
+        }
+      ]
+    },
+    {
+      "issue_id": "economy",
+      "questions": [
+        {
+          "variable": "CC24_341a",
+          "text": "Extend 2017 tax cuts (individual/corporate rate reductions, limited deductions)",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 106,
+          "results": {
+            "support": 0.46,
+            "oppose": 0.54
+          },
+          "binary_direction": {
+            "liberal_pct": 0.54,
+            "conservative_pct": 0.46
+          }
+        },
+        {
+          "variable": "CC24_341b",
+          "text": "Raise corporate income tax from 21% to 28%",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.544,
+            "oppose": 0.456
+          },
+          "binary_direction": {
+            "liberal_pct": 0.544,
+            "conservative_pct": 0.456
+          }
+        },
+        {
+          "variable": "CC24_341c",
+          "text": "Allow tax rates on $400k+ earners to rise to 35%",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.802,
+            "oppose": 0.198
+          },
+          "binary_direction": {
+            "liberal_pct": 0.802,
+            "conservative_pct": 0.198
+          }
+        },
+        {
+          "variable": "CC24_341d",
+          "text": "Spend $150B/year for 8 years on infrastructure",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 106,
+          "results": {
+            "support": 0.907,
+            "oppose": 0.093
+          },
+          "binary_direction": {
+            "liberal_pct": 0.907,
+            "conservative_pct": 0.093
+          }
+        },
+        {
+          "variable": "CC24_328a",
+          "text": "Relax zoning laws to allow more apartments and condos",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.499,
+            "oppose": 0.501
+          },
+          "binary_direction": {
+            "liberal_pct": 0.499,
+            "conservative_pct": 0.501
+          }
+        },
+        {
+          "variable": "CC24_328b",
+          "text": "Expand federal tax incentives for affordable housing",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.731,
+            "oppose": 0.269
+          },
+          "binary_direction": {
+            "liberal_pct": 0.731,
+            "conservative_pct": 0.269
+          }
+        },
+        {
+          "variable": "CC24_323f",
+          "text": "Forgive up to $20,000 of student loan debt per person",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.628,
+            "oppose": 0.372
+          },
+          "binary_direction": {
+            "liberal_pct": 0.628,
+            "conservative_pct": 0.372
+          }
+        },
+        {
+          "variable": "CC24_443_1",
+          "text": "State legislature spending on Welfare",
+          "scale": "spending_5pt",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "greatly_increase": 0.079,
+            "slightly_increase": 0.159,
+            "maintain": 0.591,
+            "slightly_decrease": 0.114,
+            "greatly_decrease": 0.057
+          },
+          "binary_direction": {
+            "liberal_pct": 0.582,
+            "conservative_pct": 0.418,
+            "neutral_excluded_pct": 0.591
+          }
+        },
+        {
+          "variable": "CC24_443_3",
+          "text": "State legislature spending on Education",
+          "scale": "spending_5pt",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "greatly_increase": 0.298,
+            "slightly_increase": 0.243,
+            "maintain": 0.398,
+            "slightly_decrease": 0.027,
+            "greatly_decrease": 0.034
+          },
+          "binary_direction": {
+            "liberal_pct": 0.899,
+            "conservative_pct": 0.101,
+            "neutral_excluded_pct": 0.398
+          }
+        },
+        {
+          "variable": "CC24_443_5",
+          "text": "State legislature spending on Transportation/Infrastructure",
+          "scale": "spending_5pt",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "greatly_increase": 0.229,
+            "slightly_increase": 0.547,
+            "maintain": 0.224,
+            "slightly_decrease": 0,
+            "greatly_decrease": 0
+          },
+          "binary_direction": {
+            "liberal_pct": 1,
+            "conservative_pct": 0,
+            "neutral_excluded_pct": 0.224
+          }
+        }
+      ]
+    },
+    {
+      "issue_id": "healthcare",
+      "questions": [
+        {
+          "variable": "CC24_328c",
+          "text": "Require able-bodied adults without dependents to have a job to receive Medicaid",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.561,
+            "oppose": 0.439
+          },
+          "binary_direction": {
+            "liberal_pct": 0.439,
+            "conservative_pct": 0.561
+          }
+        },
+        {
+          "variable": "CC24_328d",
+          "text": "Repeal the Affordable Care Act",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.219,
+            "oppose": 0.781
+          },
+          "binary_direction": {
+            "liberal_pct": 0.781,
+            "conservative_pct": 0.219
+          }
+        },
+        {
+          "variable": "CC24_328e",
+          "text": "Expand Medicaid to cover individuals <$25k and families <$40k",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.866,
+            "oppose": 0.134
+          },
+          "binary_direction": {
+            "liberal_pct": 0.866,
+            "conservative_pct": 0.134
+          }
+        },
+        {
+          "variable": "CC24_443_2",
+          "text": "State legislature spending on Health Care",
+          "scale": "spending_5pt",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "greatly_increase": 0.369,
+            "slightly_increase": 0.327,
+            "maintain": 0.258,
+            "slightly_decrease": 0.035,
+            "greatly_decrease": 0.01
+          },
+          "binary_direction": {
+            "liberal_pct": 0.939,
+            "conservative_pct": 0.061,
+            "neutral_excluded_pct": 0.258
+          }
+        }
+      ]
+    },
+    {
+      "issue_id": "criminal_justice",
+      "questions": [
+        {
+          "variable": "CC24_321d",
+          "text": "Increase police on the street by 10%, even if fewer funds for other services",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.532,
+            "oppose": 0.468
+          },
+          "binary_direction": {
+            "liberal_pct": 0.468,
+            "conservative_pct": 0.532
+          }
+        },
+        {
+          "variable": "CC24_321e",
+          "text": "Decrease police on the street by 10%, increase funding for other services",
+          "scale": "support_oppose",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "support": 0.335,
+            "oppose": 0.665
+          },
+          "binary_direction": {
+            "liberal_pct": 0.335,
+            "conservative_pct": 0.665
+          }
+        },
+        {
+          "variable": "CC24_443_4",
+          "text": "State legislature spending on Law Enforcement",
+          "scale": "spending_5pt",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "greatly_increase": 0.215,
+            "slightly_increase": 0.427,
+            "maintain": 0.27,
+            "slightly_decrease": 0.07,
+            "greatly_decrease": 0.017
+          },
+          "binary_direction": {
+            "liberal_pct": 0.88,
+            "conservative_pct": 0.12,
+            "neutral_excluded_pct": 0.27
+          }
+        }
+      ]
+    },
+    {
+      "issue_id": "election_integrity",
+      "questions": [
+        {
+          "variable": "CC24_421_1",
+          "text": "Elections in the U.S. are fair",
+          "scale": "agree_disagree_5pt",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "strongly_agree": 0.269,
+            "somewhat_agree": 0.378,
+            "neither_agree_disagree": 0.247,
+            "somewhat_disagree": 0.071,
+            "strongly_disagree": 0.035
+          },
+          "binary_direction": {}
+        },
+        {
+          "variable": "CC24_421_2",
+          "text": "Your state or local government conducted a fair and accurate election in 2024",
+          "scale": "agree_disagree_5pt",
+          "category": "core",
+          "n": 107,
+          "results": {
+            "strongly_agree": 0.575,
+            "somewhat_agree": 0.259,
+            "neither_agree_disagree": 0.122,
+            "somewhat_disagree": 0.023,
+            "strongly_disagree": 0.021
+          },
+          "binary_direction": {}
+        }
+      ]
+    }
+  ],
+  "methodology_note": "District estimates based on 107 weighted CES respondents. Weight: vvweight_post. Response distributions are weighted proportions. Binary direction fields collapse responses for alignment metric: liberal_pct vs conservative_pct. For 5-point spending scales, 'increase' = liberal, 'decrease' = conservative, 'maintain' excluded from binary and shown as neutral_excluded_pct. Questions with fewer than 5 valid responses are suppressed."
+}

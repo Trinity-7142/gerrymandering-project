@@ -1,0 +1,337 @@
+{
+  "issues": [
+    {
+      "issue_id": "guns",
+      "display_name": "Gun Policy",
+      "short_description": "Gun regulation, background checks, concealed carry",
+      "color": "#F39C12",
+      "icon": "shield",
+      "ces_questions": [
+        {
+          "variable": "CC24_321a",
+          "text": "Ban assault rifles",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_321b",
+          "text": "Make it easier to obtain concealed-carry permit",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_321c",
+          "text": "Require background checks on all gun sales",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_321f",
+          "text": "Gun safety package: mental health spending, confiscate from dangerous, domestic violence ban, minor background checks",
+          "scale": "support_oppose",
+          "category": "core"
+        }
+      ]
+    },
+    {
+      "issue_id": "immigration",
+      "display_name": "Immigration",
+      "short_description": "Border policy, legal status, enforcement",
+      "color": "#E74C3C",
+      "icon": "globe",
+      "ces_questions": [
+        {
+          "variable": "CC24_323a",
+          "text": "Grant legal status to immigrants with 3+ years jobs/taxes, no felonies",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_323b",
+          "text": "Increase border patrols on US-Mexico border",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_323c",
+          "text": "Build a wall between the U.S. and Mexico",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_323d",
+          "text": "Permanent resident status for Dreamers with pathway to citizenship",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_340f",
+          "text": "Deny asylum access for immigrants who cross border illegally",
+          "scale": "support_oppose",
+          "category": "core"
+        }
+      ]
+    },
+    {
+      "issue_id": "abortion",
+      "display_name": "Abortion & Reproductive Rights",
+      "short_description": "Abortion access, reproductive policy",
+      "color": "#9B59B6",
+      "icon": "heart",
+      "ces_questions": [
+        {
+          "variable": "CC24_324a",
+          "text": "Always allow abortion as a matter of choice",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_324b",
+          "text": "Permit abortion only in cases of rape, incest, or life danger",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_324c",
+          "text": "Make abortions illegal in all circumstances",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_324d",
+          "text": "Expand abortion access, affordability, provider types, clinic protections",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_340a",
+          "text": "Prohibit government restrictions on contraceptives",
+          "scale": "support_oppose",
+          "category": "supplementary"
+        },
+        {
+          "variable": "CC24_340b",
+          "text": "Prohibit government restrictions on abortion services",
+          "scale": "support_oppose",
+          "category": "supplementary"
+        },
+        {
+          "variable": "CC24_444c",
+          "text": "Prohibit receiving abortion-inducing drugs through the mail",
+          "scale": "support_oppose",
+          "category": "supplementary"
+        },
+        {
+          "variable": "CC24_444d",
+          "text": "Prohibit women from traveling to another state for an abortion",
+          "scale": "support_oppose",
+          "category": "supplementary"
+        },
+        {
+          "variable": "CC24_445b",
+          "text": "Roe v. Wade is overruled; states can outlaw abortion",
+          "scale": "agree_disagree",
+          "category": "supplementary"
+        }
+      ]
+    },
+    {
+      "issue_id": "environment",
+      "display_name": "Climate & Environment",
+      "short_description": "EPA regulation, renewables, fossil fuels",
+      "color": "#27AE60",
+      "icon": "leaf",
+      "ces_questions": [
+        {
+          "variable": "CC24_326a",
+          "text": "Give EPA power to regulate carbon dioxide emissions",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_326b",
+          "text": "Require 20% of electricity from renewable sources",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_326c",
+          "text": "Strengthen EPA enforcement of Clean Air/Water Acts even if it costs jobs",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_326d",
+          "text": "Increase fossil fuel production in the U.S.",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_326e",
+          "text": "Halt new oil and gas leases on federal lands",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_326f",
+          "text": "Prevent the government from banning gas stoves",
+          "scale": "support_oppose",
+          "category": "core"
+        }
+      ]
+    },
+    {
+      "issue_id": "economy",
+      "display_name": "Economy & Taxes",
+      "short_description": "Tax policy, spending, housing, infrastructure",
+      "color": "#3498DB",
+      "icon": "dollar-sign",
+      "ces_questions": [
+        {
+          "variable": "CC24_341a",
+          "text": "Extend 2017 tax cuts (individual/corporate rate reductions, limited deductions)",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_341b",
+          "text": "Raise income tax on those earning over $400k",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_328a",
+          "text": "Relax zoning laws to allow more apartments and condos",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_328b",
+          "text": "Expand federal tax incentives for affordable housing",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_323f",
+          "text": "Forgive up to $20,000 of student loan debt per person",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_443_1",
+          "text": "State legislature spending on Welfare",
+          "scale": "spending_5pt",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_443_3",
+          "text": "State legislature spending on Education",
+          "scale": "spending_5pt",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_443_5",
+          "text": "State legislature spending on Transportation/Infrastructure",
+          "scale": "spending_5pt",
+          "category": "core"
+        }
+      ]
+    },
+    {
+      "issue_id": "healthcare",
+      "display_name": "Healthcare",
+      "short_description": "ACA, Medicaid, health spending",
+      "color": "#1ABC9C",
+      "icon": "activity",
+      "ces_questions": [
+        {
+          "variable": "CC24_328c",
+          "text": "Require able-bodied adults without dependents to have a job to receive Medicaid",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_328d",
+          "text": "Repeal the Affordable Care Act",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_328e",
+          "text": "Expand Medicaid to cover individuals <$25k and families <$40k",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_443_2",
+          "text": "State legislature spending on Health Care",
+          "scale": "spending_5pt",
+          "category": "core"
+        }
+      ]
+    },
+    {
+      "issue_id": "criminal_justice",
+      "display_name": "Criminal Justice",
+      "short_description": "Policing, law enforcement spending",
+      "color": "#34495E",
+      "icon": "shield",
+      "ces_questions": [
+        {
+          "variable": "CC24_321d",
+          "text": "Increase police on the street by 10%, even if fewer funds for other services",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_321e",
+          "text": "Decrease police on the street by 10%, increase funding for other services",
+          "scale": "support_oppose",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_443_4",
+          "text": "State legislature spending on Law Enforcement",
+          "scale": "spending_5pt",
+          "category": "core"
+        }
+      ]
+    },
+    {
+      "issue_id": "election_integrity",
+      "display_name": "Voting & Elections",
+      "short_description": "Election fairness, voting access",
+      "color": "#8E44AD",
+      "icon": "check-square",
+      "ces_questions": [
+        {
+          "variable": "CC24_421_1",
+          "text": "Elections in the U.S. are fair",
+          "scale": "agree_disagree_5pt",
+          "category": "core"
+        },
+        {
+          "variable": "CC24_421_2",
+          "text": "Your state or local government conducted a fair and accurate election in 2024",
+          "scale": "agree_disagree_5pt",
+          "category": "core"
+        }
+      ]
+    },
+    {
+      "issue_id": "foreign_policy",
+      "display_name": "Foreign Policy",
+      "short_description": "International relations, defense, trade",
+      "color": "#2C3E50",
+      "icon": "globe",
+      "ces_questions": [],
+      "data_availability_note": "VoteCast includes foreign policy as an issue salience option (ISSUES2024), but CES 2024 does not include comparable foreign policy questions. This issue will have salience data but no district-level position data for alignment calculations."
+    }
+  ],
+  "metadata": {
+    "version": "1.1",
+    "last_updated": "2026-02-21",
+    "total_issues": 9,
+    "notes": "Issue taxonomy for alignment project. 8 issues have CES question mappings for position data; foreign_policy has VoteCast salience data only."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "state_code": "MD",
+  "state_name": "Maryland",
+  "total_districts": 8,
+  "delegation_composition": {
+    "democrat": 7,
+    "republican": 1
+  },
+  "districts": [
+    {
+      "district_id": "MD-01",
+      "representative": "Andy Harris",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 104
+    },
+    {
+      "district_id": "MD-02",
+      "representative": "Johnny Olszewski",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 98
+    },
+    {
+      "district_id": "MD-03",
+      "representative": "Sarah Elfreth",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 89
+    },
+    {
+      "district_id": "MD-04",
+      "representative": "Glenn Ivey",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 45
+    },
+    {
+      "district_id": "MD-05",
+      "representative": "Steny Hoyer",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 71
+    },
+    {
+      "district_id": "MD-06",
+      "representative": "April McClain Delaney",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 78
+    },
+    {
+      "district_id": "MD-07",
+      "representative": "Kweisi Mfume",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 76
+    },
+    {
+      "district_id": "MD-08",
+      "representative": "Jamie Raskin",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 64
+    }
+  ]
+}

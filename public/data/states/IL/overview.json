@@ -1,0 +1,130 @@
+{
+  "state_code": "IL",
+  "state_name": "Illinois",
+  "total_districts": 17,
+  "delegation_composition": {
+    "democrat": 14,
+    "republican": 3
+  },
+  "districts": [
+    {
+      "district_id": "IL-01",
+      "representative": "Jonathan Jackson",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 83
+    },
+    {
+      "district_id": "IL-02",
+      "representative": "Robin Kelly",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 57
+    },
+    {
+      "district_id": "IL-03",
+      "representative": "Delia Ramirez",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 77
+    },
+    {
+      "district_id": "IL-04",
+      "representative": "Chuy García",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 35
+    },
+    {
+      "district_id": "IL-05",
+      "representative": "Mike Quigley",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 94
+    },
+    {
+      "district_id": "IL-06",
+      "representative": "Sean Casten",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 88
+    },
+    {
+      "district_id": "IL-07",
+      "representative": "Danny Davis",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 70
+    },
+    {
+      "district_id": "IL-08",
+      "representative": "Raja Krishnamoorthi",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 80
+    },
+    {
+      "district_id": "IL-09",
+      "representative": "Jan Schakowsky",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 115
+    },
+    {
+      "district_id": "IL-10",
+      "representative": "Brad Schneider",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 66
+    },
+    {
+      "district_id": "IL-11",
+      "representative": "Bill Foster",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 82
+    },
+    {
+      "district_id": "IL-12",
+      "representative": "Mike Bost",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 87
+    },
+    {
+      "district_id": "IL-13",
+      "representative": "Nicole (Nikki) Budzinski",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 87
+    },
+    {
+      "district_id": "IL-14",
+      "representative": "Lauren Underwood",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 95
+    },
+    {
+      "district_id": "IL-15",
+      "representative": "Mary Miller",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 97
+    },
+    {
+      "district_id": "IL-16",
+      "representative": "Darin LaHood",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 92
+    },
+    {
+      "district_id": "IL-17",
+      "representative": "Eric Sorensen",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 82
+    }
+  ]
+}

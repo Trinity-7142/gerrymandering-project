@@ -1,0 +1,54 @@
+{
+  "state_code": "MO",
+  "source": "AP VoteCast 2024",
+  "sample_size": 2351,
+  "question": "Which one of the following would you say is the most important issue facing the country?",
+  "salience": [
+    {
+      "issue_id": "economy",
+      "pct": 0.406,
+      "rank": 1
+    },
+    {
+      "issue_id": "immigration",
+      "pct": 0.207,
+      "rank": 2
+    },
+    {
+      "issue_id": "abortion",
+      "pct": 0.117,
+      "rank": 3
+    },
+    {
+      "issue_id": "healthcare",
+      "pct": 0.086,
+      "rank": 4
+    },
+    {
+      "issue_id": "environment",
+      "pct": 0.061,
+      "rank": 5
+    },
+    {
+      "issue_id": "guns",
+      "pct": 0.04,
+      "rank": 6
+    },
+    {
+      "issue_id": "criminal_justice",
+      "pct": 0.035,
+      "rank": 7
+    },
+    {
+      "issue_id": "voting_rights",
+      "pct": 0.025,
+      "rank": 8
+    },
+    {
+      "issue_id": "foreign_policy",
+      "pct": 0.024,
+      "rank": 9
+    }
+  ],
+  "methodology_note": "Percentages based on weighted responses of registered voters in MO from AP VoteCast 2024 general election survey. Weights: FINALVOTE_STATE_WEIGHT. Filtered to LIKELYVOTER==1 (likely voters). ISSUES2024 mapped to contract issue taxonomy; excluded DK/Refused (code 99); renormalized to sum to 1."
+}

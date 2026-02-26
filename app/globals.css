@@ -1,0 +1,6 @@
+/* app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* TODO: Add any custom global styles */
+/* TODO: Font imports if not using next/font */

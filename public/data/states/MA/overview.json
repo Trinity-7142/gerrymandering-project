@@ -1,0 +1,74 @@
+{
+  "state_code": "MA",
+  "state_name": "Massachusetts",
+  "total_districts": 9,
+  "delegation_composition": {
+    "democrat": 9,
+    "republican": 0
+  },
+  "districts": [
+    {
+      "district_id": "MA-01",
+      "representative": "Richard Neal",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 97
+    },
+    {
+      "district_id": "MA-02",
+      "representative": "Jim McGovern",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 87
+    },
+    {
+      "district_id": "MA-03",
+      "representative": "Lori Trahan",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 78
+    },
+    {
+      "district_id": "MA-04",
+      "representative": "Jake Auchincloss",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 81
+    },
+    {
+      "district_id": "MA-05",
+      "representative": "Katherine Clark",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 57
+    },
+    {
+      "district_id": "MA-06",
+      "representative": "Seth Moulton",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 88
+    },
+    {
+      "district_id": "MA-07",
+      "representative": "Ayanna Pressley",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 69
+    },
+    {
+      "district_id": "MA-08",
+      "representative": "Stephen Lynch",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 78
+    },
+    {
+      "district_id": "MA-09",
+      "representative": "William Keating",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 87
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "state_code": "ND",
+  "state_name": "North Dakota",
+  "total_districts": 1,
+  "delegation_composition": {
+    "democrat": 0,
+    "republican": 1
+  },
+  "districts": [
+    {
+      "district_id": "ND-AL",
+      "representative": "Julie Fedorchak",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 74
+    }
+  ]
+}

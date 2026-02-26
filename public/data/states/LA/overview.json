@@ -1,0 +1,53 @@
+{
+  "state_code": "LA",
+  "state_name": "Louisiana",
+  "total_districts": 6,
+  "delegation_composition": {
+    "democrat": 2,
+    "republican": 4
+  },
+  "districts": [
+    {
+      "district_id": "LA-01",
+      "representative": "Steve Scalise",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 73
+    },
+    {
+      "district_id": "LA-02",
+      "representative": "Troy Carter",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 74
+    },
+    {
+      "district_id": "LA-03",
+      "representative": "Clay Higgins",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 57
+    },
+    {
+      "district_id": "LA-04",
+      "representative": "Mike Johnson",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 60
+    },
+    {
+      "district_id": "LA-05",
+      "representative": "Julia Letlow",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 58
+    },
+    {
+      "district_id": "LA-06",
+      "representative": "Cleo Fields",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 57
+    }
+  ]
+}

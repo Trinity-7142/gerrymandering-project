@@ -1,0 +1,53 @@
+{
+  "state_code": "KY",
+  "state_name": "Kentucky",
+  "total_districts": 6,
+  "delegation_composition": {
+    "democrat": 1,
+    "republican": 5
+  },
+  "districts": [
+    {
+      "district_id": "KY-01",
+      "representative": "James Comer",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 85
+    },
+    {
+      "district_id": "KY-02",
+      "representative": "Brett Guthrie",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 90
+    },
+    {
+      "district_id": "KY-03",
+      "representative": "Morgan McGarvey",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 91
+    },
+    {
+      "district_id": "KY-04",
+      "representative": "Thomas Massie",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 71
+    },
+    {
+      "district_id": "KY-05",
+      "representative": "Hal Rogers",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 88
+    },
+    {
+      "district_id": "KY-06",
+      "representative": "Andy Barr",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 86
+    }
+  ]
+}

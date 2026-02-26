@@ -1,0 +1,25 @@
+{
+  "state_code": "ID",
+  "state_name": "Idaho",
+  "total_districts": 2,
+  "delegation_composition": {
+    "democrat": 0,
+    "republican": 2
+  },
+  "districts": [
+    {
+      "district_id": "ID-01",
+      "representative": "Russ Fulcher",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 105
+    },
+    {
+      "district_id": "ID-02",
+      "representative": "Mike Simpson",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 88
+    }
+  ]
+}

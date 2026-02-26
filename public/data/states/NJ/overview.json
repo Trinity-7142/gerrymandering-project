@@ -1,0 +1,88 @@
+{
+  "state_code": "NJ",
+  "state_name": "New Jersey",
+  "total_districts": 11,
+  "delegation_composition": {
+    "democrat": 8,
+    "republican": 3
+  },
+  "districts": [
+    {
+      "district_id": "NJ-01",
+      "representative": "Donald Norcross",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 101
+    },
+    {
+      "district_id": "NJ-02",
+      "representative": "Jefferson Van Drew",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 92
+    },
+    {
+      "district_id": "NJ-03",
+      "representative": "Herbert Conaway",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 88
+    },
+    {
+      "district_id": "NJ-04",
+      "representative": "Chris Smith",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 101
+    },
+    {
+      "district_id": "NJ-05",
+      "representative": "Josh Gottheimer",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 86
+    },
+    {
+      "district_id": "NJ-06",
+      "representative": "Frank Pallone",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 78
+    },
+    {
+      "district_id": "NJ-07",
+      "representative": "Thomas Kean",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 90
+    },
+    {
+      "district_id": "NJ-08",
+      "representative": "Robert Menendez",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 57
+    },
+    {
+      "district_id": "NJ-09",
+      "representative": "Nellie Pou",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 61
+    },
+    {
+      "district_id": "NJ-10",
+      "representative": "LaMonica McIver",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 52
+    },
+    {
+      "district_id": "NJ-12",
+      "representative": "Bonnie Watson Coleman",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 95
+    }
+  ]
+}

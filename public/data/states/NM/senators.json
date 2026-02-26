@@ -1,0 +1,53 @@
+{
+  "state_code": "NM",
+  "source": "congress.gov / VoteView (UCLA)",
+  "congress": 119,
+  "ces_state_sample": {
+    "n_respondents": 242,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "State-level estimates based on 242 weighted CES respondents"
+  },
+  "senators": [
+    {
+      "name": "Martin Heinrich",
+      "party": "D",
+      "seat_class": 1,
+      "assumed_office": "NA",
+      "photo_url": "/images/senators/NM-heinrich.jpg",
+      "alignment": {
+        "overall_score": 0.69,
+        "overall_label": "Placeholder - Pending D6",
+        "issue_scores": []
+      },
+      "votes_by_issue": [],
+      "overall_voting_stats": {
+        "total_tracked_votes": "NA",
+        "attendance_rate": "NA"
+      }
+    },
+    {
+      "name": "Ben Luján",
+      "party": "D",
+      "seat_class": 2,
+      "assumed_office": "NA",
+      "photo_url": "/images/senators/NM-luján.jpg",
+      "alignment": {
+        "overall_score": 0.69,
+        "overall_label": "Placeholder - Pending D6",
+        "issue_scores": []
+      },
+      "votes_by_issue": [],
+      "overall_voting_stats": {
+        "total_tracked_votes": "NA",
+        "attendance_rate": "NA"
+      }
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed identically to district-level scores: salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. State-level CES samples are substantially larger than district-level, producing more precise estimates. See methodology page for full details."
+}

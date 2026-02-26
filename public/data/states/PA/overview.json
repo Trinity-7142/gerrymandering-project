@@ -1,0 +1,130 @@
+{
+  "state_code": "PA",
+  "state_name": "Pennsylvania",
+  "total_districts": 17,
+  "delegation_composition": {
+    "democrat": 7,
+    "republican": 10
+  },
+  "districts": [
+    {
+      "district_id": "PA-01",
+      "representative": "Brian Fitzpatrick",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 119
+    },
+    {
+      "district_id": "PA-02",
+      "representative": "Brendan Boyle",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 75
+    },
+    {
+      "district_id": "PA-03",
+      "representative": "Dwight Evans",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 114
+    },
+    {
+      "district_id": "PA-04",
+      "representative": "Madeleine Dean",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 105
+    },
+    {
+      "district_id": "PA-05",
+      "representative": "Mary Scanlon",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 107
+    },
+    {
+      "district_id": "PA-06",
+      "representative": "Chrissy Houlahan",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 95
+    },
+    {
+      "district_id": "PA-07",
+      "representative": "Ryan Mackenzie",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 105
+    },
+    {
+      "district_id": "PA-08",
+      "representative": "Robert Bresnahan",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 147
+    },
+    {
+      "district_id": "PA-09",
+      "representative": "Daniel Meuser",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 128
+    },
+    {
+      "district_id": "PA-10",
+      "representative": "Scott Perry",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 109
+    },
+    {
+      "district_id": "PA-11",
+      "representative": "Lloyd Smucker",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 102
+    },
+    {
+      "district_id": "PA-12",
+      "representative": "Summer Lee",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 132
+    },
+    {
+      "district_id": "PA-13",
+      "representative": "John Joyce",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 136
+    },
+    {
+      "district_id": "PA-14",
+      "representative": "Guy Reschenthaler",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 115
+    },
+    {
+      "district_id": "PA-15",
+      "representative": "Glenn Thompson",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 124
+    },
+    {
+      "district_id": "PA-16",
+      "representative": "Mike Kelly",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 121
+    },
+    {
+      "district_id": "PA-17",
+      "representative": "Chris Deluzio",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 133
+    }
+  ]
+}

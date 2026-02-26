@@ -1,0 +1,46 @@
+{
+  "state_code": "OK",
+  "state_name": "Oklahoma",
+  "total_districts": 5,
+  "delegation_composition": {
+    "democrat": 0,
+    "republican": 5
+  },
+  "districts": [
+    {
+      "district_id": "OK-01",
+      "representative": "Kevin Hern",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 99
+    },
+    {
+      "district_id": "OK-02",
+      "representative": "Josh Brecheen",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 66
+    },
+    {
+      "district_id": "OK-03",
+      "representative": "Frank Lucas",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 62
+    },
+    {
+      "district_id": "OK-04",
+      "representative": "Tom Cole",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 75
+    },
+    {
+      "district_id": "OK-05",
+      "representative": "Stephanie Bice",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 101
+    }
+  ]
+}

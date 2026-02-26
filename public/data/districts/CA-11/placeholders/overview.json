@@ -1,0 +1,21 @@
+{
+  "district_id": "CA-11",
+  "state_code": "CA",
+  "representative": {
+    "name": "Nancy Pelosi",
+    "party": "D",
+    "assumed_office": 1987,
+    "photo_url": "/images/reps/CA-11.jpg"
+  },
+  "demographics": {
+    "population": 760000,
+    "median_income": 112000,
+    "urban_pct": 0.98,
+    "cook_pvi": "D+38"
+  },
+  "ces_sample": {
+    "n_respondents": 543,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 543 weighted CES respondents"
+  }
+}

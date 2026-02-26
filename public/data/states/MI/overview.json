@@ -1,0 +1,102 @@
+{
+  "state_code": "MI",
+  "state_name": "Michigan",
+  "total_districts": 13,
+  "delegation_composition": {
+    "democrat": 6,
+    "republican": 7
+  },
+  "districts": [
+    {
+      "district_id": "MI-01",
+      "representative": "Jack Bergman",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 119
+    },
+    {
+      "district_id": "MI-02",
+      "representative": "John Moolenaar",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 82
+    },
+    {
+      "district_id": "MI-03",
+      "representative": "Hillary Scholten",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 114
+    },
+    {
+      "district_id": "MI-04",
+      "representative": "Bill Huizenga",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 78
+    },
+    {
+      "district_id": "MI-05",
+      "representative": "Tim Walberg",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 97
+    },
+    {
+      "district_id": "MI-06",
+      "representative": "Debbie Dingell",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 94
+    },
+    {
+      "district_id": "MI-07",
+      "representative": "Tom Barrett",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 111
+    },
+    {
+      "district_id": "MI-08",
+      "representative": "Kristen McDonald Rivet",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 102
+    },
+    {
+      "district_id": "MI-09",
+      "representative": "Lisa McClain",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 105
+    },
+    {
+      "district_id": "MI-10",
+      "representative": "John James",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 114
+    },
+    {
+      "district_id": "MI-11",
+      "representative": "Haley Stevens",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 88
+    },
+    {
+      "district_id": "MI-12",
+      "representative": "Rashida Tlaib",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 83
+    },
+    {
+      "district_id": "MI-13",
+      "representative": "Shri Thanedar",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 86
+    }
+  ]
+}

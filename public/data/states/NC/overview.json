@@ -1,0 +1,109 @@
+{
+  "state_code": "NC",
+  "state_name": "North Carolina",
+  "total_districts": 14,
+  "delegation_composition": {
+    "democrat": 4,
+    "republican": 10
+  },
+  "districts": [
+    {
+      "district_id": "NC-01",
+      "representative": "Donald Davis",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 63
+    },
+    {
+      "district_id": "NC-02",
+      "representative": "Deborah Ross",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 86
+    },
+    {
+      "district_id": "NC-03",
+      "representative": "Gregory Murphy",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 87
+    },
+    {
+      "district_id": "NC-04",
+      "representative": "Valerie Foushee",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 83
+    },
+    {
+      "district_id": "NC-05",
+      "representative": "Virginia Foxx",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 94
+    },
+    {
+      "district_id": "NC-06",
+      "representative": "Addison McDowell",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 95
+    },
+    {
+      "district_id": "NC-07",
+      "representative": "David Rouzer",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 99
+    },
+    {
+      "district_id": "NC-08",
+      "representative": "Mark Harris",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 78
+    },
+    {
+      "district_id": "NC-09",
+      "representative": "Richard Hudson",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 84
+    },
+    {
+      "district_id": "NC-10",
+      "representative": "Pat Harrigan",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 68
+    },
+    {
+      "district_id": "NC-11",
+      "representative": "Charles (Chuck) Edwards",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 94
+    },
+    {
+      "district_id": "NC-12",
+      "representative": "Alma Adams",
+      "party": "D",
+      "alignment_score": 0.69,
+      "ces_sample_size": 56
+    },
+    {
+      "district_id": "NC-13",
+      "representative": "Brad Knott",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 73
+    },
+    {
+      "district_id": "NC-14",
+      "representative": "Tim Moore",
+      "party": "R",
+      "alignment_score": 0.69,
+      "ces_sample_size": 73
+    }
+  ]
+}

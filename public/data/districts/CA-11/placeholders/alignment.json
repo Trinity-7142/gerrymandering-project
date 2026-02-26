@@ -1,0 +1,15 @@
+{
+  "district_id": "CA-11",
+  "overall_score": 0.74,
+  "overall_label": "Moderate Alignment",
+  "score_range": { "min": 0, "max": 1 },
+  "issue_scores": [
+    { "issue_id": "immigration", "score": 0.68, "salience_weight": 0.142, "weighted_contribution": 0.097, "direction": "Representative votes slightly more restrictive than constituents prefer" },
+    { "issue_id": "abortion", "score": 0.91, "salience_weight": 0.118, "weighted_contribution": 0.107, "direction": "Strong alignment on reproductive policy" },
+    { "issue_id": "environment", "score": 0.82, "salience_weight": 0.131, "weighted_contribution": 0.107, "direction": "Representative generally matches constituent preferences" },
+    { "issue_id": "guns", "score": 0.85, "salience_weight": 0.068, "weighted_contribution": 0.058, "direction": "High alignment on gun regulation" },
+    { "issue_id": "economy", "score": 0.55, "salience_weight": 0.283, "weighted_contribution": 0.156, "direction": "Moderate divergence on economic policy" },
+    { "issue_id": "healthcare", "score": 0.72, "salience_weight": 0.187, "weighted_contribution": 0.135, "direction": "Mostly aligned on healthcare expansion" }
+  ],
+  "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes."
+}
