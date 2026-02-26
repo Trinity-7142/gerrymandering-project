@@ -13,7 +13,7 @@ Covers all 50 states at the state level, with district-level analysis for Califo
 ## Getting Started
 
 ### Prerequisites
-
+- Download the datasets from Google Drive (I'll send the link in Slack)
 - [Node.js](https://nodejs.org/) (v18 or later)
 - [R](https://cran.r-project.org/) (for data pipeline scripts)
 - npm (comes with Node.js)
@@ -64,9 +64,9 @@ This is a **static-first** application. R scripts process survey data into JSON 
 
 ### Raw Data
 
-Raw survey files (`.dta`) are large and licensed, so they are **not committed** to the repo. They live in `data-raw/` (gitignored). Contact Trinity for access if you need to re-run the R pipeline.
+Raw survey files (`.dta`) are large and licensed, so they are **not committed** to the repo. They live in `data-raw/` (gitignored).
 
 ## Key Documentation
 
-- **Data Contract v1.5** (`docs/`) — Schemas, task assignments, and architecture details
-- **Timeline v4** (`docs/`) — Project phases, milestones, and dependencies
+- **Data Contract v1.5** (View in Notion) — Schemas, task assignments, and architecture details
+- **Timeline v4** (View in Notion) — Project phases, milestones, and dependencies
