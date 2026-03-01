@@ -17,6 +17,8 @@
 // TODO: Read each JSON file, pass to corresponding component as props
 // TODO: If a JSON file is missing, pass null → component renders DataUnavailable fallback
 
+// TODO Import PrincetonPanel
+
 export async function generateStaticParams() {
   // TODO: Return [{ stateCode: 'CA' }, { stateCode: 'TX' }]
   // Later: read from states.json dynamically
