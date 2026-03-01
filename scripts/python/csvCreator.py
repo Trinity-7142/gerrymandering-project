@@ -2,13 +2,15 @@ import json
 import os
 import csv
 
-#NOTE: This code will not work unless you have a very particular file structure (this script must be in the same folder as congress), 
-# and is here so that the methodology of the production of senator_rollcall_votes.csv is made clear.
+
+#This file must be in gerrymandering-project/scripts/python/, 
+#and it outputs the generated csv into gerrymandering-project/data-raw/congress.
 
 #Gets the paths for the folders containing the data.json files we are interested in
 #Uses os.path.join as opposed to string concatenation for better compatibility and more legible code.
-base_path = os.path.dirname(__file__)
-votes_path = os.path.join(base_path, "congress", "data", "118", "votes")
+base_path = os.path.dirname(os.path.abspath(__file__))
+congress_path = os.path.join(base_path, "..", "..", "data-raw", "congress")
+votes_path = os.path.join(base_path, "..", "..", "data-raw", "congress", "data", "118", "votes")
 subfolders = [
      os.path.join(votes_path, entry) 
      for entry in os.listdir(votes_path)
@@ -29,7 +31,7 @@ strange_representatives = []
 
 #Open context manager for better memory usage, 
 #Create senator_rollcall_votes.csv file and write to it or overwrite it if it already exists.
-with open(os.path.join(base_path, "senator_rollcall_votes.csv"), mode="w", encoding = 'utf-8', newline='\n') as file:
+with open(os.path.join(congress_path, "senator_rollcall_votes.csv"), mode="w", encoding = 'utf-8', newline='\n') as file:
     #Setting up the CSV writer, which takes care of the formatting of CSV
     writer = csv.writer(file)
     writer.writerow(column_names)
