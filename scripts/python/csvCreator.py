@@ -2,7 +2,6 @@ import json
 import os
 import csv
 
-
 #This file must be in gerrymandering-project/scripts/python/, 
 #and it outputs the generated csv into gerrymandering-project/data-raw/congress.
 
@@ -10,44 +9,36 @@ import csv
 #Uses os.path.join as opposed to string concatenation for better compatibility and more legible code.
 base_path = os.path.dirname(os.path.abspath(__file__))
 congress_path = os.path.join(base_path, "..", "..", "data-raw", "congress")
-votes_path = os.path.join(base_path, "..", "..", "data-raw", "congress", "data", "118", "votes")
-subfolders = [
-     os.path.join(votes_path, entry) 
-     for entry in os.listdir(votes_path)
-]
-file_dirs = [
-    os.path.join(folder_dir, file) 
-    for folder_dir in subfolders 
-    for file in os.listdir(folder_dir)
-    ]
+data_path = os.path.join(congress_path, "data")
 
 column_names = ["bioguide_id", "name", "state", "party", "vote_id", "bill_number", "vote_date", "position", "category", "question"]
-
-#Whenever a representative is found whose JSON data representation is not a dictionary, they are put in this list.
-#The only values that end up filling this list are 'VP' because, if my analysis is correct, when a tie-breaking vote is needed,
-#They record the VP's vote under 'VP' instead of using a dictionary.
 strange_representatives = []
 
-
-#Open context manager for better memory usage, 
-#Create senator_rollcall_votes.csv file and write to it or overwrite it if it already exists.
+#Setting up the CSV file to be written to
 with open(os.path.join(congress_path, "senator_rollcall_votes.csv"), mode="w", encoding = 'utf-8', newline='\n') as file:
-    #Setting up the CSV writer, which takes care of the formatting of CSV
-    writer = csv.writer(file)
-    writer.writerow(column_names)
 
+    ### Defining functions: (Main is after definitions)
 
-    for dir in file_dirs:
-        #Loads the JSON data from the file, stores it as a mix of dictionaries and lists.
-        with open(os.path.join(dir, "data.json"), encoding="utf-8") as f:
-            json_data = json.load(f)
+    #Recursively traverses the subdirectories of a path until it finds json files, 
+    # which are sent to scanFile for processing
+    def iterate_over(path):
+        for root, dirs, files in os.walk(data_path):
+            for file in files:
+                if file.endswith(".json"):
+                    scan_file(os.path.join(root, file))
+    
+
+    #Takes in an file produced by the iterator returned by os.scandir().
+    #Adds relevant data from the file to the CSV
+    def scan_file(f):
+        with open(f, mode="r", encoding="utf-8",) as file:
+            json_data = json.load(file)
 
         vote_id = json_data["vote_id"]
         bill_number = json_data["number"]
         vote_date = json_data["date"]
         category = json_data["category"]
         question = json_data["question"]
-
 
         #Goes through the "Aye", "No", "Present", and "Not Voting" lists to find each representative-vote pair
         #Then it adds the relevant information to the CSV file
@@ -63,3 +54,14 @@ with open(os.path.join(congress_path, "senator_rollcall_votes.csv"), mode="w", e
                         writer.writerow([bioguide_id, name, state, party, vote_id, bill_number, vote_date, position, category, question])
                     else:
                         strange_representatives.append(representative)
+
+
+    ### MAIN:
+    #Don't unindent this, it has to stay inside the context manager!
+
+    #Setting up the CSV writer, which takes care of the formatting of CSV
+    writer = csv.writer(file)
+    writer.writerow(column_names)
+
+    #Iterating through subfolders of congress/data, scanning for data.json files.
+    iterate_over(data_path)
