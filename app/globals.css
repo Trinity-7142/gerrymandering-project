@@ -4,3 +4,14 @@
 @tailwind utilities;
 /* TODO: Add any custom global styles */
 /* TODO: Font imports if not using next/font */
+
+
+.rectangle {
+  display: block;
+  width: 50vw;
+  height: 50vh;
+  background: white;
+  border: 5px solid black;
+  margin-top:5vh;
+  margin-bottom:5vh;
+}
