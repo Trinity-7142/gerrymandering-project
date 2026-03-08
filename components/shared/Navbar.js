@@ -18,7 +18,7 @@
 // Next.js Navigation — we use <Link> instead of <a> for internal
 // pages. It makes page transitions faster (no full browser reload).
 // UNCOMMENT THIS LINE when you're ready to use it:
-// import Link from "next/link";
+import Link from "next/link";
 
 export default function Navbar() {
   // ─── STEP 1: Define the nav links ──────────────────────
@@ -70,11 +70,11 @@ export default function Navbar() {
   // over your navLinks array. This is how React renders lists.
   //
   // PATTERN (put this inside the <div className="nav__inner">):
-  //   {navLinks.map((link) => (
-  //     <Link key={link.href} href={link.href} className="nav__link">
-  //       {link.label}
-  //     </Link>
-  //   ))}
+    // {navLinks.map((link) => (
+    //   <Link key={link.href} href={link.href} className="nav__link">
+    //     {link.label}
+    //   </Link>
+    // ))}
   //
   // KEY CONCEPT — "key" prop:
   //   When you render a list in React, each item needs a unique
@@ -101,5 +101,20 @@ export default function Navbar() {
   //     </nav>
   //   );
 
-  return null; // ← DELETE this line once you start building
+  const navLinks = [{label: "Home", href: "/"}, {label: "About", href: "/about"}, {label: "Methodology", href: "/methodology"}]
+
+  //return null; // ← DELETE this line once you start building
+
+  return (
+      <nav className="nav" role="navigation" aria-label="Main navigation">
+        <div className="nav__inner">
+          {navLinks.map((link) => (
+            <Link key={link.href} href={link.href} className="nav__link">
+            {link.label + " "}
+            </Link>
+          )) 
+          }
+        </div>
+      </nav>
+    );
 }

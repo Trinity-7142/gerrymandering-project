@@ -10,4 +10,7 @@
 
 export default function StateSelector({ availableStates, comingSoon }) {
   // TODO: implement
+  return(
+    <button className='rectangle mx-auto' >Clickable map placeholder</button>
+  )
 }
