@@ -10,14 +10,15 @@ import csv
 base_path = os.path.dirname(os.path.abspath(__file__))
 congress_path = os.path.join(base_path, "..", "..", "data-raw", "congress")
 data_path = os.path.join(congress_path, "data")
-
-column_names = ["bioguide_id", "name", "state", "party", "vote_id", "bill_number", "vote_date", "position", "category", "question"]
+# changed column name bill_number -> vote_number 
+column_names = ["bioguide_id", "name", "state", "party", "vote_id", "vote_number", "vote_date", "position", "category", "question"]
 wrong_type_representatives = []
 
 ### Defining Functions ###
 #Takes in an file produced by the iterator returned by os.scandir().
 #Adds relevant data from the file to the CSV
-def scan_file(input_file, writer, wrong_type_representatives):
+# added an aditional argument: chamber; used to differentiate between house and senate votes
+def scan_file(input_file, writer, wrong_type_representatives, chamber="s"):
     with open(input_file, mode="r", encoding="utf-8",) as json_file:
         try: 
             json_data = json.load(json_file)
@@ -31,6 +32,10 @@ def scan_file(input_file, writer, wrong_type_representatives):
     
     try:
         vote_id = json_data["vote_id"]
+
+        # skip if not a senate vote
+        if not vote_id.startswith(chamber):
+            return
         bill_number = json_data["number"]
         vote_date = json_data["date"]
         category = json_data["category"]
@@ -66,4 +71,4 @@ with open(os.path.join(congress_path, "senator_rollcall_votes.csv"), mode="w", e
     for root, dirs, files in os.walk(data_path):
         for filename in files:
             if filename.endswith(".json"):
-                scan_file(os.path.join(root, filename), writer, wrong_type_representatives)
+                scan_file(os.path.join(root, filename), writer, wrong_type_representatives, chamber="s")
