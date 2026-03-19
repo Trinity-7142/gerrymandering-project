@@ -6,6 +6,9 @@
 // TODO: Set metadata (title, description, og tags)
 import "./globals.css";
 
+import Footer from '../components/shared/Footer';
+import Navbar from '../components/shared/Navbar';
+
 export const metadata = {
   title: "Gerrymandering Project",
   description: "Measuring representational alignment across U.S. congressional districts",
@@ -13,8 +16,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <>
+    <Navbar />
     <html lang="en">
+      
       <body>{children}</body>
+      
     </html>
+    <Footer />  
+    </>
   );
 }

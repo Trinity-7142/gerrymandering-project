@@ -20,7 +20,7 @@
 // We use <Link> for internal links (like the methodology page)
 // and regular <a> tags for external links (like Princeton's site).
 // UNCOMMENT THIS LINE when you're ready:
-// import Link from "next/link";
+import Link from "next/link";
 
 export default function Footer() {
   // ─── STEP 1: Write the outer footer structure ──────────
@@ -52,14 +52,14 @@ export default function Footer() {
   // two child <div>s — one for each column.
   //
   // STRUCTURE:
-  //   <div className="footer-grid">
-  //     <div>
-  //       {/* LEFT column: blocks 1 and 2 go here */}
-  //     </div>
-  //     <div>
-  //       {/* RIGHT column: blocks 3 and 4 go here */}
-  //     </div>
-  //   </div>
+    // <div className="footer-grid">
+    //   <div>
+    //     {/* LEFT column: blocks 1 and 2 go here */}
+    //   </div>
+    //   <div>
+    //     {/* RIGHT column: blocks 3 and 4 go here */}
+    //   </div>
+    // </div>
   //
   // The "footer-grid" class uses CSS Grid to make two columns.
   // You don't need to write any CSS — it's already in our
@@ -71,9 +71,8 @@ export default function Footer() {
   //
   // PATTERN for each block:
   //   <p className="footer-block">
-  //     <strong>Heading:</strong> Description text here.
+  //     <strong>Heading:</strong> Description text here. 
   //   </p>
-  //
   // KEY CONCEPT — <strong>:
   //   Makes text bold. The heading of each source is bold,
   //   while the description text stays normal weight.
@@ -159,5 +158,35 @@ export default function Footer() {
   //     </footer>
   //   );
 
-  return null; // ← DELETE this line once you start building
+  //return null; // ← DELETE this line once you start building
+
+  return (
+  <footer className="site-footer">
+         <h4 className="footer-title">Data Sources & Methodology</h4>
+          <div className="footer-grid">
+            <div>
+              <p className="footer-block">
+                <strong>Constituent Preferences:</strong> Cooperative Election Study 2024 (Harvard/YouGov, n≈60,000). District-level estimates use weighted samples with shrinkage toward state means for small samples.
+              </p>
+
+              <p className="footer-block">
+                <strong>Issue Salience:</strong> AP VoteCast 2024 General Election (n=140,000+). State-level weighting for issue importance.
+              </p>
+            </div>
+            <div>
+              <p className="footer-block">
+                <strong>Representative Voting:</strong> Cooperative Election Study 2024 (Harvard/YouGov, n≈60,000). District-level estimates use weighted samples with shrinkage toward state means for small samples.
+              </p>
+
+              <p className="footer-block">
+                <strong>Gerrymandering Metrics:</strong> Princeton Gerrymandering Project (Electoral Innovation Lab) and PlanScore (Campaign Legal Center / Harvard Election Law Clinic). See individual source pages for methodology details.
+              </p>
+            </div>
+          </div>
+          <p className="footer-updated">
+            Last updated: February 2026 · Questions about methodology?{" "}
+          <Link href="/methodology">Read our full documentation</Link>
+        </p>
+  </footer>
+)
 }
