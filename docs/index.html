@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>California — State Profile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,700;1,8..60,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ─── Reset & Base ──────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --burgundy: #c3524d;
+  --burgundy-dark: #a8433f;
+  --burgundy-light: #d4706b;
+  --btn-district: #A64745;
+  --bg: #F4F3F1;
+  --card-bg: #FFFFFF;
+  --card-border: #E8E6E3;
+  --card-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);
+  --card-shadow-hover: 0 2px 8px rgba(0,0,0,0.07), 0 8px 24px rgba(0,0,0,0.05);
+  --text-primary: #1A1A1A;
+  --text-secondary: #555555;
+  --text-muted: #888888;
+  --text-faint: #AAAAAA;
+  --accent-blue: #2563EB;
+  --accent-red: #C93545;
+  --gauge-green: #2D8F5E;
+  --gauge-yellow: #D4952A;
+  --gauge-red: #C93545;
+  --bar-dem: #2563EB;
+  --bar-rep: #DC2626;
+  --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --container: 960px;
+}
+
+html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ─── Navigation ────────────────────────────────────────── */
+.nav {
+  background: var(--burgundy);
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(139,58,58,0.25);
+}
+
+.nav__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  height: 56px;
+}
+
+.nav__link {
+  color: rgba(255,255,255,0.82);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 16px 28px;
+  letter-spacing: 0.01em;
+  transition: color 0.2s, background 0.2s;
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav__link:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.08);
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: rgba(255,255,255,0.7);
+  transition: width 0.25s ease, left 0.25s ease;
+}
+
+.nav__link:hover::after {
+  width: 60%;
+  left: 20%;
+}
+
+/* ─── Container ─────────────────────────────────────────── */
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ─── Card ──────────────────────────────────────────────── */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  box-shadow: var(--card-shadow);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+
+.card--lift:hover {
+  transform: translateY(-2px);
+}
+
+/* ─── Grid Helpers ──────────────────────────────────────── */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* ─── Header Section ────────────────────────────────────── */
+.header-section {
+  padding: 48px 0 0;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: start;
+}
+
+.state-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.state-name {
+  font-family: var(--serif);
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.state-meta {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.state-meta span {
+  margin: 0 2px;
+  color: var(--text-muted);
+}
+
+/* ─── Alignment Gauge Card ──────────────────────────────── */
+.gauge-card {
+  padding: 28px 36px;
+  text-align: center;
+  min-width: 280px;
+}
+
+.gauge-card__label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.gauge-wrapper {
+  position: relative;
+  width: 180px;
+  height: 105px;
+  margin: 0 auto 8px;
+}
+
+.gauge-wrapper svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+/* Needle: pivots from center-bottom of the arc.
+   Arc spans 180°: left = 0 (pointing left, -90deg), right = 100 (pointing right, +90deg).
+   Formula: rotate( score/100 * 180 - 90 )deg
+   Driven by --score CSS variable on .gauge-wrapper so score is set in one place. */
+.gauge-needle {
+  transform-origin: 90px 90px;
+  transform: rotate(calc(var(--score) * 1.8deg - 90deg));
+  transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes needleSweep {
+  from { transform: rotate(-90deg); }
+  to   { transform: rotate(calc(var(--score) * 1.8deg - 90deg)); }
+}
+
+.gauge-needle-animated {
+  animation: needleSweep 1.4s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
+}
+
+.gauge-score {
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.gauge-of {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.gauge-caption {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+/* ─── Tabs ──────────────────────────────────────────────── */
+.tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid #E8E6E3;
+  margin: 32px 0 28px;
+  position: relative;
+}
+
+.tabs__indicator {
+  position: absolute;
+  bottom: -2px;
+  height: 2px;
+  background: var(--burgundy);
+  border-radius: 1px;
+  transition: left 0.35s cubic-bezier(0.22, 1, 0.36, 1), width 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+}
+
+.tab {
+  background: none;
+  border: none;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 12px 20px;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.25s;
+}
+
+.tab:hover {
+  color: var(--text-secondary);
+}
+
+.tab:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: -2px;
+  border-radius: 4px;
+}
+
+.tab[aria-selected="true"] {
+  color: var(--burgundy);
+  font-weight: 600;
+}
+
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* ─── Map & Grade Row ───────────────────────────────────── */
+.map-grade-row {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.map-card {
+  padding: 24px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.map-placeholder {
+  flex: 1;
+  background: linear-gradient(135deg, #EBE9E6 0%, #E0DEDA 100%);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  min-height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.map-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 40%, rgba(37,99,235,0.08) 0%, transparent 50%),
+    radial-gradient(circle at 70% 60%, rgba(220,38,38,0.06) 0%, transparent 50%);
+}
+
+.map-placeholder__text {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.zip-input-row {
+  display: flex;
+  gap: 8px;
+}
+
+.zip-input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1.5px solid var(--card-border);
+  border-radius: var(--radius-sm);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  background: #FAFAFA;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.zip-input:focus {
+  border-color: var(--burgundy-light);
+  box-shadow: 0 0 0 3px rgba(139,58,58,0.1);
+}
+
+.zip-input::placeholder { color: var(--text-faint); }
+
+.zip-btn {
+  padding: 10px 18px;
+  background: var(--btn-district);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  white-space: nowrap;
+}
+
+.zip-btn:hover {
+  background: #8B3A3A;
+  transform: translateY(-1px);
+}
+
+.zip-btn:active { transform: translateY(0); }
+
+/* ─── Grade Card ────────────────────────────────────────── */
+.grade-card {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.grade-card__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.grade-badge {
+  width: 72px;
+  height: 72px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.grade-sub-grades {
+  display: flex;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.grade-sub {
+  text-align: center;
+}
+
+.grade-sub__badge {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #fff;
+  margin: 0 auto 4px;
+}
+
+.grade-sub__label {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  line-height: 1.3;
+  max-width: 64px;
+}
+
+.grade-note {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #EEECE9;
+}
+
+.grade-note a {
+  color: var(--accent-blue);
+  text-decoration: underline;
+  text-decoration-color: rgba(37,99,235,0.3);
+  transition: text-decoration-color 0.2s;
+}
+
+.grade-note a:hover {
+  text-decoration-color: var(--accent-blue);
+}
+
+/* ─── Top Concerns ──────────────────────────────────────── */
+.concerns-card {
+  padding: 32px;
+  margin-bottom: 28px;
+}
+
+.concerns-title {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+}
+
+.concern-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 0;
+  transition: background 0.15s;
+  border-radius: 8px;
+  margin: 0 -8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.concern-row:hover {
+  background: #F9F8F6;
+}
+
+.concern-icon {
+  font-size: 1.15rem;
+  width: 28px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.concern-label {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.concern-bar-track {
+  flex: 1;
+  height: 14px;
+  background: #EDEBE8;
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+}
+
+.concern-bar-fill {
+  height: 100%;
+  border-radius: 7px;
+  transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  position: relative;
+}
+
+.concern-bar-fill--gradient {
+  background: linear-gradient(90deg, #1e40af, #3b82f6 40%, #a855f7 65%, #dc2626);
+  border-radius: 7px;
+}
+
+.concern-pct {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  width: 42px;
+  text-align: right;
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.show-more-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  padding: 8px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--burgundy);
+  background: rgba(139,58,58,0.06);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: var(--sans);
+  transition: background 0.2s, color 0.2s;
+}
+
+.show-more-toggle:hover {
+  background: rgba(139,58,58,0.1);
+  color: var(--burgundy-dark);
+}
+
+.show-more-toggle svg {
+  transition: transform 0.3s ease;
+}
+
+.show-more-toggle.expanded svg {
+  transform: rotate(180deg);
+}
+
+.hidden-concerns {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.hidden-concerns.show {
+  max-height: 500px;
+}
+
+/* ─── Senator Cards ─────────────────────────────────────── */
+.senators-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.senator-card {
+  padding: 32px;
+  text-align: center;
+}
+
+.senator-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #E8E6E3, #D5D3D0);
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: var(--text-faint);
+}
+
+.senator-name {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.senator-party {
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.senator-party--d {
+  background: rgba(37,99,235,0.1);
+  color: var(--bar-dem);
+}
+
+.senator-party--r {
+  background: rgba(220,38,38,0.1);
+  color: var(--bar-rep);
+}
+
+.senator-placeholder {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  padding-top: 8px;
+  border-top: 1px solid #EEECE9;
+}
+
+/* ─── Footer ────────────────────────────────────────────── */
+.site-footer {
+  border-top: 1.5px solid #DDD9D5;
+  padding: 36px 0 40px;
+  margin-top: 16px;
+}
+
+.footer-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.footer-block {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.footer-block strong {
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.footer-block + .footer-block { margin-top: 10px; }
+
+.footer-updated {
+  font-size: 0.72rem;
+  color: var(--text-faint);
+}
+
+.footer-updated a {
+  color: var(--accent-blue);
+  text-decoration: underline;
+  text-decoration-color: rgba(37,99,235,0.3);
+  transition: text-decoration-color 0.2s;
+}
+
+.footer-updated a:hover { text-decoration-color: var(--accent-blue); }
+
+/* ─── Animations ────────────────────────────────────────── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-in {
+  animation: fadeInUp 0.5s ease both;
+}
+
+.delay-1 { animation-delay: 0.05s; }
+.delay-2 { animation-delay: 0.1s; }
+.delay-3 { animation-delay: 0.15s; }
+.delay-4 { animation-delay: 0.2s; }
+.delay-5 { animation-delay: 0.25s; }
+
+/* ─── Gauge Animation ───────────────────────────────────── */
+/* Gauge needle animation is defined above with .gauge-needle */
+
+/* ─── Responsive ────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .nav__link { padding: 14px 14px; font-size: 0.82rem; }
+  .header-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 32px;
+  }
+  .state-name { font-size: 2.4rem; }
+  .gauge-card { min-width: auto; }
+  .map-grade-row {
+    grid-template-columns: 1fr;
+  }
+  .senators-row {
+    grid-template-columns: 1fr;
+  }
+  .concern-label { width: 140px; font-size: 0.82rem; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .grade-sub-grades { gap: 10px; }
+}
+
+@media (max-width: 480px) {
+  .nav__inner { gap: 0; flex-wrap: wrap; height: auto; padding: 8px 0; justify-content: center; }
+  .nav__link { padding: 10px 12px; font-size: 0.78rem; }
+  .state-name { font-size: 2rem; }
+  .concerns-card { padding: 20px; }
+  .concern-label { width: 110px; }
+  .concern-icon { display: none; }
+  .tabs { overflow-x: auto; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ NAVIGATION ═══ -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="#" class="nav__link">Home</a>
+    <a href="#" class="nav__link">Legal</a>
+    <a href="#" class="nav__link">Case Studies</a>
+    <a href="#" class="nav__link">What Now?</a>
+    <a href="#" class="nav__link">Methodology</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- ═══ HEADER ═══ -->
+  <div class="header-section animate-in">
+    <div>
+      <p class="state-label">State Profile</p>
+      <h1 class="state-name">California</h1>
+      <p class="state-meta">
+        52 congressional districts <span>·</span> 59.4% Dem / 40.6% Rep (2024)
+      </p>
+    </div>
+
+    <div class="card card--lift gauge-card animate-in delay-2">
+      <p class="gauge-card__label">Alignment Score</p>
+      <div class="gauge-wrapper" style="--score: 67;">
+        <svg viewBox="0 0 180 110" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gaugeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#C93545"/>
+              <stop offset="50%" stop-color="#D4952A"/>
+              <stop offset="100%" stop-color="#2D8F5E"/>
+            </linearGradient>
+          </defs>
+          <!-- Thin arc track -->
+          <path d="M 15 90 A 75 75 0 0 1 165 90" fill="none" stroke="#EDEBE8" stroke-width="4" stroke-linecap="round"/>
+          <!-- Colored arc (thin) -->
+          <path d="M 15 90 A 75 75 0 0 1 165 90" fill="none" stroke="url(#gaugeGrad)" stroke-width="4" stroke-linecap="round"/>
+          <!-- Minor tick marks around arc -->
+          <g stroke="#D5D3D0" stroke-width="0.8">
+            <line x1="15" y1="90" x2="21" y2="90"/>
+            <line x1="21.5" y1="58.5" x2="27" y2="61"/>
+            <line x1="42" y1="32" x2="46" y2="36"/>
+            <line x1="90" y1="15" x2="90" y2="21"/>
+            <line x1="138" y1="32" x2="134" y2="36"/>
+            <line x1="158.5" y1="58.5" x2="153" y2="61"/>
+            <line x1="165" y1="90" x2="159" y2="90"/>
+          </g>
+          <!-- Needle (clock hand) -->
+          <g class="gauge-needle gauge-needle-animated">
+            <line x1="90" y1="90" x2="90" y2="24" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
+          </g>
+          <!-- Center pivot dot -->
+          <circle cx="90" cy="90" r="4.5" fill="#1A1A1A"/>
+          <circle cx="90" cy="90" r="2" fill="#fff"/>
+          <!-- Labels -->
+          <text x="8" y="104" font-size="8" fill="#AAA" text-anchor="middle" font-family="DM Sans, sans-serif">0</text>
+          <text x="90" y="9" font-size="7" fill="#CCC" text-anchor="middle" font-family="DM Sans, sans-serif">50</text>
+          <text x="172" y="104" font-size="8" fill="#AAA" text-anchor="middle" font-family="DM Sans, sans-serif">100</text>
+        </svg>
+      </div>
+      <div>
+        <span class="gauge-score">67</span><span class="gauge-of"> / 100</span>
+      </div>
+      <p class="gauge-caption">Statewide average alignment</p>
+    </div>
+  </div>
+
+  <!-- ═══ TABS ═══ -->
+  <div class="tabs" role="tablist" aria-label="State profile sections">
+    <button class="tab" role="tab" aria-selected="true" aria-controls="panel-overview" id="tab-overview" tabindex="0">Overview</button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="panel-districts" id="tab-districts" tabindex="-1">All Districts</button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="panel-methodology" id="tab-methodology" tabindex="-1">How We Measured This</button>
+    <div class="tabs__indicator" id="tabs-indicator"></div>
+  </div>
+
+  <!-- ═══ OVERVIEW PANEL ═══ -->
+  <div class="tab-panel active" role="tabpanel" id="panel-overview" aria-labelledby="tab-overview">
+
+    <!-- Map + Grade Row -->
+    <div class="map-grade-row animate-in delay-1">
+      <!-- Interactive Map Card -->
+      <div class="card map-card">
+        <div class="map-placeholder">
+          <p class="map-placeholder__text">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#BBB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:8px; display:block; margin:0 auto 8px;">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            Interactive district map<br>
+            <span style="font-size:0.75rem; color:#AAA">Color-coded by alignment score</span>
+          </p>
+        </div>
+        <div class="zip-input-row">
+          <input type="text" class="zip-input" placeholder="Enter your ZIP code" maxlength="5" aria-label="ZIP code lookup" inputmode="numeric">
+          <button class="zip-btn">Find District</button>
+        </div>
+      </div>
+
+      <!-- Gerrymandering Grade Card -->
+      <div class="card card--lift grade-card">
+        <p class="grade-card__label">Gerrymandering Grade</p>
+        <div class="grade-badge" style="background: #0d9488;">B</div>
+        <div class="grade-sub-grades">
+          <div class="grade-sub">
+            <div class="grade-sub__badge" style="background:#059669;">A</div>
+            <p class="grade-sub__label">Partisan Fairness</p>
+          </div>
+          <div class="grade-sub">
+            <div class="grade-sub__badge" style="background:#D4952A;">C</div>
+            <p class="grade-sub__label">Competitive&shy;ness</p>
+          </div>
+          <div class="grade-sub">
+            <div class="grade-sub__badge" style="background:#D4952A;">C</div>
+            <p class="grade-sub__label">Geographic</p>
+          </div>
+        </div>
+        <p class="grade-note">
+          Grade from Princeton Gerrymandering Project. For detailed analysis and supplementary metrics, see <a href="#">PlanScore's data</a> as well.
+        </p>
+      </div>
+    </div>
+
+    <!-- Top Concerns -->
+    <div class="card concerns-card animate-in delay-2">
+      <h2 class="concerns-title">California's Top Concerns</h2>
+
+      <div id="concerns-visible">
+        <div class="concern-row">
+          <span class="concern-icon">💼</span>
+          <span class="concern-label">Economy & Jobs</span>
+          <div class="concern-bar-track">
+            <div class="concern-bar-fill concern-bar-fill--gradient" style="width:72%;"></div>
+          </div>
+          <span class="concern-pct">72%</span>
+        </div>
+        <div class="concern-row">
+          <span class="concern-icon">🌎</span>
+          <span class="concern-label">Immigration</span>
+          <div class="concern-bar-track">
+            <div class="concern-bar-fill concern-bar-fill--gradient" style="width:68%;"></div>
+          </div>
+          <span class="concern-pct">68%</span>
+        </div>
+        <div class="concern-row">
+          <span class="concern-icon">🏥</span>
+          <span class="concern-label">Healthcare</span>
+          <div class="concern-bar-track">
+            <div class="concern-bar-fill concern-bar-fill--gradient" style="width:61%;"></div>
+          </div>
+          <span class="concern-pct">61%</span>
+        </div>
+        <div class="concern-row">
+          <span class="concern-icon">⚖️</span>
+          <span class="concern-label">Abortion & Reproductive Rights</span>
+          <div class="concern-bar-track">
+            <div class="concern-bar-fill concern-bar-fill--gradient" style="width:58%;"></div>
+          </div>
+          <span class="concern-pct">58%</span>
+        </div>
+        <div class="concern-row">
+          <span class="concern-icon">🌿</span>
+          <span class="concern-label">Climate & Environment</span>
+          <div class="concern-bar-track">
+            <div class="concern-bar-fill concern-bar-fill--gradient" style="width:49%;"></div>
+          </div>
+          <span class="concern-pct">49%</span>
+        </div>
+      </div>
+
+      <div class="hidden-concerns" id="hidden-concerns">
+        <div class="concern-row">
+          <span class="concern-icon">🔫</span>
+          <span class="concern-label">Gun Policy</span>
+          <div class="concern-bar-track">
+            <div class="concern-bar-fill concern-bar-fill--gradient" style="width:44%;"></div>
+          </div>
+          <span class="concern-pct">44%</span>
+        </div>
+        <div class="concern-row">
+          <span class="concern-icon">⚖️</span>
+          <span class="concern-label">Criminal Justice</span>
+          <div class="concern-bar-track">
+            <div class="concern-bar-fill concern-bar-fill--gradient" style="width:38%;"></div>
+          </div>
+          <span class="concern-pct">38%</span>
+        </div>
+        <div class="concern-row">
+          <span class="concern-icon">🗳️</span>
+          <span class="concern-label">Election Integrity</span>
+          <div class="concern-bar-track">
+            <div class="concern-bar-fill concern-bar-fill--gradient" style="width:35%;"></div>
+          </div>
+          <span class="concern-pct">35%</span>
+        </div>
+        <div class="concern-row">
+          <span class="concern-icon">🌐</span>
+          <span class="concern-label">Foreign Policy</span>
+          <div class="concern-bar-track">
+            <div class="concern-bar-fill concern-bar-fill--gradient" style="width:29%;"></div>
+          </div>
+          <span class="concern-pct">29%</span>
+        </div>
+      </div>
+
+      <button class="show-more-toggle" id="show-more-btn" aria-expanded="false">
+        <span id="show-more-text">Show 4 more</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Senators -->
+    <div class="senators-row animate-in delay-3">
+      <div class="card card--lift senator-card">
+        <div class="senator-avatar">👤</div>
+        <h3 class="senator-name">Adam Schiff</h3>
+        <span class="senator-party senator-party--d">Democrat</span>
+        <p class="senator-placeholder">
+          Senator profile and alignment information developed by the policy team. Includes voting record analysis and constituent representation data.
+        </p>
+      </div>
+      <div class="card card--lift senator-card">
+        <div class="senator-avatar">👤</div>
+        <h3 class="senator-name">Alex Padilla</h3>
+        <span class="senator-party senator-party--d">Democrat</span>
+        <p class="senator-placeholder">
+          Senator profile and alignment information developed by the policy team. Includes voting record analysis and constituent representation data.
+        </p>
+      </div>
+    </div>
+
+    <!-- Context -->
+    <div class="card concerns-card animate-in delay-4" style="margin-bottom: 48px;">
+      <h2 class="concerns-title">Context</h2>
+      <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 16px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. California's independent citizens redistricting commission, established by voter referendum in 2008, fundamentally changed how district lines are drawn in the state. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 16px;">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+      </p>
+      <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.75;">
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+      </p>
+      <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid #EEECE9;">
+        <span style="font-size: 0.75rem; color: var(--text-faint); font-style: italic;">Content by the Policy Research Team</span>
+      </div>
+    </div>
+
+  </div><!-- /panel-overview -->
+
+  <!-- ═══ ALL DISTRICTS PANEL ═══ -->
+  <div class="tab-panel" role="tabpanel" id="panel-districts" aria-labelledby="tab-districts">
+    <div class="card" style="padding:40px; text-align:center;">
+      <p style="color:var(--text-muted); font-size:0.9rem;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#AAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:block; margin:0 auto 12px;">
+          <rect x="3" y="3" width="7" height="7"/>
+          <rect x="14" y="3" width="7" height="7"/>
+          <rect x="3" y="14" width="7" height="7"/>
+          <rect x="14" y="14" width="7" height="7"/>
+        </svg>
+        All 52 California districts with alignment scores, representative info, and top issues.<br>
+        <span style="font-size:0.8rem; color:#BBB;">(Sortable table — coming soon)</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- ═══ METHODOLOGY PANEL ═══ -->
+  <div class="tab-panel" role="tabpanel" id="panel-methodology" aria-labelledby="tab-methodology">
+    <div class="card" style="padding:40px;">
+      <h2 style="font-family:var(--serif); font-size:1.4rem; font-weight:700; margin-bottom:20px;">How We Measured This</h2>
+      <div style="font-size:0.88rem; color:var(--text-secondary); line-height:1.7;">
+        <p style="margin-bottom:16px;"><strong>Constituent Preferences:</strong> We use the Cooperative Election Study (CES) 2024, a survey of 60,000 Americans conducted by Harvard and YouGov. The CES includes congressional district identifiers, allowing us to estimate policy positions at the district level.</p>
+        <p style="margin-bottom:16px;"><strong>Issue Salience:</strong> AP VoteCast's 2024 general election survey (140,000+ respondents) provides state-level data on which issues voters considered most important. Issues that voters care about more contribute more to the overall score.</p>
+        <p style="margin-bottom:16px;"><strong>Representative Voting Records:</strong> Congressional roll call votes are sourced from VoteView (UCLA) and congress.gov. Each vote is scored as "aligned" or "not aligned" with the district majority position.</p>
+        <p><strong>Gerrymandering Context:</strong> We display metrics from PlanScore (Campaign Legal Center) and the Princeton Gerrymandering Project. Using both sources provides complementary validation.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="site-footer animate-in delay-4">
+    <h4 class="footer-title">Data Sources & Methodology</h4>
+    <div class="footer-grid">
+      <div>
+        <p class="footer-block">
+          <strong>Constituent Preferences:</strong> Cooperative Election Study 2024 (Harvard/YouGov, n≈60,000). District-level estimates use weighted samples with shrinkage toward state means for small samples.
+        </p>
+        <p class="footer-block">
+          <strong>Issue Salience:</strong> AP VoteCast 2024 General Election (n=140,000+). State-level weighting for issue importance.
+        </p>
+      </div>
+      <div>
+        <p class="footer-block">
+          <strong>Representative Voting:</strong> Congressional roll call data via VoteView (UCLA) and congress.gov. Key vote selection documented in methodology.
+        </p>
+        <p class="footer-block">
+          <strong>Gerrymandering Metrics:</strong> Princeton Gerrymandering Project (Electoral Innovation Lab) and PlanScore (Campaign Legal Center / Harvard Election Law Clinic). See individual source pages for methodology details.
+        </p>
+      </div>
+    </div>
+    <p class="footer-updated">
+      Last updated: February 2026 · Questions about methodology? <a href="#">Read our full documentation</a>
+    </p>
+  </footer>
+
+</div><!-- /container -->
+
+<script>
+// ─── Tab switching with ARIA + keyboard support + sliding indicator ───
+const tabs = document.querySelectorAll('[role="tab"]');
+const panels = document.querySelectorAll('[role="tabpanel"]');
+const indicator = document.getElementById('tabs-indicator');
+
+function moveIndicator(tab) {
+  const tabsContainer = tab.parentElement;
+  const containerRect = tabsContainer.getBoundingClientRect();
+  const tabRect = tab.getBoundingClientRect();
+  indicator.style.left = (tabRect.left - containerRect.left) + 'px';
+  indicator.style.width = tabRect.width + 'px';
+}
+
+function activateTab(tab) {
+  tabs.forEach(t => {
+    t.setAttribute('aria-selected', 'false');
+    t.setAttribute('tabindex', '-1');
+  });
+  panels.forEach(p => p.classList.remove('active'));
+
+  tab.setAttribute('aria-selected', 'true');
+  tab.setAttribute('tabindex', '0');
+  tab.focus();
+
+  const panelId = tab.getAttribute('aria-controls');
+  document.getElementById(panelId).classList.add('active');
+
+  moveIndicator(tab);
+}
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => activateTab(tab));
+  tab.addEventListener('keydown', (e) => {
+    const idx = Array.from(tabs).indexOf(tab);
+    let newIdx;
+    if (e.key === 'ArrowRight') { newIdx = (idx + 1) % tabs.length; }
+    else if (e.key === 'ArrowLeft') { newIdx = (idx - 1 + tabs.length) % tabs.length; }
+    else if (e.key === 'Home') { newIdx = 0; }
+    else if (e.key === 'End') { newIdx = tabs.length - 1; }
+    else return;
+    e.preventDefault();
+    activateTab(tabs[newIdx]);
+  });
+});
+
+// Position indicator on the initially active tab
+moveIndicator(document.querySelector('[aria-selected="true"]'));
+// Reposition on resize
+window.addEventListener('resize', () => {
+  moveIndicator(document.querySelector('[aria-selected="true"]'));
+});
+
+// ─── Show More toggle ───
+const showMoreBtn = document.getElementById('show-more-btn');
+const hiddenConcerns = document.getElementById('hidden-concerns');
+const showMoreText = document.getElementById('show-more-text');
+
+showMoreBtn.addEventListener('click', () => {
+  const expanded = showMoreBtn.getAttribute('aria-expanded') === 'true';
+  showMoreBtn.setAttribute('aria-expanded', !expanded);
+  hiddenConcerns.classList.toggle('show');
+  showMoreBtn.classList.toggle('expanded');
+  showMoreText.textContent = expanded ? 'Show 4 more' : 'Show fewer';
+});
+</script>
+</body>
+</html>
