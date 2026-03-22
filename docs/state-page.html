@@ -50,13 +50,14 @@ body {
 a { color: inherit; text-decoration: none; }
 
 /* ─── Navigation ────────────────────────────────────────── */
+:root {
+  --burgundy: #BF4545;
+}
+
+/* ─── Navigation ────────────────────────────────────────── */
 .nav {
   background: var(--burgundy);
   padding: 0 24px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 12px rgba(139,58,58,0.25);
 }
 
 .nav__inner {
@@ -66,16 +67,16 @@ a { color: inherit; text-decoration: none; }
   align-items: center;
   justify-content: center;
   gap: 0;
-  height: 56px;
+  min-height: 56px;
 }
 
 .nav__link {
   color: rgba(255,255,255,0.82);
-  font-size: 0.9rem;
+  font-size: 0.98rem;
   font-weight: 500;
   padding: 16px 28px;
   letter-spacing: 0.01em;
-  transition: color 0.2s, background 0.2s;
+  transition: color 0.2s ease, background 0.2s ease;
   position: relative;
   white-space: nowrap;
 }
@@ -524,7 +525,15 @@ a { color: inherit; text-decoration: none; }
 }
 
 .concern-bar-fill--gradient {
-  background: linear-gradient(90deg, #1e40af, #3b82f6 40%, #a855f7 65%, #dc2626);
+  /* lower % = lighter, higher % = darker */
+  background: linear-gradient(
+    90deg,
+    #C8D6E0 0%,
+    #9BBDD0 25%,
+    #5E8EAB 50%,
+    #194973 75%,
+    #011826 100%
+  );
   border-radius: 7px;
 }
 
@@ -841,18 +850,18 @@ a { color: inherit; text-decoration: none; }
       <!-- Gerrymandering Grade Card -->
       <div class="card card--lift grade-card">
         <p class="grade-card__label">Gerrymandering Grade</p>
-        <div class="grade-badge" style="background: #0d9488;">B</div>
+        <div class="grade-badge" style="background: #194973;">B</div>
         <div class="grade-sub-grades">
           <div class="grade-sub">
-            <div class="grade-sub__badge" style="background:#059669;">A</div>
+            <div class="grade-sub__badge" style="background:#011826;">A</div>
             <p class="grade-sub__label">Partisan Fairness</p>
           </div>
           <div class="grade-sub">
-            <div class="grade-sub__badge" style="background:#D4952A;">C</div>
+            <div class="grade-sub__badge" style="background:#5E8EAB;">C</div>
             <p class="grade-sub__label">Competitive&shy;ness</p>
           </div>
           <div class="grade-sub">
-            <div class="grade-sub__badge" style="background:#D4952A;">C</div>
+            <div class="grade-sub__badge" style="background:#5E8EAB;">C</div>
             <p class="grade-sub__label">Geographic</p>
           </div>
         </div>
