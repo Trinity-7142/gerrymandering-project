@@ -1,120 +1,103 @@
 // components/shared/Navbar.js
 // Server Component — shared navigation bar across all pages
-//
-// ┌─────────────────────────────────────────────────────────────┐
-// │  WHAT IS A "SERVER COMPONENT"?                              │
-// │  This file runs on the server at build time, not in the     │
-// │  user's browser. That means:                                │
-// │    • You CAN'T use useState, useEffect, or onClick here     │
-// │    • You DON'T need "use client" at the top                 │
-// │    • You just return JSX (the HTML-like syntax below)       │
-// │  Think of it like a template that generates HTML.           │
-// └─────────────────────────────────────────────────────────────┘
-//
-// REFERENCE: Look at state-page-mockup.html in the project repo
-// for the exact HTML structure and CSS classes to match.
-// The nav section starts at <!-- ═══ NAVIGATION ═══ -->
 
-// Next.js Navigation — we use <Link> instead of <a> for internal
-// pages. It makes page transitions faster (no full browser reload).
-// UNCOMMENT THIS LINE when you're ready to use it:
 import Link from "next/link";
+import { colors } from "@/lib/constants";
+
+const navLinks = [
+  {label: "Home", href: "/"}, 
+  {label: "Legal", href: "/legal"}, 
+  {label: "Case Studies", href: "/case-studies"}, 
+  {label: "What Now?", href: "/what-now"}, 
+  {label: "Methodology", href: "/methodology"}
+];
 
 export default function Navbar() {
-  // ─── STEP 1: Define the nav links ──────────────────────
-  // Create an array (a list) of objects, where each object has:
-  //   - label: the text shown to the user (e.g., "Home")
-  //   - href:  the URL path it links to (e.g., "/")
-  //
-  // Our site has these pages (from the mockup):
-  //   Home        → "/"
-  //   About       → "/about"
-  //   Methodology → "/methodology"
-  //
-  // EXAMPLE of an array of objects:
-  //   const navLinks = [
-  //     { label: "Home", href: "/" },
-  //     ...add the other two here...
-  //   ];
-
-  // ─── STEP 2: Return the JSX structure ──────────────────
-  // A React component must return JSX (HTML-like syntax).
-  // Replace the "return null" at the bottom with a return(...)
-  // block containing the navbar markup.
-  //
-  // STRUCTURE TO MATCH (from the mockup):
-  //
-  //   <nav>                          ← outer navigation wrapper
-  //     <div>                        ← inner container for centering
-  //       <Link href="/">Home</Link> ← one link per page
-  //       <Link href="...">...</Link>
-  //     </div>
-  //   </nav>
-  //
-  // CSS CLASSES FROM THE MOCKUP (copy these exactly):
-  //   • Outer <nav>:   className="nav"
-  //   • Inner <div>:   className="nav__inner"
-  //   • Each <Link>:   className="nav__link"
-  //
-  // KEY CONCEPT — className vs class:
-  //   In HTML you write class="...". In JSX (React) you write
-  //   className="..." instead, because "class" is a reserved
-  //   word in JavaScript. Same effect, different spelling.
-  //
-  // Also add these accessibility attributes to <nav>:
-  //   role="navigation"  aria-label="Main navigation"
-  //   (These help screen readers understand the page structure.)
-
-  // ─── STEP 3: Render links from your array ──────────────
-  // Instead of writing each <Link> by hand, use .map() to loop
-  // over your navLinks array. This is how React renders lists.
-  //
-  // PATTERN (put this inside the <div className="nav__inner">):
-    // {navLinks.map((link) => (
-    //   <Link key={link.href} href={link.href} className="nav__link">
-    //     {link.label}
-    //   </Link>
-    // ))}
-  //
-  // KEY CONCEPT — "key" prop:
-  //   When you render a list in React, each item needs a unique
-  //   "key". This helps React track which items changed. The href
-  //   works great here since each page URL is unique.
-  //
-  // KEY CONCEPT — curly braces {}:
-  //   Inside JSX, curly braces let you "escape" into JavaScript.
-  //   {link.label} means "insert the value of link.label here."
-
-  // ─── STEP 4 (STRETCH GOAL): Highlight the active page ──
-  // This requires converting to a Client Component ("use client")
-  // and using Next.js's usePathname() hook. Skip this for now —
-  // Trinity will pair with you on this later.
-
-  // ─── YOUR FINAL RESULT SHOULD LOOK ROUGHLY LIKE: ───────
-  //
-  //   const navLinks = [ ... ];
-  //   return (
-  //     <nav className="nav" role="navigation" aria-label="Main navigation">
-  //       <div className="nav__inner">
-  //         {navLinks.map(...)}
-  //       </div>
-  //     </nav>
-  //   );
-
-  const navLinks = [{label: "Home", href: "/"}, {label: "About", href: "/about"}, {label: "Methodology", href: "/methodology"}]
-
-  //return null; // ← DELETE this line once you start building
 
   return (
-      <nav className="nav" role="navigation" aria-label="Main navigation">
-        <div className="nav__inner">
-          {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="nav__link">
-            {link.label + " "}
-            </Link>
-          )) 
-          }
-        </div>
-      </nav>
-    );
+  <>
+    <style>{`
+    /* This is the full bar itself */
+      .nav {
+        background: ${colors.primarySoftRed};
+        padding: 0 24px;
+      }
+
+    /* centered inner container */
+      .nav__inner {
+        max-width: 960px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 56px;
+      }
+
+    /* Each redirect/link */
+      .nav__link {
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 0.98rem;
+        font-weight: 375;
+        padding: 16px 28px;
+        letter-spacing: 0.02em;
+        position: relative;
+        white-space: nowrap;
+        transition: color 0.2s ease, background 0.2s ease;
+      }
+
+    /* Underline */
+      .nav__link::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.7);
+        transition: width 0.25s ease, left 0.25s ease;
+      }
+
+    /* Underline on hover */
+      .nav__link:hover {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .nav__link:hover::after {
+        width: 60%;
+        left: 20%;
+      }
+
+      @media (max-width: 768px) {
+        .nav__link {
+          padding: 14px 14px;
+          font-size: 0.82rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .nav__inner {
+          flex-wrap: wrap;
+          height: auto;
+          padding: 8px 0;
+          justify-content: center;
+        }
+        .nav__link {
+          padding: 10px 12px;
+          font-size: 0.78rem;
+        }
+      }
+    `}</style>
+
+    <nav className="nav" role="navigation" aria-label="Main navigation">
+      <div className="nav__inner">
+        {navLinks.map((link) => (
+          <Link key={link.href} href={link.href} className="nav__link">
+            {link.label}
+          </Link>
+        ))}
+      </div>
+    </nav>
+  </>
+  );
 }
