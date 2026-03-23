@@ -1,11 +1,12 @@
 // app/page.js
-// Home page — hero section + interactive US map + policy content
+// Home page — intro section + interactive US map + policy content
 // Server Component: reads markdown content at build time, passes to styled renderer
 //
 // Content lives in /content/home/*.md — policy team edits those files directly.
 // See components/shared/Markdown.js for how markdown maps to styled elements.
 
 import StateSelector from "../components/home/StateSelector";
+import ExplainerSections from "@/components/home/ExplainerSections";
 import Markdown from "@/components/shared/Markdown";
 import { loadContent } from "@/lib/loadContent";
 import { colors } from "@/lib/constants";
@@ -14,9 +15,8 @@ export default function HomePage() {
   // ── Load content from markdown files at build time ──
   const intro       = loadContent("home/intro.md");
   const policyIntro = loadContent("home/policy-intro.md");
-  // Uncomment these when you build the explainer and support sections:
-  // const explainer = loadContent("home/explainer.md");
-  // const support   = loadContent("home/support.md");
+  const explainer   = loadContent("home/explainer.md");
+  const support     = loadContent("home/support.md");
 
   return (
     <main
@@ -87,6 +87,16 @@ export default function HomePage() {
       <section style={{ marginTop: "26px" }}>
         <Markdown>{policyIntro.body}</Markdown>
       </section>
+
+      {/* ════════════════════════════════════════════════════════
+          EXPLAINER + FEATURE SECTIONS
+          Two-column grids: text from markdown, infographic placeholders
+          Images go in public/content/infographics/ when ready
+          ════════════════════════════════════════════════════════ */}
+      <ExplainerSections
+        explainerBody={explainer.body}
+        supportBody={support.body}
+      />
     </main>
   );
 }
