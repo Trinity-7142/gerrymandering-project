@@ -15,10 +15,14 @@
 // TODO: If a JSON file is missing, pass null → component renders DataUnavailable fallback
 
 export async function generateStaticParams() {
-  // TODO: Read overview.json for each state, extract district IDs
-  // Return [{ districtId: 'CA-01' }, { districtId: 'CA-02' }, ..., { districtId: 'TX-38' }]
+  return [];
 }
 
 export default async function DistrictPage({ params }) {
-  // TODO: implement
+  return (
+    <div>
+      <h1>District Page</h1>
+      <p>Coming soon</p>
+    </div>
+  );
 }

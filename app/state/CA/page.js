@@ -20,10 +20,15 @@
 // TODO Import PrincetonPanel
 
 export async function generateStaticParams() {
-  // TODO: Return [{ stateCode: 'CA' }, { stateCode: 'TX' }]
-  // Later: read from states.json dynamically
+  return [];
+  
 }
 
 export default async function StatePage({ params }) {
-  // TODO: implement
+  return (
+    <div>
+      <h1>District Page</h1>
+      <p>Coming soon</p>
+    </div>
+  );
 }
