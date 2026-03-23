@@ -1,4 +1,5 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "_comment": "TODO: Configure Vercel deployment settings if needed (usually auto-detected)"
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next"
 }
