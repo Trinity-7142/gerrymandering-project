@@ -122,7 +122,7 @@ export default function StateSelector({ availableStates, comingSoon }) {
             const score = getPlaceholderScore(d.id);
             if (feedbackRef.current) {
               feedbackRef.current.innerHTML =
-                `<strong>${name}</strong> · Placeholder score: ${score.toFixed(2)} · ${alignmentLevel(score)} alignment`;
+                `<strong>${name}</strong> · Placeholder score: ${score.toFixed(2) + "%"} · ${alignmentLevel(score)} alignment`;
             }
           })
           .on("focus", function (event, d) {
@@ -131,7 +131,7 @@ export default function StateSelector({ availableStates, comingSoon }) {
             const score = getPlaceholderScore(d.id);
             if (feedbackRef.current) {
               feedbackRef.current.innerHTML =
-                `<strong>${name}</strong> · Placeholder score: ${score.toFixed(2)} · ${alignmentLevel(score)} alignment`;
+                `<strong>${name}</strong> · Placeholder score: ${score.toFixed(2) + "%"} · ${alignmentLevel(score)} alignment`;
             }
           })
           .on("mouseleave", function () {
@@ -223,7 +223,7 @@ export default function StateSelector({ availableStates, comingSoon }) {
                 color: "rgba(1, 24, 38, 0.85)",
               }}
             >
-              State alignment overview
+              State Alignment Overview
             </p>
             <p
               style={{
@@ -233,7 +233,7 @@ export default function StateSelector({ availableStates, comingSoon }) {
                 color: "rgba(1, 24, 38, 0.62)",
               }}
             >
-              Select a state to explore representational alignment
+              Click a state to view representational alignment details
             </p>
           </div>
  
