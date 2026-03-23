@@ -2,16 +2,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* TODO: Add any custom global styles */
-/* TODO: Font imports if not using next/font */
 
+/* ══════════════════════════════════════════════════════════
+   GLOBAL RESET & BASE STYLES
+   Matches the mockup's design token system
+   ══════════════════════════════════════════════════════════ */
 
-.rectangle {
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #F4F3F1;
+  color: #011826;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+svg {
   display: block;
-  width: 50vw;
-  height: 50vh;
-  background: white;
-  border: 5px solid black;
-  margin-top:5vh;
-  margin-bottom:5vh;
+  max-width: 100%;
+}
+
+/* ── Responsive breakpoints for map card ── */
+@media (max-width: 640px) {
+  .map-wrap {
+    padding: 4px 2px 0 !important;
+  }
+  .map-card {
+    border-radius: 24px !important;
+    padding: 14px 12px 10px !important;
+  }
 }

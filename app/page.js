@@ -1,31 +1,92 @@
 // app/page.js
-// Home page — renders StateSelector with data from states.json
-// This is a Server Component: reads states.json at build time, passes as props
+// Home page — hero section + interactive US map + policy content
+// Server Component: reads markdown content at build time, passes to styled renderer
+//
+// Content lives in /content/home/*.md — policy team edits those files directly.
+// See components/shared/Markdown.js for how markdown maps to styled elements.
 
-// TODO: Import loadData helper from lib/loadData
-// TODO: Import StateSelector from components/home
-// TODO: Read public/data/states.json at build time
-// TODO: Pass available_states and coming_soon to StateSelector
-// TODO: Add hero section / project intro above the state selector
-
-import StateSelector from '../components/home/StateSelector'
+import StateSelector from "../components/home/StateSelector";
+import Markdown from "@/components/shared/Markdown";
+import { loadContent } from "@/lib/loadContent";
+import { colors } from "@/lib/constants";
 
 export default function HomePage() {
-  return (
-    <main className="min-h-screen flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Is your representative actually representing you?</h1>
-        <p className="text-lg text-gray-600">
-          Measuring representational alignment across U.S. states & congressional districts
-        </p>
-        
-        <StateSelector/>
-        <div className='text-center flex items-center max-w-prose mx-auto'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper, justo eu faucibus consequat, sapien tortor efficitur nisi, blandit bibendum magna magna ut turpis. Nunc nisl nisi, auctor eget consectetur ac, condimentum nec ipsum. Donec et sapien vehicula, condimentum metus sed, scelerisque odio. Donec ut elit metus. Nam pharetra faucibus purus viverra consectetur. Etiam rhoncus fringilla facilisis. Duis nec semper augue, ac laoreet sapien. Aenean at finibus leo, non malesuada elit. Nunc et lectus id risus molestie viverra ut non magna. Suspendisse ante neque, consectetur in mollis ac, pharetra ullamcorper risus.</p>
-        </div>
-      </div>
-      
-    </main>
+  // ── Load content from markdown files at build time ──
+  const intro       = loadContent("home/intro.md");
+  const policyIntro = loadContent("home/policy-intro.md");
+  // Uncomment these when you build the explainer and support sections:
+  // const explainer = loadContent("home/explainer.md");
+  // const support   = loadContent("home/support.md");
 
+  return (
+    <main
+      style={{
+        width: "min(100%, 1000px)",
+        margin: "0 auto",
+        padding: "10px clamp(22px, 5vw, 86px) 56px",
+      }}
+    >
+      {/* ════════════════════════════════════════════════════════
+          HERO SECTION
+          Headline stays in JSX (it's a design element).
+          Body copy comes from /content/home/intro.md
+          ════════════════════════════════════════════════════════ */}
+      <section
+        style={{ paddingTop: "8px", textAlign: "center" }}
+        aria-labelledby="hero-title"
+      >
+        <h1
+          id="hero-title"
+          style={{
+            margin: "0 auto 18px",
+            maxWidth: "860px",
+            fontFamily: "var(--font-serif)",
+            fontSize: "clamp(2.6rem, 7vw, 4rem)",
+            lineHeight: 0.98,
+            fontWeight: 700,
+            letterSpacing: "-0.04em",
+            color: "#000",
+          }}
+        >
+          Is your representative
+          <br />
+          <span
+            style={{
+              color: colors.primarySoftRed,
+              fontStyle: "italic",
+              fontWeight: 700,
+            }}
+          >
+            actually
+          </span>{" "}
+          representing you?
+        </h1>
+
+        <Markdown
+          style={{
+            width: "min(100%, 830px)",
+            margin: "0 auto",
+            textAlign: "left",
+          }}
+        >
+          {intro.body}
+        </Markdown>
+      </section>
+
+      {/* ════════════════════════════════════════════════════════
+          MAP SECTION
+          Client Component — D3 choropleth + routing
+          ════════════════════════════════════════════════════════ */}
+      <StateSelector />
+
+      {/* ════════════════════════════════════════════════════════
+          POLICY INTRO
+          Content from /content/home/policy-intro.md
+          *italic* renders as red lead-in, **bold** as blue emphasis
+          ════════════════════════════════════════════════════════ */}
+      <section style={{ marginTop: "26px" }}>
+        <Markdown>{policyIntro.body}</Markdown>
+      </section>
+    </main>
   );
 }
