@@ -34,8 +34,7 @@ CONTRACT_ISSUES <- c(
   "abortion",
   "guns",
   "criminal_justice",
-  "voting_rights",
-  "election_integrity"
+  "election_integrity",
 )
 
 # -----------------------------
@@ -61,7 +60,7 @@ ISSUES2024_TO_CONTRACT_ISSUE_ID <- c(
   `6`  = "environment",
   `7`  = "foreign_policy",
   `8`  = "guns",
-  `9`  = "voting_rights",
+  `9`  = "election_integrity",
   `99` = NA
 )
 
