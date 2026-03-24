@@ -50,3 +50,6 @@ temp/
 # R
 .Renviron
 .Rprofile
+
+# Claude instructions
+Claude.md
