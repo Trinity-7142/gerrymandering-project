@@ -18,7 +18,7 @@ import { issueLabels, issueIcons, stateNames, alignmentColors } from "@/lib/cons
 //
 // The percentage *label* always shows the real value regardless of mode.
 const BAR_MODE = "amplified";
-const AMPLIFY_FACTOR = 2.5;
+const AMPLIFY_FACTOR = 0.7;
 
 function getBarWidth(pct, maxPct) {
   switch (BAR_MODE) {
