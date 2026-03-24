@@ -23,7 +23,7 @@ function alignmentColor(score) {
 function SenatorCard({ senator, interpretation }) {
   const { name, party, photo_url, alignment } = senator;
   const pc = partyColors[party] ?? partyColors.D;
-  const partyLabel = party === "D" ? "Democrat" : party === "R" ? "Republican" : party;
+  const partyLabel = party === "D" ? "Democrat" : party === "R" ? "Republican" : party === "I" ? "Independent" : party;
   const score = alignment?.overall_score;
   const isPending = !score || typeof score !== "number" || alignment?.overall_label?.startsWith("Placeholder");
   const scoreLabel = interpretScore(score, interpretation);

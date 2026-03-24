@@ -8,7 +8,7 @@
 "use client";
 
 import { useState } from "react";
-import { issueLabels, issueIcons, stateNames, alignmentColors } from "@/lib/constants";
+import { issueLabels, stateNames, alignmentColors } from "@/lib/constants";
 
 // ── Bar width scaling config ───────────────────────────────────────────
 // Switch BAR_MODE to change how bar fills are rendered:
@@ -75,9 +75,9 @@ export default function VoteCastPanel({ data }) {
       <div style={styles.barList}>
         {visibleIssues.map((item) => (
           <div key={item.issue_id} style={styles.row}>
-            <span style={styles.icon}>
+            {/* <span style={styles.icon}>
               {issueIcons[item.issue_id] || "📊"}
-            </span>
+            </span> */}
             <span style={styles.label}>
               {issueLabels[item.issue_id] || item.issue_id}
             </span>
