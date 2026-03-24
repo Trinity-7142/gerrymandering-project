@@ -35,6 +35,7 @@ CONTRACT_ISSUES <- c(
   "guns",
   "criminal_justice",
   "election_integrity",
+  "foreign_policy"
 )
 
 # -----------------------------
@@ -127,7 +128,7 @@ compute_state_salience <- function(votecast_df, state_code, likely_only = TRUE) 
 }
 
 write_contract_json <- function(state_code, res, out_root, likely_only) {
-  out_dir <- file.path(out_root, state_code)
+  out_dir <- file.path(out_root, "states" ,state_code)
   dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 
   out_obj <- list(
