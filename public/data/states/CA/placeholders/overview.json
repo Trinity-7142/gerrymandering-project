@@ -1,9 +1,0 @@
-{
-  "state_code": "CA",
-  "state_name": "California",
-  "total_districts": 52,
-  "delegation_composition": { "democrat": 40, "republican": 12 },
-  "districts": [
-    { "district_id": "CA-11", "representative": "Nancy Pelosi", "party": "D", "alignment_score": 0.74, "ces_sample_size": 543 }
-  ]
-}

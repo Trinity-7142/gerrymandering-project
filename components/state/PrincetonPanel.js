@@ -1,9 +1,7 @@
 // components/state/PrincetonPanel.js
 // Server Component — renders Princeton Gerrymandering Project grades
 // Receives: princeton.json data as props
-// Task F1 — good first task for a beginner
 //
-// Design: Look at gerrymander.princeton.edu for inspiration
 // Should show overall grade prominently + sub-grades for partisan fairness,
 // geographic features, and competitiveness
 // Include "See detailed metrics →" link to PlanScore (passed separately from overview.json)
