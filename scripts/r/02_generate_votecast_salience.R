@@ -35,7 +35,7 @@ CONTRACT_ISSUES <- c(
   "guns",
   "criminal_justice",
   "voting_rights",
-  "foreign_policy"
+  "election_integrity"
 )
 
 # -----------------------------
@@ -50,7 +50,7 @@ CONTRACT_ISSUES <- c(
 #   6 = Climate change         -> environment
 #   7 = Foreign policy         -> foreign_policy
 #   8 = Gun policy             -> guns
-#   9 = Racism                 -> voting_rights (closest contract bucket)
+#   9 = Racism                 -> election_integrity (closest contract bucket)
 #  99 = DK/Refused             -> excluded
 ISSUES2024_TO_CONTRACT_ISSUE_ID <- c(
   `1`  = "economy",

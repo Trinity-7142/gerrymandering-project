@@ -7,6 +7,9 @@
    GLOBAL RESET & BASE STYLES
    Matches the mockup's design token system
    ══════════════════════════════════════════════════════════ */
+html {
+  overflow-y: scroll;
+}
 
 * {
   box-sizing: border-box;
