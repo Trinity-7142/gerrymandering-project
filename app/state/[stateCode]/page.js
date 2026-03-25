@@ -18,6 +18,7 @@ import SenatorPanel    from "@/components/state/SenatorPanel";
 import StateKeyFacts   from "@/components/state/StateKeyFacts";
 import StateTabs       from "@/components/state/StateTabs";
 import ZipLookup       from "@/components/state/ZipLookup";
+import CESStatePanel   from "@/components/state/CESStatePanel";
 import { loadStateData, loadStateContent } from "@/lib/loadData";
 import { cardStyle, textColors, fonts } from "@/lib/constants";
 
@@ -35,6 +36,7 @@ export default async function StatePage({ params }) {
   const princeton  = loadStateData(stateCode, "princeton.json");
   const votecast   = loadStateData(stateCode, "votecast_salience.json");
   const senators   = loadStateData(stateCode, "senators.json");
+  const ces        = loadStateData(stateCode, "ces_summary.json");
   const keyFacts   = loadStateContent(stateCode, "key_facts.md");
 
   // Compute statewide average alignment (0–100) from district scores
@@ -91,27 +93,7 @@ export default async function StatePage({ params }) {
     </div>
   );
 
-  const methodologyContent = (
-    <div style={{ ...cardStyle, padding: "40px", marginBottom: "28px" }}>
-      <h2 style={{ fontFamily: fonts.serif, fontSize: "1.4rem", fontWeight: 700, marginBottom: "20px", color: textColors.primary }}>
-        How We Measured This
-      </h2>
-      <div style={{ fontSize: "0.88rem", color: textColors.secondary, lineHeight: 1.7, fontFamily: fonts.sans }}>
-        <p style={{ marginBottom: "16px" }}>
-          <strong>Constituent Preferences:</strong> We use the Cooperative Election Study (CES) 2024, a survey of 60,000 Americans conducted by Harvard and YouGov. The CES includes congressional district identifiers, allowing us to estimate policy positions at the district level.
-        </p>
-        <p style={{ marginBottom: "16px" }}>
-          <strong>Issue Salience:</strong> AP VoteCast&rsquo;s 2024 general election survey (140,000+ respondents) provides state-level data on which issues voters considered most important. Issues that voters care about more contribute more to the overall score.
-        </p>
-        <p style={{ marginBottom: "16px" }}>
-          <strong>Representative Voting Records:</strong> Congressional roll call votes are sourced from VoteView (UCLA) and congress.gov. Each vote is scored as &ldquo;aligned&rdquo; or &ldquo;not aligned&rdquo; with the district majority position.
-        </p>
-        <p>
-          <strong>Gerrymandering Context:</strong> We display metrics from PlanScore (Campaign Legal Center) and the Princeton Gerrymandering Project. Using both sources provides complementary validation.
-        </p>
-      </div>
-    </div>
-  );
+  const methodologyContent = <CESStatePanel data={ces} />;
 
   return (
     <main style={{ background: "#F4F3F1", minHeight: "100vh" }}>

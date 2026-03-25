@@ -10,7 +10,7 @@ import { colors, fonts, textColors } from "@/lib/constants";
 const TABS = [
   { id: "overview",    label: "Overview",             controls: "panel-overview" },
   { id: "districts",  label: "All Districts",          controls: "panel-districts" },
-  { id: "methodology",label: "How We Measured This",   controls: "panel-methodology" },
+  { id: "methodology",label: "Policy Preferences",   controls: "panel-methodology" },
 ];
 
 export default function StateTabs({ overviewContent, districtsContent, methodologyContent }) {
