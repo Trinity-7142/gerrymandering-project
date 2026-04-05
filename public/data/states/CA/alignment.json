@@ -1,0 +1,223 @@
+{
+  "state_code": "CA",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Schiff",
+      "overall_score": 0.5278810705439869,
+      "overall_label": "Partial Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.20324999999999993,
+          "salience_weight": 0.026740665993945513,
+          "weighted_contribution": 0.005435040363269424,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.43783333333333346,
+          "salience_weight": 0.21190716448032293,
+          "weighted_contribution": 0.09278002018163475,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.5798909090909091,
+          "salience_weight": 0.7225025227043391,
+          "weighted_contribution": 0.4189726447114944,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.2752500000000001,
+          "salience_weight": 0.03884964682139254,
+          "weighted_contribution": 0.0106933652875883,
+          "direction": "Low Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Padilla (D-CA)",
+      "overall_score": 0.7850139521800513,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.20324999999999993,
+          "salience_weight": 0.01726946888237211,
+          "weighted_contribution": 0.00351001955034213,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.47899999999999987,
+          "salience_weight": 0.2124470511567286,
+          "weighted_contribution": 0.10176213750407297,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9132222222222223,
+          "salience_weight": 0.06647116324535679,
+          "weighted_contribution": 0.06070294341262083,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7172510548523207,
+          "salience_weight": 0.13685239491691104,
+          "weighted_contribution": 0.0981575246132208,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9051409168081492,
+          "salience_weight": 0.46660149885956337,
+          "weighted_contribution": 0.4223401084618018,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.981892857142857,
+          "salience_weight": 0.1003584229390681,
+          "weighted_contribution": 0.09854121863799283,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Feinstein (D-CA)",
+      "overall_score": 0.5905987412587412,
+      "overall_label": "Partial Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.20324999999999993,
+          "salience_weight": 0.024708624708624706,
+          "weighted_contribution": 0.0050220279720279695,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.47899999999999987,
+          "salience_weight": 0.075990675990676,
+          "weighted_contribution": 0.03639953379953379,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.4378333333333334,
+          "salience_weight": 0.1958041958041958,
+          "weighted_contribution": 0.08572960372960374,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.6794,
+          "salience_weight": 0.6675990675990676,
+          "weighted_contribution": 0.45356680652680653,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.2752500000000001,
+          "salience_weight": 0.035897435897435895,
+          "weighted_contribution": 0.009880769230769235,
+          "direction": "Low Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Butler (D-CA)",
+      "overall_score": 0.7315334284959027,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "immigration",
+          "score": 0.47899999999999987,
+          "salience_weight": 0.06721649484536084,
+          "weighted_contribution": 0.03219670103092783,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.7117777777777777,
+          "salience_weight": 0.04206185567010309,
+          "weighted_contribution": 0.0299386941580756,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.6301410256410257,
+          "salience_weight": 0.1731958762886598,
+          "weighted_contribution": 0.10913782712133228,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.7928826815642458,
+          "salience_weight": 0.5905154639175257,
+          "weighted_contribution": 0.46820948453608247,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.7247499999999999,
+          "salience_weight": 0.12701030927835052,
+          "weighted_contribution": 0.09205072164948452,
+          "direction": "Moderate Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Schiff (D-CA)",
+      "overall_score": 0.8040899423101895,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "immigration",
+          "score": 0.47899999999999987,
+          "salience_weight": 0.22374742621825672,
+          "weighted_contribution": 0.10717501715854494,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.28822222222222227,
+          "salience_weight": 0.035003431708991076,
+          "weighted_contribution": 0.010088766872569207,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.944337837837838,
+          "salience_weight": 0.1441317776252574,
+          "weighted_contribution": 0.13610909124635964,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9897666666666667,
+          "salience_weight": 0.49142072752230614,
+          "weighted_contribution": 0.4863918554106612,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.6085833333333336,
+          "salience_weight": 0.10569663692518876,
+          "weighted_contribution": 0.06432521162205448,
+          "direction": "Moderate Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}
