@@ -1,1 +1,111 @@
-{"state_code": "WY", "last_updated": "2026-04-05", "senators": [{"name": "Barrasso (R-WY)", "overall_score": 0.8654295578156826, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.43999999999999995, "salience_weight": 0.004471771939631079, "weighted_contribution": 0.0019675796534376743, "direction": "Partial Alignment"}, {"issue_id": "immigration", "score": 0.7427999999999999, "salience_weight": 0.3387367244270542, "weighted_contribution": 0.25161363890441585, "direction": "Moderate Alignment"}, {"issue_id": "abortion", "score": 0.8735555555555558, "salience_weight": 0.046394633873672445, "weighted_contribution": 0.04052829016831254, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.9329789029535864, "salience_weight": 0.0704304080491895, "weighted_contribution": 0.06571008483630626, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9925025466893036, "salience_weight": 0.4572386808272778, "weighted_contribution": 0.4538105551659309, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.6261428571428571, "salience_weight": 0.08272778088317495, "weighted_contribution": 0.0517994090872794, "direction": "Moderate Alignment"}]}, {"name": "Lummis (R-WY)", "overall_score": 0.8654295578156826, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.43999999999999995, "salience_weight": 0.004471771939631079, "weighted_contribution": 0.0019675796534376743, "direction": "Partial Alignment"}, {"issue_id": "immigration", "score": 0.7427999999999999, "salience_weight": 0.3387367244270542, "weighted_contribution": 0.25161363890441585, "direction": "Moderate Alignment"}, {"issue_id": "abortion", "score": 0.8735555555555558, "salience_weight": 0.046394633873672445, "weighted_contribution": 0.04052829016831254, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.9329789029535864, "salience_weight": 0.0704304080491895, "weighted_contribution": 0.06571008483630626, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9925025466893036, "salience_weight": 0.4572386808272778, "weighted_contribution": 0.4538105551659309, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.6261428571428571, "salience_weight": 0.08272778088317495, "weighted_contribution": 0.0517994090872794, "direction": "Moderate Alignment"}]}], "interpretation": {"0.0_to_0.3": "Low Alignment", "0.3_to_0.6": "Partial Alignment", "0.6_to_0.8": "Moderate Alignment", "0.8_to_1.0": "Strong Alignment"}, "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."}
+{
+  "state_code": "WY",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "John Barrasso",
+      "overall_score": 0.8639195987417844,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.43999999999999995,
+          "salience_weight": 0.004471771939631079,
+          "weighted_contribution": 0.0019675796534376743,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.7428,
+          "salience_weight": 0.3387367244270542,
+          "weighted_contribution": 0.25161363890441585,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.8735555555555558,
+          "salience_weight": 0.046394633873672445,
+          "weighted_contribution": 0.04052829016831254,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.9290041152263374,
+          "salience_weight": 0.0704304080491895,
+          "weighted_contribution": 0.0654301389147672,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9831226415094336,
+          "salience_weight": 0.4572386808272778,
+          "weighted_contribution": 0.44952169969520217,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.6631176470588235,
+          "salience_weight": 0.08272778088317495,
+          "weighted_contribution": 0.05485825140564889,
+          "direction": "Moderate Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Cynthia Lummis",
+      "overall_score": 0.8639195987417844,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.43999999999999995,
+          "salience_weight": 0.004471771939631079,
+          "weighted_contribution": 0.0019675796534376743,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.7428,
+          "salience_weight": 0.3387367244270542,
+          "weighted_contribution": 0.25161363890441585,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.8735555555555558,
+          "salience_weight": 0.046394633873672445,
+          "weighted_contribution": 0.04052829016831254,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.9290041152263374,
+          "salience_weight": 0.0704304080491895,
+          "weighted_contribution": 0.0654301389147672,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9831226415094336,
+          "salience_weight": 0.4572386808272778,
+          "weighted_contribution": 0.44952169969520217,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.6631176470588235,
+          "salience_weight": 0.08272778088317495,
+          "weighted_contribution": 0.05485825140564889,
+          "direction": "Moderate Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

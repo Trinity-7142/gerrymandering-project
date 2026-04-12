@@ -16,26 +16,6 @@ This file has two tasks: to generate the alignment.json file on the district and
                 alignment.json (carries data about the representatives in that state)
             ... 
             (other districts in other states with same data)
-
-
-We will first generate the district-level alignment.json files, then aggregate those into the state-level alignment.json files
-PLAN:
-- Iterate through \data-raw\votes\congressional_vote_tagging_database_all.csv
-- Make a dictionary between the bill's number and its issue category and direction  
-
-
-==== {district} \ alignment.json
-(Do the next steps simultaneously, if possible, to avoid reiterating over a large list)
-- Collect all relevant votes from senator_rollcall_votes.csv. (i.e. those votes which deal with the bills in our vote tagging database)
-- Use the dictionary to assign each vote a liberal/conservative direction, as well as a topic (economy, immigration, etc...)
-- Make a dictionary from a certain representative to a list of their votes
-
-- Compute the RVD for each representative.
-- Combine with CPD data to compute alignment metric for that representative
-
-==== {state} \ alignment.json
-- Repeat the process described for {district} \ alignment.json
-
 """
 
 import os
@@ -54,13 +34,6 @@ bill_to_roll_path = os.path.join(home_path, "data-raw", "bill_to_roll.csv")
 legislators_historical_path = os.path.join(home_path, "data-raw", "congress-legislators", "legislators-historical.json")
 legislators_current_path = os.path.join(home_path, "data-raw", "congress-legislators", "legislators-current.json")
 
-"""
-1. Load in bill_to_roll.csv 
-2. For each line in senator_rollcall_votes.csv, check to see if it is in bill_to_roll.csv
-    a. If it is, then add the relevant voting information to that politicians data.
-3. When all politicians have their voting information, compute alignment metric info.
-
-"""
 
 class Politician:
     # A mapping by bioguide ID to their corresponding politician object
@@ -70,15 +43,40 @@ class Politician:
         legislators_historical = json.load(legislators_historical_file)
     with open(legislators_current_path, "r", encoding="utf-8") as legislators_current_file:
         legislators_current = json.load(legislators_current_file)
+
+
+    current_bioguide_ids = set()
+    for leg in legislators_current:
+        bioguide = leg["id"].get("bioguide")
+        if bioguide:
+            current_bioguide_ids.add(bioguide)
+
+
     
-    #Investigate truncating this file to the shortest length possible. We don't need the first senators in existence.
+    #Investigate truncating this file to the shortest length possible. We don't need the first senators in existence,
+    #Just the ones who have been in the 118th and 119th congress
     all_legislators_data = legislators_historical+legislators_current 
 
-    def __init__(self, bioguide_id, name, state, party):
-        self.bioguide_id = bioguide_id
+    lis_to_bioguide_dict = {}
+    for legislator in all_legislators_data:
+        lis = legislator["id"].get("lis")
+        bioguide = legislator["id"].get("bioguide")
+
+        if bioguide is None:
+            raise ValueError("This legislator has no bioguide somehow??")
+
+        if lis is not None:
+            lis_to_bioguide_dict[lis] = bioguide
+
+    def __init__(self, bioguide_id, name, state, party, most_recent_vote):
+        self.bioguide_id = bioguide_id #bioguide_id may be an LIS or a Bioguide ID!
+        #self.lis = None
         self.name = name
         self.state = state
         self.party = party
+        self.most_recent_vote = most_recent_vote
+        self.is_current = self.bioguide in Politician.current_bioguide_ids
+        self.term_end = ""
 
         self.district = None
         self.role = None
@@ -90,22 +88,70 @@ class Politician:
         Politician.politicians[bioguide_id] = self
 
     @staticmethod
-    def create_politician(bioguide_id, name, state, party):
+    def date_compare(date1, date2):
+        #Compares two strings of the format:
+        # 2023-01-03T12:28:00-05:00
+        #to determine which is more recent, ignoring precision beyond day.
+        #print(date1)
+        #print(re.split("-|T|:", date1))
+
+        date1 = [int(v) for v in re.split("-|T|:", date1)]
+        date2 = [int(v) for v in re.split("-|T|:", date2)]
+
+        if date1[0] < date2[0]:
+            return -1
+        elif date1[0] > date2[0]:
+            return 1
+        elif date1[1] < date2[1]:
+            return -1
+        elif date1[1] > date2[1]:
+            return 1
+        elif date1[2] < date2[2]:
+            return -1
+        elif date1[2] > date2[2]:
+            return 1
+        else:
+            return 0
+
+
+    @staticmethod
+    def create_politician(bioguide_or_lis, name, state, party, most_recent_vote):
         #If the required politician does not exist, create it.
         #Otherwise, return the existing one
 
-        supposed_politician = Politician.politicians.get(bioguide_id)
-        if supposed_politician is None:
-            Politician.politicians[bioguide_id] = Politician(bioguide_id, name, state, party)
-            return Politician.politicians[bioguide_id]
-        return supposed_politician
+        #Check whether the ID we are given is a bioguide or lis. If it is an lis, replace it with its corresponding bioguide.
+        id_to_use = ""
+        if len(bioguide_or_lis) == 4:
+            #It is an LIS
+            id_to_use = Politician.lis_to_bioguide_dict.get(bioguide_or_lis)
 
-    
+            if id_to_use is None:
+                raise ValueError(f"Could not find a corresponding bioguide ID for \"{name}\"'s LIS ID")
+
+        else:
+            #It is a bioguide.
+            id_to_use = bioguide_or_lis
+
+        supposed_bioguide_politician = Politician.politicians.get(id_to_use)
+
+        #If we cannot find a politician with the corresponding ID in Politician.politicians, create a new one
+        if supposed_bioguide_politician is None: 
+                Politician.politicians[id_to_use] = Politician(id_to_use, name, state, party, most_recent_vote)
+                return Politician.politicians[id_to_use]
+        
+        #Update the Politicians most recent congress
+        if Politician.date_compare(supposed_bioguide_politician.most_recent_vote, most_recent_vote) < 0:
+            supposed_bioguide_politician.most_recent_vote = most_recent_vote
+
+        return supposed_bioguide_politician
 
     def populate_district_and_role(self):
         for person in Politician.all_legislators_data:
             #Apparently, the senator rollcall vote data uses both bioguide IDs and "lis" IDs in the bioguide field.
             if person["id"].get("bioguide") == self.bioguide_id or person["id"].get("lis") == self.bioguide_id:
+
+                self.term_end = person["terms"][-1]["end"]
+
                 if person["terms"][-1]["type"] == "rep": #If their most recent term is as a representative
                     district_entry = person["terms"][-1]["district"]
 
@@ -282,8 +328,6 @@ class Vote:
         chamber = vote_id[:1].lower()
         roll_call_num = split_vote_id[1].lower()
         
-        
-        
         #print(bill_to_roll_reader.fieldnames)
         key = (congress, chamber, roll_call_num, vote_date)
         #print(key)
@@ -313,7 +357,6 @@ class Vote:
 
 # This big chunk of code goes through senator_rollcall_votes.csv and bill_to_roll.csv
 # In order to populate Politician.politicians with all of its necessary politicians, as well as their tagged votes.
-
 bill_to_roll_dict = {}
 with open(bill_to_roll_path, "r", encoding="utf-8") as bill_to_roll_file:
     bill_to_roll_reader = csv.DictReader(bill_to_roll_file)
@@ -337,7 +380,10 @@ with open(senator_rollcall_votes_path, "r", encoding="utf-8") as rollcall_votes_
         if line_vote != False:
             if line["state"] == "XX":
                 continue #Skip to next line
-            Politician.create_politician(line["bioguide_id"], line["name"], line["state"], line["party"]).add_vote(line_vote)
+
+            congress = int(re.split("h|s|-|\.", line["vote_id"])[2])
+
+            Politician.create_politician(line["bioguide_id"], line["name"], line["state"], line["party"], line["vote_date"]).add_vote(line_vote)
 
 
 #Now we will populate the alignment.json files for each state and district
@@ -410,7 +456,7 @@ class AlignmentFiles:
     def generate_senator_template(senator: Politician):
         new_senator = copy.deepcopy(senator_template)
 
-        new_senator["name"] = senator.name
+        new_senator["name"] = AlignmentFiles.get_senator_name(senator) or senator.name
         new_senator["overall_score"] = senator.overall_score()
         new_senator["overall_label"] = AlignmentFiles.score_to_alignment("state", new_senator["overall_score"])
 
@@ -422,9 +468,22 @@ class AlignmentFiles:
         new_state = copy.deepcopy(state_template)
 
         new_state["state_code"] = state
+
+        num_senators = 0
+        senators = []
+
         for p in Politician.politicians.values():
-            if p.role == "sen" and p.state == state:
+            #print(p.most_recent_congress)
+            if num_senators > 2:
+                raise OverflowError(f"TOO MANY SENATORS IN {state} \n {senators}")
+
+
+            if p.role == "sen" and p.state == state and p.is_current and p.term_end >= today_date:
                 new_state["senators"].append(AlignmentFiles.generate_senator_template(p))
+                num_senators += 1
+                senators.append((p.name, p.bioguide_id))
+        if num_senators != 2:
+                print(f"WRONG NUMBER OF SENATORS IN {state} \n {senators}. \nInvestigate possible vacancy. Check legislators-current.json for a recent appointee that is not included in rollcallvote data")
         return new_state
 
     @staticmethod
@@ -470,126 +529,57 @@ class AlignmentFiles:
 
     @staticmethod
     def populate_alignment_json():
+
+        reps_by_district = {}
         num = 0
+
         for p in Politician.politicians.values():
             print(num)
             num += 1
 
             if p.role == "sen" and p.state in AlignmentFiles.visited_states:
                 continue
-
-
-            alignment_path = AlignmentFiles.get_alignment_path(p)
-            
-            with open(alignment_path, "w", encoding = "utf-8") as alignment_json:
-                to_dump = None
-                if p.role == "rep":
-                    to_dump = AlignmentFiles.generate_district_template(p)
-                elif p.role == "sen":
+            elif p.role == "rep":
+                if p.district not in reps_by_district:
+                    reps_by_district[p.district] = []
+                reps_by_district[p.district].append(p)
+            elif p.role == "sen":
+                alignment_path = AlignmentFiles.get_alignment_path(p)
+                with open(alignment_path, "w", encoding = "utf-8") as alignment_json:
                     to_dump = AlignmentFiles.generate_state_template(p.state)
                     AlignmentFiles.visited_states.append(p.state)
+
+                    json.dump(to_dump, alignment_json)
+                    
+        
+        for district, reps in reps_by_district.items():
+            most_recent_rep = reps[0]
+
+            if len(reps) > 1:
+                for rep in reps[1:]:
+                    if rep.is_current: #if Politician.date_compare(rep.most_recent_vote, most_recent_rep.most_recent_vote) > 0:
+                        most_recent_rep = rep
+            
+            alignment_path = AlignmentFiles.get_alignment_path(most_recent_rep)
+
+            with open(alignment_path, "w", encoding = "utf-8") as alignment_json:
+                to_dump = AlignmentFiles.generate_district_template(most_recent_rep)
                 json.dump(to_dump, alignment_json)
-              
+    
+    def get_senator_name(senator):
+        data_path = os.path.join(home_path, "public", "data")
+        senator_path = os.path.join(data_path, "states", senator.state, "senators.json")
+
+        with open(senator_path, "r", encoding="utf-8") as senator_file:
+            data = json.load(senator_file)
+            all_senators = data.get("senators")
+
+            this_senator_name = senator.name.split(" ")[0]
+
+            for s in all_senators:
+                if this_senator_name in s.get("name"):
+                    return s.get("name")
+        return None and print("Couldn't find a valid name")
+        #raise LookupError(f"The senator we're looking for is from {senator.state}.\n            Could not find a senator with the last name {this_senator_name} out of names {[person.get("name") for person in all_senators]}")         
 
 AlignmentFiles.populate_alignment_json()
-
-
-# # ==========================================
-# # EDGE CASE TESTING
-# # ==========================================
-
-# # 1. CREATE THE PERFECT ALIGNMENT POLITICIAN (Score: 1.0)
-# perfect_match = Politician("TEST-01", "Perfect Match", "XX", "Democrat")
-# perfect_match.role = "sen"
-# perfect_match.district = "XX-01"
-
-# # Mock the dictionaries to avoid File I/O
-# perfect_match.cpd_dict_by_issue = {"environment": 1.0}
-# perfect_match.salience_dict_by_issue = {"environment": 1.0}
-# perfect_match.salience_populated = True
-
-# # Disable the file-reading methods for this specific test object
-# perfect_match.populate_cpd_dict = lambda: None
-# perfect_match.populate_salience_dict = lambda: None
-# perfect_match.non_normalized_weight = lambda issue: 1.0
-
-# # Create and add 3 completely liberal votes on the environment
-# vote1 = Vote("s", "101", "Liberal Direction", "High", "environment", "2026-01-01")
-# vote2 = Vote("s", "102", "Liberal Direction", "High", "environment", "2026-01-02")
-# vote3 = Vote("s", "103", "Liberal Direction", "High", "environment", "2026-01-03")
-
-# perfect_match.add_vote(vote1)
-# perfect_match.add_vote(vote2)
-# perfect_match.add_vote(vote3)
-
-
-# # 2. CREATE THE PERFECT DEFIANCE POLITICIAN (Score: 0.0)
-# total_defiance = Politician("TEST-02", "Total Defiance", "XX", "Republican")
-# total_defiance.role = "sen"
-# total_defiance.district = "XX-02"
-
-# # Mock the exact same constituent preferences (District wants liberal policies)
-# total_defiance.cpd_dict_by_issue = {"environment": 1.0}
-# total_defiance.salience_dict_by_issue = {"environment": 1.0}
-# total_defiance.salience_populated = True
-
-# # Disable the file-reading methods for this specific test object
-# total_defiance.populate_cpd_dict = lambda: None
-# total_defiance.populate_salience_dict = lambda: None
-# total_defiance.non_normalized_weight = lambda issue: 1.0
-
-# # Create and add 3 completely conservative votes on the environment (opposite of CPD)
-# vote4 = Vote("s", "201", "Conservative Direction", "High", "environment", "2026-01-04")
-# vote5 = Vote("s", "202", "Conservative Direction", "High", "environment", "2026-01-05")
-# vote6 = Vote("s", "203", "Conservative Direction", "High", "environment", "2026-01-06")
-
-# total_defiance.add_vote(vote4)
-# total_defiance.add_vote(vote5)
-# total_defiance.add_vote(vote6)
-
-
-# # ==========================================
-# # PRINT RESULTS
-# # ==========================================
-# print(f"--- Perfect Match Overall Score: {perfect_match.overall_score()} ---")
-# for issue in perfect_match.cpd_dict_by_issue:
-#     print(f"Issue: {issue}")
-#     print(f"Score: {perfect_match.compute_per_issue_score(issue)}")
-
-# print(f"\n--- Total Defiance Overall Score: {total_defiance.overall_score()} ---")
-# for issue in total_defiance.cpd_dict_by_issue:
-#     print(f"Issue: {issue}")
-#     print(f"Score: {total_defiance.compute_per_issue_score(issue)}")
-
-
-
-
-"""num = 1
-senator_num = 0
-representative_num = 0
-
-
-overall_average = 0
-senator_average = 0
-representative_average = 0
-
-for p in Politician.politicians.values():
-    score = p.overall_score()
-    print(num, p.bioguide_id, p.name, p.district, len(p.votes), p.role, p.party, score)
-    overall_average += score
-    if p.role == "sen":
-        senator_average += score
-        senator_num += 1
-    elif p.role == "rep":
-        representative_average += score * int(p.role == "rep")
-        representative_num += 1
-    num += 1
-
-overall_average /= num
-senator_average /= senator_num
-representative_average /= representative_num
-
-print("Overall:", overall_average)
-print("Senate:", senator_average)
-print("House:", representative_average)"""
-                

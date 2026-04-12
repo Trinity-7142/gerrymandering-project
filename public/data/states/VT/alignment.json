@@ -1,1 +1,111 @@
-{"state_code": "VT", "last_updated": "2026-04-05", "senators": [{"name": "Sanders (I-VT)", "overall_score": 0.7769084978364835, "overall_label": "Moderate Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.21150000000000002, "salience_weight": 0.008315368032029565, "weighted_contribution": 0.0017587003387742532, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.4506, "salience_weight": 0.1946412072682476, "weighted_contribution": 0.08770532799507237, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.9460000000000002, "salience_weight": 0.07884200800739143, "weighted_contribution": 0.07458453957499231, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.7234915611814347, "salience_weight": 0.19956883276870957, "weighted_contribution": 0.14438636638299035, "direction": "Moderate Alignment"}, {"issue_id": "economy", "score": 0.8872774193548385, "salience_weight": 0.37326763165999377, "weighted_contribution": 0.33119194094797166, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.9443928571428571, "salience_weight": 0.14536495226362794, "weighted_contribution": 0.13728162259668264, "direction": "Strong Alignment"}]}, {"name": "Welch (D-VT)", "overall_score": 0.7769084978364835, "overall_label": "Moderate Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.21150000000000002, "salience_weight": 0.008315368032029565, "weighted_contribution": 0.0017587003387742532, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.4506, "salience_weight": 0.1946412072682476, "weighted_contribution": 0.08770532799507237, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.9460000000000002, "salience_weight": 0.07884200800739143, "weighted_contribution": 0.07458453957499231, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.7234915611814347, "salience_weight": 0.19956883276870957, "weighted_contribution": 0.14438636638299035, "direction": "Moderate Alignment"}, {"issue_id": "economy", "score": 0.8872774193548385, "salience_weight": 0.37326763165999377, "weighted_contribution": 0.33119194094797166, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.9443928571428571, "salience_weight": 0.14536495226362794, "weighted_contribution": 0.13728162259668264, "direction": "Strong Alignment"}]}], "interpretation": {"0.0_to_0.3": "Low Alignment", "0.3_to_0.6": "Partial Alignment", "0.6_to_0.8": "Moderate Alignment", "0.8_to_1.0": "Strong Alignment"}, "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."}
+{
+  "state_code": "VT",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Bernie Sanders",
+      "overall_score": 0.778477547298562,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.21150000000000002,
+          "salience_weight": 0.008315368032029567,
+          "weighted_contribution": 0.0017587003387742534,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.4506,
+          "salience_weight": 0.19464120726824763,
+          "weighted_contribution": 0.08770532799507239,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9460000000000002,
+          "salience_weight": 0.07884200800739144,
+          "weighted_contribution": 0.07458453957499231,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7166769547325101,
+          "salience_weight": 0.1995688327687096,
+          "weighted_contribution": 0.14302638332820036,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.8807249999999996,
+          "salience_weight": 0.3732676316599938,
+          "weighted_contribution": 0.32874613489374793,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9813676470588236,
+          "salience_weight": 0.14536495226362797,
+          "weighted_contribution": 0.1426564611677748,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Peter Welch",
+      "overall_score": 0.778477547298562,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.21150000000000002,
+          "salience_weight": 0.008315368032029567,
+          "weighted_contribution": 0.0017587003387742534,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.4506,
+          "salience_weight": 0.19464120726824763,
+          "weighted_contribution": 0.08770532799507239,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9460000000000002,
+          "salience_weight": 0.07884200800739144,
+          "weighted_contribution": 0.07458453957499231,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7166769547325101,
+          "salience_weight": 0.1995688327687096,
+          "weighted_contribution": 0.14302638332820036,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.8807249999999996,
+          "salience_weight": 0.3732676316599938,
+          "weighted_contribution": 0.32874613489374793,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9813676470588236,
+          "salience_weight": 0.14536495226362797,
+          "weighted_contribution": 0.1426564611677748,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

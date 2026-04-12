@@ -1,1 +1,111 @@
-{"state_code": "KY", "last_updated": "2026-04-05", "senators": [{"name": "Paul (R-KY)", "overall_score": 0.8334897727023357, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.31525000000000003, "salience_weight": 0.009096422073984232, "weighted_contribution": 0.0028676470588235295, "direction": "Partial Alignment"}, {"issue_id": "immigration", "score": 0.6198, "salience_weight": 0.2692540933899333, "weighted_contribution": 0.16688368708308066, "direction": "Moderate Alignment"}, {"issue_id": "abortion", "score": 0.9311111111111112, "salience_weight": 0.05700424499696786, "weighted_contribution": 0.053077285897176744, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.7910611814345992, "salience_weight": 0.04487568223165555, "weighted_contribution": 0.03549941020385709, "direction": "Moderate Alignment"}, {"issue_id": "economy", "score": 0.9263076400679114, "salience_weight": 0.5215281989084294, "weighted_contribution": 0.4830955551597355, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.937142857142857, "salience_weight": 0.09824135839902971, "weighted_contribution": 0.09206618729966212, "direction": "Strong Alignment"}]}, {"name": "McConnell (R-KY)", "overall_score": 0.8334897727023357, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.31525000000000003, "salience_weight": 0.009096422073984232, "weighted_contribution": 0.0028676470588235295, "direction": "Partial Alignment"}, {"issue_id": "immigration", "score": 0.6198, "salience_weight": 0.2692540933899333, "weighted_contribution": 0.16688368708308066, "direction": "Moderate Alignment"}, {"issue_id": "abortion", "score": 0.9311111111111112, "salience_weight": 0.05700424499696786, "weighted_contribution": 0.053077285897176744, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.7910611814345992, "salience_weight": 0.04487568223165555, "weighted_contribution": 0.03549941020385709, "direction": "Moderate Alignment"}, {"issue_id": "economy", "score": 0.9263076400679114, "salience_weight": 0.5215281989084294, "weighted_contribution": 0.4830955551597355, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.937142857142857, "salience_weight": 0.09824135839902971, "weighted_contribution": 0.09206618729966212, "direction": "Strong Alignment"}]}], "interpretation": {"0.0_to_0.3": "Low Alignment", "0.3_to_0.6": "Partial Alignment", "0.6_to_0.8": "Moderate Alignment", "0.8_to_1.0": "Strong Alignment"}, "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."}
+{
+  "state_code": "KY",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Rand Paul",
+      "overall_score": 0.8328932844752669,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.31525000000000003,
+          "salience_weight": 0.009096422073984232,
+          "weighted_contribution": 0.0028676470588235295,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.6198,
+          "salience_weight": 0.2692540933899333,
+          "weighted_contribution": 0.16688368708308066,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9311111111111112,
+          "salience_weight": 0.05700424499696786,
+          "weighted_contribution": 0.053077285897176744,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7851625514403292,
+          "salience_weight": 0.04487568223165555,
+          "weighted_contribution": 0.03523470515863212,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9187064465408801,
+          "salience_weight": 0.5215281989084294,
+          "weighted_contribution": 0.4791313183900284,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9741176470588234,
+          "salience_weight": 0.09824135839902971,
+          "weighted_contribution": 0.0956986408875254,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Mitch McConnell",
+      "overall_score": 0.8328932844752669,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.31525000000000003,
+          "salience_weight": 0.009096422073984232,
+          "weighted_contribution": 0.0028676470588235295,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.6198,
+          "salience_weight": 0.2692540933899333,
+          "weighted_contribution": 0.16688368708308066,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9311111111111112,
+          "salience_weight": 0.05700424499696786,
+          "weighted_contribution": 0.053077285897176744,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7851625514403292,
+          "salience_weight": 0.04487568223165555,
+          "weighted_contribution": 0.03523470515863212,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9187064465408801,
+          "salience_weight": 0.5215281989084294,
+          "weighted_contribution": 0.4791313183900284,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9741176470588234,
+          "salience_weight": 0.09824135839902971,
+          "weighted_contribution": 0.0956986408875254,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

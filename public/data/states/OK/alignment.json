@@ -1,1 +1,62 @@
-{"state_code": "OK", "last_updated": "2026-04-05", "senators": [{"name": "Lankford (R-OK)", "overall_score": 0.8190847969004447, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.349, "salience_weight": 0.00533175355450237, "weighted_contribution": 0.001860781990521327, "direction": "Partial Alignment"}, {"issue_id": "immigration", "score": 0.6072, "salience_weight": 0.3045023696682465, "weighted_contribution": 0.18489383886255928, "direction": "Moderate Alignment"}, {"issue_id": "abortion", "score": 0.9401111111111111, "salience_weight": 0.04443127962085309, "weighted_contribution": 0.04177033965244867, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.8234472573839664, "salience_weight": 0.0675355450236967, "weighted_contribution": 0.055611959325694425, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9288285229202036, "salience_weight": 0.4964454976303318, "weighted_contribution": 0.4611127382743665, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.9031428571428571, "salience_weight": 0.0817535545023697, "weighted_contribution": 0.07383513879485445, "direction": "Strong Alignment"}]}, {"name": "Mullin (R-OK)", "overall_score": 0.8190847969004447, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.349, "salience_weight": 0.00533175355450237, "weighted_contribution": 0.001860781990521327, "direction": "Partial Alignment"}, {"issue_id": "immigration", "score": 0.6072, "salience_weight": 0.3045023696682465, "weighted_contribution": 0.18489383886255928, "direction": "Moderate Alignment"}, {"issue_id": "abortion", "score": 0.9401111111111111, "salience_weight": 0.04443127962085309, "weighted_contribution": 0.04177033965244867, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.8234472573839664, "salience_weight": 0.0675355450236967, "weighted_contribution": 0.055611959325694425, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9288285229202036, "salience_weight": 0.4964454976303318, "weighted_contribution": 0.4611127382743665, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.9031428571428571, "salience_weight": 0.0817535545023697, "weighted_contribution": 0.07383513879485445, "direction": "Strong Alignment"}]}], "interpretation": {"0.0_to_0.3": "Low Alignment", "0.3_to_0.6": "Partial Alignment", "0.6_to_0.8": "Moderate Alignment", "0.8_to_1.0": "Strong Alignment"}, "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."}
+{
+  "state_code": "OK",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "James Lankford",
+      "overall_score": 0.8179316935079544,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.349,
+          "salience_weight": 0.005331753554502369,
+          "weighted_contribution": 0.0018607819905213268,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.6072,
+          "salience_weight": 0.30450236966824645,
+          "weighted_contribution": 0.18489383886255922,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9401111111111111,
+          "salience_weight": 0.04443127962085308,
+          "weighted_contribution": 0.04177033965244866,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8179876543209877,
+          "salience_weight": 0.06753554502369669,
+          "weighted_contribution": 0.055243242057223106,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9211595911949683,
+          "salience_weight": 0.49644549763033174,
+          "weighted_contribution": 0.45730553164773896,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9401176470588234,
+          "salience_weight": 0.08175355450236968,
+          "weighted_contribution": 0.07685795929746306,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

@@ -1,1 +1,111 @@
-{"state_code": "AZ", "last_updated": "2026-04-05", "senators": [{"name": "Gallego", "overall_score": 0.6174913645742915, "overall_label": "Moderate Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.2985, "salience_weight": 0.014150943396226415, "weighted_contribution": 0.004224056603773584, "direction": "Low Alignment"}, {"issue_id": "environment", "score": 0.595680790960452, "salience_weight": 0.1320754716981132, "weighted_contribution": 0.07867482144760687, "direction": "Partial Alignment"}, {"issue_id": "economy", "score": 0.6390857142857143, "salience_weight": 0.8176100628930818, "weighted_contribution": 0.522522911051213, "direction": "Moderate Alignment"}, {"issue_id": "healthcare", "score": 0.33375, "salience_weight": 0.03616352201257862, "weighted_contribution": 0.012069575471698115, "direction": "Partial Alignment"}]}, {"name": "Kelly (D-AZ)", "overall_score": 0.8193852711984593, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.2985, "salience_weight": 0.008199210446401458, "weighted_contribution": 0.002447464318250835, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.5644, "salience_weight": 0.27695110841178255, "weighted_contribution": 0.15631120558761008, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.9982222222222222, "salience_weight": 0.08077740662010326, "weighted_contribution": 0.08063380234166752, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.7863270042194094, "salience_weight": 0.07652596416641361, "weighted_contribution": 0.06017443214797788, "direction": "Moderate Alignment"}, {"issue_id": "economy", "score": 0.9339137521222408, "salience_weight": 0.47373215912541755, "weighted_contribution": 0.44242497822978916, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.9233928571428571, "salience_weight": 0.08381415122988158, "weighted_contribution": 0.07739338857316386, "direction": "Strong Alignment"}]}, {"name": "Sinema (I-AZ)", "overall_score": 0.7611052859769429, "overall_label": "Moderate Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.2985, "salience_weight": 0.009985207100591717, "weighted_contribution": 0.0029805843195266275, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.5644, "salience_weight": 0.1686390532544379, "weighted_contribution": 0.09517988165680476, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.6267777777777778, "salience_weight": 0.04918639053254439, "weighted_contribution": 0.030828936554898097, "direction": "Moderate Alignment"}, {"issue_id": "environment", "score": 0.645608527131783, "salience_weight": 0.09319526627218935, "weighted_contribution": 0.060167658593642495, "direction": "Moderate Alignment"}, {"issue_id": "economy", "score": 0.8504249999999999, "salience_weight": 0.576923076923077, "weighted_contribution": 0.4906298076923077, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.7966847826086956, "salience_weight": 0.10207100591715978, "weighted_contribution": 0.08131841715976332, "direction": "Moderate Alignment"}]}, {"name": "Gallego (D-AZ)", "overall_score": 0.8126817900763419, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "immigration", "score": 0.5644, "salience_weight": 0.29109479731886373, "weighted_contribution": 0.16429390360676668, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.37322222222222223, "salience_weight": 0.04245132460900096, "weighted_contribution": 0.015843777706848246, "direction": "Partial Alignment"}, {"issue_id": "environment", "score": 0.9544074074074074, "salience_weight": 0.08043408873284393, "weighted_contribution": 0.07676689009469093, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9981634782608697, "salience_weight": 0.4979253112033195, "weighted_contribution": 0.4970108605448314, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.6670833333333334, "salience_weight": 0.08809447813597192, "weighted_contribution": 0.058766358123204604, "direction": "Moderate Alignment"}]}], "interpretation": {"0.0_to_0.3": "Low Alignment", "0.3_to_0.6": "Partial Alignment", "0.6_to_0.8": "Moderate Alignment", "0.8_to_1.0": "Strong Alignment"}, "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."}
+{
+  "state_code": "AZ",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Ruben Gallego",
+      "overall_score": 0.7373180845969302,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.2985,
+          "salience_weight": 0.008544303797468353,
+          "weighted_contribution": 0.0025504746835443032,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5644,
+          "salience_weight": 0.28860759493670884,
+          "weighted_contribution": 0.16289012658227847,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.37322222222222223,
+          "salience_weight": 0.04208860759493671,
+          "weighted_contribution": 0.01570840365682138,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8276716566866268,
+          "salience_weight": 0.07974683544303797,
+          "weighted_contribution": 0.06600419540665504,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.8833005714285711,
+          "salience_weight": 0.4936708860759494,
+          "weighted_contribution": 0.4360597757685351,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.6194642857142857,
+          "salience_weight": 0.08734177215189874,
+          "weighted_contribution": 0.05410510849909584,
+          "direction": "Moderate Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Mark Kelly",
+      "overall_score": 0.8183302199192544,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.2985,
+          "salience_weight": 0.008199210446401458,
+          "weighted_contribution": 0.002447464318250835,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5644,
+          "salience_weight": 0.27695110841178255,
+          "weighted_contribution": 0.15631120558761008,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9982222222222222,
+          "salience_weight": 0.08077740662010326,
+          "weighted_contribution": 0.08063380234166752,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7803641975308642,
+          "salience_weight": 0.07652596416641361,
+          "weighted_contribution": 0.05971812261699902,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9261081761006285,
+          "salience_weight": 0.47373215912541755,
+          "weighted_contribution": 0.4387272258478531,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9603676470588234,
+          "salience_weight": 0.08381415122988158,
+          "weighted_contribution": 0.08049239920687376,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

@@ -1,1 +1,111 @@
-{"state_code": "NE", "last_updated": "2026-04-05", "senators": [{"name": "Fischer (R-NE)", "overall_score": 0.7925822418801739, "overall_label": "Moderate Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.3375, "salience_weight": 0.012485136741973843, "weighted_contribution": 0.004213733650416172, "direction": "Partial Alignment"}, {"issue_id": "immigration", "score": 0.5878, "salience_weight": 0.3579072532699168, "weighted_contribution": 0.21037788347205708, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.9604444444444443, "salience_weight": 0.061236623067776455, "weighted_contribution": 0.0588143744219844, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.8302257383966246, "salience_weight": 0.05469678953626635, "weighted_contribution": 0.0454106824806715, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9379993208828521, "salience_weight": 0.4007134363852557, "weighted_contribution": 0.3758689311980038, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.8666428571428572, "salience_weight": 0.11296076099881094, "weighted_contribution": 0.09789663665704094, "direction": "Strong Alignment"}]}, {"name": "Ricketts (R-NE)", "overall_score": 0.7925822418801739, "overall_label": "Moderate Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.3375, "salience_weight": 0.012485136741973843, "weighted_contribution": 0.004213733650416172, "direction": "Partial Alignment"}, {"issue_id": "immigration", "score": 0.5878, "salience_weight": 0.3579072532699168, "weighted_contribution": 0.21037788347205708, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.9604444444444443, "salience_weight": 0.061236623067776455, "weighted_contribution": 0.0588143744219844, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.8302257383966246, "salience_weight": 0.05469678953626635, "weighted_contribution": 0.0454106824806715, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9379993208828521, "salience_weight": 0.4007134363852557, "weighted_contribution": 0.3758689311980038, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.8666428571428572, "salience_weight": 0.11296076099881094, "weighted_contribution": 0.09789663665704094, "direction": "Strong Alignment"}]}], "interpretation": {"0.0_to_0.3": "Low Alignment", "0.3_to_0.6": "Partial Alignment", "0.6_to_0.8": "Moderate Alignment", "0.8_to_1.0": "Strong Alignment"}, "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."}
+{
+  "state_code": "NE",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Deb Fischer",
+      "overall_score": 0.7932935550277032,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.3375,
+          "salience_weight": 0.012485136741973843,
+          "weighted_contribution": 0.004213733650416172,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5878,
+          "salience_weight": 0.3579072532699168,
+          "weighted_contribution": 0.21037788347205708,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9604444444444443,
+          "salience_weight": 0.061236623067776455,
+          "weighted_contribution": 0.0588143744219844,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.824858024691358,
+          "salience_weight": 0.05469678953626635,
+          "weighted_contribution": 0.04511708577384361,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9300839622641506,
+          "salience_weight": 0.4007134363852557,
+          "weighted_contribution": 0.37269714064568227,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9036176470588235,
+          "salience_weight": 0.11296076099881094,
+          "weighted_contribution": 0.10207333706371967,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Pete Ricketts",
+      "overall_score": 0.7932935550277032,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.3375,
+          "salience_weight": 0.012485136741973843,
+          "weighted_contribution": 0.004213733650416172,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5878,
+          "salience_weight": 0.3579072532699168,
+          "weighted_contribution": 0.21037788347205708,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9604444444444443,
+          "salience_weight": 0.061236623067776455,
+          "weighted_contribution": 0.0588143744219844,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.824858024691358,
+          "salience_weight": 0.05469678953626635,
+          "weighted_contribution": 0.04511708577384361,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9300839622641506,
+          "salience_weight": 0.4007134363852557,
+          "weighted_contribution": 0.37269714064568227,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9036176470588235,
+          "salience_weight": 0.11296076099881094,
+          "weighted_contribution": 0.10207333706371967,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

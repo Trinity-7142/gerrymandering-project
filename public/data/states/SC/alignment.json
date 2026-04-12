@@ -1,1 +1,111 @@
-{"state_code": "SC", "last_updated": "2026-04-05", "senators": [{"name": "Graham (R-SC)", "overall_score": 0.8335006618601903, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.3032499999999999, "salience_weight": 0.011642156862745098, "weighted_contribution": 0.00353048406862745, "direction": "Partial Alignment"}, {"issue_id": "immigration", "score": 0.5964, "salience_weight": 0.26960784313725494, "weighted_contribution": 0.16079411764705887, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.9728888888888889, "salience_weight": 0.056985294117647065, "weighted_contribution": 0.05544035947712419, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.807415611814346, "salience_weight": 0.04779411764705883, "weighted_contribution": 0.03858971674112683, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9459531409168079, "salience_weight": 0.5245098039215687, "weighted_contribution": 0.49616169646126695, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.8828928571428571, "salience_weight": 0.08946078431372549, "weighted_contribution": 0.078984287464986, "direction": "Strong Alignment"}]}, {"name": "Scott (R-SC)", "overall_score": 0.8335006618601903, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.3032499999999999, "salience_weight": 0.011642156862745098, "weighted_contribution": 0.00353048406862745, "direction": "Partial Alignment"}, {"issue_id": "immigration", "score": 0.5964, "salience_weight": 0.26960784313725494, "weighted_contribution": 0.16079411764705887, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.9728888888888889, "salience_weight": 0.056985294117647065, "weighted_contribution": 0.05544035947712419, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.807415611814346, "salience_weight": 0.04779411764705883, "weighted_contribution": 0.03858971674112683, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9459531409168079, "salience_weight": 0.5245098039215687, "weighted_contribution": 0.49616169646126695, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.8828928571428571, "salience_weight": 0.08946078431372549, "weighted_contribution": 0.078984287464986, "direction": "Strong Alignment"}]}], "interpretation": {"0.0_to_0.3": "Low Alignment", "0.3_to_0.6": "Partial Alignment", "0.6_to_0.8": "Moderate Alignment", "0.8_to_1.0": "Strong Alignment"}, "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."}
+{
+  "state_code": "SC",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Lindsey Graham",
+      "overall_score": 0.8322733473492864,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.3032499999999999,
+          "salience_weight": 0.011642156862745098,
+          "weighted_contribution": 0.00353048406862745,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5964,
+          "salience_weight": 0.26960784313725494,
+          "weighted_contribution": 0.16079411764705887,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9728888888888889,
+          "salience_weight": 0.056985294117647065,
+          "weighted_contribution": 0.05544035947712419,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.801738683127572,
+          "salience_weight": 0.04779411764705883,
+          "weighted_contribution": 0.03831839294359719,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9378240566037731,
+          "salience_weight": 0.5245098039215687,
+          "weighted_contribution": 0.49189791204217514,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9198676470588236,
+          "salience_weight": 0.08946078431372549,
+          "weighted_contribution": 0.08229208117070358,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Tim Scott",
+      "overall_score": 0.8322733473492864,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.3032499999999999,
+          "salience_weight": 0.011642156862745098,
+          "weighted_contribution": 0.00353048406862745,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5964,
+          "salience_weight": 0.26960784313725494,
+          "weighted_contribution": 0.16079411764705887,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9728888888888889,
+          "salience_weight": 0.056985294117647065,
+          "weighted_contribution": 0.05544035947712419,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.801738683127572,
+          "salience_weight": 0.04779411764705883,
+          "weighted_contribution": 0.03831839294359719,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9378240566037731,
+          "salience_weight": 0.5245098039215687,
+          "weighted_contribution": 0.49189791204217514,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9198676470588236,
+          "salience_weight": 0.08946078431372549,
+          "weighted_contribution": 0.08229208117070358,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

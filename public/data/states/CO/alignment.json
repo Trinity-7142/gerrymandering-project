@@ -1,1 +1,111 @@
-{"state_code": "CO", "last_updated": "2026-04-05", "senators": [{"name": "Bennet (D-CO)", "overall_score": 0.7876052037872986, "overall_label": "Moderate Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.2795000000000001, "salience_weight": 0.016149068322981366, "weighted_contribution": 0.0045136645962732935, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.5162000000000001, "salience_weight": 0.25590062111801243, "weighted_contribution": 0.13209590062111803, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.945111111111111, "salience_weight": 0.055900621118012424, "weighted_contribution": 0.05283229813664596, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.7487763713080168, "salience_weight": 0.1267080745341615, "weighted_contribution": 0.09487601226511518, "direction": "Moderate Alignment"}, {"issue_id": "economy", "score": 0.9206573853989811, "salience_weight": 0.43478260869565216, "weighted_contribution": 0.40028581973868743, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.9316428571428572, "salience_weight": 0.11055900621118013, "weighted_contribution": 0.10300150842945875, "direction": "Strong Alignment"}]}, {"name": "Hickenlooper (D-CO)", "overall_score": 0.7876052037872986, "overall_label": "Moderate Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.2795000000000001, "salience_weight": 0.016149068322981366, "weighted_contribution": 0.0045136645962732935, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.5162000000000001, "salience_weight": 0.25590062111801243, "weighted_contribution": 0.13209590062111803, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.945111111111111, "salience_weight": 0.055900621118012424, "weighted_contribution": 0.05283229813664596, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.7487763713080168, "salience_weight": 0.1267080745341615, "weighted_contribution": 0.09487601226511518, "direction": "Moderate Alignment"}, {"issue_id": "economy", "score": 0.9206573853989811, "salience_weight": 0.43478260869565216, "weighted_contribution": 0.40028581973868743, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.9316428571428572, "salience_weight": 0.11055900621118013, "weighted_contribution": 0.10300150842945875, "direction": "Strong Alignment"}]}], "interpretation": {"0.0_to_0.3": "Low Alignment", "0.3_to_0.6": "Partial Alignment", "0.6_to_0.8": "Moderate Alignment", "0.8_to_1.0": "Strong Alignment"}, "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."}
+{
+  "state_code": "CO",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Michael Bennet",
+      "overall_score": 0.787634209839011,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.2795000000000001,
+          "salience_weight": 0.016149068322981366,
+          "weighted_contribution": 0.0045136645962732935,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5162000000000001,
+          "salience_weight": 0.25590062111801243,
+          "weighted_contribution": 0.13209590062111803,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.945111111111111,
+          "salience_weight": 0.055900621118012424,
+          "weighted_contribution": 0.05283229813664596,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7423045267489712,
+          "salience_weight": 0.1267080745341615,
+          "weighted_contribution": 0.09405597730235411,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9132080188679241,
+          "salience_weight": 0.43478260869565216,
+          "weighted_contribution": 0.3970469647251844,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9686176470588235,
+          "salience_weight": 0.11055900621118013,
+          "weighted_contribution": 0.10708940445743514,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "John Hickenlooper",
+      "overall_score": 0.787634209839011,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.2795000000000001,
+          "salience_weight": 0.016149068322981366,
+          "weighted_contribution": 0.0045136645962732935,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5162000000000001,
+          "salience_weight": 0.25590062111801243,
+          "weighted_contribution": 0.13209590062111803,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.945111111111111,
+          "salience_weight": 0.055900621118012424,
+          "weighted_contribution": 0.05283229813664596,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7423045267489712,
+          "salience_weight": 0.1267080745341615,
+          "weighted_contribution": 0.09405597730235411,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9132080188679241,
+          "salience_weight": 0.43478260869565216,
+          "weighted_contribution": 0.3970469647251844,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9686176470588235,
+          "salience_weight": 0.11055900621118013,
+          "weighted_contribution": 0.10708940445743514,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

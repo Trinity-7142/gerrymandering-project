@@ -1,1 +1,111 @@
-{"state_code": "NC", "last_updated": "2026-04-05", "senators": [{"name": "Tillis (R-NC)", "overall_score": 0.8272202077616103, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.263, "salience_weight": 0.010283577438454348, "weighted_contribution": 0.0027045808663134934, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.5648000000000001, "salience_weight": 0.23808039887815519, "weighted_contribution": 0.13446780928638208, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.988, "salience_weight": 0.06855718292302898, "weighted_contribution": 0.06773449672795263, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.7768586497890296, "salience_weight": 0.06606419445310065, "weighted_contribution": 0.05132254090223567, "direction": "Moderate Alignment"}, {"issue_id": "economy", "score": 0.9239606112054327, "salience_weight": 0.5222810844499843, "weighted_contribution": 0.4825671500094437, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.933392857142857, "salience_weight": 0.09473356185727641, "weighted_contribution": 0.08842362996928281, "direction": "Strong Alignment"}]}, {"name": "Budd (R-NC)", "overall_score": 0.8272202077616103, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.263, "salience_weight": 0.010283577438454348, "weighted_contribution": 0.0027045808663134934, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.5648000000000001, "salience_weight": 0.23808039887815519, "weighted_contribution": 0.13446780928638208, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.988, "salience_weight": 0.06855718292302898, "weighted_contribution": 0.06773449672795263, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.7768586497890296, "salience_weight": 0.06606419445310065, "weighted_contribution": 0.05132254090223567, "direction": "Moderate Alignment"}, {"issue_id": "economy", "score": 0.9239606112054327, "salience_weight": 0.5222810844499843, "weighted_contribution": 0.4825671500094437, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.933392857142857, "salience_weight": 0.09473356185727641, "weighted_contribution": 0.08842362996928281, "direction": "Strong Alignment"}]}], "interpretation": {"0.0_to_0.3": "Low Alignment", "0.3_to_0.6": "Partial Alignment", "0.6_to_0.8": "Moderate Alignment", "0.8_to_1.0": "Strong Alignment"}, "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."}
+{
+  "state_code": "NC",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Thom Tillis",
+      "overall_score": 0.8263835326184514,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.263,
+          "salience_weight": 0.010283577438454348,
+          "weighted_contribution": 0.0027045808663134934,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5648000000000001,
+          "salience_weight": 0.23808039887815519,
+          "weighted_contribution": 0.13446780928638208,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.988,
+          "salience_weight": 0.06855718292302898,
+          "weighted_contribution": 0.06773449672795263,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7707674897119342,
+          "salience_weight": 0.06606419445310065,
+          "weighted_contribution": 0.050920133318457475,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9164224842767293,
+          "salience_weight": 0.5222810844499843,
+          "weighted_contribution": 0.4786301289023989,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9703676470588235,
+          "salience_weight": 0.09473356185727641,
+          "weighted_contribution": 0.09192638351694682,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Ted Budd",
+      "overall_score": 0.8263835326184514,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.263,
+          "salience_weight": 0.010283577438454348,
+          "weighted_contribution": 0.0027045808663134934,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5648000000000001,
+          "salience_weight": 0.23808039887815519,
+          "weighted_contribution": 0.13446780928638208,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.988,
+          "salience_weight": 0.06855718292302898,
+          "weighted_contribution": 0.06773449672795263,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7707674897119342,
+          "salience_weight": 0.06606419445310065,
+          "weighted_contribution": 0.050920133318457475,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9164224842767293,
+          "salience_weight": 0.5222810844499843,
+          "weighted_contribution": 0.4786301289023989,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9703676470588235,
+          "salience_weight": 0.09473356185727641,
+          "weighted_contribution": 0.09192638351694682,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

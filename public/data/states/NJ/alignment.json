@@ -1,1 +1,111 @@
-{"state_code": "NJ", "last_updated": "2026-04-05", "senators": [{"name": "Kim (NJ)", "overall_score": 0.5653186344064978, "overall_label": "Partial Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.17400000000000004, "salience_weight": 0.02529601722282024, "weighted_contribution": 0.004401506996770723, "direction": "Low Alignment"}, {"issue_id": "environment", "score": 0.46149999999999985, "salience_weight": 0.1356297093649085, "weighted_contribution": 0.06259311087190525, "direction": "Partial Alignment"}, {"issue_id": "economy", "score": 0.6099454545454546, "salience_weight": 0.7965554359526373, "weighted_contribution": 0.4858553674527841, "direction": "Moderate Alignment"}, {"issue_id": "healthcare", "score": 0.29325, "salience_weight": 0.042518837459634015, "weighted_contribution": 0.012468649085037675, "direction": "Low Alignment"}]}, {"name": "Booker (D-NJ)", "overall_score": 0.7962553171015487, "overall_label": "Moderate Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.17400000000000004, "salience_weight": 0.014793830657853323, "weighted_contribution": 0.002574126534466479, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.5248, "salience_weight": 0.265659427132515, "weighted_contribution": 0.1394180673591439, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.932, "salience_weight": 0.07491344035253385, "weighted_contribution": 0.06981932640856155, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.7325295358649788, "salience_weight": 0.0793201133144476, "weighted_contribution": 0.05810432579098983, "direction": "Moderate Alignment"}, {"issue_id": "economy", "score": 0.9240475382003394, "salience_weight": 0.46584828454516847, "weighted_contribution": 0.43046596050881414, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.963892857142857, "salience_weight": 0.09946490399748191, "weighted_contribution": 0.09587351049957282, "direction": "Strong Alignment"}]}, {"name": "Menendez (D-NJ)", "overall_score": 0.7215368331353127, "overall_label": "Moderate Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.17400000000000004, "salience_weight": 0.017830045523520487, "weighted_contribution": 0.0031024279210925656, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.5248, "salience_weight": 0.16009104704097118, "weighted_contribution": 0.08401578148710169, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.6930000000000001, "salience_weight": 0.04514415781487102, "weighted_contribution": 0.03128490136570562, "direction": "Moderate Alignment"}, {"issue_id": "environment", "score": 0.5408650793650793, "salience_weight": 0.09559939301972688, "weighted_contribution": 0.05170637329286799, "direction": "Partial Alignment"}, {"issue_id": "economy", "score": 0.8033865546218487, "salience_weight": 0.5614567526555387, "weighted_contribution": 0.4510668060851048, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.8371847826086956, "salience_weight": 0.1198786039453718, "weighted_contribution": 0.10036054298344, "direction": "Strong Alignment"}]}, {"name": "Helmy (D-NJ)", "overall_score": 0.9484036748329622, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "economy", "score": 1.0, "salience_weight": 0.8240534521158129, "weighted_contribution": 0.8240534521158129, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.70675, "salience_weight": 0.1759465478841871, "weighted_contribution": 0.12435022271714923, "direction": "Moderate Alignment"}]}, {"name": "Kim (D-NJ)", "overall_score": 0.7932340433425787, "overall_label": "Moderate Alignment", "issue_scores": [{"issue_id": "immigration", "score": 0.5248, "salience_weight": 0.2803055463301229, "weighted_contribution": 0.1471043507140485, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.30699999999999994, "salience_weight": 0.03952175357024245, "weighted_contribution": 0.01213317834606443, "direction": "Partial Alignment"}, {"issue_id": "environment", "score": 0.9500945945945946, "salience_weight": 0.08369312520757224, "weighted_contribution": 0.079516385864443, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9942833333333332, "salience_weight": 0.49153105280637666, "weighted_contribution": 0.4887211336211668, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.6265833333333334, "salience_weight": 0.10494852208568584, "weighted_contribution": 0.06575899479685599, "direction": "Moderate Alignment"}]}], "interpretation": {"0.0_to_0.3": "Low Alignment", "0.3_to_0.6": "Partial Alignment", "0.6_to_0.8": "Moderate Alignment", "0.8_to_1.0": "Strong Alignment"}, "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."}
+{
+  "state_code": "NJ",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Andy Kim",
+      "overall_score": 0.711911785988544,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.17400000000000004,
+          "salience_weight": 0.015369522563767168,
+          "weighted_contribution": 0.002674296926095488,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5248,
+          "salience_weight": 0.275997383911053,
+          "weighted_contribution": 0.14484342707652062,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.30699999999999994,
+          "salience_weight": 0.038914323086984955,
+          "weighted_contribution": 0.011946697187704379,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7862544910179641,
+          "salience_weight": 0.08240680183126227,
+          "weighted_contribution": 0.06479271803025735,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.8839832402234635,
+          "salience_weight": 0.4839764551994768,
+          "weighted_contribution": 0.42782707505909945,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.5789642857142857,
+          "salience_weight": 0.10333551340745586,
+          "weighted_contribution": 0.05982757170886668,
+          "direction": "Partial Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Cory Booker",
+      "overall_score": 0.7957168814178663,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.17400000000000004,
+          "salience_weight": 0.014793830657853321,
+          "weighted_contribution": 0.0025741265344664784,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5248,
+          "salience_weight": 0.26565942713251495,
+          "weighted_contribution": 0.13941806735914386,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.932,
+          "salience_weight": 0.07491344035253383,
+          "weighted_contribution": 0.06981932640856153,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7258374485596707,
+          "salience_weight": 0.07932011331444759,
+          "weighted_contribution": 0.057573508667622605,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9165070754716977,
+          "salience_weight": 0.4658482845451684,
+          "weighted_contribution": 0.4269532488819996,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9991323529411765,
+          "salience_weight": 0.0994649039974819,
+          "weighted_contribution": 0.09937860356607232,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

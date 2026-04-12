@@ -1,1 +1,40 @@
-{"district_id": "DE-01", "last_updated": "2026-04-05", "overall_score": 0.8945847613436577, "overall_label": "Strong Alignment", "score_range": {"min": 0, "max": 1}, "interpretation": {"0.0_to_0.3": "Low Alignment", "0.3_to_0.6": "Partial Alignment", "0.6_to_0.8": "Moderate Alignment", "0.8_to_1.0": "Strong Alignment"}, "issue_scores": [{"issue_id": "immigration", "score": 0.5399999999999999, "salience_weight": 0.09381663113006397, "weighted_contribution": 0.05066098081023454, "direction": "Partial Alignment"}, {"issue_id": "environment", "score": 0.9403541666666667, "salience_weight": 0.13219616204690832, "weighted_contribution": 0.1243112117981521, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9297473684210527, "salience_weight": 0.7739872068230278, "weighted_contribution": 0.7196125687352711, "direction": "Strong Alignment"}], "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."}
+{
+  "district_id": "DE-01",
+  "last_updated": "2026-04-05",
+  "overall_score": 0.8973034932480455,
+  "overall_label": "Strong Alignment",
+  "score_range": {
+    "min": 0,
+    "max": 1
+  },
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "issue_scores": [
+    {
+      "issue_id": "immigration",
+      "score": 0.5399999999999999,
+      "salience_weight": 0.09381663113006397,
+      "weighted_contribution": 0.05066098081023454,
+      "direction": "Partial Alignment"
+    },
+    {
+      "issue_id": "environment",
+      "score": 0.9403541666666667,
+      "salience_weight": 0.13219616204690832,
+      "weighted_contribution": 0.1243112117981521,
+      "direction": "Strong Alignment"
+    },
+    {
+      "issue_id": "economy",
+      "score": 0.93326,
+      "salience_weight": 0.7739872068230278,
+      "weighted_contribution": 0.7223313006396589,
+      "direction": "Strong Alignment"
+    }
+  ],
+  "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

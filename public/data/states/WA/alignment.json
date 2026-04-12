@@ -1,1 +1,111 @@
-{"state_code": "WA", "last_updated": "2026-04-05", "senators": [{"name": "Cantwell (D-WA)", "overall_score": 0.7954211447076325, "overall_label": "Moderate Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.22475, "salience_weight": 0.011688311688311687, "weighted_contribution": 0.002626948051948052, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.46160000000000007, "salience_weight": 0.187012987012987, "weighted_contribution": 0.08632519480519481, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.9167777777777777, "salience_weight": 0.08961038961038961, "weighted_contribution": 0.08215281385281385, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.715529535864979, "salience_weight": 0.14025974025974025, "weighted_contribution": 0.10035998684859446, "direction": "Moderate Alignment"}, {"issue_id": "economy", "score": 0.8938838709677417, "salience_weight": 0.4454545454545455, "weighted_contribution": 0.39818463343108496, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.9983928571428571, "salience_weight": 0.125974025974026, "weighted_contribution": 0.1257715677179963, "direction": "Strong Alignment"}]}, {"name": "Murray (D-WA)", "overall_score": 0.7954211447076325, "overall_label": "Moderate Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.22475, "salience_weight": 0.011688311688311687, "weighted_contribution": 0.002626948051948052, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.46160000000000007, "salience_weight": 0.187012987012987, "weighted_contribution": 0.08632519480519481, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.9167777777777777, "salience_weight": 0.08961038961038961, "weighted_contribution": 0.08215281385281385, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.715529535864979, "salience_weight": 0.14025974025974025, "weighted_contribution": 0.10035998684859446, "direction": "Moderate Alignment"}, {"issue_id": "economy", "score": 0.8938838709677417, "salience_weight": 0.4454545454545455, "weighted_contribution": 0.39818463343108496, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.9983928571428571, "salience_weight": 0.125974025974026, "weighted_contribution": 0.1257715677179963, "direction": "Strong Alignment"}]}], "interpretation": {"0.0_to_0.3": "Low Alignment", "0.3_to_0.6": "Partial Alignment", "0.6_to_0.8": "Moderate Alignment", "0.8_to_1.0": "Strong Alignment"}, "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."}
+{
+  "state_code": "WA",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Maria Cantwell",
+      "overall_score": 0.7871993619843591,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.22475,
+          "salience_weight": 0.011688311688311687,
+          "weighted_contribution": 0.002626948051948052,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.4616,
+          "salience_weight": 0.187012987012987,
+          "weighted_contribution": 0.0863251948051948,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9167777777777777,
+          "salience_weight": 0.08961038961038961,
+          "weighted_contribution": 0.08215281385281385,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7086069958847737,
+          "salience_weight": 0.14025974025974025,
+          "weighted_contribution": 0.0993890331890332,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.8871539308176098,
+          "salience_weight": 0.4454545454545455,
+          "weighted_contribution": 0.3951867510005717,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9646323529411766,
+          "salience_weight": 0.125974025974026,
+          "weighted_contribution": 0.12151862108479758,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Patty Murray",
+      "overall_score": 0.7871993619843591,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.22475,
+          "salience_weight": 0.011688311688311687,
+          "weighted_contribution": 0.002626948051948052,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.4616,
+          "salience_weight": 0.187012987012987,
+          "weighted_contribution": 0.0863251948051948,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9167777777777777,
+          "salience_weight": 0.08961038961038961,
+          "weighted_contribution": 0.08215281385281385,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7086069958847737,
+          "salience_weight": 0.14025974025974025,
+          "weighted_contribution": 0.0993890331890332,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.8871539308176098,
+          "salience_weight": 0.4454545454545455,
+          "weighted_contribution": 0.3951867510005717,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9646323529411766,
+          "salience_weight": 0.125974025974026,
+          "weighted_contribution": 0.12151862108479758,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

@@ -1,1 +1,90 @@
-{"state_code": "OH", "last_updated": "2026-04-05", "senators": [{"name": "Brown (D-OH)", "overall_score": 0.7637850969704436, "overall_label": "Moderate Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.26374999999999993, "salience_weight": 0.01353823637028906, "weighted_contribution": 0.0035707098426637387, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.5742, "salience_weight": 0.15075009147457008, "weighted_contribution": 0.08656070252469815, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.6040000000000001, "salience_weight": 0.0424442005122576, "weighted_contribution": 0.025636297109403593, "direction": "Moderate Alignment"}, {"issue_id": "environment", "score": 0.6579418604651164, "salience_weight": 0.0761068422978412, "weighted_contribution": 0.050073877415566855, "direction": "Moderate Alignment"}, {"issue_id": "economy", "score": 0.8434749999999999, "salience_weight": 0.6044639590193926, "weighted_contribution": 0.5098502378338822, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.7816847826086956, "salience_weight": 0.11269667032564948, "weighted_contribution": 0.08809327224422915, "direction": "Moderate Alignment"}]}, {"name": "Vance (R-OH)", "overall_score": 0.7389491478601661, "overall_label": "Moderate Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.26374999999999993, "salience_weight": 0.011764705882352943, "weighted_contribution": 0.003102941176470588, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.5742, "salience_weight": 0.2620031796502385, "weighted_contribution": 0.15044222575516697, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.6040000000000001, "salience_weight": 0.03688394276629572, "weighted_contribution": 0.022277901430842618, "direction": "Moderate Alignment"}, {"issue_id": "environment", "score": 0.6579418604651164, "salience_weight": 0.06613672496025438, "weighted_contribution": 0.04351411986541947, "direction": "Moderate Alignment"}, {"issue_id": "economy", "score": 0.8434749999999999, "salience_weight": 0.5252782193958665, "weighted_contribution": 0.4430590461049284, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.7816847826086956, "salience_weight": 0.09793322734499206, "weighted_contribution": 0.07655291352733808, "direction": "Moderate Alignment"}]}, {"name": "Moreno (R-OH)", "overall_score": 0.8269112712505466, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "immigration", "score": 0.5742, "salience_weight": 0.2651222651222651, "weighted_contribution": 0.15223320463320464, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.3959999999999999, "salience_weight": 0.03732303732303733, "weighted_contribution": 0.014779922779922778, "direction": "Partial Alignment"}, {"issue_id": "environment", "score": 0.9571481481481482, "salience_weight": 0.06692406692406692, "weighted_contribution": 0.06405624672291339, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9938226086956523, "salience_weight": 0.5315315315315315, "weighted_contribution": 0.528248053270662, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.6820833333333334, "salience_weight": 0.09909909909909911, "weighted_contribution": 0.06759384384384386, "direction": "Moderate Alignment"}]}, {"name": "Husted (R-OH)", "overall_score": 0.9181584397343594, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "abortion", "score": 0.3959999999999999, "salience_weight": 0.05078809106830123, "weighted_contribution": 0.020112084063047285, "direction": "Partial Alignment"}, {"issue_id": "environment", "score": 0.9571481481481482, "salience_weight": 0.09106830122591944, "weighted_contribution": 0.08716585587338653, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9939282051282052, "salience_weight": 0.7232924693520141, "weighted_contribution": 0.7189007858457948, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.6820833333333334, "salience_weight": 0.13485113835376533, "weighted_contribution": 0.09197971395213078, "direction": "Moderate Alignment"}]}], "interpretation": {"0.0_to_0.3": "Low Alignment", "0.3_to_0.6": "Partial Alignment", "0.6_to_0.8": "Moderate Alignment", "0.8_to_1.0": "Strong Alignment"}, "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."}
+{
+  "state_code": "OH",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Bernie Moreno",
+      "overall_score": 0.8270216402677188,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "immigration",
+          "score": 0.5742,
+          "salience_weight": 0.2651222651222651,
+          "weighted_contribution": 0.15223320463320464,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.3959999999999999,
+          "salience_weight": 0.03732303732303733,
+          "weighted_contribution": 0.014779922779922778,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.9571481481481482,
+          "salience_weight": 0.06692406692406692,
+          "weighted_contribution": 0.06405624672291339,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9940302521008404,
+          "salience_weight": 0.5315315315315315,
+          "weighted_contribution": 0.5283584222878341,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.6820833333333334,
+          "salience_weight": 0.09909909909909911,
+          "weighted_contribution": 0.06759384384384386,
+          "direction": "Moderate Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Jon Husted",
+      "overall_score": 0.9182322495411865,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "abortion",
+          "score": 0.3959999999999999,
+          "salience_weight": 0.05078809106830123,
+          "weighted_contribution": 0.020112084063047285,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.9571481481481482,
+          "salience_weight": 0.09106830122591944,
+          "weighted_contribution": 0.08716585587338653,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9940302521008404,
+          "salience_weight": 0.7232924693520141,
+          "weighted_contribution": 0.7189745956526219,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.6820833333333334,
+          "salience_weight": 0.13485113835376533,
+          "weighted_contribution": 0.09197971395213078,
+          "direction": "Moderate Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

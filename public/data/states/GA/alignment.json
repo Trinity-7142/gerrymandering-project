@@ -1,1 +1,111 @@
-{"state_code": "GA", "last_updated": "2026-04-05", "senators": [{"name": "Ossoff (D-GA)", "overall_score": 0.8422086725015516, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.27525, "salience_weight": 0.012682308180088777, "weighted_contribution": 0.0034908053265694356, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.5814, "salience_weight": 0.22447685478757134, "weighted_contribution": 0.13051084337349397, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.9624444444444447, "salience_weight": 0.06658211794546608, "weighted_contribution": 0.06408158951595859, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.7903080168776371, "salience_weight": 0.05072923272035511, "weighted_contribution": 0.04009171930894798, "direction": "Moderate Alignment"}, {"issue_id": "economy", "score": 0.9389120543293715, "salience_weight": 0.5529486366518707, "weighted_contribution": 0.5191701403774331, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.916642857142857, "salience_weight": 0.09258084971464806, "weighted_contribution": 0.08486357459914845, "direction": "Strong Alignment"}]}, {"name": "Warnock (D-GA)", "overall_score": 0.8422086725015516, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.27525, "salience_weight": 0.012682308180088777, "weighted_contribution": 0.0034908053265694356, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.5814, "salience_weight": 0.22447685478757134, "weighted_contribution": 0.13051084337349397, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.9624444444444447, "salience_weight": 0.06658211794546608, "weighted_contribution": 0.06408158951595859, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.7903080168776371, "salience_weight": 0.05072923272035511, "weighted_contribution": 0.04009171930894798, "direction": "Moderate Alignment"}, {"issue_id": "economy", "score": 0.9389120543293715, "salience_weight": 0.5529486366518707, "weighted_contribution": 0.5191701403774331, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.916642857142857, "salience_weight": 0.09258084971464806, "weighted_contribution": 0.08486357459914845, "direction": "Strong Alignment"}]}], "interpretation": {"0.0_to_0.3": "Low Alignment", "0.3_to_0.6": "Partial Alignment", "0.6_to_0.8": "Moderate Alignment", "0.8_to_1.0": "Strong Alignment"}, "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."}
+{
+  "state_code": "GA",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Jon Ossoff",
+      "overall_score": 0.8409417307350063,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.27525,
+          "salience_weight": 0.012682308180088777,
+          "weighted_contribution": 0.0034908053265694356,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5814,
+          "salience_weight": 0.22447685478757134,
+          "weighted_contribution": 0.13051084337349397,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9624444444444447,
+          "salience_weight": 0.06658211794546608,
+          "weighted_contribution": 0.06408158951595859,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7843991769547325,
+          "salience_weight": 0.05072923272035511,
+          "weighted_contribution": 0.03979196839339163,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9309721698113205,
+          "salience_weight": 0.5529486366518707,
+          "weighted_contribution": 0.5147797920580035,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9536176470588235,
+          "salience_weight": 0.09258084971464806,
+          "weighted_contribution": 0.08828673206758923,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Raphael Warnock",
+      "overall_score": 0.8409417307350063,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.27525,
+          "salience_weight": 0.012682308180088777,
+          "weighted_contribution": 0.0034908053265694356,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5814,
+          "salience_weight": 0.22447685478757134,
+          "weighted_contribution": 0.13051084337349397,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9624444444444447,
+          "salience_weight": 0.06658211794546608,
+          "weighted_contribution": 0.06408158951595859,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7843991769547325,
+          "salience_weight": 0.05072923272035511,
+          "weighted_contribution": 0.03979196839339163,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9309721698113205,
+          "salience_weight": 0.5529486366518707,
+          "weighted_contribution": 0.5147797920580035,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9536176470588235,
+          "salience_weight": 0.09258084971464806,
+          "weighted_contribution": 0.08828673206758923,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

@@ -1,1 +1,111 @@
-{"state_code": "SD", "last_updated": "2026-04-05", "senators": [{"name": "Rounds (R-SD)", "overall_score": 0.8056683118122555, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.33775, "salience_weight": 0.008711324722138782, "weighted_contribution": 0.0029422499249023735, "direction": "Partial Alignment"}, {"issue_id": "immigration", "score": 0.601, "salience_weight": 0.3412436167017122, "weighted_contribution": 0.20508741363772903, "direction": "Moderate Alignment"}, {"issue_id": "abortion", "score": 0.9515555555555556, "salience_weight": 0.04926404325623311, "weighted_contribution": 0.04687747404959782, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.8559409282700423, "salience_weight": 0.06969059777711026, "weighted_contribution": 0.0596510349530339, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9437799660441423, "salience_weight": 0.43616701712225897, "weighted_contribution": 0.4116456926092204, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.8371428571428572, "salience_weight": 0.09492340042054671, "weighted_contribution": 0.07946444663777197, "direction": "Strong Alignment"}]}, {"name": "Thune (R-SD)", "overall_score": 0.8056683118122555, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.33775, "salience_weight": 0.008711324722138782, "weighted_contribution": 0.0029422499249023735, "direction": "Partial Alignment"}, {"issue_id": "immigration", "score": 0.601, "salience_weight": 0.3412436167017122, "weighted_contribution": 0.20508741363772903, "direction": "Moderate Alignment"}, {"issue_id": "abortion", "score": 0.9515555555555556, "salience_weight": 0.04926404325623311, "weighted_contribution": 0.04687747404959782, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.8559409282700423, "salience_weight": 0.06969059777711026, "weighted_contribution": 0.0596510349530339, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9437799660441423, "salience_weight": 0.43616701712225897, "weighted_contribution": 0.4116456926092204, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.8371428571428572, "salience_weight": 0.09492340042054671, "weighted_contribution": 0.07946444663777197, "direction": "Strong Alignment"}]}], "interpretation": {"0.0_to_0.3": "Low Alignment", "0.3_to_0.6": "Partial Alignment", "0.6_to_0.8": "Moderate Alignment", "0.8_to_1.0": "Strong Alignment"}, "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."}
+{
+  "state_code": "SD",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Mike Rounds",
+      "overall_score": 0.8053081308126537,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.33775,
+          "salience_weight": 0.008711324722138782,
+          "weighted_contribution": 0.0029422499249023735,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.601,
+          "salience_weight": 0.3412436167017122,
+          "weighted_contribution": 0.20508741363772903,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9515555555555556,
+          "salience_weight": 0.04926404325623311,
+          "weighted_contribution": 0.04687747404959782,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8509218106995885,
+          "salience_weight": 0.06969059777711026,
+          "weighted_contribution": 0.05930124964923538,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9357092767295593,
+          "salience_weight": 0.43616701712225897,
+          "weighted_contribution": 0.4081255241247582,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.8741176470588237,
+          "salience_weight": 0.09492340042054671,
+          "weighted_contribution": 0.08297421942643085,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "John Thune",
+      "overall_score": 0.8053081308126537,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.33775,
+          "salience_weight": 0.008711324722138782,
+          "weighted_contribution": 0.0029422499249023735,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.601,
+          "salience_weight": 0.3412436167017122,
+          "weighted_contribution": 0.20508741363772903,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9515555555555556,
+          "salience_weight": 0.04926404325623311,
+          "weighted_contribution": 0.04687747404959782,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8509218106995885,
+          "salience_weight": 0.06969059777711026,
+          "weighted_contribution": 0.05930124964923538,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9357092767295593,
+          "salience_weight": 0.43616701712225897,
+          "weighted_contribution": 0.4081255241247582,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.8741176470588237,
+          "salience_weight": 0.09492340042054671,
+          "weighted_contribution": 0.08297421942643085,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

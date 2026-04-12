@@ -1,1 +1,111 @@
-{"state_code": "ID", "last_updated": "2026-04-05", "senators": [{"name": "Crapo (R-ID)", "overall_score": 0.8496658909287774, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.41725, "salience_weight": 0.004926108374384237, "weighted_contribution": 0.002055418719211823, "direction": "Partial Alignment"}, {"issue_id": "immigration", "score": 0.635, "salience_weight": 0.30136192407997686, "weighted_contribution": 0.19136482179078532, "direction": "Moderate Alignment"}, {"issue_id": "abortion", "score": 0.9720000000000001, "salience_weight": 0.049261083743842374, "weighted_contribution": 0.04788177339901479, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.8716497890295359, "salience_weight": 0.05331787887568821, "weighted_contribution": 0.04647451787349598, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9734655348047535, "salience_weight": 0.5053607649956535, "weighted_contribution": 0.4919512873658332, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.815392857142857, "salience_weight": 0.08577223993045495, "weighted_contribution": 0.0699380717804363, "direction": "Strong Alignment"}]}, {"name": "Risch (R-ID)", "overall_score": 0.8496658909287774, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.41725, "salience_weight": 0.004926108374384237, "weighted_contribution": 0.002055418719211823, "direction": "Partial Alignment"}, {"issue_id": "immigration", "score": 0.635, "salience_weight": 0.30136192407997686, "weighted_contribution": 0.19136482179078532, "direction": "Moderate Alignment"}, {"issue_id": "abortion", "score": 0.9720000000000001, "salience_weight": 0.049261083743842374, "weighted_contribution": 0.04788177339901479, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.8716497890295359, "salience_weight": 0.05331787887568821, "weighted_contribution": 0.04647451787349598, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9734655348047535, "salience_weight": 0.5053607649956535, "weighted_contribution": 0.4919512873658332, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.815392857142857, "salience_weight": 0.08577223993045495, "weighted_contribution": 0.0699380717804363, "direction": "Strong Alignment"}]}], "interpretation": {"0.0_to_0.3": "Low Alignment", "0.3_to_0.6": "Partial Alignment", "0.6_to_0.8": "Moderate Alignment", "0.8_to_1.0": "Strong Alignment"}, "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."}
+{
+  "state_code": "ID",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Mike Crapo",
+      "overall_score": 0.8480993230999139,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.41725,
+          "salience_weight": 0.0049261083743842365,
+          "weighted_contribution": 0.0020554187192118227,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.635,
+          "salience_weight": 0.3013619240799768,
+          "weighted_contribution": 0.19136482179078526,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9720000000000001,
+          "salience_weight": 0.04926108374384237,
+          "weighted_contribution": 0.04788177339901478,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8668436213991769,
+          "salience_weight": 0.0533178788756882,
+          "weighted_contribution": 0.04621826320992423,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9645971698113203,
+          "salience_weight": 0.5053607649956534,
+          "weighted_contribution": 0.48746956364849103,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.8523676470588235,
+          "salience_weight": 0.08577223993045494,
+          "weighted_contribution": 0.07310948233248674,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "James Risch",
+      "overall_score": 0.8480993230999139,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.41725,
+          "salience_weight": 0.0049261083743842365,
+          "weighted_contribution": 0.0020554187192118227,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.635,
+          "salience_weight": 0.3013619240799768,
+          "weighted_contribution": 0.19136482179078526,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9720000000000001,
+          "salience_weight": 0.04926108374384237,
+          "weighted_contribution": 0.04788177339901478,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8668436213991769,
+          "salience_weight": 0.0533178788756882,
+          "weighted_contribution": 0.04621826320992423,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9645971698113203,
+          "salience_weight": 0.5053607649956534,
+          "weighted_contribution": 0.48746956364849103,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.8523676470588235,
+          "salience_weight": 0.08577223993045494,
+          "weighted_contribution": 0.07310948233248674,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

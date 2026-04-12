@@ -1,1 +1,111 @@
-{"state_code": "DE", "last_updated": "2026-04-05", "senators": [{"name": "Blunt Rochester", "overall_score": 0.5757415896032271, "overall_label": "Partial Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.21300000000000008, "salience_weight": 0.017857142857142856, "weighted_contribution": 0.0038035714285714296, "direction": "Low Alignment"}, {"issue_id": "environment", "score": 0.573680790960452, "salience_weight": 0.13419913419913418, "weighted_contribution": 0.07698746545356713, "direction": "Partial Alignment"}, {"issue_id": "economy", "score": 0.6066321428571428, "salience_weight": 0.7857142857142857, "weighted_contribution": 0.47663954081632653, "direction": "Moderate Alignment"}, {"issue_id": "healthcare", "score": 0.29425, "salience_weight": 0.06222943722943723, "weighted_contribution": 0.018311011904761906, "direction": "Low Alignment"}]}, {"name": "Carper (D-DE)", "overall_score": 0.7576606762596535, "overall_label": "Moderate Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.21300000000000008, "salience_weight": 0.01236418134132634, "weighted_contribution": 0.0026335706257025115, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.5399999999999999, "salience_weight": 0.13188460097414761, "weighted_contribution": 0.0712176845260397, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.7073333333333331, "salience_weight": 0.04645934807043837, "weighted_contribution": 0.03286224553515673, "direction": "Moderate Alignment"}, {"issue_id": "environment", "score": 0.623608527131783, "salience_weight": 0.09291869614087674, "weighted_contribution": 0.05794489124341783, "direction": "Moderate Alignment"}, {"issue_id": "economy", "score": 0.8251226562499999, "salience_weight": 0.5440239790183589, "weighted_contribution": 0.4488865106313225, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.8361847826086956, "salience_weight": 0.172349194454852, "weighted_contribution": 0.1441157736980142, "direction": "Strong Alignment"}]}, {"name": "Coons (D-DE)", "overall_score": 0.819021269217814, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.21300000000000008, "salience_weight": 0.010492845786963434, "weighted_contribution": 0.0022349761526232123, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.5399999999999999, "salience_weight": 0.22384737678855324, "weighted_contribution": 0.12087758346581873, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.9176666666666669, "salience_weight": 0.07885532591414944, "weighted_contribution": 0.07236290408055115, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.7721244725738396, "salience_weight": 0.07885532591414944, "weighted_contribution": 0.06088612693110087, "direction": "Moderate Alignment"}, {"issue_id": "economy", "score": 0.913659762308998, "salience_weight": 0.46168521462639106, "weighted_contribution": 0.4218232034571272, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.9628928571428571, "salience_weight": 0.14626391096979333, "weighted_contribution": 0.14083647513059278, "direction": "Strong Alignment"}]}, {"name": "Blunt Rochester (D-DE)", "overall_score": 0.7921707873469186, "overall_label": "Moderate Alignment", "issue_scores": [{"issue_id": "immigration", "score": 0.5399999999999999, "salience_weight": 0.23560910307898258, "weighted_contribution": 0.12722891566265057, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.29266666666666685, "salience_weight": 0.041499330655957165, "weighted_contribution": 0.012145470771976804, "direction": "Low Alignment"}, {"issue_id": "environment", "score": 0.9495185185185184, "salience_weight": 0.08299866131191433, "weighted_contribution": 0.07880876592790917, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9823600000000001, "salience_weight": 0.4859437751004016, "weighted_contribution": 0.4773717269076306, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.6275833333333334, "salience_weight": 0.1539491298527443, "weighted_contribution": 0.09661590807675145, "direction": "Moderate Alignment"}]}], "interpretation": {"0.0_to_0.3": "Low Alignment", "0.3_to_0.6": "Partial Alignment", "0.6_to_0.8": "Moderate Alignment", "0.8_to_1.0": "Strong Alignment"}, "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."}
+{
+  "state_code": "DE",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Lisa Blunt Rochester",
+      "overall_score": 0.710098682270773,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.21300000000000008,
+          "salience_weight": 0.01092353525322741,
+          "weighted_contribution": 0.002326713008937439,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5399999999999999,
+          "salience_weight": 0.23303541873551803,
+          "weighted_contribution": 0.1258391261171797,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.29266666666666685,
+          "salience_weight": 0.04104601125455148,
+          "weighted_contribution": 0.012012799293832073,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8167375249500999,
+          "salience_weight": 0.08209202250910295,
+          "weighted_contribution": 0.06704763528223263,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.8625302857142855,
+          "salience_weight": 0.48063555114200596,
+          "weighted_contribution": 0.41456271925095745,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.5799642857142857,
+          "salience_weight": 0.1522674611055942,
+          "weighted_contribution": 0.08830968931763372,
+          "direction": "Partial Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Christopher Coons",
+      "overall_score": 0.8205915146710766,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.21300000000000008,
+          "salience_weight": 0.010492845786963434,
+          "weighted_contribution": 0.0022349761526232123,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5399999999999999,
+          "salience_weight": 0.22384737678855324,
+          "weighted_contribution": 0.12087758346581873,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9176666666666669,
+          "salience_weight": 0.07885532591414944,
+          "weighted_contribution": 0.07236290408055115,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7659691358024692,
+          "salience_weight": 0.07885532591414944,
+          "weighted_contribution": 0.0604007458438831,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9063984276729555,
+          "salience_weight": 0.46168521462639106,
+          "weighted_contribution": 0.4184707526172119,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9998676470588235,
+          "salience_weight": 0.14626391096979333,
+          "weighted_contribution": 0.1462445525109885,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

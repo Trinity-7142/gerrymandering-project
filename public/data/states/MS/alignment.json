@@ -1,1 +1,111 @@
-{"state_code": "MS", "last_updated": "2026-04-05", "senators": [{"name": "Hyde-Smith (R-MS)", "overall_score": 0.8251725037464827, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.25425, "salience_weight": 0.009809932556713672, "weighted_contribution": 0.002494175352544451, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.5696, "salience_weight": 0.2709993868792152, "weighted_contribution": 0.15436125076640098, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.8732222222222221, "salience_weight": 0.04475781729000613, "weighted_contribution": 0.03908352067579535, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.836789029535865, "salience_weight": 0.03310852237890864, "weighted_contribution": 0.02770484831081343, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9418675721561968, "salience_weight": 0.5481299816063765, "weighted_contribution": 0.5162658550016186, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.9148928571428572, "salience_weight": 0.0931943592887799, "weighted_contribution": 0.08526285363930981, "direction": "Strong Alignment"}]}, {"name": "Wicker (R-MS)", "overall_score": 0.8251725037464827, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.25425, "salience_weight": 0.009809932556713672, "weighted_contribution": 0.002494175352544451, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.5696, "salience_weight": 0.2709993868792152, "weighted_contribution": 0.15436125076640098, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.8732222222222221, "salience_weight": 0.04475781729000613, "weighted_contribution": 0.03908352067579535, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.836789029535865, "salience_weight": 0.03310852237890864, "weighted_contribution": 0.02770484831081343, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9418675721561968, "salience_weight": 0.5481299816063765, "weighted_contribution": 0.5162658550016186, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.9148928571428572, "salience_weight": 0.0931943592887799, "weighted_contribution": 0.08526285363930981, "direction": "Strong Alignment"}]}], "interpretation": {"0.0_to_0.3": "Low Alignment", "0.3_to_0.6": "Partial Alignment", "0.6_to_0.8": "Moderate Alignment", "0.8_to_1.0": "Strong Alignment"}, "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."}
+{
+  "state_code": "MS",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Cindy Hyde-Smith",
+      "overall_score": 0.8240479545703885,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.25425,
+          "salience_weight": 0.009809932556713672,
+          "weighted_contribution": 0.002494175352544451,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5696,
+          "salience_weight": 0.2709993868792152,
+          "weighted_contribution": 0.15436125076640098,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.8732222222222221,
+          "salience_weight": 0.04475781729000613,
+          "weighted_contribution": 0.03908352067579535,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8315102880658436,
+          "salience_weight": 0.03310852237890864,
+          "weighted_contribution": 0.027530076980720755,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9338482704402513,
+          "salience_weight": 0.5481299816063765,
+          "weighted_contribution": 0.5118702352995614,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9518676470588235,
+          "salience_weight": 0.0931943592887799,
+          "weighted_contribution": 0.08870869549536553,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Roger Wicker",
+      "overall_score": 0.8240479545703885,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.25425,
+          "salience_weight": 0.009809932556713672,
+          "weighted_contribution": 0.002494175352544451,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5696,
+          "salience_weight": 0.2709993868792152,
+          "weighted_contribution": 0.15436125076640098,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.8732222222222221,
+          "salience_weight": 0.04475781729000613,
+          "weighted_contribution": 0.03908352067579535,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8315102880658436,
+          "salience_weight": 0.03310852237890864,
+          "weighted_contribution": 0.027530076980720755,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9338482704402513,
+          "salience_weight": 0.5481299816063765,
+          "weighted_contribution": 0.5118702352995614,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9518676470588235,
+          "salience_weight": 0.0931943592887799,
+          "weighted_contribution": 0.08870869549536553,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

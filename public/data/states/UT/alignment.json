@@ -1,1 +1,111 @@
-{"state_code": "UT", "last_updated": "2026-04-05", "senators": [{"name": "Curtis", "overall_score": 0.6542893071130488, "overall_label": "Moderate Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.2982500000000001, "salience_weight": 0.013296652911508482, "weighted_contribution": 0.003965726730857407, "direction": "Low Alignment"}, {"issue_id": "environment", "score": 0.639680790960452, "salience_weight": 0.12104539202200826, "weighted_contribution": 0.07743041211075624, "direction": "Moderate Alignment"}, {"issue_id": "economy", "score": 0.6705642857142857, "salience_weight": 0.83447959651536, "weighted_contribution": 0.5595722145804677, "direction": "Moderate Alignment"}, {"issue_id": "healthcare", "score": 0.4272500000000001, "salience_weight": 0.03117835855112334, "weighted_contribution": 0.01332095369096745, "direction": "Partial Alignment"}]}, {"name": "Lee (R-UT)", "overall_score": 0.8267015251427734, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.2982500000000001, "salience_weight": 0.008501905599530929, "weighted_contribution": 0.0025356933450601006, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.5566000000000001, "salience_weight": 0.2544708296687188, "weighted_contribution": 0.14163846379360892, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.9607777777777777, "salience_weight": 0.04632072705951333, "weighted_contribution": 0.044503925209290196, "direction": "Strong Alignment"}, {"issue_id": "environment", "score": 0.8147320675105485, "salience_weight": 0.0773966578715919, "weighted_contribution": 0.06305753908612864, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9535592529711372, "salience_weight": 0.5335678686602169, "weighted_contribution": 0.5087885782490382, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.8298928571428571, "salience_weight": 0.07974201114042802, "weighted_contribution": 0.06617732545964734, "direction": "Strong Alignment"}]}, {"name": "Romney (R-UT)", "overall_score": 0.7806257031493443, "overall_label": "Moderate Alignment", "issue_scores": [{"issue_id": "guns", "score": 0.2982500000000001, "salience_weight": 0.010006901311249136, "weighted_contribution": 0.0029845583160800562, "direction": "Low Alignment"}, {"issue_id": "immigration", "score": 0.5566000000000001, "salience_weight": 0.14975845410628016, "weighted_contribution": 0.08335555555555556, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.5857777777777777, "salience_weight": 0.027260179434092473, "weighted_contribution": 0.015968407330726166, "direction": "Partial Alignment"}, {"issue_id": "environment", "score": 0.689608527131783, "salience_weight": 0.09109730848861282, "weighted_contribution": 0.06282148073250196, "direction": "Moderate Alignment"}, {"issue_id": "economy", "score": 0.8749671874999999, "salience_weight": 0.6280193236714975, "weighted_contribution": 0.5494963013285022, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.7031847826086955, "salience_weight": 0.09385783298826776, "weighted_contribution": 0.06599939988597832, "direction": "Moderate Alignment"}]}, {"name": "Curtis (R-UT)", "overall_score": 0.839455087674651, "overall_label": "Strong Alignment", "issue_scores": [{"issue_id": "immigration", "score": 0.5566000000000001, "salience_weight": 0.2627914017559794, "weighted_contribution": 0.14626969421737818, "direction": "Partial Alignment"}, {"issue_id": "abortion", "score": 0.41422222222222227, "salience_weight": 0.023917650620647896, "weighted_contribution": 0.009907222390419485, "direction": "Partial Alignment"}, {"issue_id": "environment", "score": 0.9641851851851851, "salience_weight": 0.07992733878292461, "weighted_contribution": 0.0770647559457732, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.9865078260869565, "salience_weight": 0.551014229488344, "weighted_contribution": 0.5435798496755256, "direction": "Strong Alignment"}, {"issue_id": "healthcare", "score": 0.7605833333333334, "salience_weight": 0.08234937935210415, "weighted_contribution": 0.06263356544555455, "direction": "Moderate Alignment"}]}], "interpretation": {"0.0_to_0.3": "Low Alignment", "0.3_to_0.6": "Partial Alignment", "0.6_to_0.8": "Moderate Alignment", "0.8_to_1.0": "Strong Alignment"}, "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."}
+{
+  "state_code": "UT",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "John Curtis",
+      "overall_score": 0.7764044748475379,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.2982500000000001,
+          "salience_weight": 0.008703481392557022,
+          "weighted_contribution": 0.002595813325330133,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5566000000000001,
+          "salience_weight": 0.26050420168067223,
+          "weighted_contribution": 0.1449966386554622,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.41422222222222227,
+          "salience_weight": 0.023709483793517405,
+          "weighted_contribution": 0.009820995064692544,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8495399201596807,
+          "salience_weight": 0.07923169267707082,
+          "weighted_contribution": 0.06731048587099511,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9034468571428569,
+          "salience_weight": 0.5462184873949579,
+          "weighted_contribution": 0.49347937575029993,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.7129642857142857,
+          "salience_weight": 0.08163265306122448,
+          "weighted_contribution": 0.05820116618075801,
+          "direction": "Moderate Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Mike Lee",
+      "overall_score": 0.8247718001897506,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.2982500000000001,
+          "salience_weight": 0.008501905599530929,
+          "weighted_contribution": 0.0025356933450601006,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5566,
+          "salience_weight": 0.25447082966871887,
+          "weighted_contribution": 0.14163846379360892,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9607777777777777,
+          "salience_weight": 0.04632072705951334,
+          "weighted_contribution": 0.0445039252092902,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8091543209876544,
+          "salience_weight": 0.07739665787159192,
+          "weighted_contribution": 0.06262584014680175,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9452257861635217,
+          "salience_weight": 0.533567868660217,
+          "weighted_contribution": 0.5043421081259483,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.8668676470588235,
+          "salience_weight": 0.07974201114042803,
+          "weighted_contribution": 0.06912576956904133,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

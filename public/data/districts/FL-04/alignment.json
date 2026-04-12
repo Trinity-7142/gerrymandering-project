@@ -1,1 +1,54 @@
-{"district_id": "FL-04", "last_updated": "2026-04-05", "overall_score": 0.7317220769498123, "overall_label": "Moderate Alignment", "score_range": {"min": 0, "max": 1}, "interpretation": {"0.0_to_0.3": "Low Alignment", "0.3_to_0.6": "Partial Alignment", "0.6_to_0.8": "Moderate Alignment", "0.8_to_1.0": "Strong Alignment"}, "issue_scores": [{"issue_id": "guns", "score": 0.376, "salience_weight": 0.01829826166514181, "weighted_contribution": 0.006880146386093321, "direction": "Partial Alignment"}, {"issue_id": "immigration", "score": 0.6496, "salience_weight": 0.10567246111619395, "weighted_contribution": 0.06864483074107959, "direction": "Moderate Alignment"}, {"issue_id": "environment", "score": 0.8272270693512304, "salience_weight": 0.0951509606587374, "weighted_contribution": 0.07871145033168156, "direction": "Strong Alignment"}, {"issue_id": "economy", "score": 0.758981914893617, "salience_weight": 0.7429094236047574, "weighted_contribution": 0.563854816920052, "direction": "Moderate Alignment"}, {"issue_id": "healthcare", "score": 0.359, "salience_weight": 0.03796889295516925, "weighted_contribution": 0.013630832570905761, "direction": "Partial Alignment"}], "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."}
+{
+  "district_id": "FL-04",
+  "last_updated": "2026-04-05",
+  "overall_score": 0.7360887493974362,
+  "overall_label": "Moderate Alignment",
+  "score_range": {
+    "min": 0,
+    "max": 1
+  },
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "issue_scores": [
+    {
+      "issue_id": "guns",
+      "score": 0.376,
+      "salience_weight": 0.018298261665141813,
+      "weighted_contribution": 0.0068801463860933216,
+      "direction": "Partial Alignment"
+    },
+    {
+      "issue_id": "immigration",
+      "score": 0.6496,
+      "salience_weight": 0.10567246111619397,
+      "weighted_contribution": 0.06864483074107959,
+      "direction": "Moderate Alignment"
+    },
+    {
+      "issue_id": "environment",
+      "score": 0.833915053763441,
+      "salience_weight": 0.09515096065873742,
+      "weighted_contribution": 0.07934781847337408,
+      "direction": "Strong Alignment"
+    },
+    {
+      "issue_id": "economy",
+      "score": 0.7640031249999999,
+      "salience_weight": 0.7429094236047576,
+      "weighted_contribution": 0.5675851212259835,
+      "direction": "Moderate Alignment"
+    },
+    {
+      "issue_id": "healthcare",
+      "score": 0.359,
+      "salience_weight": 0.03796889295516926,
+      "weighted_contribution": 0.013630832570905764,
+      "direction": "Partial Alignment"
+    }
+  ],
+  "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}
