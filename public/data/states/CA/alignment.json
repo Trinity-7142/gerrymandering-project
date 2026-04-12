@@ -1,0 +1,111 @@
+{
+  "state_code": "CA",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Adam Schiff",
+      "overall_score": 0.7036975272575845,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.20324999999999993,
+          "salience_weight": 0.017863161442534546,
+          "weighted_contribution": 0.003630687563195145,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.47899999999999987,
+          "salience_weight": 0.2197505898213684,
+          "weighted_contribution": 0.10526053252443543,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.28822222222222227,
+          "salience_weight": 0.034378159757330634,
+          "weighted_contribution": 0.00990854960116841,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7744920159680639,
+          "salience_weight": 0.1415571284125379,
+          "weighted_contribution": 0.10963486575887658,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.8640558659217875,
+          "salience_weight": 0.4826423997303673,
+          "weighted_contribution": 0.41702999662959206,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.5609642857142858,
+          "salience_weight": 0.10380856083586114,
+          "weighted_contribution": 0.058232895180316824,
+          "direction": "Partial Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Alex Padilla",
+      "overall_score": 0.7807121160989114,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.20324999999999993,
+          "salience_weight": 0.01726946888237211,
+          "weighted_contribution": 0.00351001955034213,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.47899999999999987,
+          "salience_weight": 0.2124470511567286,
+          "weighted_contribution": 0.10176213750407297,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9132222222222223,
+          "salience_weight": 0.06647116324535679,
+          "weighted_contribution": 0.06070294341262083,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7103518518518519,
+          "salience_weight": 0.13685239491691104,
+          "weighted_contribution": 0.09721335215958872,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.8981084905660375,
+          "salience_weight": 0.46660149885956337,
+          "weighted_contribution": 0.4190587678366131,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9811323529411765,
+          "salience_weight": 0.1003584229390681,
+          "weighted_contribution": 0.09846489563567364,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

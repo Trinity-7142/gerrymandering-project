@@ -1,0 +1,111 @@
+{
+  "state_code": "TN",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Marsha Blackburn",
+      "overall_score": 0.8316660276363814,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.32175,
+          "salience_weight": 0.010064043915827997,
+          "weighted_contribution": 0.003238106129917658,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.6288,
+          "salience_weight": 0.29399207075327843,
+          "weighted_contribution": 0.1848622140896615,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9043333333333332,
+          "salience_weight": 0.05794449527294907,
+          "weighted_contribution": 0.052401138558503604,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8167880658436214,
+          "salience_weight": 0.036596523330283626,
+          "weighted_contribution": 0.02989160350754333,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9350325471698109,
+          "salience_weight": 0.5086916742909423,
+          "weighted_contribution": 0.4756432719363356,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9236176470588234,
+          "salience_weight": 0.0927111924367185,
+          "weighted_contribution": 0.08562969341441973,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Bill Hagerty",
+      "overall_score": 0.8316660276363814,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.32175,
+          "salience_weight": 0.010064043915827997,
+          "weighted_contribution": 0.003238106129917658,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.6288,
+          "salience_weight": 0.29399207075327843,
+          "weighted_contribution": 0.1848622140896615,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9043333333333332,
+          "salience_weight": 0.05794449527294907,
+          "weighted_contribution": 0.052401138558503604,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8167880658436214,
+          "salience_weight": 0.036596523330283626,
+          "weighted_contribution": 0.02989160350754333,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9350325471698109,
+          "salience_weight": 0.5086916742909423,
+          "weighted_contribution": 0.4756432719363356,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9236176470588234,
+          "salience_weight": 0.0927111924367185,
+          "weighted_contribution": 0.08562969341441973,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

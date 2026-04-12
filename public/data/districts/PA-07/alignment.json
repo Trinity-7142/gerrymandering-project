@@ -1,0 +1,40 @@
+{
+  "district_id": "PA-07",
+  "last_updated": "2026-04-05",
+  "overall_score": 0.8874731816026554,
+  "overall_label": "Strong Alignment",
+  "score_range": {
+    "min": 0,
+    "max": 1
+  },
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "issue_scores": [
+    {
+      "issue_id": "immigration",
+      "score": 0.47539999999999993,
+      "salience_weight": 0.09340919867235657,
+      "weighted_contribution": 0.044406733048838305,
+      "direction": "Partial Alignment"
+    },
+    {
+      "issue_id": "environment",
+      "score": 0.9253125000000001,
+      "salience_weight": 0.09483167377904221,
+      "weighted_contribution": 0.08774893314367001,
+      "direction": "Strong Alignment"
+    },
+    {
+      "issue_id": "economy",
+      "score": 0.9304700000000001,
+      "salience_weight": 0.8117591275486012,
+      "weighted_contribution": 0.7553175154101471,
+      "direction": "Strong Alignment"
+    }
+  ],
+  "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

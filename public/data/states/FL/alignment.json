@@ -1,0 +1,97 @@
+{
+  "state_code": "FL",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Rick Scott",
+      "overall_score": 0.8152462257161938,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.27525,
+          "salience_weight": 0.012077294685990338,
+          "weighted_contribution": 0.0033242753623188405,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5708,
+          "salience_weight": 0.2789855072463768,
+          "weighted_contribution": 0.15924492753623185,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9993333333333333,
+          "salience_weight": 0.05555555555555555,
+          "weighted_contribution": 0.055518518518518516,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7812366255144032,
+          "salience_weight": 0.06280193236714975,
+          "weighted_contribution": 0.04906316971829584,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9221746855345908,
+          "salience_weight": 0.49033816425120774,
+          "weighted_contribution": 0.452177442423966,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9568676470588234,
+          "salience_weight": 0.10024154589371981,
+          "weighted_contribution": 0.09591789215686274,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Ashley Moody",
+      "overall_score": 0.918413707141643,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "abortion",
+          "score": 0.3756666666666667,
+          "salience_weight": 0.04078014184397163,
+          "weighted_contribution": 0.015319739952718677,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.9547037037037037,
+          "salience_weight": 0.09219858156028367,
+          "weighted_contribution": 0.08802232729183082,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9951773109243697,
+          "salience_weight": 0.7198581560283688,
+          "weighted_contribution": 0.7163865039632874,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.6705833333333334,
+          "salience_weight": 0.14716312056737588,
+          "weighted_contribution": 0.09868513593380615,
+          "direction": "Moderate Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

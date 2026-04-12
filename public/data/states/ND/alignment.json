@@ -1,0 +1,111 @@
+{
+  "state_code": "ND",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Kevin Cramer",
+      "overall_score": 0.8387903183262813,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.38975000000000004,
+          "salience_weight": 0.008373205741626795,
+          "weighted_contribution": 0.0032634569377990434,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.6724,
+          "salience_weight": 0.31818181818181823,
+          "weighted_contribution": 0.21394545454545458,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.947888888888889,
+          "salience_weight": 0.05741626794258373,
+          "weighted_contribution": 0.05442424242424243,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8705514403292182,
+          "salience_weight": 0.05382775119617225,
+          "weighted_contribution": 0.04685982633351055,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9533042452830185,
+          "salience_weight": 0.45693779904306225,
+          "weighted_contribution": 0.43560074365803003,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.8046176470588234,
+          "salience_weight": 0.10526315789473684,
+          "weighted_contribution": 0.08469659442724457,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "John Hoeven",
+      "overall_score": 0.8387903183262813,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.38975000000000004,
+          "salience_weight": 0.008373205741626795,
+          "weighted_contribution": 0.0032634569377990434,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.6724,
+          "salience_weight": 0.31818181818181823,
+          "weighted_contribution": 0.21394545454545458,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.947888888888889,
+          "salience_weight": 0.05741626794258373,
+          "weighted_contribution": 0.05442424242424243,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8705514403292182,
+          "salience_weight": 0.05382775119617225,
+          "weighted_contribution": 0.04685982633351055,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9533042452830185,
+          "salience_weight": 0.45693779904306225,
+          "weighted_contribution": 0.43560074365803003,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.8046176470588234,
+          "salience_weight": 0.10526315789473684,
+          "weighted_contribution": 0.08469659442724457,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

@@ -1,0 +1,111 @@
+{
+  "state_code": "NM",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Martin Heinrich",
+      "overall_score": 0.8097723874508881,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.29175000000000006,
+          "salience_weight": 0.010101010101010102,
+          "weighted_contribution": 0.002946969696969698,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5922,
+          "salience_weight": 0.27891821440208536,
+          "weighted_contribution": 0.16517536656891493,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9878888888888888,
+          "salience_weight": 0.06581948517432389,
+          "weighted_contribution": 0.06502233807610151,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7515740740740742,
+          "salience_weight": 0.11860540892798957,
+          "weighted_contribution": 0.08914075039523069,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9172683962264148,
+          "salience_weight": 0.4222873900293255,
+          "weighted_contribution": 0.3873508769988379,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9603676470588234,
+          "salience_weight": 0.10426849136526556,
+          "weighted_contribution": 0.10013608571483333,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Lujan (D-NM)",
+      "overall_score": 0.8097723874508881,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.29175000000000006,
+          "salience_weight": 0.010101010101010102,
+          "weighted_contribution": 0.002946969696969698,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5922,
+          "salience_weight": 0.27891821440208536,
+          "weighted_contribution": 0.16517536656891493,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9878888888888888,
+          "salience_weight": 0.06581948517432389,
+          "weighted_contribution": 0.06502233807610151,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7515740740740742,
+          "salience_weight": 0.11860540892798957,
+          "weighted_contribution": 0.08914075039523069,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9172683962264148,
+          "salience_weight": 0.4222873900293255,
+          "weighted_contribution": 0.3873508769988379,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9603676470588234,
+          "salience_weight": 0.10426849136526556,
+          "weighted_contribution": 0.10013608571483333,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

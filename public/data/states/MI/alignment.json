@@ -1,0 +1,111 @@
+{
+  "state_code": "MI",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Elissa Slotkin",
+      "overall_score": 0.7376144368089217,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.25875000000000004,
+          "salience_weight": 0.008905852417302799,
+          "weighted_contribution": 0.0023043893129770995,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5578000000000001,
+          "salience_weight": 0.24427480916030533,
+          "weighted_contribution": 0.13625648854961833,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.3648888888888888,
+          "salience_weight": 0.044529262086514,
+          "weighted_contribution": 0.016248232965790217,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8193053892215569,
+          "salience_weight": 0.08524173027989822,
+          "weighted_contribution": 0.06983900900489098,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.8710879999999998,
+          "salience_weight": 0.5229007633587786,
+          "weighted_contribution": 0.4554925801526716,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.6104642857142857,
+          "salience_weight": 0.09414758269720101,
+          "weighted_contribution": 0.05747373682297346,
+          "direction": "Moderate Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Gary Peters",
+      "overall_score": 0.8250281343250073,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.25875000000000004,
+          "salience_weight": 0.008526187576126675,
+          "weighted_contribution": 0.0022061510353227776,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5578000000000001,
+          "salience_weight": 0.2338611449451888,
+          "weighted_contribution": 0.13044774665042633,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9898888888888888,
+          "salience_weight": 0.08526187576126676,
+          "weighted_contribution": 0.08439978346190283,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7693497942386832,
+          "salience_weight": 0.08160779537149818,
+          "weighted_contribution": 0.06278494057733469,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9145191823899368,
+          "salience_weight": 0.5006090133982948,
+          "weighted_contribution": 0.4578165456300414,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9693676470588235,
+          "salience_weight": 0.09013398294762485,
+          "weighted_contribution": 0.08737296696997923,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

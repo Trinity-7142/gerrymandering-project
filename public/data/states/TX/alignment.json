@@ -1,0 +1,111 @@
+{
+  "state_code": "TX",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "John Cornyn",
+      "overall_score": 0.8137837717934733,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.27875000000000005,
+          "salience_weight": 0.009738283627510651,
+          "weighted_contribution": 0.0027145465611685946,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5606000000000001,
+          "salience_weight": 0.2824102251978089,
+          "weighted_contribution": 0.1583191722458917,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.981111111111111,
+          "salience_weight": 0.06390748630553865,
+          "weighted_contribution": 0.06270034489754514,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7850534979423869,
+          "salience_weight": 0.057212416311625075,
+          "weighted_contribution": 0.044914807551177334,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9283921383647795,
+          "salience_weight": 0.5027388922702374,
+          "weighted_contribution": 0.4667388352339062,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9333676470588237,
+          "salience_weight": 0.08399269628727937,
+          "weighted_contribution": 0.07839606530378435,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Ted Cruz",
+      "overall_score": 0.8137837717934733,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.27875000000000005,
+          "salience_weight": 0.009738283627510651,
+          "weighted_contribution": 0.0027145465611685946,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5606000000000001,
+          "salience_weight": 0.2824102251978089,
+          "weighted_contribution": 0.1583191722458917,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.981111111111111,
+          "salience_weight": 0.06390748630553865,
+          "weighted_contribution": 0.06270034489754514,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7850534979423869,
+          "salience_weight": 0.057212416311625075,
+          "weighted_contribution": 0.044914807551177334,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9283921383647795,
+          "salience_weight": 0.5027388922702374,
+          "weighted_contribution": 0.4667388352339062,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9333676470588237,
+          "salience_weight": 0.08399269628727937,
+          "weighted_contribution": 0.07839606530378435,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

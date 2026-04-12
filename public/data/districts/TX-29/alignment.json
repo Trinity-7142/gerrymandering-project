@@ -1,0 +1,54 @@
+{
+  "district_id": "TX-29",
+  "last_updated": "2026-04-05",
+  "overall_score": 0.681691863300328,
+  "overall_label": "Moderate Alignment",
+  "score_range": {
+    "min": 0,
+    "max": 1
+  },
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "issue_scores": [
+    {
+      "issue_id": "guns",
+      "score": 0.1060000000000001,
+      "salience_weight": 0.014726184997699034,
+      "weighted_contribution": 0.001560975609756099,
+      "direction": "Low Alignment"
+    },
+    {
+      "issue_id": "immigration",
+      "score": 0.40900000000000003,
+      "salience_weight": 0.106764841233318,
+      "weighted_contribution": 0.04366682006442707,
+      "direction": "Partial Alignment"
+    },
+    {
+      "issue_id": "environment",
+      "score": 0.7617698924731183,
+      "salience_weight": 0.08651633686148182,
+      "weighted_contribution": 0.06590554062813908,
+      "direction": "Moderate Alignment"
+    },
+    {
+      "issue_id": "economy",
+      "score": 0.7342614583333333,
+      "salience_weight": 0.7602393005062126,
+      "weighted_contribution": 0.5582144174720048,
+      "direction": "Moderate Alignment"
+    },
+    {
+      "issue_id": "healthcare",
+      "score": 0.38875000000000004,
+      "salience_weight": 0.031753336401288544,
+      "weighted_contribution": 0.012344109526000922,
+      "direction": "Partial Alignment"
+    }
+  ],
+  "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

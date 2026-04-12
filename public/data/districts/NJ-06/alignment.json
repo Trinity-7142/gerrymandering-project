@@ -1,0 +1,54 @@
+{
+  "district_id": "NJ-06",
+  "last_updated": "2026-04-05",
+  "overall_score": 0.7053613381354038,
+  "overall_label": "Moderate Alignment",
+  "score_range": {
+    "min": 0,
+    "max": 1
+  },
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "issue_scores": [
+    {
+      "issue_id": "guns",
+      "score": 0.15349999999999997,
+      "salience_weight": 0.022716288061865635,
+      "weighted_contribution": 0.003486950217496374,
+      "direction": "Low Alignment"
+    },
+    {
+      "issue_id": "immigration",
+      "score": 0.5676,
+      "salience_weight": 0.10198163363943934,
+      "weighted_contribution": 0.05788477525374577,
+      "direction": "Partial Alignment"
+    },
+    {
+      "issue_id": "environment",
+      "score": 0.7494021505376345,
+      "salience_weight": 0.12179797003383278,
+      "weighted_contribution": 0.09127566067447264,
+      "direction": "Moderate Alignment"
+    },
+    {
+      "issue_id": "economy",
+      "score": 0.7578666666666666,
+      "salience_weight": 0.7153214113098115,
+      "weighted_contribution": 0.5421182535846625,
+      "direction": "Moderate Alignment"
+    },
+    {
+      "issue_id": "healthcare",
+      "score": 0.27749999999999997,
+      "salience_weight": 0.03818269695505075,
+      "weighted_contribution": 0.010595698405026582,
+      "direction": "Low Alignment"
+    }
+  ],
+  "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

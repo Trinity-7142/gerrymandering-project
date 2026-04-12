@@ -1,0 +1,111 @@
+{
+  "state_code": "MA",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Ed Markey",
+      "overall_score": 0.7367732190621402,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.14125,
+          "salience_weight": 0.017456359102244388,
+          "weighted_contribution": 0.0024657107231920196,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.4668,
+          "salience_weight": 0.27805486284289277,
+          "weighted_contribution": 0.12979600997506235,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.8565555555555556,
+          "salience_weight": 0.08104738154613467,
+          "weighted_contribution": 0.06942158492657247,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.681125514403292,
+          "salience_weight": 0.11221945137157106,
+          "weighted_contribution": 0.07643553154151655,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.883051257861635,
+          "salience_weight": 0.399002493765586,
+          "weighted_contribution": 0.35233965400962985,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9473823529411765,
+          "salience_weight": 0.11221945137157106,
+          "weighted_contribution": 0.10631472788616693,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Elizabeth Warren",
+      "overall_score": 0.7367732190621402,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.14125,
+          "salience_weight": 0.017456359102244388,
+          "weighted_contribution": 0.0024657107231920196,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.4668,
+          "salience_weight": 0.27805486284289277,
+          "weighted_contribution": 0.12979600997506235,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.8565555555555556,
+          "salience_weight": 0.08104738154613467,
+          "weighted_contribution": 0.06942158492657247,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.681125514403292,
+          "salience_weight": 0.11221945137157106,
+          "weighted_contribution": 0.07643553154151655,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.883051257861635,
+          "salience_weight": 0.399002493765586,
+          "weighted_contribution": 0.35233965400962985,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9473823529411765,
+          "salience_weight": 0.11221945137157106,
+          "weighted_contribution": 0.10631472788616693,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

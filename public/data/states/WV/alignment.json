@@ -1,0 +1,104 @@
+{
+  "state_code": "WV",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Shelley Capito",
+      "overall_score": 0.8367748881730135,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.32025000000000003,
+          "salience_weight": 0.008388776395718832,
+          "weighted_contribution": 0.002686505640728956,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.6368,
+          "salience_weight": 0.2834827885449812,
+          "weighted_contribution": 0.18052183974544406,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.8880000000000001,
+          "salience_weight": 0.052068267283772056,
+          "weighted_contribution": 0.046236621347989594,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8556111111111111,
+          "salience_weight": 0.049754122071159965,
+          "weighted_contribution": 0.042570179667663036,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9231897798742135,
+          "salience_weight": 0.5206826728377206,
+          "weighted_contribution": 0.48068892212137243,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9818676470588235,
+          "salience_weight": 0.08562337286664738,
+          "weighted_contribution": 0.08407081964981537,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Jim Justice",
+      "overall_score": 0.8807033898453265,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "immigration",
+          "score": 0.6368,
+          "salience_weight": 0.17205056179775283,
+          "weighted_contribution": 0.10956179775280901,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.4869999999999999,
+          "salience_weight": 0.03160112359550562,
+          "weighted_contribution": 0.015389747191011232,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.9799629629629629,
+          "salience_weight": 0.06039325842696629,
+          "weighted_contribution": 0.05918315647107781,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9959638655462185,
+          "salience_weight": 0.6320224719101124,
+          "weighted_contribution": 0.6294715442356719,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.6455833333333334,
+          "salience_weight": 0.10393258426966293,
+          "weighted_contribution": 0.06709714419475657,
+          "direction": "Moderate Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

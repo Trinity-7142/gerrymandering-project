@@ -1,0 +1,111 @@
+{
+  "state_code": "AL",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Katie Britt",
+      "overall_score": 0.8275664589763343,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.2935,
+          "salience_weight": 0.012078042737689686,
+          "weighted_contribution": 0.0035449055435119226,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.6342,
+          "salience_weight": 0.30349953545989466,
+          "weighted_contribution": 0.1924794053886652,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9363333333333335,
+          "salience_weight": 0.03778259523072158,
+          "weighted_contribution": 0.035377103334365646,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8148251028806585,
+          "salience_weight": 0.048312170950758744,
+          "weighted_contribution": 0.03936596966533995,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9326216981132072,
+          "salience_weight": 0.5289563332301022,
+          "weighted_contribution": 0.49331615372479337,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9151176470588235,
+          "salience_weight": 0.06937132239083307,
+          "weighted_contribution": 0.06348292131965824,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Tommy Tuberville",
+      "overall_score": 0.8275664589763343,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.2935,
+          "salience_weight": 0.012078042737689686,
+          "weighted_contribution": 0.0035449055435119226,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.6342,
+          "salience_weight": 0.30349953545989466,
+          "weighted_contribution": 0.1924794053886652,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9363333333333335,
+          "salience_weight": 0.03778259523072158,
+          "weighted_contribution": 0.035377103334365646,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8148251028806585,
+          "salience_weight": 0.048312170950758744,
+          "weighted_contribution": 0.03936596966533995,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9326216981132072,
+          "salience_weight": 0.5289563332301022,
+          "weighted_contribution": 0.49331615372479337,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9151176470588235,
+          "salience_weight": 0.06937132239083307,
+          "weighted_contribution": 0.06348292131965824,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

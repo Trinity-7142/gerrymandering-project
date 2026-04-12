@@ -1,0 +1,111 @@
+{
+  "state_code": "AR",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "John Boozman",
+      "overall_score": 0.8195532931538269,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.35749999999999993,
+          "salience_weight": 0.006822901216256304,
+          "weighted_contribution": 0.002439187184811628,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.6008,
+          "salience_weight": 0.28834173835657073,
+          "weighted_contribution": 0.1732357164046277,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9088888888888891,
+          "salience_weight": 0.049836843666567786,
+          "weighted_contribution": 0.04529615346583606,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8267119341563787,
+          "salience_weight": 0.0462770691189558,
+          "weighted_contribution": 0.03825780531842037,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9219632075471694,
+          "salience_weight": 0.5315929991100564,
+          "weighted_contribution": 0.4901091865691272,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9103676470588234,
+          "salience_weight": 0.07712844853159301,
+          "weighted_contribution": 0.07021524421100389,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Tom Cotton",
+      "overall_score": 0.8195532931538269,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.35749999999999993,
+          "salience_weight": 0.006822901216256304,
+          "weighted_contribution": 0.002439187184811628,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.6008,
+          "salience_weight": 0.28834173835657073,
+          "weighted_contribution": 0.1732357164046277,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9088888888888891,
+          "salience_weight": 0.049836843666567786,
+          "weighted_contribution": 0.04529615346583606,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8267119341563787,
+          "salience_weight": 0.0462770691189558,
+          "weighted_contribution": 0.03825780531842037,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9219632075471694,
+          "salience_weight": 0.5315929991100564,
+          "weighted_contribution": 0.4901091865691272,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9103676470588234,
+          "salience_weight": 0.07712844853159301,
+          "weighted_contribution": 0.07021524421100389,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

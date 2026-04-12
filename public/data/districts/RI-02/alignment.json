@@ -1,0 +1,54 @@
+{
+  "district_id": "RI-02",
+  "last_updated": "2026-04-05",
+  "overall_score": 0.6863849294277021,
+  "overall_label": "Moderate Alignment",
+  "score_range": {
+    "min": 0,
+    "max": 1
+  },
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "issue_scores": [
+    {
+      "issue_id": "guns",
+      "score": 0.18774999999999997,
+      "salience_weight": 0.023622047244094488,
+      "weighted_contribution": 0.004435039370078739,
+      "direction": "Low Alignment"
+    },
+    {
+      "issue_id": "immigration",
+      "score": 0.5224,
+      "salience_weight": 0.0870773506252895,
+      "weighted_contribution": 0.045489207966651235,
+      "direction": "Partial Alignment"
+    },
+    {
+      "issue_id": "environment",
+      "score": 0.7867344086021506,
+      "salience_weight": 0.174154701250579,
+      "weighted_contribution": 0.1370134958936585,
+      "direction": "Moderate Alignment"
+    },
+    {
+      "issue_id": "economy",
+      "score": 0.7317531250000001,
+      "salience_weight": 0.6632700324224178,
+      "weighted_contribution": 0.4853499189439556,
+      "direction": "Moderate Alignment"
+    },
+    {
+      "issue_id": "healthcare",
+      "score": 0.27175000000000005,
+      "salience_weight": 0.051875868457619274,
+      "weighted_contribution": 0.01409726725335804,
+      "direction": "Low Alignment"
+    }
+  ],
+  "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

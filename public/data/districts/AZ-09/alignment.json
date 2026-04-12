@@ -1,0 +1,54 @@
+{
+  "district_id": "AZ-09",
+  "last_updated": "2026-04-05",
+  "overall_score": 0.8091783190618581,
+  "overall_label": "Strong Alignment",
+  "score_range": {
+    "min": 0,
+    "max": 1
+  },
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "issue_scores": [
+    {
+      "issue_id": "guns",
+      "score": 0.4115,
+      "salience_weight": 0.012640449438202247,
+      "weighted_contribution": 0.005201544943820224,
+      "direction": "Partial Alignment"
+    },
+    {
+      "issue_id": "immigration",
+      "score": 0.7388,
+      "salience_weight": 0.10674157303370786,
+      "weighted_contribution": 0.07886067415730337,
+      "direction": "Moderate Alignment"
+    },
+    {
+      "issue_id": "environment",
+      "score": 0.8912494623655914,
+      "salience_weight": 0.11797752808988764,
+      "weighted_contribution": 0.10514740848133382,
+      "direction": "Strong Alignment"
+    },
+    {
+      "issue_id": "economy",
+      "score": 0.8283239583333333,
+      "salience_weight": 0.7303370786516854,
+      "weighted_contribution": 0.604955699906367,
+      "direction": "Strong Alignment"
+    },
+    {
+      "issue_id": "healthcare",
+      "score": 0.46475,
+      "salience_weight": 0.032303370786516857,
+      "weighted_contribution": 0.015012991573033709,
+      "direction": "Partial Alignment"
+    }
+  ],
+  "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

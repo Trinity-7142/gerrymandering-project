@@ -1,0 +1,111 @@
+{
+  "state_code": "NV",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Catherine Cortez Masto",
+      "overall_score": 0.8073341808433496,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.22575,
+          "salience_weight": 0.009036144578313253,
+          "weighted_contribution": 0.002039909638554217,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5366000000000001,
+          "salience_weight": 0.25301204819277107,
+          "weighted_contribution": 0.13576626506024098,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9332222222222222,
+          "salience_weight": 0.06927710843373494,
+          "weighted_contribution": 0.06465093708165998,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7553909465020576,
+          "salience_weight": 0.06987951807228916,
+          "weighted_contribution": 0.05278635529773415,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9110932389937103,
+          "salience_weight": 0.5024096385542168,
+          "weighted_contribution": 0.4577420248920207,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9788676470588235,
+          "salience_weight": 0.0963855421686747,
+          "weighted_contribution": 0.09434868887313962,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Jacky Rosen",
+      "overall_score": 0.8073341808433496,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.22575,
+          "salience_weight": 0.009036144578313253,
+          "weighted_contribution": 0.002039909638554217,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5366000000000001,
+          "salience_weight": 0.25301204819277107,
+          "weighted_contribution": 0.13576626506024098,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9332222222222222,
+          "salience_weight": 0.06927710843373494,
+          "weighted_contribution": 0.06465093708165998,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7553909465020576,
+          "salience_weight": 0.06987951807228916,
+          "weighted_contribution": 0.05278635529773415,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9110932389937103,
+          "salience_weight": 0.5024096385542168,
+          "weighted_contribution": 0.4577420248920207,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9788676470588235,
+          "salience_weight": 0.0963855421686747,
+          "weighted_contribution": 0.09434868887313962,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

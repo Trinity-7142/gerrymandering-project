@@ -1,0 +1,40 @@
+{
+  "district_id": "CA-47",
+  "last_updated": "2026-04-05",
+  "overall_score": 0.8875906550868486,
+  "overall_label": "Strong Alignment",
+  "score_range": {
+    "min": 0,
+    "max": 1
+  },
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "issue_scores": [
+    {
+      "issue_id": "immigration",
+      "score": 0.46340000000000003,
+      "salience_weight": 0.08089330024813896,
+      "weighted_contribution": 0.037485955334987595,
+      "direction": "Partial Alignment"
+    },
+    {
+      "issue_id": "environment",
+      "score": 0.9213958333333333,
+      "salience_weight": 0.2084367245657568,
+      "weighted_contribution": 0.19205272952853594,
+      "direction": "Strong Alignment"
+    },
+    {
+      "issue_id": "economy",
+      "score": 0.92596,
+      "salience_weight": 0.7106699751861042,
+      "weighted_contribution": 0.6580519702233251,
+      "direction": "Strong Alignment"
+    }
+  ],
+  "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

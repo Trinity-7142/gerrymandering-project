@@ -1,0 +1,40 @@
+{
+  "district_id": "OH-06",
+  "last_updated": "2026-04-05",
+  "overall_score": 0.9114731243829154,
+  "overall_label": "Strong Alignment",
+  "score_range": {
+    "min": 0,
+    "max": 1
+  },
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "issue_scores": [
+    {
+      "issue_id": "immigration",
+      "score": 0.6679999999999999,
+      "salience_weight": 0.09970958373668926,
+      "weighted_contribution": 0.06660600193610841,
+      "direction": "Moderate Alignment"
+    },
+    {
+      "issue_id": "environment",
+      "score": 0.9788131313131313,
+      "salience_weight": 0.10067763794772508,
+      "weighted_contribution": 0.09854459405282252,
+      "direction": "Strong Alignment"
+    },
+    {
+      "issue_id": "economy",
+      "score": 0.9333549295774648,
+      "salience_weight": 0.7996127783155857,
+      "weighted_contribution": 0.7463225283939845,
+      "direction": "Strong Alignment"
+    }
+  ],
+  "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

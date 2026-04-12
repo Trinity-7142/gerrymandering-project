@@ -1,0 +1,111 @@
+{
+  "state_code": "LA",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Bill Cassidy",
+      "overall_score": 0.8445552351679614,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.261,
+          "salience_weight": 0.010900031142946125,
+          "weighted_contribution": 0.0028449081283089387,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.6528,
+          "salience_weight": 0.25786359389598257,
+          "weighted_contribution": 0.16833335409529743,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.8734444444444445,
+          "salience_weight": 0.049828713796325134,
+          "weighted_contribution": 0.04352261323921243,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8180967078189301,
+          "salience_weight": 0.046091560261600745,
+          "weighted_contribution": 0.03770735370825339,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9308875786163519,
+          "salience_weight": 0.563064465898474,
+          "weighted_contribution": 0.5241497172651399,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9411176470588234,
+          "salience_weight": 0.07225163500467145,
+          "weighted_contribution": 0.06799728873174932,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "John Kennedy",
+      "overall_score": 0.8445552351679614,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.261,
+          "salience_weight": 0.010900031142946125,
+          "weighted_contribution": 0.0028449081283089387,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.6528,
+          "salience_weight": 0.25786359389598257,
+          "weighted_contribution": 0.16833335409529743,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.8734444444444445,
+          "salience_weight": 0.049828713796325134,
+          "weighted_contribution": 0.04352261323921243,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.8180967078189301,
+          "salience_weight": 0.046091560261600745,
+          "weighted_contribution": 0.03770735370825339,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9308875786163519,
+          "salience_weight": 0.563064465898474,
+          "weighted_contribution": 0.5241497172651399,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9411176470588234,
+          "salience_weight": 0.07225163500467145,
+          "weighted_contribution": 0.06799728873174932,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

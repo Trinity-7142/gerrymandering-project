@@ -1,0 +1,111 @@
+{
+  "state_code": "ME",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Angus King",
+      "overall_score": 0.7670543529680558,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.251,
+          "salience_weight": 0.011249619945272118,
+          "weighted_contribution": 0.002823654606263302,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5058,
+          "salience_weight": 0.2918820310124658,
+          "weighted_contribution": 0.14763393128610522,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9400000000000001,
+          "salience_weight": 0.07418668288233506,
+          "weighted_contribution": 0.06973548190939495,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7533189300411524,
+          "salience_weight": 0.13864396473092125,
+          "weighted_contribution": 0.10444312316776086,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.8949786163522009,
+          "salience_weight": 0.38917604134995437,
+          "weighted_contribution": 0.34830423500480906,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9921176470588234,
+          "salience_weight": 0.09486166007905138,
+          "weighted_contribution": 0.09411392699372237,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Susan Collins",
+      "overall_score": 0.7670543529680558,
+      "overall_label": "Moderate Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.251,
+          "salience_weight": 0.011249619945272118,
+          "weighted_contribution": 0.002823654606263302,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5058,
+          "salience_weight": 0.2918820310124658,
+          "weighted_contribution": 0.14763393128610522,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9400000000000001,
+          "salience_weight": 0.07418668288233506,
+          "weighted_contribution": 0.06973548190939495,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7533189300411524,
+          "salience_weight": 0.13864396473092125,
+          "weighted_contribution": 0.10444312316776086,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.8949786163522009,
+          "salience_weight": 0.38917604134995437,
+          "weighted_contribution": 0.34830423500480906,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9921176470588234,
+          "salience_weight": 0.09486166007905138,
+          "weighted_contribution": 0.09411392699372237,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

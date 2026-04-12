@@ -1,0 +1,111 @@
+{
+  "state_code": "CT",
+  "last_updated": "2026-04-05",
+  "senators": [
+    {
+      "name": "Richard Blumenthal",
+      "overall_score": 0.8078904541962688,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.1884999999999999,
+          "salience_weight": 0.01668806161745828,
+          "weighted_contribution": 0.003145699614890884,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5168,
+          "salience_weight": 0.2079589216944801,
+          "weighted_contribution": 0.10747317073170733,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9360000000000002,
+          "salience_weight": 0.08472400513478819,
+          "weighted_contribution": 0.07930166880616175,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7194032921810699,
+          "salience_weight": 0.10141206675224647,
+          "weighted_contribution": 0.07295617468845253,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9083440251572324,
+          "salience_weight": 0.47881899871630296,
+          "weighted_contribution": 0.43493237661572237,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9971323529411765,
+          "salience_weight": 0.11039794608472399,
+          "weighted_contribution": 0.11008136373933397,
+          "direction": "Strong Alignment"
+        }
+      ]
+    },
+    {
+      "name": "Christopher Murphy",
+      "overall_score": 0.8078904541962688,
+      "overall_label": "Strong Alignment",
+      "issue_scores": [
+        {
+          "issue_id": "guns",
+          "score": 0.1884999999999999,
+          "salience_weight": 0.01668806161745828,
+          "weighted_contribution": 0.003145699614890884,
+          "direction": "Low Alignment"
+        },
+        {
+          "issue_id": "immigration",
+          "score": 0.5168,
+          "salience_weight": 0.2079589216944801,
+          "weighted_contribution": 0.10747317073170733,
+          "direction": "Partial Alignment"
+        },
+        {
+          "issue_id": "abortion",
+          "score": 0.9360000000000002,
+          "salience_weight": 0.08472400513478819,
+          "weighted_contribution": 0.07930166880616175,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "environment",
+          "score": 0.7194032921810699,
+          "salience_weight": 0.10141206675224647,
+          "weighted_contribution": 0.07295617468845253,
+          "direction": "Moderate Alignment"
+        },
+        {
+          "issue_id": "economy",
+          "score": 0.9083440251572324,
+          "salience_weight": 0.47881899871630296,
+          "weighted_contribution": 0.43493237661572237,
+          "direction": "Strong Alignment"
+        },
+        {
+          "issue_id": "healthcare",
+          "score": 0.9971323529411765,
+          "salience_weight": 0.11039794608472399,
+          "weighted_contribution": 0.11008136373933397,
+          "direction": "Strong Alignment"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

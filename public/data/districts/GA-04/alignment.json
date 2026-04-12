@@ -1,0 +1,54 @@
+{
+  "district_id": "GA-04",
+  "last_updated": "2026-04-05",
+  "overall_score": 0.6388459118710853,
+  "overall_label": "Moderate Alignment",
+  "score_range": {
+    "min": 0,
+    "max": 1
+  },
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "issue_scores": [
+    {
+      "issue_id": "guns",
+      "score": 0.21199999999999997,
+      "salience_weight": 0.01823154056517776,
+      "weighted_contribution": 0.0038650865998176845,
+      "direction": "Low Alignment"
+    },
+    {
+      "issue_id": "immigration",
+      "score": 0.3406,
+      "salience_weight": 0.08067456700091158,
+      "weighted_contribution": 0.027477757520510484,
+      "direction": "Partial Alignment"
+    },
+    {
+      "issue_id": "environment",
+      "score": 0.7184827956989247,
+      "salience_weight": 0.07292616226071104,
+      "weighted_contribution": 0.052396192940669085,
+      "direction": "Moderate Alignment"
+    },
+    {
+      "issue_id": "economy",
+      "score": 0.6926052083333333,
+      "salience_weight": 0.7948951686417502,
+      "weighted_contribution": 0.5505485338802795,
+      "direction": "Moderate Alignment"
+    },
+    {
+      "issue_id": "healthcare",
+      "score": 0.137,
+      "salience_weight": 0.033272561531449404,
+      "weighted_contribution": 0.004558340929808569,
+      "direction": "Low Alignment"
+    }
+  ],
+  "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}

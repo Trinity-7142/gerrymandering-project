@@ -1,0 +1,54 @@
+{
+  "district_id": "CO-02",
+  "last_updated": "2026-04-05",
+  "overall_score": 0.694253038320485,
+  "overall_label": "Moderate Alignment",
+  "score_range": {
+    "min": 0,
+    "max": 1
+  },
+  "interpretation": {
+    "0.0_to_0.3": "Low Alignment",
+    "0.3_to_0.6": "Partial Alignment",
+    "0.6_to_0.8": "Moderate Alignment",
+    "0.8_to_1.0": "Strong Alignment"
+  },
+  "issue_scores": [
+    {
+      "issue_id": "guns",
+      "score": 0.1935,
+      "salience_weight": 0.024129930394431554,
+      "weighted_contribution": 0.004669141531322506,
+      "direction": "Low Alignment"
+    },
+    {
+      "issue_id": "immigration",
+      "score": 0.514,
+      "salience_weight": 0.09559164733178654,
+      "weighted_contribution": 0.04913410672853828,
+      "direction": "Partial Alignment"
+    },
+    {
+      "issue_id": "environment",
+      "score": 0.7827645161290323,
+      "salience_weight": 0.18932714617169374,
+      "weighted_contribution": 0.14819857196317643,
+      "direction": "Moderate Alignment"
+    },
+    {
+      "issue_id": "economy",
+      "score": 0.739009375,
+      "salience_weight": 0.6496519721577726,
+      "weighted_contribution": 0.4800988979118329,
+      "direction": "Moderate Alignment"
+    },
+    {
+      "issue_id": "healthcare",
+      "score": 0.29425,
+      "salience_weight": 0.041299303944315545,
+      "weighted_contribution": 0.01215232018561485,
+      "direction": "Low Alignment"
+    }
+  ],
+  "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+}
