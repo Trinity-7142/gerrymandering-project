@@ -25,7 +25,7 @@ from datetime import date
 import pandas as pd
 
 # ── Script parameters ──
-STATE_CODE = "CA"  # change to target state before running
+STATE_CODE = None  # change to target state before running
 
 CES_STATE_SAMPLE = {
     "n_respondents": 4900,
@@ -65,6 +65,12 @@ class Senator:
         self.lastName = lastName
 
         self.birthday = birthday
+
+        birth_date = date.fromisoformat(birthday)
+        today = date.today()
+        self.age = today.year - birth_date.year - (
+            (today.month, today.day) < (birth_date.month, birth_date.day)
+        )
 
         # assumed_office in the json
         self.dateStarted = dateStarted
@@ -148,6 +154,9 @@ class Senator:
 
         if not isinstance(self.attendanceRate, (int, float)) or not (0.0 <= self.attendanceRate <= 1.0):
             errors.append(f"attendanceRate must be a float in [0.0, 1.0], got {self.attendanceRate!r}")
+
+        if not isinstance(self.age, int) or self.age < 0:
+            errors.append(f"age must be a non-negative int, got {self.age!r}")
 
         for iv in self.votes_by_issue:
             if not isinstance(iv, IssueVotes):
@@ -399,6 +408,7 @@ def build_output(state_code, ces_state_sample):
     for senator in Senator.senators:
         senators_list.append({
             "name":           senator.name,
+            "age":            senator.age,
             "party":          senator.party,
             "seat_class":     senator.seat_class,
             "assumed_office": int(senator.dateStarted[:4]),
@@ -435,7 +445,7 @@ def build_output(state_code, ces_state_sample):
 
 
 def write_output(output, state_code):
-    output_path = f"data/states/{state_code}/senators.json"
+    output_path = f"public/data/states/{state_code}/senators.json"
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, "w") as f:
         json.dump(output, f, indent=2)
