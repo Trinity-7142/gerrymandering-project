@@ -1,0 +1,214 @@
+{
+  "district_id": "NC-01",
+  "representative": "Donald Davis",
+  "age": 54,
+  "party": "D",
+  "assumed_office": 2023,
+  "photo_url": "/images/reps/NC-01.jpg",
+  "congress": [
+    118
+  ],
+  "last_updated": "2026-04-14",
+  "votes_by_issue": [
+    {
+      "issue_id": "criminal_justice",
+      "votes": [
+        {
+          "bill": "H.J.Res. 26",
+          "title": "On Passage: H J RES 26 Disapproving the action of the District of Columbia Council in approving the Revised Criminal Code Act",
+          "date": "2023-02-09",
+          "vote": "yea",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2023119"
+        },
+        {
+          "bill": "H.R. 7888",
+          "title": "On Passage: H J RES 26 Disapproving the action of the District of Columbia Council in approving the Revised Criminal Code Act",
+          "date": "2023-02-09",
+          "vote": "yea",
+          "bill_direction": "bipartisan",
+          "source_url": "https://clerk.house.gov/Votes/2023119"
+        },
+        {
+          "bill": "H.J.Res. 42",
+          "title": "On Passage: H J RES 42 Disapproving the action of the District of Columbia Council in approving the Comprehensive Policing and Justice Reform Amendment Act",
+          "date": "2023-04-19",
+          "vote": "yea",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2023188"
+        }
+      ],
+      "summary": {
+        "total_votes": 3,
+        "conservative": 2,
+        "bipartisan": 1,
+        "absent": 0
+      }
+    },
+    {
+      "issue_id": "economy",
+      "votes": [
+        {
+          "bill": "H.J.Res. 98",
+          "title": "Election of the Speaker",
+          "date": "2023-01-05",
+          "vote": "jeffries",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2023010"
+        },
+        {
+          "bill": "H.J.Res. 30",
+          "title": "On Passage: H J RES 30 Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Labor relating to \u201cPrudence and Loyalty in Selecting Plan Investments and Exercising Shareholder Rights\u201d",
+          "date": "2023-02-28",
+          "vote": "nay",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2023124"
+        },
+        {
+          "bill": "H.J.Res. 109",
+          "title": "On Motion to Suspend the Rules and Pass, as Amended: H R 1149 Countering Untrusted Telecommunications Abroad Act",
+          "date": "2023-04-19",
+          "vote": "yea",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2023189"
+        },
+        {
+          "bill": "H.J.Res. 39",
+          "title": "On Passage: H J RES 39 Disapproving the rule submitted by the Department of Commerce relating to \u201cProcedures Covering Suspension of Liquidation, Duties and Estimated Duties in Accord with Presidential Proclamation 10414\u201d",
+          "date": "2023-04-28",
+          "vote": "yea",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2023202"
+        },
+        {
+          "bill": "H.J.Res. 45",
+          "title": "On Passage: H J RES 45 Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Education relating to \u201cWaivers and Modifications of Federal Student Loans\u201d",
+          "date": "2023-05-24",
+          "vote": "nay",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2023234"
+        },
+        {
+          "bill": "H.R. 3746",
+          "title": "On Passage: H R 3746 Fiscal Responsibility Act",
+          "date": "2023-05-31",
+          "vote": "aye",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2023243"
+        },
+        {
+          "bill": "H.R. 4366",
+          "title": "On Passage: H R 4366 Making appropriations for military construction, the Department of Veterans Affairs, and related agencies for the fiscal year ending September 30, 2024, and for other purposes",
+          "date": "2023-07-27",
+          "vote": "nay",
+          "bill_direction": "bipartisan",
+          "source_url": "https://clerk.house.gov/Votes/2023380"
+        },
+        {
+          "bill": "S.J.Res. 32",
+          "title": "On Passage: S J RES 32 Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to \u201cSmall Business Lending Under the Equal Credit Opportunity Act (Regulation B)\u201d",
+          "date": "2023-12-01",
+          "vote": "nay",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2023690"
+        }
+      ],
+      "summary": {
+        "total_votes": 8,
+        "conservative": 7,
+        "bipartisan": 1,
+        "absent": 0
+      }
+    },
+    {
+      "issue_id": "environment",
+      "votes": [
+        {
+          "bill": "S.J.Res. 38",
+          "title": "On Motion to Adjourn",
+          "date": "2023-01-04",
+          "vote": "nay",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2023008"
+        },
+        {
+          "bill": "H.J.Res. 27",
+          "title": "On Passage: H J RES 27 Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of the Army, Corps of Engineers, Department of Defense and the Environmental Protection Agency relating to \u201cRevised Definition of \u2019Waters of the United States\u2019 \u201d",
+          "date": "2023-03-09",
+          "vote": "yea",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2023142"
+        },
+        {
+          "bill": "S.J.Res. 11",
+          "title": "On Passage: S J RES 11 Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \u201cControl of Air Pollution From New Motor Vehicles: Heavy-Duty Engine and Vehicle Standards\u201d",
+          "date": "2023-05-23",
+          "vote": "nay",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2023232"
+        },
+        {
+          "bill": "S.J.Res. 24",
+          "title": "On Passage: S J RES 24 Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the United States Fish and Wildlife Service relating to \u201cEndangered and Threatened Wildlife and Plants; Endangered Species Status for Northern Long-Eared Bat\u201d.",
+          "date": "2023-07-27",
+          "vote": "nay",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2023382"
+        },
+        {
+          "bill": "S.J.Res. 9",
+          "title": "On Passage: S J RES 9 Providing for congressional disapproval under chapter 8 of title 5, U.S. Code, relating to \u201cEndangered and Threatened Wildlife and Plants; Lesser Prairie-Chicken; Threatened Status With Sec. 4(d) Rule for the Northern Distinct Population Segment and Endangered Status for the Southern Distinct Population Segment\u201d",
+          "date": "2023-07-27",
+          "vote": "nay",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2023381"
+        }
+      ],
+      "summary": {
+        "total_votes": 5,
+        "conservative": 5,
+        "absent": 0
+      }
+    },
+    {
+      "issue_id": "guns",
+      "votes": [
+        {
+          "bill": "H.J.Res. 44",
+          "title": "On Passage: H J RES 44 Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Alcohol, Tobacco, Firearms, and Explosives relating to \u201cFactoring Criteria for Firearms with Attached \u2019Stabilizing Braces\u2019\u201d",
+          "date": "2023-06-13",
+          "vote": "nay",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2023252"
+        }
+      ],
+      "summary": {
+        "total_votes": 1,
+        "conservative": 1,
+        "absent": 0
+      }
+    },
+    {
+      "issue_id": "healthcare",
+      "votes": [
+        {
+          "bill": "H.J.Res. 7",
+          "title": "On Passage: H J RES 7 Relating to a national emergency declared by the President on March 13, 2020",
+          "date": "2023-02-01",
+          "vote": "yea",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2023104"
+        }
+      ],
+      "summary": {
+        "total_votes": 1,
+        "conservative": 1,
+        "absent": 0
+      }
+    }
+  ],
+  "overall_voting_stats": {
+    "total_tracked_votes": 18,
+    "attendance_rate": 0.97
+  }
+}

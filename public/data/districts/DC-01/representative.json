@@ -1,0 +1,104 @@
+{
+  "district_id": "DC-01",
+  "representative": "Eleanor Norton",
+  "age": 88,
+  "party": "D",
+  "assumed_office": 1991,
+  "photo_url": "/images/reps/DC-01.jpg",
+  "congress": [
+    118
+  ],
+  "last_updated": "2026-04-14",
+  "votes_by_issue": [
+    {
+      "issue_id": "criminal_justice",
+      "votes": [
+        {
+          "bill": "H.J.Res. 42",
+          "title": "On Agreeing to the Amendment: Amendment 5 to H R 8070",
+          "date": "2024-06-12",
+          "vote": "no",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2024253"
+        }
+      ],
+      "summary": {
+        "total_votes": 1,
+        "conservative": 1,
+        "absent": 0
+      }
+    },
+    {
+      "issue_id": "economy",
+      "votes": [
+        {
+          "bill": "H.J.Res. 109",
+          "title": "On Agreeing to the Amendment: Amendment 22 to H R 3935",
+          "date": "2023-07-19",
+          "vote": "no",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2023355"
+        },
+        {
+          "bill": "H.J.Res. 30",
+          "title": "On Agreeing to the Amendment: Amendment 3 to H R 8035",
+          "date": "2024-04-20",
+          "vote": "no",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2024149"
+        },
+        {
+          "bill": "H.R. 3746",
+          "title": "On Agreeing to the Amendment: Amendment 28 to H R 8580",
+          "date": "2024-06-05",
+          "vote": "aye",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2024243"
+        },
+        {
+          "bill": "H.J.Res. 45",
+          "title": "On Agreeing to the Amendment: Amendment 38 to H R 8070",
+          "date": "2024-06-14",
+          "vote": "no",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2024277"
+        }
+      ],
+      "summary": {
+        "total_votes": 4,
+        "conservative": 4,
+        "absent": 0
+      }
+    },
+    {
+      "issue_id": "environment",
+      "votes": [
+        {
+          "bill": "S.J.Res. 24",
+          "title": "On Agreeing to the Amendment: Amendment 7 to H R 8998",
+          "date": "2024-07-23",
+          "vote": "no",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2024382"
+        },
+        {
+          "bill": "S.J.Res. 9",
+          "title": "On Agreeing to the Amendment: Amendment 6 to H R 8998",
+          "date": "2024-07-23",
+          "vote": "no",
+          "bill_direction": "conservative",
+          "source_url": "https://clerk.house.gov/Votes/2024381"
+        }
+      ],
+      "summary": {
+        "total_votes": 2,
+        "conservative": 2,
+        "absent": 0
+      }
+    }
+  ],
+  "overall_voting_stats": {
+    "total_tracked_votes": 7,
+    "attendance_rate": 1.0
+  }
+}
