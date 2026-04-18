@@ -31,9 +31,21 @@ import argparse
 import textwrap
 from pathlib import Path
 
-import requests
-import anthropic
-from dotenv import load_dotenv  # pip install python-dotenv
+try:
+    import requests
+except ModuleNotFoundError:
+    requests = None
+
+try:
+    import anthropic
+except ModuleNotFoundError:
+    anthropic = None
+
+try:
+    from dotenv import load_dotenv  # pip install python-dotenv
+except ModuleNotFoundError:
+    def load_dotenv():
+        return False
 
 # ---------------------------------------------------------------------------
 # Config
@@ -86,12 +98,21 @@ def _call_with_retry(fn, label: str):
                 raise
 
 
+def _require_dependency(module, package_name: str):
+    if module is None:
+        raise ModuleNotFoundError(
+            f"Missing required package '{package_name}'. Install it with "
+            f"`python3 -m pip install {package_name}`."
+        )
+
+
 # ---------------------------------------------------------------------------
 # Phase 1 — Perplexity web search
 # ---------------------------------------------------------------------------
 
 def _perplexity_search(query: str) -> str:
     """Send one query to Perplexity Sonar Pro and return the text response."""
+    _require_dependency(requests, "requests")
     headers = {
         "Authorization": f"Bearer {PERPLEXITY_API_KEY}",
         "Content-Type": "application/json",
@@ -202,6 +223,7 @@ def title_abbr(title: str) -> str:
 
 def generate_summary(name: str, title: str, state: str, district: str | None, raw: str) -> str:
     """Call Claude Sonnet to produce the markdown summary."""
+    _require_dependency(anthropic, "anthropic")
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
     prompt = _build_user_prompt(name, title, state, district, raw)
 

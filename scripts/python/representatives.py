@@ -495,7 +495,5 @@ def generate_representative_json(district_id=None, state_codes=None):
         print(f"wrote representative.json for {district}")
 
 
-# if __name__ == "__main__":
-#     generate_representative_json(district_id=DISTRICT_ID, state_codes=STATE_CODES)
-
-generate_representative_json()
+if __name__ == "__main__":
+    generate_representative_json(district_id=DISTRICT_ID, state_codes=STATE_CODES)
