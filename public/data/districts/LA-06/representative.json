@@ -1,0 +1,17 @@
+{
+  "district_id": "LA-06",
+  "representative": "Cleo Fields",
+  "age": 63,
+  "party": "D",
+  "assumed_office": 1993,
+  "photo_url": "/images/reps/LA-06.jpg",
+  "congress": [
+    118
+  ],
+  "last_updated": "2026-04-14",
+  "votes_by_issue": [],
+  "overall_voting_stats": {
+    "total_tracked_votes": 0,
+    "attendance_rate": 0
+  }
+}

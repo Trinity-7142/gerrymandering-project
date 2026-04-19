@@ -1,0 +1,17 @@
+{
+  "district_id": "AZ-03",
+  "representative": "Yassamin Ansari",
+  "age": 34,
+  "party": "D",
+  "assumed_office": 2025,
+  "photo_url": "/images/reps/AZ-03.jpg",
+  "congress": [
+    118
+  ],
+  "last_updated": "2026-04-14",
+  "votes_by_issue": [],
+  "overall_voting_stats": {
+    "total_tracked_votes": 0,
+    "attendance_rate": 0
+  }
+}

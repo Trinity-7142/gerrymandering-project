@@ -4,6 +4,7 @@
 // Box 2: per-question detail using raw results (support/oppose from results field)
 
 import { issueLabels, cardStyle, textColors, fonts } from "@/lib/constants";
+import SurveyQuestionsTabs from "./SurveyQuestionsTabs";
 
 // ── Box 1 colors (liberal / conservative) ────────────────────────────────────
 const BOX1 = {
@@ -14,7 +15,7 @@ const BOX1 = {
 };
 
 // ── Box 2 colors (support / oppose) ─────────────────────────────────────────
-const BOX2 = {
+export const BOX2 = {
   leftColor:     "#194973",
   rightColor:    "#BF4545",
   leftGradient:  "linear-gradient(to left,  #194973, #102E48)",
@@ -33,7 +34,7 @@ function avgIssueLean(questions) {
 // ── Helper: derive support/oppose pcts from results based on scale ─────────────
 // Returns { leftPct, rightPct } — values are raw proportions (may not sum to 1
 // for 5pt scales where a neutral option exists).
-function getSupportOppose(q) {
+export function getSupportOppose(q) {
   const r = q.results;
   switch (q.scale) {
     case "support_oppose":
@@ -59,7 +60,7 @@ function getSupportOppose(q) {
 // leftPct / rightPct are raw proportions (0–1); bar fills from center outward.
 // For binary scales (support_oppose / agree_disagree) they sum to 1, filling
 // the full track. For 5pt scales they may not sum to 1, leaving a neutral gap.
-function DivergingBar({ leftPct, rightPct, leftColor, rightColor, leftGradient, rightGradient }) {
+export function DivergingBar({ leftPct, rightPct, leftColor, rightColor, leftGradient, rightGradient }) {
   const lc = leftColor    || BOX2.leftColor;
   const rc = rightColor   || BOX2.rightColor;
   const lg = leftGradient  || BOX2.leftGradient;
@@ -84,7 +85,7 @@ function DivergingBar({ leftPct, rightPct, leftColor, rightColor, leftGradient, 
   );
 }
 
-const barStyles = {
+export const barStyles = {
   wrapper: { display: "flex", alignItems: "center", gap: "8px" },
   track: {
     flex: 1,
@@ -120,7 +121,7 @@ const barStyles = {
 // prefixWidth + prefixGap match the issue-label column in Box 1.
 // leftStyle / rightStyle let each box override individual label positioning.
 // Defaults anchor both labels at the center tick (right: 50% / left: 50%).
-function BarLegend({ leftLabel, rightLabel, leftColor, rightColor, prefixWidth, prefixGap, leftStyle, rightStyle }) {
+export function BarLegend({ leftLabel, rightLabel, leftColor, rightColor, prefixWidth, prefixGap, leftStyle, rightStyle }) {
   const baseLabelStyle = {
     fontSize: "0.72rem",
     fontWeight: 600,
@@ -205,52 +206,13 @@ export default function CESStatePanel({ data }) {
         </p>
       </div>
 
-      {/* ── Box 2: Question Detail (support / oppose from results) ─────────── */}
-      <div style={{ ...cardStyle, padding: "32px" }}>
-        <h2 style={headingStyle}>Survey Questions</h2>
-        <BarLegend 
-          leftLabel="Support" 
-          rightLabel="Oppose" 
-          leftColor={BOX2.leftColor} 
-          rightColor={BOX2.rightColor}   
-          leftStyle={{ right: "auto", left: -40, paddingRight: 0 }} 
-          rightStyle={{ left: "auto", right: "auto", marginLeft: "35px", paddingLeft: 0 }} />
-
-        <div style={{ display: "flex", flexDirection: "column", gap: "28px" }}>
-          {data.issues.map((issue) => (
-            <div key={issue.issue_id}>
-              <p style={sectionHeaderStyle}>
-                {issueLabels[issue.issue_id] || issue.issue_id}
-              </p>
-
-              <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-                {issue.questions.map((q) => {
-                  const vals = getSupportOppose(q);
-                  return (
-                    <div key={q.variable}>
-                      <p style={questionTextStyle}>
-                        {q.text}
-                        <span style={{ color: textColors.faint, fontWeight: 400 }}>
-                          {" "}(n&nbsp;=&nbsp;{q.n?.toLocaleString()})
-                        </span>
-                      </p>
-                      {vals && (
-                        <DivergingBar leftPct={vals.leftPct} rightPct={vals.rightPct} />
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {data.methodology_note && (
-          <p style={{ ...footerTextStyle, marginTop: "24px", lineHeight: 1.5 }}>
-            {data.methodology_note}
-          </p>
-        )}
-      </div>
+      {/* ── Box 2: Question Detail (support / oppose) — tabbed by issue ──── */}
+      <SurveyQuestionsTabs
+        issues={data.issues}
+        source={data.source}
+        totalRespondents={data.total_respondents}
+        methodologyNote={data.methodology_note}
+      />
 
     </div>
   );
@@ -274,16 +236,7 @@ const issueLabelStyle = {
   fontFamily: fonts.sans,
 };
 
-const sectionHeaderStyle = {
-  fontSize: "0.9rem",
-  fontWeight: 700,
-  color: textColors.secondary,
-  letterSpacing: "0.01em",
-  marginBottom: "10px",
-  fontFamily: fonts.sans,
-};
-
-const questionTextStyle = {
+export const questionTextStyle = {
   fontSize: "0.85rem",
   fontWeight: 500,
   color: textColors.secondary,
@@ -292,7 +245,7 @@ const questionTextStyle = {
   lineHeight: 1.4,
 };
 
-const footerTextStyle = {
+export const footerTextStyle = {
   fontSize: "0.72rem",
   color: textColors.faint,
   fontFamily: fonts.sans,

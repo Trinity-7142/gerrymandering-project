@@ -1,0 +1,17 @@
+{
+  "district_id": "IN-03",
+  "representative": "Marlin Stutzman",
+  "age": 49,
+  "party": "R",
+  "assumed_office": 2010,
+  "photo_url": "/images/reps/IN-03.jpg",
+  "congress": [
+    118
+  ],
+  "last_updated": "2026-04-14",
+  "votes_by_issue": [],
+  "overall_voting_stats": {
+    "total_tracked_votes": 0,
+    "attendance_rate": 0
+  }
+}

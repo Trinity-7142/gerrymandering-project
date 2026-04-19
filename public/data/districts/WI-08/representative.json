@@ -1,0 +1,17 @@
+{
+  "district_id": "WI-08",
+  "representative": "Tony Wied",
+  "age": 49,
+  "party": "R",
+  "assumed_office": 2024,
+  "photo_url": "/images/reps/WI-08.jpg",
+  "congress": [
+    118
+  ],
+  "last_updated": "2026-04-14",
+  "votes_by_issue": [],
+  "overall_voting_stats": {
+    "total_tracked_votes": 0,
+    "attendance_rate": 0.98
+  }
+}

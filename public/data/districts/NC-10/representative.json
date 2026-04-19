@@ -1,0 +1,17 @@
+{
+  "district_id": "NC-10",
+  "representative": "Pat Harrigan",
+  "age": 38,
+  "party": "R",
+  "assumed_office": 2025,
+  "photo_url": "/images/reps/NC-10.jpg",
+  "congress": [
+    118
+  ],
+  "last_updated": "2026-04-14",
+  "votes_by_issue": [],
+  "overall_voting_stats": {
+    "total_tracked_votes": 0,
+    "attendance_rate": 0
+  }
+}

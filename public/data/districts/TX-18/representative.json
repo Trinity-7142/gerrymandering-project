@@ -1,0 +1,17 @@
+{
+  "district_id": "TX-18",
+  "representative": "Christian Menefee",
+  "age": 37,
+  "party": "D",
+  "assumed_office": 2026,
+  "photo_url": "/images/reps/TX-18.jpg",
+  "congress": [
+    118
+  ],
+  "last_updated": "2026-04-14",
+  "votes_by_issue": [],
+  "overall_voting_stats": {
+    "total_tracked_votes": 0,
+    "attendance_rate": 0
+  }
+}
