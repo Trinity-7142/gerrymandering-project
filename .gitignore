@@ -54,3 +54,5 @@ temp/
 # Claude instructions
 Claude.md
 .claude
+
+.venv

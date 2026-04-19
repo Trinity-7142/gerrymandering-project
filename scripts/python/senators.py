@@ -47,6 +47,20 @@ _bill_to_roll_df = pd.read_csv(
     os.path.join(_PROJECT_ROOT, "data-raw", "congress", "bill_to_roll.csv")
 )
 
+# Notion Tagging DB — keyed by (bill_id, congress_str) for clean titles and final bill status
+_notion_df = pd.read_csv(
+    os.path.join(_PROJECT_ROOT, "data-raw", "congress", "Notion Tagging DB.csv"),
+    encoding="utf-8-sig",
+)
+_notion_lookup = {
+    (row["Bill ID"].strip(), row["Congress"].strip()): {
+        "title":       row["Bill Title"].strip() if pd.notna(row["Bill Title"]) else None,
+        "bill_status": row["Bill Status"].strip() if pd.notna(row["Bill Status"]) else None,
+    }
+    for _, row in _notion_df.iterrows()
+    if pd.notna(row["Bill ID"])
+}
+
 # ── Lookup indexes ──
 _lis_to_senator = {}   # populated during Senator creation
 _seen_votes = set()    # (lisID, bill_id, congress) for dedup
@@ -111,7 +125,7 @@ class Senator:
         }
     
     def validatePolitican(self):
-        VALID_PARTIES = {"D", "R"}
+        VALID_PARTIES = {"D", "R", "I"}
         VALID_CLASSES = {1, 2, 3}
         DATE_PATTERN = re.compile(r"^\d{4}-\d{2}-\d{2}$")
         VALID_ISSUE_IDS = {
@@ -209,11 +223,11 @@ Vote Class
 class Vote:
     allVotes = []
 
-    def __init__(self, bill, title, date, vote, bill_direction, source_url, issue_id):
+    def __init__(self, bill, title, date, vote, bill_direction, source_url, issue_id, status=None):
         # bill identifier, e.g. "S. 2938"
         self.bill = bill
 
-        # human-readable bill title
+        # human-readable bill title (prefers Notion DB clean title over roll-call question)
         self.title = title
 
         # ISO date string "YYYY-MM-DD"
@@ -230,6 +244,9 @@ class Vote:
 
         # one of the 9 taxonomy issue_ids, e.g. "guns", "criminal_justice"
         self.issue_id = issue_id
+
+        # final bill outcome, e.g. "Became Law", "Failed Senate" (from Notion Tagging DB)
+        self.status = status
 
         self.allVotes.append(self)
 
@@ -347,14 +364,16 @@ def create_votes():
             f"roll_call_vote_cfm.cfm?congress={congress_num}&session={session}&vote={roll_num:05d}"
         )
 
+        notion = _notion_lookup.get((bill_id, row["Congress"]), {})
         v = Vote(
             bill           = bill_id,
-            title          = row["Question"],
+            title          = notion.get("title") or row["Question"],
             date           = row["Date"][:10],
             vote           = row["position"].lower(),
             bill_direction = bill_direction,
             source_url     = source_url,
             issue_id       = row["Issue ID"].lower().replace(" ", "_"),
+            status         = notion.get("bill_status"),
         )
         senatorVotes.setdefault(senator, []).append(v)
 
@@ -424,6 +443,7 @@ def build_output(state_code, ces_state_sample):
                             "vote":           v.vote,
                             "bill_direction": v.bill_direction,
                             "source_url":     v.source_url,
+                            **( {"status": v.status} if v.status else {} ),
                         }
                         for v in iv.votes
                     ],

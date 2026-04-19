@@ -9,7 +9,7 @@ import StateSelector from "../components/home/StateSelector";
 import ExplainerSections from "@/components/home/ExplainerSections";
 import Markdown from "@/components/shared/Markdown";
 import { loadContent } from "@/lib/loadContent";
-import { colors } from "@/lib/constants";
+import { colors, pageWidths } from "@/lib/constants";
 
 export default function HomePage() {
   // ── Load content from markdown files at build time ──
@@ -39,7 +39,7 @@ export default function HomePage() {
           id="hero-title"
           style={{
             margin: "0 auto 18px",
-            maxWidth: "860px",
+            maxWidth: pageWidths.home,
             fontFamily: "var(--font-serif)",
             fontSize: "clamp(2.6rem, 7vw, 4rem)",
             lineHeight: 0.98,

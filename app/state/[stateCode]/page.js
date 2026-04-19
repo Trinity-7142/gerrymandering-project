@@ -20,7 +20,7 @@ import StateTabs       from "@/components/state/StateTabs";
 import ZipLookup       from "@/components/state/ZipLookup";
 import CESStatePanel   from "@/components/state/CESStatePanel";
 import { loadStateData, loadStateContent } from "@/lib/loadData";
-import { cardStyle, textColors, fonts } from "@/lib/constants";
+import { cardStyle, textColors, fonts, pageWidths } from "@/lib/constants";
 
 // States that have district pages live
 const AVAILABLE_STATES = ["CA", "TX"];
@@ -97,7 +97,7 @@ export default async function StatePage({ params }) {
 
   return (
     <main style={{ background: "#F4F3F1", minHeight: "100vh" }}>
-      <div style={{ maxWidth: "960px", margin: "0 auto", padding: "0 24px 48px" }}>
+      <div style={{ maxWidth: pageWidths.state, margin: "0 auto", padding: "0 24px 48px" }}>
         <StateHeader data={overview} alignmentScore={avgAlignment} />
         <StateTabs
           overviewContent={overviewContent}

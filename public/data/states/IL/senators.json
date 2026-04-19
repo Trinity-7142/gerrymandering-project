@@ -1,53 +1,1022 @@
 {
   "state_code": "IL",
-  "source": "congress.gov / VoteView (UCLA)",
-  "congress": 119,
+  "source": "unitedstates/congress",
+  "congress": [
+    118
+  ],
+  "last_updated": "2026-04-19",
   "ces_state_sample": {
-    "n_respondents": 1387,
+    "n_respondents": 4900,
     "weight_variable": "vvweight_post",
-    "confidence_note": "State-level estimates based on 1387 weighted CES respondents"
+    "confidence_note": "State-level estimates based on 4900 weighted CES respondents"
   },
   "senators": [
     {
       "name": "Richard Durbin",
+      "age": 81,
       "party": "D",
       "seat_class": 2,
-      "assumed_office": "NA",
+      "assumed_office": 1997,
       "photo_url": "/images/senators/IL-durbin.jpg",
-      "alignment": {
-        "overall_score": 0.69,
-        "overall_label": "Placeholder - Pending D6",
-        "issue_scores": []
-      },
-      "votes_by_issue": [],
+      "votes_by_issue": [
+        {
+          "issue_id": "economy",
+          "votes": [
+            {
+              "bill": "H.R. 2882",
+              "title": "Further Consolidated Appropriations Act, 2024",
+              "date": "2024-03-22",
+              "vote": "yea",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00105",
+              "status": "Became Law"
+            },
+            {
+              "bill": "H.J.Res. 39",
+              "title": "Disapproving the rule submitted by the Department of Commerce relating to \"Procedures Covering Suspension of Liquidation, Duties and Estimated Duties in Accord With Presidential Proclamation 10414\"",
+              "date": "2023-05-03",
+              "vote": "not voting",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00109",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "H.J.Res. 98",
+              "title": "Providing for congressional disapproval of the rule submitted by the National Labor Relations Board relating to \"Standard for Determining Joint Employer Status\"",
+              "date": "2024-04-10",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00122",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "H.J.Res. 45",
+              "title": "Providing for congressional disapproval of the rule submitted by the Department of Education relating to \"Waivers and Modifications of Federal Student Loans\"",
+              "date": "2023-06-01",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00135",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "H.R. 3746",
+              "title": "Fiscal Responsibility Act of 2023",
+              "date": "2023-06-01",
+              "vote": "yea",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00146",
+              "status": "Became Law"
+            },
+            {
+              "bill": "H.R. 815",
+              "title": "Making emergency supplemental appropriations for the fiscal year ending September 30, 2024, and for other purposes",
+              "date": "2024-04-23",
+              "vote": "yea",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00152",
+              "status": "Became Law"
+            },
+            {
+              "bill": "S.J.Res. 57",
+              "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of the Treasury relating to \"Coronavirus State and Local Fiscal Recovery Funds\"",
+              "date": "2024-05-15",
+              "vote": "yea",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00168",
+              "status": "Failed Senate"
+            },
+            {
+              "bill": "H.J.Res. 109",
+              "title": "Providing for congressional disapproval of the rule submitted by the Securities and Exchange Commission relating to \"Staff Accounting Bulletin No. 121\"",
+              "date": "2024-05-16",
+              "vote": "yea",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00169",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "S. 2226",
+              "title": "National Defense Authorization Act for Fiscal Year 2024",
+              "date": "2023-07-18",
+              "vote": "yea",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00188",
+              "status": "Passed Senate"
+            },
+            {
+              "bill": "S. 870",
+              "title": "An act to authorize appropriations for the United States Fire Administration and firefighter assistance grant programs, to advance the benefits of nuclear energy, and for other purposes.",
+              "date": "2024-06-18",
+              "vote": "not voting",
+              "bill_direction": "bipartisan",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00200",
+              "status": "Became Law"
+            },
+            {
+              "bill": "S. 2073",
+              "title": "Kids Online Safety and Privacy Act",
+              "date": "2024-07-25",
+              "vote": "yea",
+              "bill_direction": "bipartisan",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00219",
+              "status": "Resolving Differences"
+            },
+            {
+              "bill": "H.R. 4366",
+              "title": "Consolidated Appropriations Act, 2024",
+              "date": "2023-09-12",
+              "vote": "yea",
+              "bill_direction": "bipartisan",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00227",
+              "status": "Became Law"
+            },
+            {
+              "bill": "H.R. 7024",
+              "title": "Tax Relief for American Families and Workers Act of 2024",
+              "date": "2024-08-01",
+              "vote": "yea",
+              "bill_direction": "bipartisan",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00230",
+              "status": "Passed House"
+            },
+            {
+              "bill": "H.R. 5860",
+              "title": "Continuing Appropriations Act, 2024 and Other Extensions Act",
+              "date": "2023-09-30",
+              "vote": "yea",
+              "bill_direction": "bipartisan",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00247",
+              "status": "Became Law"
+            },
+            {
+              "bill": "H.R. 9747",
+              "title": "Continuing Appropriations and Extensions Act, 2025",
+              "date": "2024-09-25",
+              "vote": "not voting",
+              "bill_direction": "bipartisan",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00255",
+              "status": "Became Law"
+            },
+            {
+              "bill": "S.J.Res. 32",
+              "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to \"Small Business Lending Under the Equal Credit Opportunity Act (Regulation B)\"",
+              "date": "2023-10-18",
+              "vote": "not voting",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00260",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "H.R. 662",
+              "title": "Block Grant Assistance Act of 2023",
+              "date": "2023-11-01",
+              "vote": "nay",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00285",
+              "status": "Failed Senate"
+            },
+            {
+              "bill": "S.J.Res. 43",
+              "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Education relating to \"Improving Income Driven Repayment for the William D. Ford Federal Direct Loan Program and the Federal Family Education Loan (FFEL) Program\"",
+              "date": "2023-11-15",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00310",
+              "status": "Failed Senate"
+            },
+            {
+              "bill": "H.R. 6363",
+              "title": "Further Continuing Appropriations and Other Extensions Act, 2024",
+              "date": "2023-11-15",
+              "vote": "yea",
+              "bill_direction": "bipartisan",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00312",
+              "status": "Became Law"
+            },
+            {
+              "bill": "H.R. 82",
+              "title": "Social Security Fairness Act of 2023",
+              "date": "2024-12-18",
+              "vote": "yea",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00326",
+              "status": "Became Law"
+            },
+            {
+              "bill": "H.R. 10545",
+              "title": "American Relief Act, 2025",
+              "date": "2024-12-21",
+              "vote": "nay",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00339",
+              "status": "Became Law"
+            },
+            {
+              "bill": "H.J.Res. 30",
+              "title": "Providing for congressional disapproval of the rule submitted by the Department of Labor relating to \"Prudence and Loyalty in Selecting Plan Investments and Exercising Shareholder Rights\"",
+              "date": "2023-03-01",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00035",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "H.R. 7463",
+              "title": "Extension of Continuing Appropriations and Other Matters Act, 2024",
+              "date": "2024-02-29",
+              "vote": "not voting",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00067",
+              "status": "Became Law"
+            }
+          ],
+          "summary": {
+            "total_votes": 23,
+            "conservative": 9,
+            "liberal": 4,
+            "bipartisan": 5,
+            "absent": 5
+          }
+        },
+        {
+          "issue_id": "environment",
+          "votes": [
+            {
+              "bill": "S.J.Res. 9",
+              "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the United States Fish and Wildlife Service relating to \"Endangered and Threatened Wildlife and Plants; Lesser Prairie-Chicken; Threatened Status with Section 4(d) Rule for the Northern Distinct Population Segment and Endangered Status for the Southern Distinct Population Segment\"",
+              "date": "2023-05-03",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00110",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "S.J.Res. 61",
+              "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Federal Highway Administration relating to \"National Performance Management Measures; Assessing Performance of the National Highway System, Greenhouse Gas Emissions Measure\"",
+              "date": "2024-04-10",
+              "vote": "yea",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00121",
+              "status": "Passed Senate"
+            },
+            {
+              "bill": "S.J.Res. 23",
+              "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the National Marine Fisheries Service relating to \"Endangered and Threatened Wildlife and Plants; Regulations for Listing Endangered and Threatened Species and Designating Critical Habitat\"",
+              "date": "2023-05-11",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00122",
+              "status": "Passed Senate"
+            },
+            {
+              "bill": "S.J.Res. 24",
+              "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the United States Fish and Wildlife Service relating to \"Endangered and Threatened Wildlife and Plants; Endangered Species Status for Northern Long-Eared Bat\"",
+              "date": "2023-05-11",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00123",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "S. 4072",
+              "title": "A bill to prohibit the use of funds to implement, administer, or enforce certain rules of the Environmental Protection Agency",
+              "date": "2024-04-18",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00142",
+              "status": "Failed Senate"
+            },
+            {
+              "bill": "S.J.Res. 11",
+              "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"Control of Air Pollution From New Motor Vehicles: Heavy-Duty Engine and Vehicle Standards\"",
+              "date": "2023-06-21",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00167",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "S.J.Res. 58",
+              "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Energy relating to \"Energy Conservation Program: Energy Conservation Standards for Consumer Furnaces\"",
+              "date": "2024-05-21",
+              "vote": "not voting",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00176",
+              "status": "Passed Senate"
+            },
+            {
+              "bill": "S.J.Res. 38",
+              "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Federal Highway Administration relating to \"Waiver of Buy America Requirements for Electric Vehicle Chargers\"",
+              "date": "2023-11-08",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00303",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "S. 4367",
+              "title": "Thomas R. Carper Water Resources Development Act of 2024",
+              "date": "2024-12-18",
+              "vote": "yea",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00327",
+              "status": "Became Law"
+            },
+            {
+              "bill": "S. 3853",
+              "title": "Radiation Exposure Compensation Reauthorization Act",
+              "date": "2024-03-07",
+              "vote": "nay",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00075",
+              "status": "Passed Senate"
+            },
+            {
+              "bill": "H.J.Res. 27",
+              "title": "Providing for congressional disapproval of the rule submitted by the Department of the Army, Corps of Engineers, Department of Defense and the Environmental Protection Agency relating to \"Revised Definition of 'Waters of the United States'\"",
+              "date": "2023-03-29",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00079",
+              "status": "Failed to pass over veto"
+            }
+          ],
+          "summary": {
+            "total_votes": 11,
+            "conservative": 8,
+            "liberal": 2,
+            "absent": 1
+          }
+        },
+        {
+          "issue_id": "criminal_justice",
+          "votes": [
+            {
+              "bill": "H.J.Res. 42",
+              "title": "Disapproving the action of the District of Columbia Council in approving the Comprehensive Policing and Justice Reform Amendment Act of 2022",
+              "date": "2023-05-16",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00126",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "H.R. 7888",
+              "title": "Reforming Intelligence and Securing America Act",
+              "date": "2024-04-18",
+              "vote": "nay",
+              "bill_direction": "bipartisan",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00141",
+              "status": "Became Law"
+            },
+            {
+              "bill": "H.J.Res. 26",
+              "title": "Disapproving the action of the District of Columbia Council in approving the Revised Criminal Code Act of 2022",
+              "date": "2023-03-08",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00049",
+              "status": "Became Law"
+            }
+          ],
+          "summary": {
+            "total_votes": 3,
+            "conservative": 2,
+            "bipartisan": 1,
+            "absent": 0
+          }
+        },
+        {
+          "issue_id": "immigration",
+          "votes": [
+            {
+              "bill": "S.J.Res. 18",
+              "title": "A joint resolution disapproving of the rule submitted by the Department of Homeland Security relating to \"Public Charge Ground of Inadmissibility\"",
+              "date": "2023-05-17",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00130",
+              "status": "Passed Senate"
+            },
+            {
+              "bill": "S. 4361",
+              "title": "Border Act of 2024",
+              "date": "2024-05-23",
+              "vote": "yea",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00182",
+              "status": "Introduced"
+            }
+          ],
+          "summary": {
+            "total_votes": 2,
+            "conservative": 2,
+            "absent": 0
+          }
+        },
+        {
+          "issue_id": "guns",
+          "votes": [
+            {
+              "bill": "H.J.Res. 44",
+              "title": "Providing for congressional disapproval of the rule submitted by the Bureau of Alcohol, Tobacco, Firearms, and Explosives relating to \"Factoring Criteria for Firearms with Attached 'Stabilizing Braces'\"",
+              "date": "2023-06-22",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00171",
+              "status": "Failed Senate"
+            }
+          ],
+          "summary": {
+            "total_votes": 1,
+            "conservative": 1,
+            "absent": 0
+          }
+        },
+        {
+          "issue_id": "healthcare",
+          "votes": [
+            {
+              "bill": "S. 4381",
+              "title": "Right to Contraception Act",
+              "date": "2024-06-05",
+              "vote": "yea",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00190",
+              "status": "Introduced"
+            },
+            {
+              "bill": "S. 4445",
+              "title": "Right to IVF Act",
+              "date": "2024-06-13",
+              "vote": "not voting",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00197",
+              "status": "Introduced"
+            },
+            {
+              "bill": "H.J.Res. 7",
+              "title": "Relating to a national emergency declared by the President on March 13, 2020",
+              "date": "2023-03-29",
+              "vote": "yea",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00080",
+              "status": "Became Law"
+            }
+          ],
+          "summary": {
+            "total_votes": 3,
+            "liberal": 1,
+            "conservative": 1,
+            "absent": 1
+          }
+        },
+        {
+          "issue_id": "abortion",
+          "votes": [
+            {
+              "bill": "S. 4554",
+              "title": "Reproductive Freedom for Women Act",
+              "date": "2024-07-10",
+              "vote": "not voting",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00211",
+              "status": "Introduced"
+            }
+          ],
+          "summary": {
+            "total_votes": 1,
+            "absent": 1
+          }
+        },
+        {
+          "issue_id": "foreign_policy",
+          "votes": [
+            {
+              "bill": "S. 316",
+              "title": "A bill to repeal the authorizations for use of military force against Iraq",
+              "date": "2023-03-16",
+              "vote": "yea",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00061",
+              "status": "Passed Senate"
+            }
+          ],
+          "summary": {
+            "total_votes": 1,
+            "liberal": 1,
+            "absent": 0
+          }
+        }
+      ],
       "overall_voting_stats": {
-        "total_tracked_votes": "NA",
-        "attendance_rate": "NA"
+        "total_tracked_votes": 45,
+        "attendance_rate": 0.93
       }
     },
     {
       "name": "Tammy Duckworth",
+      "age": 58,
       "party": "D",
       "seat_class": 3,
-      "assumed_office": "NA",
+      "assumed_office": 2017,
       "photo_url": "/images/senators/IL-duckworth.jpg",
-      "alignment": {
-        "overall_score": 0.69,
-        "overall_label": "Placeholder - Pending D6",
-        "issue_scores": []
-      },
-      "votes_by_issue": [],
+      "votes_by_issue": [
+        {
+          "issue_id": "economy",
+          "votes": [
+            {
+              "bill": "H.R. 2882",
+              "title": "Further Consolidated Appropriations Act, 2024",
+              "date": "2024-03-22",
+              "vote": "yea",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00105",
+              "status": "Became Law"
+            },
+            {
+              "bill": "H.J.Res. 39",
+              "title": "Disapproving the rule submitted by the Department of Commerce relating to \"Procedures Covering Suspension of Liquidation, Duties and Estimated Duties in Accord With Presidential Proclamation 10414\"",
+              "date": "2023-05-03",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00109",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "H.J.Res. 98",
+              "title": "Providing for congressional disapproval of the rule submitted by the National Labor Relations Board relating to \"Standard for Determining Joint Employer Status\"",
+              "date": "2024-04-10",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00122",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "H.J.Res. 45",
+              "title": "Providing for congressional disapproval of the rule submitted by the Department of Education relating to \"Waivers and Modifications of Federal Student Loans\"",
+              "date": "2023-06-01",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00135",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "H.R. 3746",
+              "title": "Fiscal Responsibility Act of 2023",
+              "date": "2023-06-01",
+              "vote": "yea",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00146",
+              "status": "Became Law"
+            },
+            {
+              "bill": "H.R. 815",
+              "title": "Making emergency supplemental appropriations for the fiscal year ending September 30, 2024, and for other purposes",
+              "date": "2024-04-23",
+              "vote": "yea",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00152",
+              "status": "Became Law"
+            },
+            {
+              "bill": "S.J.Res. 57",
+              "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of the Treasury relating to \"Coronavirus State and Local Fiscal Recovery Funds\"",
+              "date": "2024-05-15",
+              "vote": "yea",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00168",
+              "status": "Failed Senate"
+            },
+            {
+              "bill": "H.J.Res. 109",
+              "title": "Providing for congressional disapproval of the rule submitted by the Securities and Exchange Commission relating to \"Staff Accounting Bulletin No. 121\"",
+              "date": "2024-05-16",
+              "vote": "yea",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00169",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "S. 2226",
+              "title": "National Defense Authorization Act for Fiscal Year 2024",
+              "date": "2023-07-18",
+              "vote": "yea",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00188",
+              "status": "Passed Senate"
+            },
+            {
+              "bill": "S. 870",
+              "title": "An act to authorize appropriations for the United States Fire Administration and firefighter assistance grant programs, to advance the benefits of nuclear energy, and for other purposes.",
+              "date": "2024-06-18",
+              "vote": "nay",
+              "bill_direction": "bipartisan",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00200",
+              "status": "Became Law"
+            },
+            {
+              "bill": "S. 2073",
+              "title": "Kids Online Safety and Privacy Act",
+              "date": "2024-07-25",
+              "vote": "yea",
+              "bill_direction": "bipartisan",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00219",
+              "status": "Resolving Differences"
+            },
+            {
+              "bill": "H.R. 4366",
+              "title": "Consolidated Appropriations Act, 2024",
+              "date": "2023-09-12",
+              "vote": "not voting",
+              "bill_direction": "bipartisan",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00227",
+              "status": "Became Law"
+            },
+            {
+              "bill": "H.R. 7024",
+              "title": "Tax Relief for American Families and Workers Act of 2024",
+              "date": "2024-08-01",
+              "vote": "yea",
+              "bill_direction": "bipartisan",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00230",
+              "status": "Passed House"
+            },
+            {
+              "bill": "H.R. 5860",
+              "title": "Continuing Appropriations Act, 2024 and Other Extensions Act",
+              "date": "2023-09-30",
+              "vote": "yea",
+              "bill_direction": "bipartisan",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00247",
+              "status": "Became Law"
+            },
+            {
+              "bill": "H.R. 9747",
+              "title": "Continuing Appropriations and Extensions Act, 2025",
+              "date": "2024-09-25",
+              "vote": "yea",
+              "bill_direction": "bipartisan",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00255",
+              "status": "Became Law"
+            },
+            {
+              "bill": "S.J.Res. 32",
+              "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to \"Small Business Lending Under the Equal Credit Opportunity Act (Regulation B)\"",
+              "date": "2023-10-18",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00260",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "H.R. 662",
+              "title": "Block Grant Assistance Act of 2023",
+              "date": "2023-11-01",
+              "vote": "nay",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00285",
+              "status": "Failed Senate"
+            },
+            {
+              "bill": "S.J.Res. 43",
+              "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Education relating to \"Improving Income Driven Repayment for the William D. Ford Federal Direct Loan Program and the Federal Family Education Loan (FFEL) Program\"",
+              "date": "2023-11-15",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00310",
+              "status": "Failed Senate"
+            },
+            {
+              "bill": "H.R. 6363",
+              "title": "Further Continuing Appropriations and Other Extensions Act, 2024",
+              "date": "2023-11-15",
+              "vote": "yea",
+              "bill_direction": "bipartisan",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00312",
+              "status": "Became Law"
+            },
+            {
+              "bill": "H.R. 82",
+              "title": "Social Security Fairness Act of 2023",
+              "date": "2024-12-18",
+              "vote": "yea",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00326",
+              "status": "Became Law"
+            },
+            {
+              "bill": "H.R. 10545",
+              "title": "American Relief Act, 2025",
+              "date": "2024-12-21",
+              "vote": "nay",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00339",
+              "status": "Became Law"
+            },
+            {
+              "bill": "H.J.Res. 30",
+              "title": "Providing for congressional disapproval of the rule submitted by the Department of Labor relating to \"Prudence and Loyalty in Selecting Plan Investments and Exercising Shareholder Rights\"",
+              "date": "2023-03-01",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00035",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "H.R. 7463",
+              "title": "Extension of Continuing Appropriations and Other Matters Act, 2024",
+              "date": "2024-02-29",
+              "vote": "nay",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00067",
+              "status": "Became Law"
+            }
+          ],
+          "summary": {
+            "total_votes": 23,
+            "conservative": 11,
+            "liberal": 5,
+            "bipartisan": 6,
+            "absent": 1
+          }
+        },
+        {
+          "issue_id": "environment",
+          "votes": [
+            {
+              "bill": "S.J.Res. 9",
+              "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the United States Fish and Wildlife Service relating to \"Endangered and Threatened Wildlife and Plants; Lesser Prairie-Chicken; Threatened Status with Section 4(d) Rule for the Northern Distinct Population Segment and Endangered Status for the Southern Distinct Population Segment\"",
+              "date": "2023-05-03",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00110",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "S.J.Res. 61",
+              "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Federal Highway Administration relating to \"National Performance Management Measures; Assessing Performance of the National Highway System, Greenhouse Gas Emissions Measure\"",
+              "date": "2024-04-10",
+              "vote": "yea",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00121",
+              "status": "Passed Senate"
+            },
+            {
+              "bill": "S.J.Res. 23",
+              "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the National Marine Fisheries Service relating to \"Endangered and Threatened Wildlife and Plants; Regulations for Listing Endangered and Threatened Species and Designating Critical Habitat\"",
+              "date": "2023-05-11",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00122",
+              "status": "Passed Senate"
+            },
+            {
+              "bill": "S.J.Res. 24",
+              "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the United States Fish and Wildlife Service relating to \"Endangered and Threatened Wildlife and Plants; Endangered Species Status for Northern Long-Eared Bat\"",
+              "date": "2023-05-11",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00123",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "S. 4072",
+              "title": "A bill to prohibit the use of funds to implement, administer, or enforce certain rules of the Environmental Protection Agency",
+              "date": "2024-04-18",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00142",
+              "status": "Failed Senate"
+            },
+            {
+              "bill": "S.J.Res. 11",
+              "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"Control of Air Pollution From New Motor Vehicles: Heavy-Duty Engine and Vehicle Standards\"",
+              "date": "2023-06-21",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00167",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "S.J.Res. 58",
+              "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Energy relating to \"Energy Conservation Program: Energy Conservation Standards for Consumer Furnaces\"",
+              "date": "2024-05-21",
+              "vote": "yea",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00176",
+              "status": "Passed Senate"
+            },
+            {
+              "bill": "S.J.Res. 38",
+              "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Federal Highway Administration relating to \"Waiver of Buy America Requirements for Electric Vehicle Chargers\"",
+              "date": "2023-11-08",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00303",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "S. 4367",
+              "title": "Thomas R. Carper Water Resources Development Act of 2024",
+              "date": "2024-12-18",
+              "vote": "yea",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00327",
+              "status": "Became Law"
+            },
+            {
+              "bill": "S. 3853",
+              "title": "Radiation Exposure Compensation Reauthorization Act",
+              "date": "2024-03-07",
+              "vote": "nay",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00075",
+              "status": "Passed Senate"
+            },
+            {
+              "bill": "H.J.Res. 27",
+              "title": "Providing for congressional disapproval of the rule submitted by the Department of the Army, Corps of Engineers, Department of Defense and the Environmental Protection Agency relating to \"Revised Definition of 'Waters of the United States'\"",
+              "date": "2023-03-29",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00079",
+              "status": "Failed to pass over veto"
+            }
+          ],
+          "summary": {
+            "total_votes": 11,
+            "conservative": 9,
+            "liberal": 2,
+            "absent": 0
+          }
+        },
+        {
+          "issue_id": "criminal_justice",
+          "votes": [
+            {
+              "bill": "H.J.Res. 42",
+              "title": "Disapproving the action of the District of Columbia Council in approving the Comprehensive Policing and Justice Reform Amendment Act of 2022",
+              "date": "2023-05-16",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00126",
+              "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "H.R. 7888",
+              "title": "Reforming Intelligence and Securing America Act",
+              "date": "2024-04-18",
+              "vote": "nay",
+              "bill_direction": "bipartisan",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00141",
+              "status": "Became Law"
+            },
+            {
+              "bill": "H.J.Res. 26",
+              "title": "Disapproving the action of the District of Columbia Council in approving the Revised Criminal Code Act of 2022",
+              "date": "2023-03-08",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00049",
+              "status": "Became Law"
+            }
+          ],
+          "summary": {
+            "total_votes": 3,
+            "conservative": 2,
+            "bipartisan": 1,
+            "absent": 0
+          }
+        },
+        {
+          "issue_id": "immigration",
+          "votes": [
+            {
+              "bill": "S.J.Res. 18",
+              "title": "A joint resolution disapproving of the rule submitted by the Department of Homeland Security relating to \"Public Charge Ground of Inadmissibility\"",
+              "date": "2023-05-17",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00130",
+              "status": "Passed Senate"
+            },
+            {
+              "bill": "S. 4361",
+              "title": "Border Act of 2024",
+              "date": "2024-05-23",
+              "vote": "yea",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00182",
+              "status": "Introduced"
+            }
+          ],
+          "summary": {
+            "total_votes": 2,
+            "conservative": 2,
+            "absent": 0
+          }
+        },
+        {
+          "issue_id": "guns",
+          "votes": [
+            {
+              "bill": "H.J.Res. 44",
+              "title": "Providing for congressional disapproval of the rule submitted by the Bureau of Alcohol, Tobacco, Firearms, and Explosives relating to \"Factoring Criteria for Firearms with Attached 'Stabilizing Braces'\"",
+              "date": "2023-06-22",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00171",
+              "status": "Failed Senate"
+            }
+          ],
+          "summary": {
+            "total_votes": 1,
+            "conservative": 1,
+            "absent": 0
+          }
+        },
+        {
+          "issue_id": "healthcare",
+          "votes": [
+            {
+              "bill": "S. 4381",
+              "title": "Right to Contraception Act",
+              "date": "2024-06-05",
+              "vote": "yea",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00190",
+              "status": "Introduced"
+            },
+            {
+              "bill": "S. 4445",
+              "title": "Right to IVF Act",
+              "date": "2024-06-13",
+              "vote": "yea",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00197",
+              "status": "Introduced"
+            },
+            {
+              "bill": "H.J.Res. 7",
+              "title": "Relating to a national emergency declared by the President on March 13, 2020",
+              "date": "2023-03-29",
+              "vote": "nay",
+              "bill_direction": "conservative",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00080",
+              "status": "Became Law"
+            }
+          ],
+          "summary": {
+            "total_votes": 3,
+            "liberal": 2,
+            "conservative": 1,
+            "absent": 0
+          }
+        },
+        {
+          "issue_id": "abortion",
+          "votes": [
+            {
+              "bill": "S. 4554",
+              "title": "Reproductive Freedom for Women Act",
+              "date": "2024-07-10",
+              "vote": "yea",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00211",
+              "status": "Introduced"
+            }
+          ],
+          "summary": {
+            "total_votes": 1,
+            "liberal": 1,
+            "absent": 0
+          }
+        },
+        {
+          "issue_id": "foreign_policy",
+          "votes": [
+            {
+              "bill": "S. 316",
+              "title": "A bill to repeal the authorizations for use of military force against Iraq",
+              "date": "2023-03-16",
+              "vote": "yea",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00061",
+              "status": "Passed Senate"
+            }
+          ],
+          "summary": {
+            "total_votes": 1,
+            "liberal": 1,
+            "absent": 0
+          }
+        }
+      ],
       "overall_voting_stats": {
-        "total_tracked_votes": "NA",
-        "attendance_rate": "NA"
+        "total_tracked_votes": 45,
+        "attendance_rate": 0.99
       }
     }
-  ],
-  "interpretation": {
-    "0.0_to_0.3": "Low Alignment",
-    "0.3_to_0.6": "Partial Alignment",
-    "0.6_to_0.8": "Moderate Alignment",
-    "0.8_to_1.0": "Strong Alignment"
-  },
-  "methodology_note": "Senator alignment scores computed identically to district-level scores: salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. State-level CES samples are substantially larger than district-level, producing more precise estimates. See methodology page for full details."
+  ]
 }
