@@ -1,0 +1,21 @@
+{
+  "district_id": "OH-10",
+  "state_code": "OH",
+  "representative": {
+    "name": "Michael R. Turner",
+    "party": "R",
+    "assumed_office": 2003,
+    "photo_url": "/images/reps/OH-10.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 87,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 87 weighted CES respondents"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "district_id": "CO-07",
+  "state_code": "CO",
+  "representative": {
+    "name": "Brittany Pettersen",
+    "party": "D",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/CO-07.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 97,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 97 weighted CES respondents"
+  }
+}

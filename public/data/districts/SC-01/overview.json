@@ -1,0 +1,21 @@
+{
+  "district_id": "SC-01",
+  "state_code": "SC",
+  "representative": {
+    "name": "Nancy Mace",
+    "party": "R",
+    "assumed_office": 2021,
+    "photo_url": "/images/reps/SC-01.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 85,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 85 weighted CES respondents"
+  }
+}

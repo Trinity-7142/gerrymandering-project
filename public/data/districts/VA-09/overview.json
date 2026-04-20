@@ -1,0 +1,21 @@
+{
+  "district_id": "VA-09",
+  "state_code": "VA",
+  "representative": {
+    "name": "H. Morgan Griffith",
+    "party": "R",
+    "assumed_office": 2011,
+    "photo_url": "/images/reps/VA-09.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 113,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 113 weighted CES respondents"
+  }
+}

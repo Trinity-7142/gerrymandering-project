@@ -1,0 +1,21 @@
+{
+  "district_id": "OH-13",
+  "state_code": "OH",
+  "representative": {
+    "name": "Emilia Strong Sykes",
+    "party": "D",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/OH-13.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 118,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 118 weighted CES respondents"
+  }
+}

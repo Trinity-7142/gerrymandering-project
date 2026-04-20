@@ -1,0 +1,21 @@
+{
+  "district_id": "CA-23",
+  "state_code": "CA",
+  "representative": {
+    "name": "Jay Obernolte",
+    "party": "R",
+    "assumed_office": 2021,
+    "photo_url": "/images/reps/CA-23.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 82,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 82 weighted CES respondents"
+  }
+}

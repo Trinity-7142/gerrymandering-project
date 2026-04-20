@@ -2,6 +2,7 @@
   "state_code": "AK",
   "state_name": "Alaska",
   "total_districts": 1,
+  "overall_alignment": 0.8639066258,
   "delegation_composition": {
     "democrat": 0,
     "republican": 1
@@ -9,9 +10,9 @@
   "districts": [
     {
       "district_id": "AK-AL",
-      "representative": "Nicholas Begich",
+      "representative": "Nicholas J. Begich III",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.910530197368421,
       "ces_sample_size": 88
     }
   ]

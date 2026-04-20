@@ -2,6 +2,7 @@
   "state_code": "WV",
   "state_name": "West Virginia",
   "total_districts": 2,
+  "overall_alignment": 0.8403009687,
   "delegation_composition": {
     "democrat": 0,
     "republican": 2
@@ -9,16 +10,16 @@
   "districts": [
     {
       "district_id": "WV-01",
-      "representative": "Carol Miller",
+      "representative": "Carol D. Miller",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7451236948461254,
       "ces_sample_size": 149
     },
     {
       "district_id": "WV-02",
-      "representative": "Riley Moore",
+      "representative": "Riley M. Moore",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.8986019019696286,
       "ces_sample_size": 128
     }
   ]

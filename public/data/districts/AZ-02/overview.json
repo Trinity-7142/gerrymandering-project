@@ -1,0 +1,21 @@
+{
+  "district_id": "AZ-02",
+  "state_code": "AZ",
+  "representative": {
+    "name": "Elijah Crane",
+    "party": "R",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/AZ-02.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 117,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 117 weighted CES respondents"
+  }
+}

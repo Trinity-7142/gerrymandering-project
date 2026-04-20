@@ -2,6 +2,7 @@
   "state_code": "MN",
   "state_name": "Minnesota",
   "total_districts": 8,
+  "overall_alignment": 0.7499826689,
   "delegation_composition": {
     "democrat": 4,
     "republican": 4
@@ -11,56 +12,56 @@
       "district_id": "MN-01",
       "representative": "Brad Finstad",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7503075665576832,
       "ces_sample_size": 73
     },
     {
       "district_id": "MN-02",
       "representative": "Angie Craig",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7344086641756188,
       "ces_sample_size": 73
     },
     {
       "district_id": "MN-03",
       "representative": "Kelly Morrison",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.893487188434696,
       "ces_sample_size": 97
     },
     {
       "district_id": "MN-04",
       "representative": "Betty McCollum",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.623450747314339,
       "ces_sample_size": 112
     },
     {
       "district_id": "MN-05",
       "representative": "Ilhan Omar",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6213637552545538,
       "ces_sample_size": 101
     },
     {
       "district_id": "MN-06",
       "representative": "Tom Emmer",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7851755488089676,
       "ces_sample_size": 74
     },
     {
       "district_id": "MN-07",
       "representative": "Michelle Fischbach",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7483635917795423,
       "ces_sample_size": 77
     },
     {
       "district_id": "MN-08",
       "representative": "Pete Stauber",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7325992526856608,
       "ces_sample_size": 94
     }
   ]

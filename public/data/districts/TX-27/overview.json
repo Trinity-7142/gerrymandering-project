@@ -1,0 +1,21 @@
+{
+  "district_id": "TX-27",
+  "state_code": "TX",
+  "representative": {
+    "name": "Michael Cloud",
+    "party": "R",
+    "assumed_office": 2018,
+    "photo_url": "/images/reps/TX-27.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 84,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 84 weighted CES respondents"
+  }
+}

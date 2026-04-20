@@ -1,0 +1,21 @@
+{
+  "district_id": "CA-07",
+  "state_code": "CA",
+  "representative": {
+    "name": "Doris O. Matsui",
+    "party": "D",
+    "assumed_office": 2005,
+    "photo_url": "/images/reps/CA-07.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 68,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 68 weighted CES respondents"
+  }
+}

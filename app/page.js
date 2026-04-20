@@ -9,14 +9,16 @@ import StateSelector from "../components/home/StateSelector";
 import ExplainerSections from "@/components/home/ExplainerSections";
 import Markdown from "@/components/shared/Markdown";
 import { loadContent } from "@/lib/loadContent";
+import { loadAllStateAlignments } from "@/lib/loadData";
 import { colors, pageWidths } from "@/lib/constants";
 
 export default function HomePage() {
   // ── Load content from markdown files at build time ──
-  const intro       = loadContent("home/intro.md");
-  const policyIntro = loadContent("home/policy-intro.md");
-  const explainer   = loadContent("home/explainer.md");
-  const support     = loadContent("home/support.md");
+  const intro            = loadContent("home/intro.md");
+  const policyIntro      = loadContent("home/policy-intro.md");
+  const explainer        = loadContent("home/explainer.md");
+  const support          = loadContent("home/support.md");
+  const alignmentScores  = loadAllStateAlignments();
 
   return (
     <main
@@ -77,7 +79,7 @@ export default function HomePage() {
           MAP SECTION
           Client Component — D3 choropleth + routing
           ════════════════════════════════════════════════════════ */}
-      <StateSelector />
+      <StateSelector alignmentScores={alignmentScores} />
 
       {/* ════════════════════════════════════════════════════════
           POLICY INTRO

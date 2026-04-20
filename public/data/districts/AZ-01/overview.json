@@ -1,0 +1,21 @@
+{
+  "district_id": "AZ-01",
+  "state_code": "AZ",
+  "representative": {
+    "name": "David Schweikert",
+    "party": "R",
+    "assumed_office": 2011,
+    "photo_url": "/images/reps/AZ-01.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 91,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 91 weighted CES respondents"
+  }
+}

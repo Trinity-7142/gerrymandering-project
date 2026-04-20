@@ -18,6 +18,7 @@ import SenatorPanel    from "@/components/state/SenatorPanel";
 import StateKeyFacts   from "@/components/state/StateKeyFacts";
 import StateTabs       from "@/components/state/StateTabs";
 import ZipLookup       from "@/components/state/ZipLookup";
+import AllDistricts    from "@/components/state/AllDistricts";
 import CESStatePanel   from "@/components/state/CESStatePanel";
 import { loadStateData, loadStateContent } from "@/lib/loadData";
 import { cardStyle, textColors, fonts, pageWidths } from "@/lib/constants";
@@ -36,15 +37,16 @@ export default async function StatePage({ params }) {
   const princeton  = loadStateData(stateCode, "princeton.json");
   const votecast   = loadStateData(stateCode, "votecast_salience.json");
   const senators   = loadStateData(stateCode, "senators.json");
+  const alignment  = loadStateData(stateCode, "alignment.json");
   const ces        = loadStateData(stateCode, "ces_summary.json");
   const keyFacts   = loadStateContent(stateCode, "key_facts.md");
 
-  // Compute statewide average alignment (0–100) from district scores
-  const avgAlignment = overview?.districts?.length
-    ? Math.round(
-        overview.districts.reduce((sum, d) => sum + (d.alignment_score ?? 0), 0) /
-        overview.districts.length * 100
-      )
+  // Statewide average alignment — mean of senator overall_scores from alignment.json
+  const senatorScores = (alignment?.senators ?? [])
+    .map((s) => s.overall_score)
+    .filter((s) => typeof s === "number");
+  const avgAlignment = senatorScores.length
+    ? Math.round((senatorScores.reduce((sum, s) => sum + s, 0) / senatorScores.length) * 100)
     : null;
 
   // ── Tab content ──────────────────────────────────────────────────────────
@@ -78,18 +80,7 @@ export default async function StatePage({ params }) {
         <ZipLookup availableStates={AVAILABLE_STATES} />
       </div>
 
-      {/* Placeholder for district table */}
-      <div style={{ textAlign: "center", paddingTop: "24px", borderTop: "1px solid #E8E6E3" }}>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#AAA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ display: "block", margin: "0 auto 12px" }}>
-          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
-          <rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>
-        </svg>
-        <p style={{ color: textColors.muted, fontSize: "0.9rem", fontFamily: fonts.sans }}>
-          All {overview?.total_districts ?? ""} {overview?.state_name ?? stateCode} districts with alignment scores, representative info, and top issues.
-          <br />
-          <span style={{ fontSize: "0.8rem", color: textColors.faint }}>(Sortable table — coming soon)</span>
-        </p>
-      </div>
+      <AllDistricts data={overview} availableStates={AVAILABLE_STATES} />
     </div>
   );
 

@@ -1,0 +1,21 @@
+{
+  "district_id": "MI-03",
+  "state_code": "MI",
+  "representative": {
+    "name": "Hillary J. Scholten",
+    "party": "D",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/MI-03.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 114,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 114 weighted CES respondents"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "district_id": "AZ-05",
+  "state_code": "AZ",
+  "representative": {
+    "name": "Andy Biggs",
+    "party": "R",
+    "assumed_office": 2017,
+    "photo_url": "/images/reps/AZ-05.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 85,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 85 weighted CES respondents"
+  }
+}

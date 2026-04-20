@@ -2,6 +2,7 @@
   "state_code": "NY",
   "state_name": "New York",
   "total_districts": 26,
+  "overall_alignment": 0.7107523942,
   "delegation_composition": {
     "democrat": 19,
     "republican": 7
@@ -9,184 +10,184 @@
   "districts": [
     {
       "district_id": "NY-01",
-      "representative": "Nicolas LaLota",
+      "representative": "Nick LaLota",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6622867363773576,
       "ces_sample_size": 82
     },
     {
       "district_id": "NY-02",
-      "representative": "Andrew Garbarino",
+      "representative": "Andrew R. Garbarino",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6789151258565793,
       "ces_sample_size": 68
     },
     {
       "district_id": "NY-03",
-      "representative": "Thomas Suozzi",
+      "representative": "Thomas R. Suozzi",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.8345195660578831,
       "ces_sample_size": 58
     },
     {
       "district_id": "NY-04",
       "representative": "Laura Gillen",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.9021801974766869,
       "ces_sample_size": 63
     },
     {
       "district_id": "NY-05",
-      "representative": "Gregory Meeks",
+      "representative": "Gregory W. Meeks",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6294254335916842,
       "ces_sample_size": 44
     },
     {
       "district_id": "NY-06",
       "representative": "Grace Meng",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6746168408056804,
       "ces_sample_size": 38
     },
     {
       "district_id": "NY-07",
-      "representative": "Nydia Velázquez",
+      "representative": "Nydia M. Velázquez",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6389775153413096,
       "ces_sample_size": 54
     },
     {
       "district_id": "NY-08",
-      "representative": "Hakeem Jeffries",
+      "representative": "Hakeem S. Jeffries",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.5977510711374053,
       "ces_sample_size": 41
     },
     {
       "district_id": "NY-09",
-      "representative": "Yvette Clarke",
+      "representative": "Yvette D. Clarke",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.595997422687511,
       "ces_sample_size": 49
     },
     {
       "district_id": "NY-10",
-      "representative": "Dan Goldman",
+      "representative": "Daniel S. Goldman",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6850969592808037,
       "ces_sample_size": 65
     },
     {
       "district_id": "NY-11",
       "representative": "Nicole Malliotakis",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7078291285888197,
       "ces_sample_size": 63
     },
     {
       "district_id": "NY-12",
       "representative": "Jerrold Nadler",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6075694422869293,
       "ces_sample_size": 91
     },
     {
       "district_id": "NY-13",
       "representative": "Adriano Espaillat",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.620470138429843,
       "ces_sample_size": 58
     },
     {
       "district_id": "NY-14",
       "representative": "Alexandria Ocasio-Cortez",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6217428266294288,
       "ces_sample_size": 45
     },
     {
       "district_id": "NY-15",
       "representative": "Ritchie Torres",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.628723290697162,
       "ces_sample_size": 38
     },
     {
       "district_id": "NY-16",
       "representative": "George Latimer",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.8715958603035291,
       "ces_sample_size": 80
     },
     {
       "district_id": "NY-17",
       "representative": "Michael Lawler",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6557327876426713,
       "ces_sample_size": 70
     },
     {
       "district_id": "NY-18",
       "representative": "Patrick Ryan",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6885291982719681,
       "ces_sample_size": 72
     },
     {
       "district_id": "NY-19",
       "representative": "Josh Riley",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.8878691022124704,
       "ces_sample_size": 99
     },
     {
       "district_id": "NY-20",
       "representative": "Paul Tonko",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6577966921161642,
       "ces_sample_size": 114
     },
     {
       "district_id": "NY-21",
-      "representative": "Elise Stefanik",
+      "representative": "Elise M. Stefanik",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7208190248766084,
       "ces_sample_size": 98
     },
     {
       "district_id": "NY-22",
-      "representative": "John Mannion",
+      "representative": "John W. Mannion",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.886981389650759,
       "ces_sample_size": 110
     },
     {
       "district_id": "NY-23",
-      "representative": "Nicholas Langworthy",
+      "representative": "Nicholas A. Langworthy",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6811544454681164,
       "ces_sample_size": 109
     },
     {
       "district_id": "NY-24",
       "representative": "Claudia Tenney",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7439488681308389,
       "ces_sample_size": 127
     },
     {
       "district_id": "NY-25",
-      "representative": "Joseph Morelle",
+      "representative": "Joseph D. Morelle",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6726559410392429,
       "ces_sample_size": 111
     },
     {
       "district_id": "NY-26",
-      "representative": "Timothy Kennedy",
+      "representative": "Timothy M. Kennedy",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.8288399667882695,
       "ces_sample_size": 114
     }
   ]

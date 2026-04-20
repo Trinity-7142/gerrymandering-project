@@ -1,0 +1,21 @@
+{
+  "district_id": "NY-15",
+  "state_code": "NY",
+  "representative": {
+    "name": "Ritchie Torres",
+    "party": "D",
+    "assumed_office": 2021,
+    "photo_url": "/images/reps/NY-15.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 38,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 38 weighted CES respondents"
+  }
+}

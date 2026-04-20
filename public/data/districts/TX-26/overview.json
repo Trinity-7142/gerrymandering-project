@@ -1,0 +1,21 @@
+{
+  "district_id": "TX-26",
+  "state_code": "TX",
+  "representative": {
+    "name": "Brandon Gill",
+    "party": "R",
+    "assumed_office": 2025,
+    "photo_url": "/images/reps/TX-26.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 88,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 88 weighted CES respondents"
+  }
+}

@@ -2,6 +2,7 @@
   "state_code": "IL",
   "state_name": "Illinois",
   "total_districts": 17,
+  "overall_alignment": 0.6979026878,
   "delegation_composition": {
     "democrat": 14,
     "republican": 3
@@ -9,121 +10,121 @@
   "districts": [
     {
       "district_id": "IL-01",
-      "representative": "Jonathan Jackson",
+      "representative": "Jonathan L. Jackson",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6866852561066112,
       "ces_sample_size": 83
     },
     {
       "district_id": "IL-02",
-      "representative": "Robin Kelly",
+      "representative": "Robin L. Kelly",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.655404482260433,
       "ces_sample_size": 57
     },
     {
       "district_id": "IL-03",
-      "representative": "Delia Ramirez",
+      "representative": "Delia C. Ramirez",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6485585612292697,
       "ces_sample_size": 77
     },
     {
       "district_id": "IL-04",
-      "representative": "Chuy García",
+      "representative": "Jesús G. \"Chuy\" García",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6748275446844457,
       "ces_sample_size": 35
     },
     {
       "district_id": "IL-05",
       "representative": "Mike Quigley",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6945067108247939,
       "ces_sample_size": 94
     },
     {
       "district_id": "IL-06",
       "representative": "Sean Casten",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6785620459186629,
       "ces_sample_size": 88
     },
     {
       "district_id": "IL-07",
-      "representative": "Danny Davis",
+      "representative": "Danny K. Davis",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6101304853578177,
       "ces_sample_size": 70
     },
     {
       "district_id": "IL-08",
       "representative": "Raja Krishnamoorthi",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7365073215516925,
       "ces_sample_size": 80
     },
     {
       "district_id": "IL-09",
-      "representative": "Jan Schakowsky",
+      "representative": "Janice D. Schakowsky",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6058384804656868,
       "ces_sample_size": 115
     },
     {
       "district_id": "IL-10",
-      "representative": "Brad Schneider",
+      "representative": "Bradley Scott Schneider",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.713398201569482,
       "ces_sample_size": 66
     },
     {
       "district_id": "IL-11",
       "representative": "Bill Foster",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7234515191527324,
       "ces_sample_size": 82
     },
     {
       "district_id": "IL-12",
       "representative": "Mike Bost",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7312873817756937,
       "ces_sample_size": 87
     },
     {
       "district_id": "IL-13",
-      "representative": "Nicole (Nikki) Budzinski",
+      "representative": "Nikki Budzinski",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6524862977568303,
       "ces_sample_size": 87
     },
     {
       "district_id": "IL-14",
       "representative": "Lauren Underwood",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6918937991778904,
       "ces_sample_size": 95
     },
     {
       "district_id": "IL-15",
-      "representative": "Mary Miller",
+      "representative": "Mary E. Miller",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.745718165753504,
       "ces_sample_size": 97
     },
     {
       "district_id": "IL-16",
       "representative": "Darin LaHood",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7363684374654604,
       "ces_sample_size": 92
     },
     {
       "district_id": "IL-17",
       "representative": "Eric Sorensen",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7278829495813137,
       "ces_sample_size": 82
     }
   ]

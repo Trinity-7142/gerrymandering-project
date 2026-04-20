@@ -1,0 +1,21 @@
+{
+  "district_id": "CA-31",
+  "state_code": "CA",
+  "representative": {
+    "name": "Gilbert Ray Cisneros, Jr.",
+    "party": "D",
+    "assumed_office": 2019,
+    "photo_url": "/images/reps/CA-31.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 40,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 40 weighted CES respondents"
+  }
+}

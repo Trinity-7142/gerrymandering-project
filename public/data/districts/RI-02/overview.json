@@ -1,0 +1,21 @@
+{
+  "district_id": "RI-02",
+  "state_code": "RI",
+  "representative": {
+    "name": "Seth Magaziner",
+    "party": "D",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/RI-02.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 70,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 70 weighted CES respondents"
+  }
+}

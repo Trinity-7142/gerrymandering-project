@@ -1,7 +1,8 @@
 {
   "state_code": "GA",
   "state_name": "Georgia",
-  "total_districts": 13,
+  "total_districts": 14,
+  "overall_alignment": 0.7524157715,
   "delegation_composition": {
     "democrat": 5,
     "republican": 8
@@ -9,93 +10,93 @@
   "districts": [
     {
       "district_id": "GA-01",
-      "representative": "Buddy Carter",
+      "representative": "Earl L. \"Buddy\" Carter",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7760663846168926,
       "ces_sample_size": 64
     },
     {
       "district_id": "GA-02",
-      "representative": "Sanford Bishop",
+      "representative": "Sanford D. Bishop, Jr.",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6967257241156232,
       "ces_sample_size": 76
     },
     {
       "district_id": "GA-03",
       "representative": "Brian Jack",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.9267447509210316,
       "ces_sample_size": 77
     },
     {
       "district_id": "GA-04",
-      "representative": "Hank Johnson",
+      "representative": "Henry C. \"Hank\" Johnson, Jr.",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6388459118710853,
       "ces_sample_size": 82
     },
     {
       "district_id": "GA-05",
       "representative": "Nikema Williams",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.64648572646808,
       "ces_sample_size": 84
     },
     {
       "district_id": "GA-06",
       "representative": "Lucy McBath",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6929882078199586,
       "ces_sample_size": 65
     },
     {
       "district_id": "GA-07",
-      "representative": "Rich McCormick",
+      "representative": "Richard McCormick",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7547340812185727,
       "ces_sample_size": 92
     },
     {
       "district_id": "GA-08",
       "representative": "Austin Scott",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.766652157889062,
       "ces_sample_size": 70
     },
     {
       "district_id": "GA-09",
-      "representative": "Andrew Clyde",
+      "representative": "Andrew S. Clyde",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.783649270983425,
       "ces_sample_size": 92
     },
     {
       "district_id": "GA-10",
       "representative": "Mike Collins",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7711301668283981,
       "ces_sample_size": 77
     },
     {
       "district_id": "GA-11",
       "representative": "Barry Loudermilk",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7478791802668077,
       "ces_sample_size": 95
     },
     {
       "district_id": "GA-12",
-      "representative": "Rick Allen",
+      "representative": "Rick W. Allen",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6944190004998971,
       "ces_sample_size": 77
     },
     {
       "district_id": "GA-13",
       "representative": "David Scott",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7080325477107653,
       "ces_sample_size": 82
     }
   ]

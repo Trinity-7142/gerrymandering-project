@@ -1,0 +1,21 @@
+{
+  "district_id": "NJ-08",
+  "state_code": "NJ",
+  "representative": {
+    "name": "Robert Menendez",
+    "party": "D",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/NJ-08.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 57,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 57 weighted CES respondents"
+  }
+}

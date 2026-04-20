@@ -1,7 +1,8 @@
 {
   "state_code": "NJ",
   "state_name": "New Jersey",
-  "total_districts": 11,
+  "total_districts": 12,
+  "overall_alignment": 0.7559059078,
   "delegation_composition": {
     "democrat": 8,
     "republican": 3
@@ -11,77 +12,77 @@
       "district_id": "NJ-01",
       "representative": "Donald Norcross",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6802674077654262,
       "ces_sample_size": 101
     },
     {
       "district_id": "NJ-02",
       "representative": "Jefferson Van Drew",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7254711330079983,
       "ces_sample_size": 92
     },
     {
       "district_id": "NJ-03",
-      "representative": "Herbert Conaway",
+      "representative": "Herbert C. Conaway, Jr.",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.875640041173443,
       "ces_sample_size": 88
     },
     {
       "district_id": "NJ-04",
-      "representative": "Chris Smith",
+      "representative": "Christopher H. Smith",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7828535378890639,
       "ces_sample_size": 101
     },
     {
       "district_id": "NJ-05",
       "representative": "Josh Gottheimer",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6821058343337647,
       "ces_sample_size": 86
     },
     {
       "district_id": "NJ-06",
-      "representative": "Frank Pallone",
+      "representative": "Frank Pallone, Jr.",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7053613381354038,
       "ces_sample_size": 78
     },
     {
       "district_id": "NJ-07",
-      "representative": "Thomas Kean",
+      "representative": "Thomas H. Kean, Jr.",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7435794571165749,
       "ces_sample_size": 90
     },
     {
       "district_id": "NJ-08",
       "representative": "Robert Menendez",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6695516362899329,
       "ces_sample_size": 57
     },
     {
       "district_id": "NJ-09",
       "representative": "Nellie Pou",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.8834956767884714,
       "ces_sample_size": 61
     },
     {
       "district_id": "NJ-10",
       "representative": "LaMonica McIver",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.888276133439386,
       "ces_sample_size": 52
     },
     {
       "district_id": "NJ-12",
       "representative": "Bonnie Watson Coleman",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6825459375990687,
       "ces_sample_size": 95
     }
   ]

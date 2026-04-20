@@ -1,0 +1,21 @@
+{
+  "district_id": "WI-01",
+  "state_code": "WI",
+  "representative": {
+    "name": "Bryan Steil",
+    "party": "R",
+    "assumed_office": 2019,
+    "photo_url": "/images/reps/WI-01.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 99,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 99 weighted CES respondents"
+  }
+}

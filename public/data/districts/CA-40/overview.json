@@ -1,0 +1,21 @@
+{
+  "district_id": "CA-40",
+  "state_code": "CA",
+  "representative": {
+    "name": "Young Kim",
+    "party": "R",
+    "assumed_office": 2021,
+    "photo_url": "/images/reps/CA-40.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 60,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 60 weighted CES respondents"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "district_id": "NY-01",
+  "state_code": "NY",
+  "representative": {
+    "name": "Nick LaLota",
+    "party": "R",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/NY-01.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 82,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 82 weighted CES respondents"
+  }
+}

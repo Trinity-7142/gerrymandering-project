@@ -1,0 +1,21 @@
+{
+  "district_id": "UT-02",
+  "state_code": "UT",
+  "representative": {
+    "name": "Celeste Maloy",
+    "party": "R",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/UT-02.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 43,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 43 weighted CES respondents"
+  }
+}

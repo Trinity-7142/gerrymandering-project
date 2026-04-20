@@ -1,0 +1,21 @@
+{
+  "district_id": "IN-05",
+  "state_code": "IN",
+  "representative": {
+    "name": "Victoria Spartz",
+    "party": "R",
+    "assumed_office": 2021,
+    "photo_url": "/images/reps/IN-05.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 103,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 103 weighted CES respondents"
+  }
+}

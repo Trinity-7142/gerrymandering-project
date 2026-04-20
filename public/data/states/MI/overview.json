@@ -2,6 +2,7 @@
   "state_code": "MI",
   "state_name": "Michigan",
   "total_districts": 13,
+  "overall_alignment": 0.7530044091,
   "delegation_composition": {
     "democrat": 6,
     "republican": 7
@@ -11,91 +12,91 @@
       "district_id": "MI-01",
       "representative": "Jack Bergman",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7443738931092132,
       "ces_sample_size": 119
     },
     {
       "district_id": "MI-02",
-      "representative": "John Moolenaar",
+      "representative": "John R. Moolenaar",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7598434863008022,
       "ces_sample_size": 82
     },
     {
       "district_id": "MI-03",
-      "representative": "Hillary Scholten",
+      "representative": "Hillary J. Scholten",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6962796562892989,
       "ces_sample_size": 114
     },
     {
       "district_id": "MI-04",
       "representative": "Bill Huizenga",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7644430957481549,
       "ces_sample_size": 78
     },
     {
       "district_id": "MI-05",
       "representative": "Tim Walberg",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.733419967902787,
       "ces_sample_size": 97
     },
     {
       "district_id": "MI-06",
       "representative": "Debbie Dingell",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6698664394637303,
       "ces_sample_size": 94
     },
     {
       "district_id": "MI-07",
       "representative": "Tom Barrett",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.9022733998732574,
       "ces_sample_size": 111
     },
     {
       "district_id": "MI-08",
       "representative": "Kristen McDonald Rivet",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.8935253010139417,
       "ces_sample_size": 102
     },
     {
       "district_id": "MI-09",
-      "representative": "Lisa McClain",
+      "representative": "Lisa C. McClain",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.753841706818647,
       "ces_sample_size": 105
     },
     {
       "district_id": "MI-10",
       "representative": "John James",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7235646221448834,
       "ces_sample_size": 114
     },
     {
       "district_id": "MI-11",
-      "representative": "Haley Stevens",
+      "representative": "Haley M. Stevens",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6888268496719601,
       "ces_sample_size": 88
     },
     {
       "district_id": "MI-12",
       "representative": "Rashida Tlaib",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7112648612898349,
       "ces_sample_size": 83
     },
     {
       "district_id": "MI-13",
       "representative": "Shri Thanedar",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6909002853897971,
       "ces_sample_size": 86
     }
   ]

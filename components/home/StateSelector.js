@@ -34,10 +34,6 @@ const STATE_NAMES = {
   "47":"Tennessee","48":"Texas","49":"Utah","50":"Vermont","51":"Virginia",
   "53":"Washington","54":"West Virginia","55":"Wisconsin","56":"Wyoming",
 };
-// Update when alignment metric is coded
-function getPlaceholderScore(fips) {
-    return ((Number(fips) * 17) % 101) / 100;
-}
 // level widths could change
 function alignmentLevel(score) {
   if (score < 0.3) return "Low";
@@ -47,18 +43,27 @@ function alignmentLevel(score) {
 }
 
 function getFill(score) {
+  if (score == null) return "#D9D7D4";
   if (score < 0.3) return alignmentColors.low;
   if (score < 0.6) return alignmentColors.partial;
   if (score < 0.8) return alignmentColors.moderate;
   return alignmentColors.high;
 }
 
-export default function StateSelector({ availableStates, comingSoon }) {
+export default function StateSelector({ alignmentScores = {} }) {
   const svgRef = useRef(null);
   const feedbackRef = useRef(null);
+  const scoresRef = useRef(alignmentScores);
   const router = useRouter();
   const [mapReady, setMapReady] = useState(false);
   const [error, setError] = useState(false);
+
+  // getScore returns a 0–1 float or null for a D3 feature id (FIPS integer)
+  function getScore(fipsId) {
+    const fips = String(fipsId).padStart(2, "0");
+    const code = FIPS_TO_STATE[fips];
+    return code != null ? (scoresRef.current[code] ?? null) : null;
+  }
 
   useEffect(() => {
     let cancelled = false;
@@ -105,33 +110,36 @@ export default function StateSelector({ availableStates, comingSoon }) {
           .attr("class", "state-shape")
           .attr("d", path)
           .attr("tabindex", 0)
-          .attr("fill", (d) => getFill(getPlaceholderScore(d.id)))
+          .attr("fill", (d) => getFill(getScore(d.id)))
           .attr("data-state-name", (d) =>
             STATE_NAMES[String(d.id).padStart(2, "0")] || `State ${d.id}`
           )
           .attr("aria-label", (d) => {
-            const name =
-              STATE_NAMES[String(d.id).padStart(2, "0")] || `State ${d.id}`;
-            const score = getPlaceholderScore(d.id).toFixed(2);
-            return `${name}, placeholder alignment score ${score}`;
+            const name  = STATE_NAMES[String(d.id).padStart(2, "0")] || `State ${d.id}`;
+            const score = getScore(d.id);
+            return score != null
+              ? `${name}, alignment score ${Math.round(score * 100)}%`
+              : `${name}, alignment score not yet available`;
           })
           // ── Hover / focus → update feedback text ──
           .on("mouseenter", function (event, d) {
-            const fips = String(d.id).padStart(2, "0");
+            const fips  = String(d.id).padStart(2, "0");
             const name  = STATE_NAMES[fips] || `State ${d.id}`;
-            const score = getPlaceholderScore(d.id);
+            const score = getScore(d.id);
             if (feedbackRef.current) {
-              feedbackRef.current.innerHTML =
-                `<strong>${name}</strong> · Placeholder score: ${score.toFixed(2) + "%"} · ${alignmentLevel(score)} alignment`;
+              feedbackRef.current.innerHTML = score != null
+                ? `<strong>${name}</strong> · ${Math.round(score * 100)}% · ${alignmentLevel(score)} alignment`
+                : `<strong>${name}</strong> · Alignment score not yet available`;
             }
           })
           .on("focus", function (event, d) {
-            const fips = String(d.id).padStart(2, "0");
+            const fips  = String(d.id).padStart(2, "0");
             const name  = STATE_NAMES[fips] || `State ${d.id}`;
-            const score = getPlaceholderScore(d.id);
+            const score = getScore(d.id);
             if (feedbackRef.current) {
-              feedbackRef.current.innerHTML =
-                `<strong>${name}</strong> · Placeholder score: ${score.toFixed(2) + "%"} · ${alignmentLevel(score)} alignment`;
+              feedbackRef.current.innerHTML = score != null
+                ? `<strong>${name}</strong> · ${Math.round(score * 100)}% · ${alignmentLevel(score)} alignment`
+                : `<strong>${name}</strong> · Alignment score not yet available`;
             }
           })
           .on("mouseleave", function () {

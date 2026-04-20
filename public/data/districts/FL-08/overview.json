@@ -1,0 +1,21 @@
+{
+  "district_id": "FL-08",
+  "state_code": "FL",
+  "representative": {
+    "name": "Mike Haridopolos",
+    "party": "R",
+    "assumed_office": 2025,
+    "photo_url": "/images/reps/FL-08.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 128,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 128 weighted CES respondents"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "district_id": "GA-08",
+  "state_code": "GA",
+  "representative": {
+    "name": "Austin Scott",
+    "party": "R",
+    "assumed_office": 2011,
+    "photo_url": "/images/reps/GA-08.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 70,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 70 weighted CES respondents"
+  }
+}

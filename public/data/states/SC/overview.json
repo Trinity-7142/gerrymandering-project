@@ -2,6 +2,7 @@
   "state_code": "SC",
   "state_name": "South Carolina",
   "total_districts": 7,
+  "overall_alignment": 0.7789970983,
   "delegation_composition": {
     "democrat": 1,
     "republican": 6
@@ -11,49 +12,49 @@
       "district_id": "SC-01",
       "representative": "Nancy Mace",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7830606676055097,
       "ces_sample_size": 85
     },
     {
       "district_id": "SC-02",
       "representative": "Joe Wilson",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7414721911719404,
       "ces_sample_size": 97
     },
     {
       "district_id": "SC-03",
       "representative": "Sheri Biggs",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.9055936829501915,
       "ces_sample_size": 76
     },
     {
       "district_id": "SC-04",
-      "representative": "William Timmons",
+      "representative": "William R. Timmons IV",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7707519610575678,
       "ces_sample_size": 97
     },
     {
       "district_id": "SC-05",
       "representative": "Ralph Norman",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7315512962881466,
       "ces_sample_size": 95
     },
     {
       "district_id": "SC-06",
-      "representative": "Jim Clyburn",
+      "representative": "James E. Clyburn",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6808409641234774,
       "ces_sample_size": 54
     },
     {
       "district_id": "SC-07",
       "representative": "Russell Fry",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7331564271638623,
       "ces_sample_size": 90
     }
   ]

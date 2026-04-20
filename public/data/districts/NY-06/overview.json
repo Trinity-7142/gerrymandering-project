@@ -1,0 +1,21 @@
+{
+  "district_id": "NY-06",
+  "state_code": "NY",
+  "representative": {
+    "name": "Grace Meng",
+    "party": "D",
+    "assumed_office": 2013,
+    "photo_url": "/images/reps/NY-06.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 38,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 38 weighted CES respondents"
+  }
+}

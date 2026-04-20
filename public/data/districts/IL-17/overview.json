@@ -1,0 +1,21 @@
+{
+  "district_id": "IL-17",
+  "state_code": "IL",
+  "representative": {
+    "name": "Eric Sorensen",
+    "party": "D",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/IL-17.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 82,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 82 weighted CES respondents"
+  }
+}

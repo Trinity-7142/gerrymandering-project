@@ -1,0 +1,21 @@
+{
+  "district_id": "MT-01",
+  "state_code": "MT",
+  "representative": {
+    "name": "Ryan K. Zinke",
+    "party": "R",
+    "assumed_office": 2015,
+    "photo_url": "/images/reps/MT-01.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 81,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 81 weighted CES respondents"
+  }
+}

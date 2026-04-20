@@ -1,0 +1,21 @@
+{
+  "district_id": "OK-02",
+  "state_code": "OK",
+  "representative": {
+    "name": "Josh Brecheen",
+    "party": "R",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/OK-02.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 66,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 66 weighted CES respondents"
+  }
+}

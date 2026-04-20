@@ -1,0 +1,21 @@
+{
+  "district_id": "TX-19",
+  "state_code": "TX",
+  "representative": {
+    "name": "Jodey C. Arrington",
+    "party": "R",
+    "assumed_office": 2017,
+    "photo_url": "/images/reps/TX-19.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 75,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 75 weighted CES respondents"
+  }
+}

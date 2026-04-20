@@ -1,0 +1,21 @@
+{
+  "district_id": "PA-16",
+  "state_code": "PA",
+  "representative": {
+    "name": "Mike Kelly",
+    "party": "R",
+    "assumed_office": 2011,
+    "photo_url": "/images/reps/PA-16.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 121,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 121 weighted CES respondents"
+  }
+}

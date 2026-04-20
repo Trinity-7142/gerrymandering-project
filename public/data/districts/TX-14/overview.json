@@ -1,0 +1,21 @@
+{
+  "district_id": "TX-14",
+  "state_code": "TX",
+  "representative": {
+    "name": "Randy K. Weber, Sr.",
+    "party": "R",
+    "assumed_office": 2013,
+    "photo_url": "/images/reps/TX-14.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 70,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 70 weighted CES respondents"
+  }
+}

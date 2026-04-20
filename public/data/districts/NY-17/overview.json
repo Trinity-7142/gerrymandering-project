@@ -1,0 +1,21 @@
+{
+  "district_id": "NY-17",
+  "state_code": "NY",
+  "representative": {
+    "name": "Michael Lawler",
+    "party": "R",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/NY-17.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 70,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 70 weighted CES respondents"
+  }
+}

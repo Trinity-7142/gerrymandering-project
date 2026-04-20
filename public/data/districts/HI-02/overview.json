@@ -1,0 +1,21 @@
+{
+  "district_id": "HI-02",
+  "state_code": "HI",
+  "representative": {
+    "name": "Jill N. Tokuda",
+    "party": "D",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/HI-02.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 54,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 54 weighted CES respondents"
+  }
+}

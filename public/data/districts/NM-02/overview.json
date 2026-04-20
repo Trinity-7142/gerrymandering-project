@@ -1,0 +1,21 @@
+{
+  "district_id": "NM-02",
+  "state_code": "NM",
+  "representative": {
+    "name": "Gabe Vasquez",
+    "party": "D",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/NM-02.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 56,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 56 weighted CES respondents"
+  }
+}

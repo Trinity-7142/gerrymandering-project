@@ -1,0 +1,21 @@
+{
+  "district_id": "MS-02",
+  "state_code": "MS",
+  "representative": {
+    "name": "Bennie G. Thompson",
+    "party": "D",
+    "assumed_office": 1993,
+    "photo_url": "/images/reps/MS-02.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 53,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 53 weighted CES respondents"
+  }
+}

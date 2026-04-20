@@ -1,0 +1,21 @@
+{
+  "district_id": "MO-05",
+  "state_code": "MO",
+  "representative": {
+    "name": "Emanuel Cleaver",
+    "party": "D",
+    "assumed_office": 2005,
+    "photo_url": "/images/reps/MO-05.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 125,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 125 weighted CES respondents"
+  }
+}

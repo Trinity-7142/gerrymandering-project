@@ -1,0 +1,21 @@
+{
+  "district_id": "CA-37",
+  "state_code": "CA",
+  "representative": {
+    "name": "Sydney Kamlager-Dove",
+    "party": "D",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/CA-37.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 48,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 48 weighted CES respondents"
+  }
+}

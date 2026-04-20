@@ -1,0 +1,21 @@
+{
+  "district_id": "MA-02",
+  "state_code": "MA",
+  "representative": {
+    "name": "James P. McGovern",
+    "party": "D",
+    "assumed_office": 1997,
+    "photo_url": "/images/reps/MA-02.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 87,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 87 weighted CES respondents"
+  }
+}

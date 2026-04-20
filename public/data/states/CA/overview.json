@@ -1,367 +1,368 @@
 {
   "state_code": "CA",
   "state_name": "California",
-  "total_districts": 51,
+  "total_districts": 52,
+  "overall_alignment": 0.7267174227,
   "delegation_composition": {
     "democrat": 43,
-    "republican": 8
+    "republican": 7
   },
   "districts": [
     {
       "district_id": "CA-02",
       "representative": "Jared Huffman",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6147621720931399,
       "ces_sample_size": 73
     },
     {
       "district_id": "CA-03",
       "representative": "Kevin Kiley",
-      "party": "R",
-      "alignment_score": 0.69,
+      "party": "I",
+      "alignment_score": 0.6820449631551244,
       "ces_sample_size": 81
     },
     {
       "district_id": "CA-04",
       "representative": "Mike Thompson",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6437777624884076,
       "ces_sample_size": 60
     },
     {
       "district_id": "CA-05",
       "representative": "Tom McClintock",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6926626136050329,
       "ces_sample_size": 75
     },
     {
       "district_id": "CA-06",
       "representative": "Ami Bera",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7288176727573501,
       "ces_sample_size": 65
     },
     {
       "district_id": "CA-07",
-      "representative": "Doris Matsui",
+      "representative": "Doris O. Matsui",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.657474709752613,
       "ces_sample_size": 68
     },
     {
       "district_id": "CA-08",
       "representative": "John Garamendi",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6339856986740858,
       "ces_sample_size": 51
     },
     {
       "district_id": "CA-09",
       "representative": "Josh Harder",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7890826237561722,
       "ces_sample_size": 40
     },
     {
       "district_id": "CA-10",
       "representative": "Mark DeSaulnier",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6899886946386946,
       "ces_sample_size": 69
     },
     {
       "district_id": "CA-11",
       "representative": "Nancy Pelosi",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6179769264606362,
       "ces_sample_size": 82
     },
     {
       "district_id": "CA-12",
       "representative": "Lateefah Simon",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.8759208387096774,
       "ces_sample_size": 49
     },
     {
       "district_id": "CA-13",
       "representative": "Adam Gray",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.8996430918114143,
       "ces_sample_size": 38
     },
     {
       "district_id": "CA-14",
       "representative": "Eric Swalwell",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.701034100684262,
       "ces_sample_size": 34
     },
     {
       "district_id": "CA-15",
       "representative": "Kevin Mullin",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6451522764869538,
       "ces_sample_size": 39
     },
     {
       "district_id": "CA-16",
-      "representative": "Sam Liccardo",
+      "representative": "Sam T. Liccardo",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.8852601439205955,
       "ces_sample_size": 43
     },
     {
       "district_id": "CA-17",
       "representative": "Ro Khanna",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6504904349951124,
       "ces_sample_size": 45
     },
     {
       "district_id": "CA-18",
       "representative": "Zoe Lofgren",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6508894816652881,
       "ces_sample_size": 28
     },
     {
       "district_id": "CA-19",
       "representative": "Jimmy Panetta",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6458394425646038,
       "ces_sample_size": 55
     },
     {
       "district_id": "CA-20",
       "representative": "Vince Fong",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.9044029172584193,
       "ces_sample_size": 64
     },
     {
       "district_id": "CA-21",
       "representative": "Jim Costa",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.724333981753014,
       "ces_sample_size": 57
     },
     {
       "district_id": "CA-22",
-      "representative": "David Valadao",
+      "representative": "David G. Valadao",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6962406347595056,
       "ces_sample_size": 33
     },
     {
       "district_id": "CA-23",
       "representative": "Jay Obernolte",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7214661797879539,
       "ces_sample_size": 82
     },
     {
       "district_id": "CA-24",
-      "representative": "Salud Carbajal",
+      "representative": "Salud O. Carbajal",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6907522283630347,
       "ces_sample_size": 59
     },
     {
       "district_id": "CA-25",
       "representative": "Raul Ruiz",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6978290316314508,
       "ces_sample_size": 55
     },
     {
       "district_id": "CA-26",
       "representative": "Julia Brownley",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6784283842143519,
       "ces_sample_size": 54
     },
     {
       "district_id": "CA-27",
       "representative": "George Whitesides",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.9147443076923076,
       "ces_sample_size": 44
     },
     {
       "district_id": "CA-28",
       "representative": "Judy Chu",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6556952990199764,
       "ces_sample_size": 48
     },
     {
       "district_id": "CA-29",
-      "representative": "Luz Rivas",
+      "representative": "Luz M. Rivas",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.8810081538461538,
       "ces_sample_size": 38
     },
     {
       "district_id": "CA-30",
       "representative": "Laura Friedman",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.8883793101736972,
       "ces_sample_size": 87
     },
     {
       "district_id": "CA-31",
-      "representative": "Gilbert Cisneros",
+      "representative": "Gilbert Ray Cisneros, Jr.",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.9098455285359802,
       "ces_sample_size": 40
     },
     {
       "district_id": "CA-32",
       "representative": "Brad Sherman",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6823462835551546,
       "ces_sample_size": 57
     },
     {
       "district_id": "CA-33",
       "representative": "Pete Aguilar",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6971173529338046,
       "ces_sample_size": 44
     },
     {
       "district_id": "CA-34",
       "representative": "Jimmy Gomez",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.667077409830313,
       "ces_sample_size": 35
     },
     {
       "district_id": "CA-35",
-      "representative": "Norma Torres",
+      "representative": "Norma J. Torres",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6973390112038499,
       "ces_sample_size": 41
     },
     {
       "district_id": "CA-36",
       "representative": "Ted Lieu",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6624005836278417,
       "ces_sample_size": 51
     },
     {
       "district_id": "CA-37",
       "representative": "Sydney Kamlager-Dove",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6694256578188837,
       "ces_sample_size": 48
     },
     {
       "district_id": "CA-38",
-      "representative": "Linda Sánchez",
+      "representative": "Linda T. Sánchez",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.717841360002005,
       "ces_sample_size": 36
     },
     {
       "district_id": "CA-39",
       "representative": "Mark Takano",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7562643722585658,
       "ces_sample_size": 40
     },
     {
       "district_id": "CA-40",
       "representative": "Young Kim",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7205967429881945,
       "ces_sample_size": 60
     },
     {
       "district_id": "CA-41",
       "representative": "Ken Calvert",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7433119624282527,
       "ces_sample_size": 76
     },
     {
       "district_id": "CA-42",
       "representative": "Robert Garcia",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6438295235230719,
       "ces_sample_size": 46
     },
     {
       "district_id": "CA-43",
       "representative": "Maxine Waters",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6461360054640701,
       "ces_sample_size": 39
     },
     {
       "district_id": "CA-44",
-      "representative": "Nanette Barragán",
+      "representative": "Nanette Diaz Barragán",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6634386560393012,
       "ces_sample_size": 41
     },
     {
       "district_id": "CA-45",
       "representative": "Derek Tran",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.9108913846153848,
       "ces_sample_size": 52
     },
     {
       "district_id": "CA-46",
-      "representative": "J. Correa",
+      "representative": "J. Luis Correa",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7012277216332053,
       "ces_sample_size": 32
     },
     {
       "district_id": "CA-47",
       "representative": "Dave Min",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.8875906550868486,
       "ces_sample_size": 54
     },
     {
       "district_id": "CA-48",
       "representative": "Darrell Issa",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7430698608917964,
       "ces_sample_size": 72
     },
     {
       "district_id": "CA-49",
       "representative": "Mike Levin",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6932752901220642,
       "ces_sample_size": 45
     },
     {
       "district_id": "CA-50",
-      "representative": "Scott Peters",
+      "representative": "Scott H. Peters",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.69735375880392,
       "ces_sample_size": 63
     },
     {
       "district_id": "CA-51",
       "representative": "Sara Jacobs",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6825730148883374,
       "ces_sample_size": 62
     },
     {
       "district_id": "CA-52",
       "representative": "Juan Vargas",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6805775474346442,
       "ces_sample_size": 25
     }
   ]

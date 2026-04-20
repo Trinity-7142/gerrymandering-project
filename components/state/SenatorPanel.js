@@ -4,7 +4,7 @@
 // Loads senator bios from public/content/senator-info/ at build time
 
 import PoliticianPanel from "@/components/shared/PoliticianPanel";
-import { loadSenatorBio, loadStateData } from "@/lib/loadData";
+import { loadSenatorBioWithSources, loadStateData } from "@/lib/loadData";
 import { fonts, textColors } from "@/lib/constants";
 
 export default function SenatorPanel({ data }) {
@@ -27,7 +27,9 @@ export default function SenatorPanel({ data }) {
   return (
     <div style={{ marginBottom: "4px" }}>
       {senators.map((senator) => {
-        const bio = state_code ? loadSenatorBio(state_code, senator.name) : null;
+        const { body: bio, sources } = state_code
+          ? loadSenatorBioWithSources(state_code, senator.name)
+          : { body: null, sources: null };
 
         // Merge real alignment data over the placeholder in senators.json
         const realAlignment = alignmentByName[senator.name];
@@ -47,6 +49,7 @@ export default function SenatorPanel({ data }) {
             key={senator.name}
             politician={politician}
             bio={bio}
+            sources={sources}
             chamber="senator"
           />
         );

@@ -1,0 +1,21 @@
+{
+  "district_id": "AZ-06",
+  "state_code": "AZ",
+  "representative": {
+    "name": "Juan Ciscomani",
+    "party": "R",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/AZ-06.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 158,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 158 weighted CES respondents"
+  }
+}

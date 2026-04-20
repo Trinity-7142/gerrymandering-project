@@ -1,0 +1,21 @@
+{
+  "district_id": "CA-41",
+  "state_code": "CA",
+  "representative": {
+    "name": "Ken Calvert",
+    "party": "R",
+    "assumed_office": 1993,
+    "photo_url": "/images/reps/CA-41.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 76,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 76 weighted CES respondents"
+  }
+}

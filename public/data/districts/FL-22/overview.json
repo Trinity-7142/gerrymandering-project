@@ -1,0 +1,21 @@
+{
+  "district_id": "FL-22",
+  "state_code": "FL",
+  "representative": {
+    "name": "Lois Frankel",
+    "party": "D",
+    "assumed_office": 2013,
+    "photo_url": "/images/reps/FL-22.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 73,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 73 weighted CES respondents"
+  }
+}

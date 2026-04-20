@@ -1,0 +1,21 @@
+{
+  "district_id": "MN-08",
+  "state_code": "MN",
+  "representative": {
+    "name": "Pete Stauber",
+    "party": "R",
+    "assumed_office": 2019,
+    "photo_url": "/images/reps/MN-08.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 94,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 94 weighted CES respondents"
+  }
+}

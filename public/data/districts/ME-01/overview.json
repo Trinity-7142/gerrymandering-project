@@ -1,0 +1,21 @@
+{
+  "district_id": "ME-01",
+  "state_code": "ME",
+  "representative": {
+    "name": "Chellie Pingree",
+    "party": "D",
+    "assumed_office": 2009,
+    "photo_url": "/images/reps/ME-01.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 84,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 84 weighted CES respondents"
+  }
+}

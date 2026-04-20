@@ -1,0 +1,21 @@
+{
+  "district_id": "NC-01",
+  "state_code": "NC",
+  "representative": {
+    "name": "Donald G. Davis",
+    "party": "D",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/NC-01.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 63,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 63 weighted CES respondents"
+  }
+}
