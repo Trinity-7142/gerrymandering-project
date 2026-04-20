@@ -1,11 +1,11 @@
 {
   "state_code": "HI",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-19",
   "senators": [
     {
       "name": "Mazie Hirono",
-      "overall_score": 0.8039721539945608,
-      "overall_label": "Strong Alignment",
+      "overall_score": 0.6310419833642579,
+      "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
           "issue_id": "guns",
@@ -23,38 +23,38 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.8912222222222222,
+          "score": 0.7662222222222222,
           "salience_weight": 0.055909412597310686,
-          "weighted_contribution": 0.049827710938114333,
-          "direction": "Strong Alignment"
-        },
-        {
-          "issue_id": "environment",
-          "score": 0.6620411522633745,
-          "salience_weight": 0.13305024769992924,
-          "weighted_contribution": 0.08808473929618854,
+          "weighted_contribution": 0.0428390343634505,
           "direction": "Moderate Alignment"
         },
         {
+          "issue_id": "environment",
+          "score": 0.4441393728222996,
+          "salience_weight": 0.13305024769992924,
+          "weighted_contribution": 0.05909285356729818,
+          "direction": "Partial Alignment"
+        },
+        {
           "issue_id": "economy",
-          "score": 0.887492295597484,
+          "score": 0.6614639410187666,
           "salience_weight": 0.5633404104741685,
-          "weighted_contribution": 0.49996027409454874,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.3726293680473732,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9668823529411765,
+          "score": 0.8711694915254238,
           "salience_weight": 0.10049539985845717,
-          "weighted_contribution": 0.09716722867490944,
+          "weighted_contribution": 0.08754852639533628,
           "direction": "Strong Alignment"
         }
       ]
     },
     {
       "name": "Brian Schatz",
-      "overall_score": 0.8039721539945608,
-      "overall_label": "Strong Alignment",
+      "overall_score": 0.6310419833642579,
+      "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
           "issue_id": "guns",
@@ -72,30 +72,30 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.8912222222222222,
+          "score": 0.7662222222222222,
           "salience_weight": 0.055909412597310686,
-          "weighted_contribution": 0.049827710938114333,
-          "direction": "Strong Alignment"
-        },
-        {
-          "issue_id": "environment",
-          "score": 0.6620411522633745,
-          "salience_weight": 0.13305024769992924,
-          "weighted_contribution": 0.08808473929618854,
+          "weighted_contribution": 0.0428390343634505,
           "direction": "Moderate Alignment"
         },
         {
+          "issue_id": "environment",
+          "score": 0.4441393728222996,
+          "salience_weight": 0.13305024769992924,
+          "weighted_contribution": 0.05909285356729818,
+          "direction": "Partial Alignment"
+        },
+        {
           "issue_id": "economy",
-          "score": 0.887492295597484,
+          "score": 0.6614639410187666,
           "salience_weight": 0.5633404104741685,
-          "weighted_contribution": 0.49996027409454874,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.3726293680473732,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9668823529411765,
+          "score": 0.8711694915254238,
           "salience_weight": 0.10049539985845717,
-          "weighted_contribution": 0.09716722867490944,
+          "weighted_contribution": 0.08754852639533628,
           "direction": "Strong Alignment"
         }
       ]

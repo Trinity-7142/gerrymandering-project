@@ -1,7 +1,7 @@
 {
   "district_id": "NY-09",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.595997422687511,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.36455756772780584,
   "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.6745849462365592,
+      "score": 0.2627179487179486,
       "salience_weight": 0.15163934426229508,
-      "weighted_contribution": 0.10229361889652742,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.039838377469524996,
+      "direction": "Low Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.6719562499999999,
+      "score": 0.41977126099706746,
       "salience_weight": 0.6700819672131147,
-      "weighted_contribution": 0.4502657658811475,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.2812811523484448,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

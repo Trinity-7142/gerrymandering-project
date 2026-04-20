@@ -1,8 +1,8 @@
 {
   "district_id": "FL-06",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.926232018619278,
-  "overall_label": "Strong Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.549410109831944,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -16,17 +16,17 @@
   "issue_scores": [
     {
       "issue_id": "environment",
-      "score": 0.9267575757575757,
+      "score": 0.5971666666666666,
       "salience_weight": 0.11353711790393012,
-      "weighted_contribution": 0.10522138414714832,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.06780058224163027,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.926164705882353,
+      "score": 0.5432935064935066,
       "salience_weight": 0.8864628820960699,
-      "weighted_contribution": 0.8210106344721296,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.4816095275903138,
+      "direction": "Partial Alignment"
     }
   ],
   "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."

@@ -1,11 +1,11 @@
 {
   "state_code": "SC",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-19",
   "senators": [
     {
       "name": "Lindsey Graham",
-      "overall_score": 0.8322733473492864,
-      "overall_label": "Strong Alignment",
+      "overall_score": 0.7322916280057641,
+      "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
           "issue_id": "guns",
@@ -23,38 +23,38 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.9728888888888889,
+          "score": 0.9021111111111111,
           "salience_weight": 0.056985294117647065,
-          "weighted_contribution": 0.05544035947712419,
+          "weighted_contribution": 0.051407066993464055,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "environment",
-          "score": 0.801738683127572,
+          "score": 0.6576393728222996,
           "salience_weight": 0.04779411764705883,
-          "weighted_contribution": 0.03831839294359719,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.031431293554006964,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9378240566037731,
+          "score": 0.7570148793565682,
           "salience_weight": 0.5245098039215687,
-          "weighted_contribution": 0.49189791204217514,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.39706172593702355,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9198676470588236,
+          "score": 0.9844194915254237,
           "salience_weight": 0.08946078431372549,
-          "weighted_contribution": 0.08229208117070358,
+          "weighted_contribution": 0.08806693980558325,
           "direction": "Strong Alignment"
         }
       ]
     },
     {
       "name": "Tim Scott",
-      "overall_score": 0.8322733473492864,
-      "overall_label": "Strong Alignment",
+      "overall_score": 0.7322916280057641,
+      "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
           "issue_id": "guns",
@@ -72,30 +72,30 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.9728888888888889,
+          "score": 0.9021111111111111,
           "salience_weight": 0.056985294117647065,
-          "weighted_contribution": 0.05544035947712419,
+          "weighted_contribution": 0.051407066993464055,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "environment",
-          "score": 0.801738683127572,
+          "score": 0.6576393728222996,
           "salience_weight": 0.04779411764705883,
-          "weighted_contribution": 0.03831839294359719,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.031431293554006964,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9378240566037731,
+          "score": 0.7570148793565682,
           "salience_weight": 0.5245098039215687,
-          "weighted_contribution": 0.49189791204217514,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.39706172593702355,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9198676470588236,
+          "score": 0.9844194915254237,
           "salience_weight": 0.08946078431372549,
-          "weighted_contribution": 0.08229208117070358,
+          "weighted_contribution": 0.08806693980558325,
           "direction": "Strong Alignment"
         }
       ]

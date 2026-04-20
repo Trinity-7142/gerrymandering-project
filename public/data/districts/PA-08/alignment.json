@@ -1,8 +1,8 @@
 {
   "district_id": "PA-08",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.9028647953216375,
-  "overall_label": "Strong Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5031188643188643,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,17 +23,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.9436666666666668,
+      "score": 0.5493333333333335,
       "salience_weight": 0.09483167377904221,
-      "weighted_contribution": 0.08948948948948951,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.05209419946262053,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.9331100000000001,
+      "score": 0.48673295454545457,
       "salience_weight": 0.8117591275486012,
-      "weighted_contribution": 0.7574605595068754,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.39510991853097116,
+      "direction": "Partial Alignment"
     }
   ],
   "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."

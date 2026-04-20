@@ -1,8 +1,8 @@
 {
   "district_id": "NV-04",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7266198496076722,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5604793191623837,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8198677419354838,
+      "score": 0.5798846153846153,
       "salience_weight": 0.10450450450450452,
-      "weighted_contribution": 0.08567987213019472,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.0606005544005544,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7558958333333332,
+      "score": 0.5681524926686217,
       "salience_weight": 0.7513513513513514,
-      "weighted_contribution": 0.5679433558558559,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.42688214314020767,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

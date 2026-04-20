@@ -1,7 +1,7 @@
 {
   "district_id": "TX-31",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7525641441394634,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6090768149718151,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8319301075268817,
+      "score": 0.6062179487179487,
       "salience_weight": 0.08651633686148182,
-      "weighted_contribution": 0.07197554542800448,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.052447756262758556,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7880562500000001,
+      "score": 0.6250029325513196,
       "salience_weight": 0.7602393005062126,
-      "weighted_contribution": 0.599111332259549,
+      "weighted_contribution": 0.47515179225714677,
       "direction": "Moderate Alignment"
     },
     {

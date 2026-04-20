@@ -1,7 +1,7 @@
 {
   "district_id": "LA-03",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7654203812533363,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6213578917641116,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8526956989247313,
+      "score": 0.6515512820512821,
       "salience_weight": 0.06560283687943261,
-      "weighted_contribution": 0.05593925684435293,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.042743612474995446,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7877427083333333,
+      "score": 0.624448680351906,
       "salience_weight": 0.801418439716312,
-      "weighted_contribution": 0.6313115322104018,
+      "weighted_contribution": 0.5004446870905346,
       "direction": "Moderate Alignment"
     },
     {

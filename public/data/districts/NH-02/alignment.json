@@ -1,8 +1,8 @@
 {
   "district_id": "NH-02",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.8897147515986227,
-  "overall_label": "Strong Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.4958060076912758,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,17 +23,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.9369375000000001,
+      "score": 0.4955,
       "salience_weight": 0.17904574520413183,
-      "weighted_contribution": 0.16775467289719628,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.08871716674864732,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.93319,
+      "score": 0.4874147727272728,
       "salience_weight": 0.7063453025086079,
-      "weighted_contribution": 0.6591543728480078,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.3442831350892099,
+      "direction": "Partial Alignment"
     }
   ],
   "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."

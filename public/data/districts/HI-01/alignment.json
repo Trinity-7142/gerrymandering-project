@@ -1,8 +1,8 @@
 {
   "district_id": "HI-01",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6759784049357894,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.45146022447881207,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.7026032258064517,
+      "score": 0.32388461538461544,
       "salience_weight": 0.17231897341888178,
-      "weighted_contribution": 0.12107186659176254,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.055811464429246296,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7161208333333333,
+      "score": 0.49784164222873895,
       "salience_weight": 0.7296058661778185,
-      "weighted_contribution": 0.5224859608921478,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.36322818259768674,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

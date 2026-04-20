@@ -1,8 +1,8 @@
 {
   "district_id": "KY-01",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7137154340890993,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5414075543764175,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8084161290322581,
+      "score": 0.5548846153846154,
       "salience_weight": 0.06724216265333939,
-      "weighted_contribution": 0.054359648839970104,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.037311641561527976,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7416520833333333,
+      "score": 0.5429736070381231,
       "salience_weight": 0.781462971376647,
-      "weighted_contribution": 0.5795736407693473,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.4243137683351076,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

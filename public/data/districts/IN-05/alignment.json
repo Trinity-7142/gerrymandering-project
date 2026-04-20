@@ -1,8 +1,8 @@
 {
   "district_id": "IN-05",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7342201485993817,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5846958335094844,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8446032258064518,
+      "score": 0.6338846153846154,
       "salience_weight": 0.06676204101096805,
-      "weighted_contribution": 0.05638743519928625,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.042319430688529405,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7686166666666666,
+      "score": 0.5906392961876833,
       "salience_weight": 0.7610872675250359,
-      "weighted_contribution": 0.5849843586075346,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.4495280480283942,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

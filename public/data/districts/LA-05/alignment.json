@@ -1,8 +1,8 @@
 {
   "district_id": "LA-05",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7298933360501029,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5676554300545312,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8205548387096775,
+      "score": 0.5813846153846154,
       "salience_weight": 0.06560283687943261,
-      "weighted_contribution": 0.0538307252345001,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.03814048008728859,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.76225625,
+      "score": 0.5793958944281524,
       "salience_weight": 0.801418439716312,
-      "weighted_contribution": 0.610886214539007,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.4643385536906469,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

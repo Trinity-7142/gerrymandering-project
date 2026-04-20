@@ -1,8 +1,8 @@
 {
   "district_id": "FL-20",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6728681929974717,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.48952631703214,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,24 +23,24 @@
     },
     {
       "issue_id": "immigration",
-      "score": 0.42140000000000005,
+      "score": 0.4214,
       "salience_weight": 0.10567246111619397,
       "weighted_contribution": 0.04453037511436414,
       "direction": "Partial Alignment"
     },
     {
       "issue_id": "environment",
-      "score": 0.7891774193548386,
+      "score": 0.5128846153846154,
       "salience_weight": 0.09515096065873742,
-      "weighted_contribution": 0.07509098958179618,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.04880146386093321,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7250791666666666,
+      "score": 0.5136774193548387,
       "salience_weight": 0.7429094236047576,
-      "weighted_contribution": 0.5386681457761513,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.38161579553168257,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

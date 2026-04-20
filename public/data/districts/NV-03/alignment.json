@@ -1,8 +1,8 @@
 {
   "district_id": "NV-03",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6859065356485518,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.496894821614983,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,24 +23,24 @@
     },
     {
       "issue_id": "immigration",
-      "score": 0.4826,
+      "score": 0.48260000000000003,
       "salience_weight": 0.0945945945945946,
-      "weighted_contribution": 0.04565135135135135,
+      "weighted_contribution": 0.04565135135135136,
       "direction": "Partial Alignment"
     },
     {
       "issue_id": "environment",
-      "score": 0.7652817204301076,
+      "score": 0.46071794871794874,
       "salience_weight": 0.10450450450450452,
-      "weighted_contribution": 0.07997538699990314,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.04814710094710096,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7279458333333333,
+      "score": 0.5187448680351906,
       "salience_weight": 0.7513513513513514,
-      "weighted_contribution": 0.5469430855855856,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.38975965760481895,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

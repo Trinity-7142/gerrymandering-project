@@ -1,8 +1,8 @@
 {
   "district_id": "VT-01",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6831198289040014,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.46966969885735926,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.766274193548387,
+      "score": 0.4628846153846153,
       "salience_weight": 0.2995839112343967,
-      "weighted_contribution": 0.22956341998120888,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.13867278352715245,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7155385416666666,
+      "score": 0.4968123167155423,
       "salience_weight": 0.5603328710124827,
-      "weighted_contribution": 0.40093976537216836,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.2783802717795827,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

@@ -1,8 +1,8 @@
 {
   "district_id": "AR-02",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6893704742223291,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5061671715098586,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8057440860215055,
+      "score": 0.5490512820512821,
       "salience_weight": 0.06845107503290918,
-      "weighted_contribution": 0.0551540488895809,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.03758315050460729,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7260645833333332,
+      "score": 0.5154193548387096,
       "salience_weight": 0.7863097849934182,
-      "weighted_contribution": 0.570911686412169,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.40527928208467207,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

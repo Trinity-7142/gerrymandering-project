@@ -1,8 +1,8 @@
 {
   "district_id": "AL-06",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7204497349637998,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5567658283259975,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.7781075268817205,
+      "score": 0.4887179487179486,
       "salience_weight": 0.0707803992740472,
-      "weighted_contribution": 0.05507476143082959,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.034591651542649725,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7597479166666665,
+      "score": 0.5749618768328445,
       "salience_weight": 0.7749546279491834,
-      "weighted_contribution": 0.5887701640955837,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.4455693673459612,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

@@ -1,8 +1,8 @@
 {
   "district_id": "TX-17",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7390864653692184,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5884643613903822,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8332279569892475,
+      "score": 0.6090512820512821,
       "salience_weight": 0.08651633686148182,
-      "weighted_contribution": 0.07208783060928602,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.0526928858838661,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7756041666666665,
+      "score": 0.6029912023460409,
       "salience_weight": 0.7602393005062126,
-      "weighted_contribution": 0.5896447691363705,
+      "weighted_contribution": 0.4584176098829542,
       "direction": "Moderate Alignment"
     },
     {

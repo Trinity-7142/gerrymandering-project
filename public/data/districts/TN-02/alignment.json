@@ -1,8 +1,8 @@
 {
   "district_id": "TN-02",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7215959460529889,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5625364831900047,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8125387096774195,
+      "score": 0.5638846153846153,
       "salience_weight": 0.05612722170252572,
-      "weighted_contribution": 0.045605540299948705,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.03164927682233575,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7581802083333333,
+      "score": 0.5721906158357771,
       "salience_weight": 0.7801683816651076,
-      "weighted_contribution": 0.5915082261459308,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.44640502676055954,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

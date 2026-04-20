@@ -1,7 +1,7 @@
 {
   "district_id": "TX-21",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7569534572020248,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6169660890270355,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8122333333333334,
+      "score": 0.5632179487179487,
       "salience_weight": 0.08651633686148182,
-      "weighted_contribution": 0.07027145267679091,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.048727553777714844,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7975072916666666,
+      "score": 0.6417096774193547,
       "salience_weight": 0.7602393005062126,
-      "weighted_contribution": 0.6062963855652707,
+      "weighted_contribution": 0.4878529162893575,
       "direction": "Moderate Alignment"
     },
     {

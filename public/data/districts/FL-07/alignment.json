@@ -1,8 +1,8 @@
 {
   "district_id": "FL-07",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7032095792875483,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5369497192656726,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.7725344086021506,
+      "score": 0.47655128205128194,
       "salience_weight": 0.09515096065873742,
-      "weighted_contribution": 0.07350739112042422,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.04534431229033241,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7583145833333332,
+      "score": 0.5724281524926684,
       "salience_weight": 0.7429094236047576,
-      "weighted_contribution": 0.5633590500152486,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.42526226882346463,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

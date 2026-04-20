@@ -1,7 +1,7 @@
 {
   "district_id": "MN-06",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7851755488089676,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.651690175995224,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8542989247311829,
+      "score": 0.655051282051282,
       "salience_weight": 0.17375058383932743,
-      "weighted_contribution": 0.14843493694535265,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.1138155427011102,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.8089739583333332,
+      "score": 0.6619794721407624,
       "salience_weight": 0.6725829051844932,
-      "weighted_contribution": 0.5441020551144323,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.4452360765449312,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "healthcare",

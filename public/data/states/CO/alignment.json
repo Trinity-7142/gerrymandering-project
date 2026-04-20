@@ -1,10 +1,10 @@
 {
   "state_code": "CO",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-19",
   "senators": [
     {
       "name": "Michael Bennet",
-      "overall_score": 0.787634209839011,
+      "overall_score": 0.6665386784625803,
       "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
@@ -23,37 +23,37 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.945111111111111,
+          "score": 0.820111111111111,
           "salience_weight": 0.055900621118012424,
-          "weighted_contribution": 0.05283229813664596,
+          "weighted_contribution": 0.045844720496894406,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "environment",
-          "score": 0.7423045267489712,
+          "score": 0.5668060394889662,
           "salience_weight": 0.1267080745341615,
-          "weighted_contribution": 0.09405597730235411,
-          "direction": "Moderate Alignment"
+          "weighted_contribution": 0.07181890189798082,
+          "direction": "Partial Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9132080188679241,
+          "score": 0.7102832439678282,
           "salience_weight": 0.43478260869565216,
-          "weighted_contribution": 0.3970469647251844,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.30881880172514264,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9686176470588235,
+          "score": 0.9356694915254237,
           "salience_weight": 0.11055900621118013,
-          "weighted_contribution": 0.10708940445743514,
+          "weighted_contribution": 0.10344668912517108,
           "direction": "Strong Alignment"
         }
       ]
     },
     {
       "name": "John Hickenlooper",
-      "overall_score": 0.787634209839011,
+      "overall_score": 0.6665386784625803,
       "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
@@ -72,30 +72,30 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.945111111111111,
+          "score": 0.820111111111111,
           "salience_weight": 0.055900621118012424,
-          "weighted_contribution": 0.05283229813664596,
+          "weighted_contribution": 0.045844720496894406,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "environment",
-          "score": 0.7423045267489712,
+          "score": 0.5668060394889662,
           "salience_weight": 0.1267080745341615,
-          "weighted_contribution": 0.09405597730235411,
-          "direction": "Moderate Alignment"
+          "weighted_contribution": 0.07181890189798082,
+          "direction": "Partial Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9132080188679241,
+          "score": 0.7102832439678282,
           "salience_weight": 0.43478260869565216,
-          "weighted_contribution": 0.3970469647251844,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.30881880172514264,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9686176470588235,
+          "score": 0.9356694915254237,
           "salience_weight": 0.11055900621118013,
-          "weighted_contribution": 0.10708940445743514,
+          "weighted_contribution": 0.10344668912517108,
           "direction": "Strong Alignment"
         }
       ]

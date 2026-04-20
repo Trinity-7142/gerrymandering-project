@@ -1,8 +1,8 @@
 {
   "district_id": "OR-01",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6806129130385382,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.4839927829470685,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.7768860215053764,
+      "score": 0.48605128205128206,
       "salience_weight": 0.19980787704130645,
-      "weighted_contribution": 0.15522794666005602,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.09711687479987192,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7209583333333333,
+      "score": 0.5063929618768327,
       "salience_weight": 0.6455331412103748,
-      "weighted_contribution": 0.465402497598463,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.32689343936717735,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

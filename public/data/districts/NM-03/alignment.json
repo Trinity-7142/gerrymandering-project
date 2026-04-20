@@ -1,7 +1,7 @@
 {
   "district_id": "NM-03",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7539233482300045,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6049636875047705,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8291817204301075,
+      "score": 0.6002179487179486,
       "salience_weight": 0.18337531486146094,
-      "weighted_contribution": 0.15205145906123885,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.11006515533165405,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7870260416666667,
+      "score": 0.6231818181818181,
       "salience_weight": 0.652896725440806,
-      "weighted_contribution": 0.513846725440806,
+      "weighted_contribution": 0.40687336844515676,
       "direction": "Moderate Alignment"
     },
     {

@@ -18,7 +18,7 @@ wrong_type_representatives = []
 #Takes in an file produced by the iterator returned by os.scandir().
 #Adds relevant data from the file to the CSV
 # added an aditional argument: chamber; used to differentiate between house and senate votes
-def scan_file(input_file, writer, wrong_type_representatives, chamber="s"):
+def scan_file(input_file, writer, wrong_type_representatives):#, chamber="s"):
     with open(input_file, mode="r", encoding="utf-8",) as json_file:
         try: 
             json_data = json.load(json_file)
@@ -34,8 +34,8 @@ def scan_file(input_file, writer, wrong_type_representatives, chamber="s"):
         vote_id = json_data["vote_id"]
 
         # skip if not a senate vote
-        if not vote_id.startswith(chamber):
-            return
+        #if not vote_id.startswith(chamber):
+        #    return
         bill_number = json_data["number"]
         vote_date = json_data["date"]
         category = json_data["category"]
@@ -71,4 +71,4 @@ with open(os.path.join(congress_path, "senator_rollcall_votes.csv"), mode="w", e
     for root, dirs, files in os.walk(data_path):
         for filename in files:
             if filename.endswith(".json"):
-                scan_file(os.path.join(root, filename), writer, wrong_type_representatives, chamber="s")
+                scan_file(os.path.join(root, filename), writer, wrong_type_representatives)#, chamber="s")

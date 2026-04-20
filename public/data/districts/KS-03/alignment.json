@@ -1,7 +1,7 @@
 {
   "district_id": "KS-03",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7556015617238419,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6201215003692838,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8449849462365592,
+      "score": 0.6347179487179487,
       "salience_weight": 0.0858609426038264,
-      "weighted_contribution": 0.07255120396991455,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.05449748136449022,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7971041666666665,
+      "score": 0.6409970674486803,
       "salience_weight": 0.7522165188987401,
-      "weighted_contribution": 0.599594921449681,
+      "weighted_contribution": 0.48216858270054724,
       "direction": "Moderate Alignment"
     },
     {

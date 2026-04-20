@@ -1,8 +1,8 @@
 {
   "district_id": "PA-01",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6908963206936967,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5003242693745757,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.763067741935484,
+      "score": 0.4558846153846154,
       "salience_weight": 0.09045680687471733,
-      "weighted_contribution": 0.06902467136458472,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.04123786661100094,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7266020833333332,
+      "score": 0.5163695014662756,
       "salience_weight": 0.7743102668475803,
-      "weighted_contribution": 0.562615453037841,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.3998302064723039,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

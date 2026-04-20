@@ -1,11 +1,11 @@
 {
   "state_code": "PA",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-19",
   "senators": [
     {
       "name": "John Fetterman",
-      "overall_score": 0.8226531746461417,
-      "overall_label": "Strong Alignment",
+      "overall_score": 0.6935484634374174,
+      "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
           "issue_id": "guns",
@@ -23,38 +23,38 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.977777777777778,
+          "score": 0.8527777777777779,
           "salience_weight": 0.08259945338597025,
-          "weighted_contribution": 0.08076390997739315,
+          "weighted_contribution": 0.07043897830414686,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "environment",
-          "score": 0.764551440329218,
+          "score": 0.6008060394889663,
           "salience_weight": 0.06073489219556635,
-          "weighted_contribution": 0.04643494930636004,
+          "weighted_contribution": 0.036489890038807545,
           "direction": "Moderate Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9127004716981129,
+          "score": 0.7093197050938335,
           "salience_weight": 0.5198906771940479,
-          "weighted_contribution": 0.47450446630645887,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.36876870182831545,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9696176470588235,
+          "score": 0.9346694915254238,
           "salience_weight": 0.08867294260552687,
-          "weighted_contribution": 0.08597884996695307,
+          "weighted_contribution": 0.08287989417717088,
           "direction": "Strong Alignment"
         }
       ]
     },
     {
       "name": "Dave McCormick",
-      "overall_score": 0.817898970813105,
-      "overall_label": "Strong Alignment",
+      "overall_score": 0.5976904673622445,
+      "overall_label": "Partial Alignment",
       "issue_scores": [
         {
           "issue_id": "immigration",
@@ -72,24 +72,24 @@
         },
         {
           "issue_id": "environment",
-          "score": 0.9490370370370369,
+          "score": 0.5864561403508771,
           "salience_weight": 0.0639386189258312,
-          "weighted_contribution": 0.06068011745761106,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.03749719567460851,
+          "direction": "Partial Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9878361344537816,
+          "score": 0.64534355179704,
           "salience_weight": 0.5473145780051151,
-          "weighted_contribution": 0.5406571170667755,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.35320593372011905,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.6578333333333334,
+          "score": 0.5552692307692307,
           "salience_weight": 0.09335038363171355,
-          "weighted_contribution": 0.06140899403239557,
-          "direction": "Moderate Alignment"
+          "weighted_contribution": 0.05183459571119417,
+          "direction": "Partial Alignment"
         }
       ]
     }

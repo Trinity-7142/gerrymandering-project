@@ -1,8 +1,8 @@
 {
   "district_id": "ME-01",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6747890025351866,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.4754244950834481,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,24 +23,24 @@
     },
     {
       "issue_id": "immigration",
-      "score": 0.4741999999999999,
+      "score": 0.47419999999999995,
       "salience_weight": 0.11477761836441892,
-      "weighted_contribution": 0.054427546628407444,
+      "weighted_contribution": 0.05442754662840745,
       "direction": "Partial Alignment"
     },
     {
       "issue_id": "environment",
-      "score": 0.7665032258064517,
+      "score": 0.4633846153846154,
       "salience_weight": 0.21807747489239598,
-      "weighted_contribution": 0.167157087980747,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.10105374682706103,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7168822916666666,
+      "score": 0.4991876832844574,
       "salience_weight": 0.6121472979435676,
-      "weighted_contribution": 0.4388375577873425,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.30557639148929,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

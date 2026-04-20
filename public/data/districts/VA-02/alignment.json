@@ -1,8 +1,8 @@
 {
   "district_id": "VA-02",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7445079152550694,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5913257131153817,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8433817204301075,
+      "score": 0.6312179487179487,
       "salience_weight": 0.12237442922374431,
-      "weighted_contribution": 0.1032083566553739,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.07724493619014168,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7758729166666666,
+      "score": 0.6034662756598239,
       "salience_weight": 0.7378995433789955,
-      "weighted_contribution": 0.5725162709284627,
+      "weighted_contribution": 0.44529748925400714,
       "direction": "Moderate Alignment"
     },
     {

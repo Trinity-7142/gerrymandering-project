@@ -1,8 +1,8 @@
 {
   "district_id": "OH-14",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7443791551987768,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5921725134296503,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8169666666666667,
+      "score": 0.573551282051282,
       "salience_weight": 0.09541284403669725,
-      "weighted_contribution": 0.07794911314984711,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.05472415902140673,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7787395833333333,
+      "score": 0.6085337243401759,
       "salience_weight": 0.7577981651376148,
-      "weighted_contribution": 0.5901274273700307,
+      "weighted_contribution": 0.4611457397293444,
       "direction": "Moderate Alignment"
     },
     {

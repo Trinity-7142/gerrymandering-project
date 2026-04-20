@@ -1,11 +1,11 @@
 {
   "state_code": "DE",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-19",
   "senators": [
     {
       "name": "Lisa Blunt Rochester",
-      "overall_score": 0.710098682270773,
-      "overall_label": "Moderate Alignment",
+      "overall_score": 0.5647408288121767,
+      "overall_label": "Partial Alignment",
       "issue_scores": [
         {
           "issue_id": "guns",
@@ -30,31 +30,31 @@
         },
         {
           "issue_id": "environment",
-          "score": 0.8167375249500999,
+          "score": 0.5844447077409163,
           "salience_weight": 0.08209202250910295,
-          "weighted_contribution": 0.06704763528223263,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.0479782481031934,
+          "direction": "Partial Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.8625302857142855,
+          "score": 0.6247470219435733,
           "salience_weight": 0.48063555114200596,
-          "weighted_contribution": 0.41456271925095745,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.3002756292161763,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.5799642857142857,
+          "score": 0.5011465517241379,
           "salience_weight": 0.1522674611055942,
-          "weighted_contribution": 0.08830968931763372,
+          "weighted_contribution": 0.07630831307285782,
           "direction": "Partial Alignment"
         }
       ]
     },
     {
       "name": "Christopher Coons",
-      "overall_score": 0.8205915146710766,
-      "overall_label": "Strong Alignment",
+      "overall_score": 0.687408934816732,
+      "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
           "issue_id": "guns",
@@ -72,30 +72,30 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.9176666666666669,
+          "score": 0.7926666666666669,
           "salience_weight": 0.07885532591414944,
-          "weighted_contribution": 0.07236290408055115,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.06250598834128247,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "environment",
-          "score": 0.7659691358024692,
+          "score": 0.6029727061556329,
           "salience_weight": 0.07885532591414944,
-          "weighted_contribution": 0.0604007458438831,
+          "weighted_contribution": 0.0475476092612391,
           "direction": "Moderate Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9063984276729555,
+          "score": 0.6973557640750668,
           "salience_weight": 0.46168521462639106,
-          "weighted_contribution": 0.4184707526172119,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.3219588456079482,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9998676470588235,
+          "score": 0.9044194915254238,
           "salience_weight": 0.14626391096979333,
-          "weighted_contribution": 0.1462445525109885,
+          "weighted_contribution": 0.13228393198782035,
           "direction": "Strong Alignment"
         }
       ]

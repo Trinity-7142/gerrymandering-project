@@ -1,8 +1,8 @@
 {
   "district_id": "NH-01",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7073636545867953,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.531533575754844,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.7820010752688172,
+      "score": 0.49721794871794867,
       "salience_weight": 0.16953889147647883,
-      "weighted_contribution": 0.13257959543448974,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.08429777984784971,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7520437499999998,
+      "score": 0.5613431085043987,
       "salience_weight": 0.6688402421984164,
-      "weighted_contribution": 0.5029971238938052,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.375448860648494,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

@@ -1,8 +1,8 @@
 {
   "district_id": "NJ-05",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6821058343337647,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5015121446733314,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,24 +23,24 @@
     },
     {
       "issue_id": "immigration",
-      "score": 0.43539999999999995,
+      "score": 0.4354,
       "salience_weight": 0.10198163363943934,
-      "weighted_contribution": 0.044402803286611885,
+      "weighted_contribution": 0.04440280328661189,
       "direction": "Partial Alignment"
     },
     {
       "issue_id": "environment",
-      "score": 0.735736559139785,
+      "score": 0.3962179487179486,
       "salience_weight": 0.12179797003383278,
-      "weighted_contribution": 0.08961121938290277,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.04825854184481539,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7468927083333332,
+      "score": 0.5522375366568916,
       "salience_weight": 0.7153214113098115,
-      "weighted_contribution": 0.5342683462220074,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.39502733409966145,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

@@ -1,10 +1,10 @@
 {
   "state_code": "IL",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-19",
   "senators": [
     {
       "name": "Tammy Duckworth",
-      "overall_score": 0.7733217142473486,
+      "overall_score": 0.6394753628340599,
       "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
@@ -23,37 +23,37 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.9427777777777777,
+          "score": 0.8177777777777777,
           "salience_weight": 0.06836504353434376,
-          "weighted_contribution": 0.06445304382098964,
+          "weighted_contribution": 0.05590741337919668,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "environment",
-          "score": 0.7242016460905348,
+          "score": 0.5391393728222996,
           "salience_weight": 0.09416317316994517,
-          "weighted_contribution": 0.06819312501078238,
-          "direction": "Moderate Alignment"
+          "weighted_contribution": 0.05076707412580183,
+          "direction": "Partial Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.896670440251572,
+          "score": 0.6788879356568362,
           "salience_weight": 0.45791680103192517,
-          "weighted_contribution": 0.4106004595798879,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.3108741917551459,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9768823529411765,
+          "score": 0.8811694915254238,
           "salience_weight": 0.08513382779748468,
-          "weighted_contribution": 0.08316573401369579,
+          "weighted_contribution": 0.07501733175192257,
           "direction": "Strong Alignment"
         }
       ]
     },
     {
       "name": "Richard Durbin",
-      "overall_score": 0.7733217142473486,
+      "overall_score": 0.6394753628340599,
       "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
@@ -72,30 +72,30 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.9427777777777777,
+          "score": 0.8177777777777777,
           "salience_weight": 0.06836504353434376,
-          "weighted_contribution": 0.06445304382098964,
+          "weighted_contribution": 0.05590741337919668,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "environment",
-          "score": 0.7242016460905348,
+          "score": 0.5391393728222996,
           "salience_weight": 0.09416317316994517,
-          "weighted_contribution": 0.06819312501078238,
-          "direction": "Moderate Alignment"
+          "weighted_contribution": 0.05076707412580183,
+          "direction": "Partial Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.896670440251572,
+          "score": 0.6788879356568362,
           "salience_weight": 0.45791680103192517,
-          "weighted_contribution": 0.4106004595798879,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.3108741917551459,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9768823529411765,
+          "score": 0.8811694915254238,
           "salience_weight": 0.08513382779748468,
-          "weighted_contribution": 0.08316573401369579,
+          "weighted_contribution": 0.07501733175192257,
           "direction": "Strong Alignment"
         }
       ]

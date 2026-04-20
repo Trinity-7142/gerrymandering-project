@@ -1,8 +1,8 @@
 {
   "district_id": "NC-08",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.9297208144941479,
-  "overall_label": "Strong Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6262890543239027,
+  "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,17 +23,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.9551666666666668,
+      "score": 0.6413333333333332,
       "salience_weight": 0.10197210197210198,
-      "weighted_contribution": 0.0974003527336861,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.06539810806477472,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.94769,
+      "score": 0.610994318181818,
       "salience_weight": 0.8061568061568062,
-      "weighted_contribution": 0.7639867436267437,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.49255722812540986,
+      "direction": "Moderate Alignment"
     }
   ],
   "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."

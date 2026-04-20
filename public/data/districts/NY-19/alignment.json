@@ -1,8 +1,8 @@
 {
   "district_id": "NY-19",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.8878691022124704,
-  "overall_label": "Strong Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5122514677770577,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,17 +23,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.9355416666666668,
+      "score": 0.48433333333333345,
       "salience_weight": 0.1623697202413604,
-      "weighted_contribution": 0.15190363869080273,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.0786410678368989,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.9364300000000001,
+      "score": 0.5150284090909092,
       "salience_weight": 0.7174986286341196,
-      "weighted_contribution": 0.6718872408118487,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.3695321772303397,
+      "direction": "Partial Alignment"
     }
   ],
   "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."

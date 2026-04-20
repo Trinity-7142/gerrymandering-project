@@ -1,7 +1,7 @@
 {
   "district_id": "SC-04",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7707519610575678,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6404218909821714,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8384956989247313,
+      "score": 0.6205512820512821,
       "salience_weight": 0.07094133697135062,
-      "weighted_contribution": 0.059484005926447515,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.04402273760800364,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.8082572916666667,
+      "score": 0.6607126099706745,
       "salience_weight": 0.7785356980445658,
-      "weighted_contribution": 0.6292571547673186,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.514388353010366,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "healthcare",

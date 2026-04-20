@@ -1,7 +1,7 @@
 {
   "district_id": "CA-39",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7562643722585658,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6058451802464773,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8603301075268818,
+      "score": 0.6682179487179487,
       "salience_weight": 0.1958041958041958,
-      "weighted_contribution": 0.1684562448304384,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.13083987807064731,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7803520833333333,
+      "score": 0.6113841642228738,
       "salience_weight": 0.6675990675990676,
-      "weighted_contribution": 0.5209623232323232,
+      "weighted_contribution": 0.40815949798002576,
       "direction": "Moderate Alignment"
     },
     {

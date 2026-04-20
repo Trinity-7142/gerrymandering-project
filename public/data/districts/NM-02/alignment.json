@@ -1,8 +1,8 @@
 {
   "district_id": "NM-02",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7234925952709839,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5435116056641821,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.7900935483870968,
+      "score": 0.5148846153846154,
       "salience_weight": 0.18337531486146094,
-      "weighted_contribution": 0.1448836532054928,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.09441712846347607,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7420552083333332,
+      "score": 0.5436862170087975,
       "salience_weight": 0.652896725440806,
-      "weighted_contribution": 0.4844854156171283,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.3549709507523433,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

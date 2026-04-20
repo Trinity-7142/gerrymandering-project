@@ -1,8 +1,8 @@
 {
   "district_id": "NJ-10",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.888276133439386,
-  "overall_label": "Strong Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.45241979938109056,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,17 +23,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.9377272727272727,
+      "score": 0.41058273381294963,
       "salience_weight": 0.12969634585692227,
-      "weighted_contribution": 0.12161980068310484,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.05325108024748497,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.9487840909090909,
+      "score": 0.46633244680851066,
       "salience_weight": 0.761708697889861,
-      "weighted_contribution": 0.7226970944649791,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.35520948084230347,
+      "direction": "Partial Alignment"
     }
   ],
   "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."

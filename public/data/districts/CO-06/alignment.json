@@ -1,8 +1,8 @@
 {
   "district_id": "CO-06",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6591713833794876,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.4497398538748878,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,24 +23,24 @@
     },
     {
       "issue_id": "immigration",
-      "score": 0.46580000000000005,
+      "score": 0.4658,
       "salience_weight": 0.09559164733178654,
-      "weighted_contribution": 0.04452658932714618,
+      "weighted_contribution": 0.04452658932714617,
       "direction": "Partial Alignment"
     },
     {
       "issue_id": "environment",
-      "score": 0.7405462365591399,
+      "score": 0.40671794871794864,
       "salience_weight": 0.18932714617169374,
-      "weighted_contribution": 0.14020550557592998,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.07700274852757451,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7072520833333332,
+      "score": 0.4821642228739001,
       "salience_weight": 0.6496519721577726,
-      "weighted_contribution": 0.45946771075019327,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.313238938293949,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

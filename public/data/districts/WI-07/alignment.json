@@ -1,7 +1,7 @@
 {
   "district_id": "WI-07",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7638011762452107,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6200770942210674,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8737666666666667,
+      "score": 0.6975512820512821,
       "salience_weight": 0.13425287356321836,
-      "weighted_contribution": 0.11730568582375477,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.09364826407309165,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7846072916666667,
+      "score": 0.6189061583577712,
       "salience_weight": 0.7245977011494252,
-      "weighted_contribution": 0.5685246398467433,
+      "weighted_contribution": 0.4484579795732631,
       "direction": "Moderate Alignment"
     },
     {

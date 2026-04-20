@@ -1,10 +1,10 @@
 {
   "state_code": "ME",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-19",
   "senators": [
     {
       "name": "Angus King",
-      "overall_score": 0.7670543529680558,
+      "overall_score": 0.6413246864724661,
       "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
@@ -23,37 +23,37 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.9400000000000001,
+          "score": 0.8150000000000001,
           "salience_weight": 0.07418668288233506,
-          "weighted_contribution": 0.06973548190939495,
+          "weighted_contribution": 0.06046214654910308,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "environment",
-          "score": 0.7533189300411524,
+          "score": 0.5836393728222996,
           "salience_weight": 0.13864396473092125,
-          "weighted_contribution": 0.10444312316776086,
-          "direction": "Moderate Alignment"
+          "weighted_contribution": 0.0809180766211519,
+          "direction": "Partial Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.8949786163522009,
+          "score": 0.6756761394101876,
           "salience_weight": 0.38917604134995437,
-          "weighted_contribution": 0.34830423500480906,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.26295696517027667,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9921176470588234,
+          "score": 0.9121694915254238,
           "salience_weight": 0.09486166007905138,
-          "weighted_contribution": 0.09411392699372237,
+          "weighted_contribution": 0.0865299122395659,
           "direction": "Strong Alignment"
         }
       ]
     },
     {
       "name": "Susan Collins",
-      "overall_score": 0.7670543529680558,
+      "overall_score": 0.6413246864724661,
       "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
@@ -72,30 +72,30 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.9400000000000001,
+          "score": 0.8150000000000001,
           "salience_weight": 0.07418668288233506,
-          "weighted_contribution": 0.06973548190939495,
+          "weighted_contribution": 0.06046214654910308,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "environment",
-          "score": 0.7533189300411524,
+          "score": 0.5836393728222996,
           "salience_weight": 0.13864396473092125,
-          "weighted_contribution": 0.10444312316776086,
-          "direction": "Moderate Alignment"
+          "weighted_contribution": 0.0809180766211519,
+          "direction": "Partial Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.8949786163522009,
+          "score": 0.6756761394101876,
           "salience_weight": 0.38917604134995437,
-          "weighted_contribution": 0.34830423500480906,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.26295696517027667,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9921176470588234,
+          "score": 0.9121694915254238,
           "salience_weight": 0.09486166007905138,
-          "weighted_contribution": 0.09411392699372237,
+          "weighted_contribution": 0.0865299122395659,
           "direction": "Strong Alignment"
         }
       ]

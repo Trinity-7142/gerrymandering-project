@@ -1,8 +1,8 @@
 {
   "district_id": "NE-03",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7106749145788986,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.561728681628671,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.862925806451613,
+      "score": 0.6738846153846153,
       "salience_weight": 0.09340101522842639,
-      "weighted_contribution": 0.08059814638938922,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.06294150722374071,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7505208333333333,
+      "score": 0.5586510263929618,
       "salience_weight": 0.684263959390863,
-      "weighted_contribution": 0.5135543570219967,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.3822647632374176,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

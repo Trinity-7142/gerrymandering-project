@@ -1,8 +1,8 @@
 {
   "district_id": "MO-08",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7404450481941247,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5861843537818651,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8884247311827957,
+      "score": 0.7295512820512821,
       "salience_weight": 0.11085870059064061,
-      "weighted_contribution": 0.09848961127151393,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.08087710714244108,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7592104166666666,
+      "score": 0.5740117302052784,
       "salience_weight": 0.7378464334393458,
-      "weighted_contribution": 0.5601806981674995,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.4235325078843126,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

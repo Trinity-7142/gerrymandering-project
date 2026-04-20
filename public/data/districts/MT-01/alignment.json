@@ -1,8 +1,8 @@
 {
   "district_id": "MT-01",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7410820436767124,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5892804579474377,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8418548387096775,
+      "score": 0.6278846153846154,
       "salience_weight": 0.148642210576465,
-      "weighted_contribution": 0.12513516421029985,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.09333015721772274,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7700499999999998,
+      "score": 0.5931730205278591,
       "salience_weight": 0.6784182944259172,
-      "weighted_contribution": 0.5224160076226774,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.40241942888597976,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

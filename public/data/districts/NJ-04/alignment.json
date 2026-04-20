@@ -1,7 +1,7 @@
 {
   "district_id": "NJ-04",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7828535378890639,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6576634218001396,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8581924731182797,
+      "score": 0.6635512820512821,
       "salience_weight": 0.12179797003383278,
-      "weighted_contribution": 0.10452610112412107,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.08081919916719338,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.8156479166666667,
+      "score": 0.6737771260997065,
       "salience_weight": 0.7153214113098115,
-      "weighted_contribution": 0.5834504188819075,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.4819672047499109,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "healthcare",

@@ -1,7 +1,7 @@
 {
   "district_id": "ID-02",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7497829565882036,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6064911847271753,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8569709677419355,
+      "score": 0.6608846153846154,
       "salience_weight": 0.08073716542343133,
-      "weighted_contribution": 0.06918940678565869,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.05335795051810849,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7834874999999999,
+      "score": 0.6169266862170087,
       "salience_weight": 0.765247915752523,
-      "weighted_contribution": 0.5995621763931548,
+      "weighted_contribution": 0.47210186079967675,
       "direction": "Moderate Alignment"
     },
     {

@@ -1,7 +1,7 @@
 {
   "district_id": "NJ-07",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7435794571165749,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6000034353927772,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8183408602150538,
+      "score": 0.576551282051282,
       "salience_weight": 0.12179797003383278,
-      "weighted_contribution": 0.09967225556993406,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.07022277577424992,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7926249999999999,
+      "score": 0.6330791788856304,
       "salience_weight": 0.7153214113098115,
-      "weighted_contribution": 0.5669816336394393,
+      "weighted_contribution": 0.45285509171132576,
       "direction": "Moderate Alignment"
     },
     {

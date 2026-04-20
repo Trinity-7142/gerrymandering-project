@@ -1,7 +1,7 @@
 {
   "district_id": "TX-25",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7598091737427568,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6155237958249856,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8478860215053763,
+      "score": 0.641051282051282,
       "salience_weight": 0.08651633686148182,
-      "weighted_contribution": 0.07335599265670074,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.055461408663433506,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.783890625,
+      "score": 0.6176392961876832,
       "salience_weight": 0.7602393005062126,
-      "weighted_contribution": 0.5959444604233778,
+      "weighted_contribution": 0.46955366649887376,
       "direction": "Moderate Alignment"
     },
     {

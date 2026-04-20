@@ -1,8 +1,8 @@
 {
   "district_id": "WI-08",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.926704973672233,
-  "overall_label": "Strong Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5968745326180384,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,17 +23,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.9718434343434343,
+      "score": 0.6357494004796163,
       "salience_weight": 0.1414043583535109,
-      "weighted_contribution": 0.13742289725340573,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.08989773604844936,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.9548048780487806,
+      "score": 0.5849061452513967,
       "salience_weight": 0.7631961259079904,
-      "weighted_contribution": 0.7287033839248805,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.4463981040756423,
+      "direction": "Partial Alignment"
     }
   ],
   "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."

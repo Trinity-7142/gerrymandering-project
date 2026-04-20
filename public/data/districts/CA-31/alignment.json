@@ -1,8 +1,8 @@
 {
   "district_id": "CA-31",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.9098455285359802,
-  "overall_label": "Strong Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5341341213625085,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,17 +23,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.9422916666666669,
+      "score": 0.5383333333333333,
       "salience_weight": 0.2084367245657568,
-      "weighted_contribution": 0.19640818858560796,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.11220843672456574,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.9379200000000001,
+      "score": 0.5277272727272728,
       "salience_weight": 0.7106699751861042,
-      "weighted_contribution": 0.6665515831265509,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.37503992781412143,
+      "direction": "Partial Alignment"
     }
   ],
   "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."

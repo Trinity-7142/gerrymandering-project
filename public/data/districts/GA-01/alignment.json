@@ -1,7 +1,7 @@
 {
   "district_id": "GA-01",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7760663846168926,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6410148506618306,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8541462365591398,
+      "score": 0.6547179487179486,
       "salience_weight": 0.07292616226071104,
-      "weighted_contribution": 0.062289607041687504,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.04774606736320501,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.802971875,
+      "score": 0.6513695014662755,
       "salience_weight": 0.7948951686417502,
-      "weighted_contribution": 0.6382784639927074,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.5177704697161278,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "healthcare",

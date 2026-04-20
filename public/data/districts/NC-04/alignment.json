@@ -1,8 +1,8 @@
 {
   "district_id": "NC-04",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6061273020851762,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.3725048230489213,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,24 +23,24 @@
     },
     {
       "issue_id": "immigration",
-      "score": 0.24440000000000003,
+      "score": 0.24440000000000006,
       "salience_weight": 0.08729433272394882,
       "weighted_contribution": 0.021334734917733095,
       "direction": "Low Alignment"
     },
     {
       "issue_id": "environment",
-      "score": 0.6709967741935485,
+      "score": 0.2548846153846154,
       "salience_weight": 0.09689213893967094,
-      "weighted_contribution": 0.06501431267323231,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.02469631556743074,
+      "direction": "Low Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.6717322916666665,
+      "score": 0.41937536656891483,
       "salience_weight": 0.7659963436928703,
-      "weighted_contribution": 0.5145444793570992,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.32123999742664594,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

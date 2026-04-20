@@ -1,8 +1,8 @@
 {
   "district_id": "NY-25",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6726559410392429,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.4880663240676452,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,24 +23,24 @@
     },
     {
       "issue_id": "immigration",
-      "score": 0.4732,
+      "score": 0.47320000000000007,
       "salience_weight": 0.11219262295081968,
-      "weighted_contribution": 0.05308954918032787,
+      "weighted_contribution": 0.05308954918032788,
       "direction": "Partial Alignment"
     },
     {
       "issue_id": "environment",
-      "score": 0.777878494623656,
+      "score": 0.48821794871794866,
       "salience_weight": 0.15163934426229508,
-      "weighted_contribution": 0.11795698484047243,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.07403304960067254,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7270052083333333,
+      "score": 0.51708211143695,
       "salience_weight": 0.6700819672131147,
-      "weighted_contribution": 0.4871530801741803,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.3464873984423825,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

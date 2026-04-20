@@ -1,7 +1,7 @@
 {
   "district_id": "FL-11",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7640042811537743,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6264205045168802,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8675064516129034,
+      "score": 0.6838846153846154,
       "salience_weight": 0.09515096065873742,
-      "weighted_contribution": 0.08254407224862027,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.06507227813357731,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7898479166666665,
+      "score": 0.6281700879765394,
       "salience_weight": 0.7429094236047576,
-      "weighted_contribution": 0.5867854605062519,
+      "weighted_contribution": 0.4666734779844008,
       "direction": "Moderate Alignment"
     },
     {

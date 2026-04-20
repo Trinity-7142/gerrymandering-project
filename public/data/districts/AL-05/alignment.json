@@ -1,7 +1,7 @@
 {
   "district_id": "AL-05",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7707347473069492,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6373463101612105,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8623913978494623,
+      "score": 0.6727179487179487,
       "salience_weight": 0.0707803992740472,
-      "weighted_contribution": 0.061040407470288625,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.04761524500907441,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7988062499999999,
+      "score": 0.6440058651026392,
       "salience_weight": 0.7749546279491834,
-      "weighted_contribution": 0.6190386002722323,
+      "weighted_contribution": 0.49907532558770773,
       "direction": "Moderate Alignment"
     },
     {

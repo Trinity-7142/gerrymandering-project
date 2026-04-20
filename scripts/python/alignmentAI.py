@@ -8,7 +8,7 @@ base_path = os.path.dirname(os.path.abspath(__file__))
 home_path = os.path.join(base_path, "..", "..")
 
 senator_rollcall_votes_path = os.path.join(home_path, "data-raw", "congress", "senator_rollcall_votes.csv")
-bill_to_roll_path = os.path.join(home_path, "data-raw", "bill_to_roll.csv")
+bill_to_roll_path = os.path.join(home_path, "data-raw", "congress", "bill_to_roll.csv")
 legislators_historical_path = os.path.join(home_path, "data-raw", "congress-legislators", "legislators-historical.json")
 legislators_current_path = os.path.join(home_path, "data-raw", "congress-legislators", "legislators-current.json")
 
@@ -49,7 +49,7 @@ class Politician:
     CONFIDENCE_TO_NUM = {"High": 1.0, "Moderate": 0.6, "Low": 0.3}
     DIRECTION_TO_NUM = {"Liberal Direction": 1, "Conservative Direction": 0}
 
-    def __init__(self, bioguide_id, name, state):
+    def __init__(self, bioguide_id, name, state, party):
         self.bioguide_id = bioguide_id
         self.name = name
         self.state = state
@@ -57,6 +57,7 @@ class Politician:
         self.term_end = ""
         self.district = None
         self.role = None
+        self.party = party
         
         self._populate_district_and_role()
 
@@ -69,11 +70,11 @@ class Politician:
         Politician.politicians[bioguide_id] = self
 
     @staticmethod
-    def create_politician(bioguide_or_lis, name, state):
+    def create_politician(bioguide_or_lis, name, state, party):
         id_to_use = Politician.lis_to_bioguide_dict.get(bioguide_or_lis) if len(bioguide_or_lis) == 4 else bioguide_or_lis
         
         if id_to_use not in Politician.politicians:
-            return Politician(id_to_use, name, state)
+            return Politician(id_to_use, name, state, party)
         return Politician.politicians[id_to_use]
 
     def _populate_district_and_role(self):
@@ -194,7 +195,7 @@ with open(senator_rollcall_votes_path, "r", encoding="utf-8") as f:
         vote_data = bill_to_roll_dict.get((congress, chamber, roll_call_num, line["vote_date"]))
         if vote_data:
             bill_dir, conf, issue = vote_data
-            p = Politician.create_politician(line["bioguide_id"], line["name"], line["state"])
+            p = Politician.create_politician(line["bioguide_id"], line["name"], line["state"], line["party"])
             p.add_vote(vote_id, issue, bill_dir, conf)
 
 
@@ -321,3 +322,10 @@ class AlignmentFiles:
         return None
 
 AlignmentFiles.populate_alignment_json()
+
+
+with open(os.path.join(base_path, "alignment_scores.csv"), "w", encoding="utf-8", newline="") as f:
+    writer = csv.writer(f)
+    writer.writerow(["ID", "Name", "Score", "Vote #", "State", "Term End", "Role", "Party"])
+    for politician in Politician.politicians.values():
+        writer.writerow([politician.bioguide_id, politician.name, politician.overall_score(), len(politician.votes), politician.state, politician.term_end, politician.role, politician.party])

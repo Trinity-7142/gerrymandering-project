@@ -1,8 +1,8 @@
 {
   "district_id": "AZ-01",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6842714026821312,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.4974398716723653,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.7651290322580645,
+      "score": 0.4603846153846153,
       "salience_weight": 0.11797752808988764,
-      "weighted_contribution": 0.09026803189561435,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.05431503889369056,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.73135,
+      "score": 0.5247624633431085,
       "salience_weight": 0.7303370786516854,
-      "weighted_contribution": 0.53413202247191,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.383253484464068,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

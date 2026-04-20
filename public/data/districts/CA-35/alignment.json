@@ -1,8 +1,8 @@
 {
   "district_id": "CA-35",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6973390112038499,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5049974567676101,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,24 +23,24 @@
     },
     {
       "issue_id": "immigration",
-      "score": 0.44580000000000003,
+      "score": 0.4458,
       "salience_weight": 0.075990675990676,
       "weighted_contribution": 0.03387664335664336,
       "direction": "Partial Alignment"
     },
     {
       "issue_id": "environment",
-      "score": 0.7390193548387097,
+      "score": 0.40338461538461523,
       "salience_weight": 0.1958041958041958,
-      "weighted_contribution": 0.14470309045792917,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.07898440021516942,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7533874999999999,
+      "score": 0.5637184750733136,
       "salience_weight": 0.6675990675990676,
-      "weighted_contribution": 0.5029607925407925,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.37633792834731244,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

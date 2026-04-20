@@ -1,8 +1,8 @@
 {
   "district_id": "VA-06",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7252280922570826,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.554872195705311,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.828341935483871,
+      "score": 0.5983846153846153,
       "salience_weight": 0.12237442922374431,
-      "weighted_contribution": 0.10136787155693035,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.07322697576396206,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7494010416666667,
+      "score": 0.5566715542521993,
       "salience_weight": 0.7378995433789955,
-      "weighted_contribution": 0.552982686453577,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.41076768569477357,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

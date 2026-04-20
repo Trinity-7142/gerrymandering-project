@@ -1,7 +1,7 @@
 {
   "district_id": "TX-08",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.753825660167055,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.61294247600595,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.7958193548387097,
+      "score": 0.5273846153846153,
       "salience_weight": 0.08651633686148182,
-      "weighted_contribution": 0.06885137538411294,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.04562738504017841,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7988510416666665,
+      "score": 0.6440850439882697,
       "salience_weight": 0.7602393005062126,
-      "weighted_contribution": 0.6073179571253259,
+      "weighted_contribution": 0.48965876330815533,
       "direction": "Moderate Alignment"
     },
     {

@@ -1,7 +1,7 @@
 {
   "district_id": "FL-17",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7519017371051363,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6048512533325463,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8369688172043012,
+      "score": 0.6172179487179487,
       "salience_weight": 0.09515096065873742,
-      "weighted_contribution": 0.07963838699839645,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.05872888075632814,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7792770833333332,
+      "score": 0.6094838709677418,
       "salience_weight": 0.7429094236047576,
-      "weighted_contribution": 0.5789322888075633,
+      "weighted_contribution": 0.45279131127704153,
       "direction": "Moderate Alignment"
     },
     {

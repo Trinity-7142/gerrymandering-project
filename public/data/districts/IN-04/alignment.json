@@ -1,7 +1,7 @@
 {
   "district_id": "IN-04",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7445976609570253,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6036771035918205,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.833915053763441,
+      "score": 0.6105512820512821,
       "salience_weight": 0.06676204101096805,
-      "weighted_contribution": 0.055673871019018474,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.040761649731606814,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7847864583333334,
+      "score": 0.6192228739002932,
       "salience_weight": 0.7610872675250359,
-      "weighted_contribution": 0.5972909811635672,
+      "weighted_contribution": 0.471282645085774,
       "direction": "Moderate Alignment"
     },
     {

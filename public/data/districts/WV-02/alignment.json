@@ -1,8 +1,8 @@
 {
   "district_id": "WV-02",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.8986019019696286,
-  "overall_label": "Strong Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5170201200092946,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,17 +23,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.9454791666666668,
+      "score": 0.5638333333333334,
       "salience_weight": 0.07758231844835362,
-      "weighted_contribution": 0.07335246579461735,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.043743497218463386,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.93482,
+      "score": 0.5013068181818182,
       "salience_weight": 0.8119079837618404,
-      "weighted_contribution": 0.7589878213802436,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.40701500799606355,
+      "direction": "Partial Alignment"
     }
   ],
   "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."

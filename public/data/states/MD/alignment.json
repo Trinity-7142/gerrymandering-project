@@ -1,10 +1,10 @@
 {
   "state_code": "MD",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-19",
   "senators": [
     {
       "name": "Chris Van Hollen",
-      "overall_score": 0.782586342729558,
+      "overall_score": 0.6372236979909024,
       "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
@@ -16,45 +16,45 @@
         },
         {
           "issue_id": "immigration",
-          "score": 0.47740000000000005,
+          "score": 0.4774000000000001,
           "salience_weight": 0.20990099009900992,
           "weighted_contribution": 0.10020673267326735,
           "direction": "Partial Alignment"
         },
         {
           "issue_id": "abortion",
-          "score": 0.9091111111111111,
+          "score": 0.7841111111111111,
           "salience_weight": 0.0646864686468647,
-          "weighted_contribution": 0.05880718738540522,
-          "direction": "Strong Alignment"
-        },
-        {
-          "issue_id": "environment",
-          "score": 0.7057716049382716,
-          "salience_weight": 0.10825082508250826,
-          "weighted_contribution": 0.07640035855437396,
+          "weighted_contribution": 0.05072137880454713,
           "direction": "Moderate Alignment"
         },
         {
+          "issue_id": "environment",
+          "score": 0.5109727061556331,
+          "salience_weight": 0.10825082508250826,
+          "weighted_contribution": 0.05531321703598933,
+          "direction": "Partial Alignment"
+        },
+        {
           "issue_id": "economy",
-          "score": 0.8956976415094337,
+          "score": 0.6770411528150133,
           "salience_weight": 0.48052805280528055,
-          "weighted_contribution": 0.4304078435768104,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.32533726683124076,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9731323529411766,
+          "score": 0.8774194915254239,
           "salience_weight": 0.11617161716171617,
-          "weighted_contribution": 0.11305035915356243,
+          "weighted_contribution": 0.10193124125971921,
           "direction": "Strong Alignment"
         }
       ]
     },
     {
       "name": "Angela Alsobrooks",
-      "overall_score": 0.7897971554583894,
-      "overall_label": "Moderate Alignment",
+      "overall_score": 0.5417119086139535,
+      "overall_label": "Partial Alignment",
       "issue_scores": [
         {
           "issue_id": "immigration",
@@ -72,24 +72,24 @@
         },
         {
           "issue_id": "environment",
-          "score": 0.929074074074074,
+          "score": 0.49662280701754397,
           "salience_weight": 0.11428571428571428,
-          "weighted_contribution": 0.10617989417989418,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.05675689223057645,
+          "direction": "Partial Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9746613445378152,
+          "score": 0.6078632135306552,
           "salience_weight": 0.5073170731707317,
-          "weighted_contribution": 0.4944623406435745,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.3083793863765275,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.6005833333333334,
+          "score": 0.4980192307692307,
           "salience_weight": 0.12264808362369337,
-          "weighted_contribution": 0.07366039488966318,
-          "direction": "Moderate Alignment"
+          "weighted_contribution": 0.06108110426159205,
+          "direction": "Partial Alignment"
         }
       ]
     }

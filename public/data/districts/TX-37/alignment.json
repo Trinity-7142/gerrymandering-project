@@ -1,8 +1,8 @@
 {
   "district_id": "TX-37",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6356080580833195,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.4206927844659039,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,24 +23,24 @@
     },
     {
       "issue_id": "immigration",
-      "score": 0.4258,
+      "score": 0.42579999999999996,
       "salience_weight": 0.106764841233318,
-      "weighted_contribution": 0.045460469397146805,
+      "weighted_contribution": 0.0454604693971468,
       "direction": "Partial Alignment"
     },
     {
       "issue_id": "environment",
-      "score": 0.7230634408602151,
+      "score": 0.36855128205128196,
       "salience_weight": 0.08651633686148182,
-      "weighted_contribution": 0.0625568002216845,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.031885706868679704,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.6847666666666665,
+      "score": 0.44241642228739,
       "salience_weight": 0.7602393005062126,
-      "weighted_contribution": 0.5205865316766374,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.3363423514122265,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

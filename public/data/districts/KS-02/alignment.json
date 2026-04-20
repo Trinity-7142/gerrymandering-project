@@ -1,8 +1,8 @@
 {
   "district_id": "KS-02",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.9095135806132542,
-  "overall_label": "Strong Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5919797432784821,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,17 +23,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.9601875000000001,
+      "score": 0.6815,
       "salience_weight": 0.0909990108803165,
-      "weighted_contribution": 0.08737611275964391,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.0620158259149357,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.9437300000000001,
+      "score": 0.5772443181818182,
       "salience_weight": 0.7972304648862512,
-      "weighted_contribution": 0.7523703066271018,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.46019675613703803,
+      "direction": "Partial Alignment"
     }
   ],
   "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
