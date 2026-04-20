@@ -6,7 +6,7 @@ author(s): Full Team
 table_of_contents: True
 ---
 
-## TL;DR: Alignment Score Methodology
+# TL:DR - Alignment Score Methodology
 
 The alignment score measures how closely a member of Congress's voting record matches their constituents' policy preferences on a 0–1 scale. For each of nine issue areas, the script computes two directional averages:
 
@@ -52,8 +52,12 @@ $$
 
 In the alignment script, key placeholders include: `{CES_DATA_PATH}` for the preprocessed constituent positions file (output of `04_generate_ces_positions.R`), `{VOTECAST_WEIGHTS_PATH}` for the state-level issue salience weights, `{ROLL_CALL_DATA_PATH}` for the tagged roll-call vote records, `{BILL_TAGS_PATH}` for the policy team's issue/direction/confidence tagging CSV, and `{OUTPUT_PATH}` for the final per-member and per-state alignment score outputs.
 
----
-
 ## Limitations
 
 The methodology carries several important caveats. **CES sample sizes vary** across districts, producing noisier constituent estimates in smaller or demographically underrepresented areas. **Collapsing preferences and votes to a binary liberal/conservative axis** loses significant nuance — a constituent may hold mixed views within a single issue, and procedural versus substantive votes on the same bill are treated identically. **CES question coverage is uneven** (e.g., more healthcare questions than criminal justice), making some issue estimates more stable than others without the score reflecting that asymmetry. **Bill direction tagging is inherently subjective**, and while confidence weighting mitigates ambiguous cases, reasonable reviewers could disagree. **VoteCast salience is state-level only**, flattening intra-state variation in what voters actually prioritize at the district level. The **confidence and penalty values** (1.0/0.6/0.3 and 1.0/0.5/0.25/0) are calibrated choices, not statistically derived — different values would shift scores modestly. Finally, there is a **timeline mismatch**: CES and VoteCast capture a 2024 snapshot of opinion, while votes span both the 118th and ongoing 119th Congress, meaning the score treats preferences as static even as public opinion shifts over time.
+
+# TL:DR - Generated Explainer Content
+
+The site features two categories of AI-generated short-form text: state "key facts" blurbs (describing each state's redistricting process and notable features) and legislator profiles (brief bios covering background, platform, and notable accomplishments or controversies). Both are written as 100-word paragraphs using Anthropic's Claude Sonnet model with web search enabled. Each generation request follows the same pipeline — a system prompt instructs the model to write as a neutral political analyst, and the user prompt specifies the subject (a state or legislator). The model performs up to five web searches per request, and every cited source URL is extracted, mapped to a clean display name, and embedded in the output's frontmatter so readers can trace the underlying facts. A separate debug trace (search queries, returned URLs, cited snippets) is logged for internal review.
+
+No generated content reaches the public site without human review. Before launch, the policy team manually read, fact-checked, and where necessary corrected or rewrote every blurb and profile, cross-referencing claims against primary sources (state government sites, court records, official legislator pages) and independent secondary sources. The same standard applies to any future regenerations. Key limitations include: content reflects a snapshot in time and will lag behind real-world changes until the next regeneration cycle; 100-word compression necessarily omits nuance; web search sources vary in editorial quality; framing choices around what to foreground or call "notable" mean neutrality is a goal, not a guarantee; and results are model-version-dependent — regenerating the same prompt at a different time would produce different text.
