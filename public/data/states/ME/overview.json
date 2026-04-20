@@ -2,7 +2,15 @@
   "state_code": "ME",
   "state_name": "Maine",
   "total_districts": 2,
-  "overall_alignment": 0.7295053867,
+  "overall_alignment": 0.5728673852,
+  "house_alignment": 0.5044100839,
+  "senate_alignment": 0.6413246865,
+  "delegation_sample": {
+    "house_n": 2,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 2,
     "republican": 0
@@ -12,14 +20,14 @@
       "district_id": "ME-01",
       "representative": "Chellie Pingree",
       "party": "D",
-      "alignment_score": 0.6747890025351866,
+      "alignment_score": 0.4754244950834481,
       "ces_sample_size": 84
     },
     {
       "district_id": "ME-02",
       "representative": "Jared F. Golden",
       "party": "D",
-      "alignment_score": 0.7091238382108678,
+      "alignment_score": 0.5333956727040565,
       "ces_sample_size": 112
     }
   ]

@@ -2,7 +2,15 @@
   "state_code": "UT",
   "state_name": "Utah",
   "total_districts": 4,
-  "overall_alignment": 0.8051467865,
+  "overall_alignment": 0.6407609683,
+  "house_alignment": 0.5952578821,
+  "senate_alignment": 0.6862640545,
+  "delegation_sample": {
+    "house_n": 4,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 0,
     "republican": 4
@@ -12,28 +20,28 @@
       "district_id": "UT-01",
       "representative": "Blake D. Moore",
       "party": "R",
-      "alignment_score": 0.7420764490121695,
+      "alignment_score": 0.5828993175708307,
       "ces_sample_size": 31
     },
     {
       "district_id": "UT-02",
       "representative": "Celeste Maloy",
       "party": "R",
-      "alignment_score": 0.8497499016990542,
+      "alignment_score": 0.6553905198069462,
       "ces_sample_size": 43
     },
     {
       "district_id": "UT-03",
       "representative": "Mike Kennedy",
       "party": "R",
-      "alignment_score": 0.9071655801825294,
+      "alignment_score": 0.5802383390620679,
       "ces_sample_size": 41
     },
     {
       "district_id": "UT-04",
       "representative": "Burgess Owens",
       "party": "R",
-      "alignment_score": 0.7307125130597182,
+      "alignment_score": 0.5625033521524346,
       "ces_sample_size": 37
     }
   ]

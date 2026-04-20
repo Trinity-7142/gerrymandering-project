@@ -2,7 +2,15 @@
   "state_code": "NV",
   "state_name": "Nevada",
   "total_districts": 4,
-  "overall_alignment": 0.7435199028,
+  "overall_alignment": 0.6085946635,
+  "house_alignment": 0.53835297,
+  "senate_alignment": 0.678836357,
+  "delegation_sample": {
+    "house_n": 4,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 3,
     "republican": 1
@@ -12,28 +20,28 @@
       "district_id": "NV-01",
       "representative": "Dina Titus",
       "party": "D",
-      "alignment_score": 0.6962070235154509,
+      "alignment_score": 0.5159170218210541,
       "ces_sample_size": 124
     },
     {
       "district_id": "NV-02",
       "representative": "Mark E. Amodei",
       "party": "R",
-      "alignment_score": 0.7377176461542188,
+      "alignment_score": 0.5801207172320076,
       "ces_sample_size": 103
     },
     {
       "district_id": "NV-03",
       "representative": "Susie Lee",
       "party": "D",
-      "alignment_score": 0.6859065356485518,
+      "alignment_score": 0.496894821614983,
       "ces_sample_size": 93
     },
     {
       "district_id": "NV-04",
       "representative": "Steven Horsford",
       "party": "D",
-      "alignment_score": 0.7266198496076722,
+      "alignment_score": 0.5604793191623837,
       "ces_sample_size": 84
     }
   ]

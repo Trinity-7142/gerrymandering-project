@@ -2,7 +2,15 @@
   "state_code": "RI",
   "state_name": "Rhode Island",
   "total_districts": 2,
-  "overall_alignment": 0.769303156,
+  "overall_alignment": 0.5849446592,
+  "house_alignment": 0.5135043203,
+  "senate_alignment": 0.6563849981,
+  "delegation_sample": {
+    "house_n": 2,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 2,
     "republican": 0
@@ -12,14 +20,14 @@
       "district_id": "RI-01",
       "representative": "Gabe Amo",
       "party": "D",
-      "alignment_score": 0.8050445213177677,
+      "alignment_score": 0.5260628152514918,
       "ces_sample_size": 68
     },
     {
       "district_id": "RI-02",
       "representative": "Seth Magaziner",
       "party": "D",
-      "alignment_score": 0.6863849294277021,
+      "alignment_score": 0.5009458253990826,
       "ces_sample_size": 70
     }
   ]

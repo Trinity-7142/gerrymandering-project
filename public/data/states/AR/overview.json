@@ -2,7 +2,15 @@
   "state_code": "AR",
   "state_name": "Arkansas",
   "total_districts": 4,
-  "overall_alignment": 0.7592190789,
+  "overall_alignment": 0.6428262788,
+  "house_alignment": 0.5665531616,
+  "senate_alignment": 0.7190993959,
+  "delegation_sample": {
+    "house_n": 4,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 0,
     "republican": 4
@@ -12,28 +20,28 @@
       "district_id": "AR-01",
       "representative": "Eric A. \"Rick\" Crawford",
       "party": "R",
-      "alignment_score": 0.7836387823370937,
+      "alignment_score": 0.6508068937474505,
       "ces_sample_size": 81
     },
     {
       "district_id": "AR-02",
       "representative": "J. French Hill",
       "party": "R",
-      "alignment_score": 0.6893704742223291,
+      "alignment_score": 0.5061671715098586,
       "ces_sample_size": 64
     },
     {
       "district_id": "AR-03",
       "representative": "Steve Womack",
       "party": "R",
-      "alignment_score": 0.6903394690653796,
+      "alignment_score": 0.5058381306947664,
       "ces_sample_size": 66
     },
     {
       "district_id": "AR-04",
       "representative": "Bruce Westerman",
       "party": "R",
-      "alignment_score": 0.7528591617243934,
+      "alignment_score": 0.6034004505628979,
       "ces_sample_size": 61
     }
   ]

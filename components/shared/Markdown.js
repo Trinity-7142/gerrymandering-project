@@ -3,22 +3,23 @@
 // Policy team writes plain .md files → this component handles the visual treatment.
 //
 // Markdown conventions for the policy team:
-//   **bold text**  → renders in blue (#194973), extra bold
-//   *italic text*  → renders in red (#BF4545), used for lead-in accent sentences
-//   [link](url)    → renders as a blue underlined link
-//   Paragraphs     → Georgia serif, proper spacing, ink color
-//
-// Usage:
-//   import Markdown from "@/components/shared/Markdown";
-//   <Markdown>{body}</Markdown>
-//   <Markdown style={{ textAlign: "left" }}>{body}</Markdown>
+//   **bold text**    → blue (#194973), extra bold
+//   *italic text*    → red (#BF4545), accent sentences
+//   `code text`      → blue monospace with subtle background chip
+//   [link](url)      → blue underlined link
+//   # / ## / ###     → serif headings, h1 > h2 > h3 in size
+//   $$ ... $$        → block LaTeX equation (KaTeX rendered)
+//   $ ... $          → inline LaTeX (KaTeX rendered)
+//   Paragraphs       → Georgia serif, proper spacing, ink color
 
 import ReactMarkdown from "react-markdown";
-import { colors } from "@/lib/constants";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
+import { colors, fonts, markdownTypography, textColors } from "@/lib/constants";
+import { slugify } from "@/lib/slugify";
 
 // ── Custom renderers mapping markdown → styled React elements ───────────
 const components = {
-  // Paragraphs: Georgia serif body text with vertical spacing
   p: ({ children }) => (
     <p
       style={{
@@ -33,19 +34,39 @@ const components = {
     </p>
   ),
 
-  // Bold (**text**): blue emphasis, matching the mockup's "where/how/why" style
+  h1: ({ children }) => {
+    const text = typeof children === "string" ? children : String(children ?? "");
+    return (
+      <h1 id={slugify(text)} style={{ fontFamily: fonts.serif, color: textColors.primary, ...markdownTypography.h1 }}>
+        {children}
+      </h1>
+    );
+  },
+
+  h2: ({ children }) => {
+    const text = typeof children === "string" ? children : String(children ?? "");
+    return (
+      <h2 id={slugify(text)} style={{ fontFamily: fonts.serif, color: textColors.primary, ...markdownTypography.h2 }}>
+        {children}
+      </h2>
+    );
+  },
+
+  h3: ({ children }) => {
+    const text = typeof children === "string" ? children : String(children ?? "");
+    return (
+      <h3 id={slugify(text)} style={{ fontFamily: fonts.serif, color: textColors.primary, ...markdownTypography.h3 }}>
+        {children}
+      </h3>
+    );
+  },
+
   strong: ({ children }) => (
-    <strong
-      style={{
-        fontWeight: 800,
-        color: colors.primaryBlue,
-      }}
-    >
+    <strong style={{ fontWeight: 800, color: colors.primaryBlue }}>
       {children}
     </strong>
   ),
 
-  // Italic (*text*): red accent, used for lead-in sentences
   em: ({ children }) => (
     <em
       style={{
@@ -58,7 +79,32 @@ const components = {
     </em>
   ),
 
-  // Links ([text](url)): blue with subtle underline
+  // Inline code (`code`): blue monospace chip
+  code: ({ inline, children }) => {
+    if (inline === false) {
+      // fenced code block — plain preformatted
+      return (
+        <pre
+          style={{
+            fontFamily: fonts.mono,
+            fontSize: "0.875rem",
+            background: "rgba(25, 73, 115, 0.06)",
+            border: "1px solid rgba(25, 73, 115, 0.14)",
+            borderRadius: "8px",
+            padding: "12px 16px",
+            overflowX: "auto",
+            margin: "0 0 16px 0",
+          }}
+        >
+          <code style={{ color: colors.primaryBlue }}>{children}</code>
+        </pre>
+      );
+    }
+    return (
+      <code style={markdownTypography.inlineCode}>{children}</code>
+    );
+  },
+
   a: ({ href, children }) => (
     <a
       href={href}
@@ -75,13 +121,29 @@ const components = {
       {children}
     </a>
   ),
+
+  hr: () => (
+    <hr
+      style={{
+        border: "none",
+        borderTop: "1px solid #E8E6E3",
+        margin: "32px 0",
+      }}
+    />
+  ),
 };
 
 // ── Main component ──────────────────────────────────────────────────────
 export default function Markdown({ children, className, style }) {
   return (
     <div className={className} style={style}>
-      <ReactMarkdown components={components}>{children}</ReactMarkdown>
+      <ReactMarkdown
+        remarkPlugins={[remarkMath]}
+        rehypePlugins={[rehypeKatex]}
+        components={components}
+      >
+        {children}
+      </ReactMarkdown>
     </div>
   );
 }

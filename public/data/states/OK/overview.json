@@ -2,7 +2,15 @@
   "state_code": "OK",
   "state_name": "Oklahoma",
   "total_districts": 5,
-  "overall_alignment": 0.7479696232,
+  "overall_alignment": 0.6434120249,
+  "house_alignment": 0.5735046873,
+  "senate_alignment": 0.7133193626,
+  "delegation_sample": {
+    "house_n": 5,
+    "senate_n": 1,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 0,
     "republican": 5
@@ -12,35 +20,35 @@
       "district_id": "OK-01",
       "representative": "Kevin Hern",
       "party": "R",
-      "alignment_score": 0.7346176207405388,
+      "alignment_score": 0.5766589287929096,
       "ces_sample_size": 99
     },
     {
       "district_id": "OK-02",
       "representative": "Josh Brecheen",
       "party": "R",
-      "alignment_score": 0.7466129987109211,
+      "alignment_score": 0.5919102207200445,
       "ces_sample_size": 66
     },
     {
       "district_id": "OK-03",
       "representative": "Frank D. Lucas",
       "party": "R",
-      "alignment_score": 0.7093566306848621,
+      "alignment_score": 0.5353447982134958,
       "ces_sample_size": 62
     },
     {
       "district_id": "OK-04",
       "representative": "Tom Cole",
       "party": "R",
-      "alignment_score": 0.7390041279823405,
+      "alignment_score": 0.5775137120606693,
       "ces_sample_size": 75
     },
     {
       "district_id": "OK-05",
       "representative": "Stephanie I. Bice",
       "party": "R",
-      "alignment_score": 0.7402946673028354,
+      "alignment_score": 0.5860957767307311,
       "ces_sample_size": 101
     }
   ]

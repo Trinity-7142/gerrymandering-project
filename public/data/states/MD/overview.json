@@ -2,7 +2,15 @@
   "state_code": "MD",
   "state_name": "Maryland",
   "total_districts": 8,
-  "overall_alignment": 0.7587420743,
+  "overall_alignment": 0.5299373908,
+  "house_alignment": 0.4704069783,
+  "senate_alignment": 0.5894678033,
+  "delegation_sample": {
+    "house_n": 8,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 7,
     "republican": 1
@@ -12,56 +20,56 @@
       "district_id": "MD-01",
       "representative": "Andy Harris",
       "party": "R",
-      "alignment_score": 0.7176702595441024,
+      "alignment_score": 0.5489814600007824,
       "ces_sample_size": 104
     },
     {
       "district_id": "MD-02",
       "representative": "Johnny Olszewski, Jr.",
       "party": "D",
-      "alignment_score": 0.9034664436438499,
+      "alignment_score": 0.500176933514247,
       "ces_sample_size": 98
     },
     {
       "district_id": "MD-03",
       "representative": "Sarah Elfreth",
       "party": "D",
-      "alignment_score": 0.9032834002401785,
+      "alignment_score": 0.5232041953243188,
       "ces_sample_size": 89
     },
     {
       "district_id": "MD-04",
       "representative": "Glenn Ivey",
       "party": "D",
-      "alignment_score": 0.6289907428242631,
+      "alignment_score": 0.40383910413318114,
       "ces_sample_size": 45
     },
     {
       "district_id": "MD-05",
       "representative": "Steny H. Hoyer",
       "party": "D",
-      "alignment_score": 0.7168420944880272,
+      "alignment_score": 0.5467550789951587,
       "ces_sample_size": 71
     },
     {
       "district_id": "MD-06",
       "representative": "April McClain Delaney",
       "party": "D",
-      "alignment_score": 0.8841017361468521,
+      "alignment_score": 0.4277546780205555,
       "ces_sample_size": 78
     },
     {
       "district_id": "MD-07",
       "representative": "Kweisi Mfume",
       "party": "D",
-      "alignment_score": 0.6571802436693741,
+      "alignment_score": 0.44675079870322065,
       "ces_sample_size": 76
     },
     {
       "district_id": "MD-08",
       "representative": "Jamie Raskin",
       "party": "D",
-      "alignment_score": 0.6035023244404029,
+      "alignment_score": 0.3657935779903197,
       "ces_sample_size": 64
     }
   ]

@@ -2,7 +2,15 @@
   "state_code": "ID",
   "state_name": "Idaho",
   "total_districts": 2,
-  "overall_alignment": 0.8096361602,
+  "overall_alignment": 0.7034692193,
+  "house_alignment": 0.639095959,
+  "senate_alignment": 0.7678424796,
+  "delegation_sample": {
+    "house_n": 2,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 0,
     "republican": 2
@@ -12,14 +20,14 @@
       "district_id": "ID-01",
       "representative": "Russ Fulcher",
       "party": "R",
-      "alignment_score": 0.7925630379292936,
+      "alignment_score": 0.6717007333621899,
       "ces_sample_size": 105
     },
     {
       "district_id": "ID-02",
       "representative": "Michael K. Simpson",
       "party": "R",
-      "alignment_score": 0.7497829565882036,
+      "alignment_score": 0.6064911847271753,
       "ces_sample_size": 88
     }
   ]

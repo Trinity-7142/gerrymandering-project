@@ -2,7 +2,15 @@
   "state_code": "AL",
   "state_name": "Alabama",
   "total_districts": 7,
-  "overall_alignment": 0.7816716406,
+  "overall_alignment": 0.6556857723,
+  "house_alignment": 0.5833200485,
+  "senate_alignment": 0.728051496,
+  "delegation_sample": {
+    "house_n": 7,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 2,
     "republican": 5
@@ -12,49 +20,49 @@
       "district_id": "AL-01",
       "representative": "Barry Moore",
       "party": "R",
-      "alignment_score": 0.7895640097793845,
+      "alignment_score": 0.6613620722919139,
       "ces_sample_size": 70
     },
     {
       "district_id": "AL-02",
       "representative": "Shomari Figures",
       "party": "D",
-      "alignment_score": 0.8861804267425321,
+      "alignment_score": 0.48022939566360623,
       "ces_sample_size": 71
     },
     {
       "district_id": "AL-03",
       "representative": "Mike Rogers",
       "party": "R",
-      "alignment_score": 0.7619118061247391,
+      "alignment_score": 0.6213323762181264,
       "ces_sample_size": 84
     },
     {
       "district_id": "AL-04",
       "representative": "Robert B. Aderholt",
       "party": "R",
-      "alignment_score": 0.7891824074751675,
+      "alignment_score": 0.664589236246015,
       "ces_sample_size": 79
     },
     {
       "district_id": "AL-05",
       "representative": "Dale W. Strong",
       "party": "R",
-      "alignment_score": 0.7707347473069492,
+      "alignment_score": 0.6373463101612105,
       "ces_sample_size": 73
     },
     {
       "district_id": "AL-06",
       "representative": "Gary J. Palmer",
       "party": "R",
-      "alignment_score": 0.7204497349637998,
+      "alignment_score": 0.5567658283259975,
       "ces_sample_size": 73
     },
     {
       "district_id": "AL-07",
       "representative": "Terri A. Sewell",
       "party": "D",
-      "alignment_score": 0.6618887146171184,
+      "alignment_score": 0.46161512060183824,
       "ces_sample_size": 57
     }
   ]

@@ -2,7 +2,15 @@
   "state_code": "AZ",
   "state_name": "Arizona",
   "total_districts": 9,
-  "overall_alignment": 0.7903187173,
+  "overall_alignment": 0.6158707736,
+  "house_alignment": 0.5768907866,
+  "senate_alignment": 0.6548507607,
+  "delegation_sample": {
+    "house_n": 9,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 3,
     "republican": 6
@@ -12,63 +20,63 @@
       "district_id": "AZ-01",
       "representative": "David Schweikert",
       "party": "R",
-      "alignment_score": 0.6842714026821312,
+      "alignment_score": 0.4974398716723653,
       "ces_sample_size": 91
     },
     {
       "district_id": "AZ-02",
       "representative": "Elijah Crane",
       "party": "R",
-      "alignment_score": 0.7759934472030928,
+      "alignment_score": 0.6382311082040467,
       "ces_sample_size": 117
     },
     {
       "district_id": "AZ-03",
       "representative": "Yassamin Ansari",
       "party": "D",
-      "alignment_score": 0.8819225,
+      "alignment_score": 0.45582382352941186,
       "ces_sample_size": 68
     },
     {
       "district_id": "AZ-04",
       "representative": "Greg Stanton",
       "party": "D",
-      "alignment_score": 0.6960345943578591,
+      "alignment_score": 0.5140481610723455,
       "ces_sample_size": 81
     },
     {
       "district_id": "AZ-05",
       "representative": "Andy Biggs",
       "party": "R",
-      "alignment_score": 0.713648694046756,
+      "alignment_score": 0.5426936236493661,
       "ces_sample_size": 85
     },
     {
       "district_id": "AZ-06",
       "representative": "Juan Ciscomani",
       "party": "R",
-      "alignment_score": 0.6942764913314001,
+      "alignment_score": 0.5141316055433329,
       "ces_sample_size": 158
     },
     {
       "district_id": "AZ-07",
       "representative": "Adelita S. Grijalva",
       "party": "D",
-      "alignment_score": 0.9803057395143487,
+      "alignment_score": 0.7701425977355266,
       "ces_sample_size": 89
     },
     {
       "district_id": "AZ-08",
       "representative": "Abraham J. Hamadeh",
       "party": "R",
-      "alignment_score": 0.9022263970588237,
+      "alignment_score": 0.5651833556149733,
       "ces_sample_size": 117
     },
     {
       "district_id": "AZ-09",
       "representative": "Paul A. Gosar",
       "party": "R",
-      "alignment_score": 0.8091783190618581,
+      "alignment_score": 0.6943229326875551,
       "ces_sample_size": 119
     }
   ]

@@ -13,10 +13,12 @@ function districtSortKey(districtId) {
 function alignmentBadge(score) {
   if (score == null) return { bg: "#F0EFED", color: textColors.faint, label: "—" };
   const pct = Math.round(score * 100);
-  if (score < 0.3) return { bg: alignmentColors.low,      color: "#1A1A1A", label: `${pct}%` };
-  if (score < 0.6) return { bg: alignmentColors.partial,  color: "#fff",    label: `${pct}%` };
-  if (score < 0.8) return { bg: alignmentColors.moderate, color: "#fff",    label: `${pct}%` };
-  return               { bg: alignmentColors.high,     color: "#fff",    label: `${pct}%` };
+  if (score < 0.25) return { bg: alignmentColors.veryLow,    color: "#1A1A1A", label: `${pct}%` };
+  if (score < 0.40) return { bg: alignmentColors.low,        color: "#1A1A1A", label: `${pct}%` };
+  if (score < 0.55) return { bg: alignmentColors.moderate,   color: "#fff",    label: `${pct}%` };
+  if (score < 0.70) return { bg: alignmentColors.good,       color: "#fff",    label: `${pct}%` };
+  if (score < 0.85) return { bg: alignmentColors.strong,     color: "#fff",    label: `${pct}%` };
+  return                   { bg: alignmentColors.veryStrong, color: "#fff",    label: `${pct}%` };
 }
 
 export default function AllDistricts({ data }) {

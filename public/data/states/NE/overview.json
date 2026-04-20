@@ -2,7 +2,15 @@
   "state_code": "NE",
   "state_name": "Nebraska",
   "total_districts": 3,
-  "overall_alignment": 0.7495526679,
+  "overall_alignment": 0.6484934314,
+  "house_alignment": 0.5781444714,
+  "senate_alignment": 0.7188423913,
+  "delegation_sample": {
+    "house_n": 3,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 0,
     "republican": 3
@@ -12,21 +20,21 @@
       "district_id": "NE-01",
       "representative": "Mike Flood",
       "party": "R",
-      "alignment_score": 0.7306145677091863,
+      "alignment_score": 0.5989540438806322,
       "ces_sample_size": 89
     },
     {
       "district_id": "NE-02",
       "representative": "Don Bacon",
       "party": "R",
-      "alignment_score": 0.7198867473118279,
+      "alignment_score": 0.573750688590379,
       "ces_sample_size": 61
     },
     {
       "district_id": "NE-03",
       "representative": "Adrian Smith",
       "party": "R",
-      "alignment_score": 0.7106749145788986,
+      "alignment_score": 0.561728681628671,
       "ces_sample_size": 79
     }
   ]

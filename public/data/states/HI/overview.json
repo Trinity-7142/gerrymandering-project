@@ -2,7 +2,15 @@
   "state_code": "HI",
   "state_name": "Hawaii",
   "total_districts": 2,
-  "overall_alignment": 0.7445303497,
+  "overall_alignment": 0.5498518136,
+  "house_alignment": 0.4686616438,
+  "senate_alignment": 0.6310419834,
+  "delegation_sample": {
+    "house_n": 2,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 2,
     "republican": 0
@@ -12,14 +20,14 @@
       "district_id": "HI-01",
       "representative": "Ed Case",
       "party": "D",
-      "alignment_score": 0.6759784049357894,
+      "alignment_score": 0.45146022447881207,
       "ces_sample_size": 53
     },
     {
       "district_id": "HI-02",
       "representative": "Jill N. Tokuda",
       "party": "D",
-      "alignment_score": 0.694198685851,
+      "alignment_score": 0.4858630630639478,
       "ces_sample_size": 54
     }
   ]

@@ -2,7 +2,15 @@
   "state_code": "VA",
   "state_name": "Virginia",
   "total_districts": 11,
-  "overall_alignment": 0.7952221551,
+  "overall_alignment": 0.6196042795,
+  "house_alignment": 0.5490602761,
+  "senate_alignment": 0.690148283,
+  "delegation_sample": {
+    "house_n": 11,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 6,
     "republican": 5
@@ -12,77 +20,77 @@
       "district_id": "VA-01",
       "representative": "Robert J. Wittman",
       "party": "R",
-      "alignment_score": 0.7306277846516424,
+      "alignment_score": 0.5684821204052489,
       "ces_sample_size": 120
     },
     {
       "district_id": "VA-02",
       "representative": "Jennifer A. Kiggans",
       "party": "R",
-      "alignment_score": 0.7445079152550694,
+      "alignment_score": 0.5913257131153817,
       "ces_sample_size": 95
     },
     {
       "district_id": "VA-03",
       "representative": "Robert C. \"Bobby\" Scott",
       "party": "D",
-      "alignment_score": 0.6886422455442628,
+      "alignment_score": 0.4957595510975007,
       "ces_sample_size": 77
     },
     {
       "district_id": "VA-04",
       "representative": "Jennifer L. McClellan",
       "party": "D",
-      "alignment_score": 0.7337793941962503,
+      "alignment_score": 0.5448225617234292,
       "ces_sample_size": 103
     },
     {
       "district_id": "VA-05",
       "representative": "John J. McGuire III",
       "party": "R",
-      "alignment_score": 0.9270030225442834,
+      "alignment_score": 0.6377902971746449,
       "ces_sample_size": 86
     },
     {
       "district_id": "VA-06",
       "representative": "Ben Cline",
       "party": "R",
-      "alignment_score": 0.7252280922570826,
+      "alignment_score": 0.554872195705311,
       "ces_sample_size": 89
     },
     {
       "district_id": "VA-07",
       "representative": "Eugene Simon Vindman",
       "party": "D",
-      "alignment_score": 0.9032095024154588,
+      "alignment_score": 0.527521379007466,
       "ces_sample_size": 85
     },
     {
       "district_id": "VA-08",
       "representative": "Donald S. Beyer, Jr.",
       "party": "D",
-      "alignment_score": 0.6658968986595964,
+      "alignment_score": 0.4626952390419028,
       "ces_sample_size": 95
     },
     {
       "district_id": "VA-09",
       "representative": "H. Morgan Griffith",
       "party": "R",
-      "alignment_score": 0.7291362034172927,
+      "alignment_score": 0.5599988369297517,
       "ces_sample_size": 113
     },
     {
       "district_id": "VA-10",
       "representative": "Suhas Subramanyam",
       "party": "D",
-      "alignment_score": 0.8825962721417069,
+      "alignment_score": 0.4267153418240375,
       "ces_sample_size": 74
     },
     {
       "district_id": "VA-11",
       "representative": "James R. Walkinshaw",
       "party": "D",
-      "alignment_score": 0.9704039867893371,
+      "alignment_score": 0.6696798010074518,
       "ces_sample_size": 97
     }
   ]

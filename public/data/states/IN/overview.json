@@ -2,7 +2,15 @@
   "state_code": "IN",
   "state_name": "Indiana",
   "total_districts": 9,
-  "overall_alignment": 0.7814649043,
+  "overall_alignment": 0.6150032394,
+  "house_alignment": 0.557654674,
+  "senate_alignment": 0.6723518048,
+  "delegation_sample": {
+    "house_n": 9,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 2,
     "republican": 7
@@ -12,63 +20,63 @@
       "district_id": "IN-01",
       "representative": "Frank J. Mrvan",
       "party": "D",
-      "alignment_score": 0.7055246996477302,
+      "alignment_score": 0.5412789986791093,
       "ces_sample_size": 100
     },
     {
       "district_id": "IN-02",
       "representative": "Rudy Yakym III",
       "party": "R",
-      "alignment_score": 0.7291113058978264,
+      "alignment_score": 0.5733337368401745,
       "ces_sample_size": 82
     },
     {
       "district_id": "IN-03",
       "representative": "Marlin A. Stutzman",
       "party": "R",
-      "alignment_score": 0.8968729328621906,
+      "alignment_score": 0.5373034050754898,
       "ces_sample_size": 92
     },
     {
       "district_id": "IN-04",
       "representative": "James R. Baird",
       "party": "R",
-      "alignment_score": 0.7445976609570253,
+      "alignment_score": 0.6036771035918205,
       "ces_sample_size": 81
     },
     {
       "district_id": "IN-05",
       "representative": "Victoria Spartz",
       "party": "R",
-      "alignment_score": 0.7342201485993817,
+      "alignment_score": 0.5846958335094844,
       "ces_sample_size": 103
     },
     {
       "district_id": "IN-06",
       "representative": "Jefferson Shreve",
       "party": "R",
-      "alignment_score": 0.9042229328621908,
+      "alignment_score": 0.5496818181818183,
       "ces_sample_size": 87
     },
     {
       "district_id": "IN-07",
       "representative": "André Carson",
       "party": "D",
-      "alignment_score": 0.6841389881089729,
+      "alignment_score": 0.5108190566029414,
       "ces_sample_size": 88
     },
     {
       "district_id": "IN-08",
       "representative": "Mark B. Messmer",
       "party": "R",
-      "alignment_score": 0.8967139104829212,
+      "alignment_score": 0.5407898864974836,
       "ces_sample_size": 93
     },
     {
       "district_id": "IN-09",
       "representative": "Erin Houchin",
       "party": "R",
-      "alignment_score": 0.7299407909276436,
+      "alignment_score": 0.5773122268023279,
       "ces_sample_size": 93
     }
   ]

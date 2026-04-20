@@ -32,10 +32,12 @@ function formatScore(score, label) {
 
 function alignmentColor(score, label) {
   if (isPlaceholder(score, label)) return textColors.muted;
-  if (score < 0.3) return alignmentColors.low;
-  if (score < 0.6) return alignmentColors.partial;
-  if (score < 0.8) return alignmentColors.moderate;
-  return alignmentColors.high;
+  if (score < 0.25) return alignmentColors.veryLow;
+  if (score < 0.40) return alignmentColors.low;
+  if (score < 0.55) return alignmentColors.moderate;
+  if (score < 0.70) return alignmentColors.good;
+  if (score < 0.85) return alignmentColors.strong;
+  return alignmentColors.veryStrong;
 }
 
 function formatAttendance(rate) {

@@ -2,7 +2,15 @@
   "state_code": "LA",
   "state_name": "Louisiana",
   "total_districts": 6,
-  "overall_alignment": 0.7957849695,
+  "overall_alignment": 0.6609455604,
+  "house_alignment": 0.5810736312,
+  "senate_alignment": 0.7408174896,
+  "delegation_sample": {
+    "house_n": 6,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 2,
     "republican": 4
@@ -12,42 +20,42 @@
       "district_id": "LA-01",
       "representative": "Steve Scalise",
       "party": "R",
-      "alignment_score": 0.7874209138831694,
+      "alignment_score": 0.655732172556767,
       "ces_sample_size": 73
     },
     {
       "district_id": "LA-02",
       "representative": "Troy A. Carter",
       "party": "D",
-      "alignment_score": 0.6984172905704261,
+      "alignment_score": 0.516100466685425,
       "ces_sample_size": 74
     },
     {
       "district_id": "LA-03",
       "representative": "Clay Higgins",
       "party": "R",
-      "alignment_score": 0.7654203812533363,
+      "alignment_score": 0.6213578917641116,
       "ces_sample_size": 57
     },
     {
       "district_id": "LA-04",
       "representative": "Mike Johnson",
       "party": "R",
-      "alignment_score": 0.7874796954669185,
+      "alignment_score": 0.6110601364135273,
       "ces_sample_size": 60
     },
     {
       "district_id": "LA-05",
       "representative": "Julia Letlow",
       "party": "R",
-      "alignment_score": 0.7298933360501029,
+      "alignment_score": 0.5676554300545312,
       "ces_sample_size": 58
     },
     {
       "district_id": "LA-06",
       "representative": "Cleo Fields",
       "party": "D",
-      "alignment_score": 0.9085376683618429,
+      "alignment_score": 0.5145356897686995,
       "ces_sample_size": 57
     }
   ]

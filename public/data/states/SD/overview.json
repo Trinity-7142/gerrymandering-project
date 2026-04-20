@@ -2,7 +2,15 @@
   "state_code": "SD",
   "state_name": "South Dakota",
   "total_districts": 1,
-  "overall_alignment": 0.7836203749,
+  "overall_alignment": 0.6610677921,
+  "house_alignment": 0.5970501907,
+  "senate_alignment": 0.7250853936,
+  "delegation_sample": {
+    "house_n": 1,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 0,
     "republican": 1
@@ -12,7 +20,7 @@
       "district_id": "SD-AL",
       "representative": "Dusty Johnson",
       "party": "R",
-      "alignment_score": 0.7402448630145854,
+      "alignment_score": 0.597050190666182,
       "ces_sample_size": 112
     }
   ]

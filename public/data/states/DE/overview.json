@@ -2,7 +2,15 @@
   "state_code": "DE",
   "state_name": "Delaware",
   "total_districts": 1,
-  "overall_alignment": 0.8093312301,
+  "overall_alignment": 0.5617834875,
+  "house_alignment": 0.4974920931,
+  "senate_alignment": 0.6260748818,
+  "delegation_sample": {
+    "house_n": 1,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 1,
     "republican": 0
@@ -12,7 +20,7 @@
       "district_id": "DE-AL",
       "representative": "Sarah McBride",
       "party": "D",
-      "alignment_score": 0.8973034932480455,
+      "alignment_score": 0.49749209310589904,
       "ces_sample_size": 128
     }
   ]

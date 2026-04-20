@@ -2,7 +2,15 @@
   "state_code": "PA",
   "state_name": "Pennsylvania",
   "total_districts": 17,
-  "overall_alignment": 0.7461715675,
+  "overall_alignment": 0.5909872351,
+  "house_alignment": 0.5363550047,
+  "senate_alignment": 0.6456194654,
+  "delegation_sample": {
+    "house_n": 17,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 7,
     "republican": 10
@@ -12,119 +20,119 @@
       "district_id": "PA-01",
       "representative": "Brian K. Fitzpatrick",
       "party": "R",
-      "alignment_score": 0.6908963206936967,
+      "alignment_score": 0.5003242693745757,
       "ces_sample_size": 119
     },
     {
       "district_id": "PA-02",
       "representative": "Brendan F. Boyle",
       "party": "D",
-      "alignment_score": 0.6617737979214388,
+      "alignment_score": 0.4547015633454925,
       "ces_sample_size": 75
     },
     {
       "district_id": "PA-03",
       "representative": "Dwight Evans",
       "party": "D",
-      "alignment_score": 0.6442185317303998,
+      "alignment_score": 0.4341444440278357,
       "ces_sample_size": 114
     },
     {
       "district_id": "PA-04",
       "representative": "Madeleine Dean",
       "party": "D",
-      "alignment_score": 0.7060003270548527,
+      "alignment_score": 0.5242388364352999,
       "ces_sample_size": 105
     },
     {
       "district_id": "PA-05",
       "representative": "Mary Gay Scanlon",
       "party": "D",
-      "alignment_score": 0.6792571545984641,
+      "alignment_score": 0.4847603013138751,
       "ces_sample_size": 107
     },
     {
       "district_id": "PA-06",
       "representative": "Chrissy Houlahan",
       "party": "D",
-      "alignment_score": 0.7533088550405354,
+      "alignment_score": 0.6016413744428538,
       "ces_sample_size": 95
     },
     {
       "district_id": "PA-07",
       "representative": "Ryan Mackenzie",
       "party": "R",
-      "alignment_score": 0.8874731816026554,
+      "alignment_score": 0.45942181990603054,
       "ces_sample_size": 105
     },
     {
       "district_id": "PA-08",
       "representative": "Robert P. Bresnahan, Jr.",
       "party": "R",
-      "alignment_score": 0.9028647953216375,
+      "alignment_score": 0.5031188643188643,
       "ces_sample_size": 147
     },
     {
       "district_id": "PA-09",
       "representative": "Daniel Meuser",
       "party": "R",
-      "alignment_score": 0.7470788622868065,
+      "alignment_score": 0.5924098962919749,
       "ces_sample_size": 128
     },
     {
       "district_id": "PA-10",
       "representative": "Scott Perry",
       "party": "R",
-      "alignment_score": 0.7175005643823891,
+      "alignment_score": 0.546660847237947,
       "ces_sample_size": 109
     },
     {
       "district_id": "PA-11",
       "representative": "Lloyd Smucker",
       "party": "R",
-      "alignment_score": 0.7268648125452892,
+      "alignment_score": 0.5590178295661532,
       "ces_sample_size": 102
     },
     {
       "district_id": "PA-12",
       "representative": "Summer L. Lee",
       "party": "D",
-      "alignment_score": 0.6886495258312544,
+      "alignment_score": 0.500797814096536,
       "ces_sample_size": 132
     },
     {
       "district_id": "PA-13",
       "representative": "John Joyce",
       "party": "R",
-      "alignment_score": 0.7484100927425434,
+      "alignment_score": 0.5932253075278067,
       "ces_sample_size": 136
     },
     {
       "district_id": "PA-14",
       "representative": "Guy Reschenthaler",
       "party": "R",
-      "alignment_score": 0.775483472422832,
+      "alignment_score": 0.6391047166671275,
       "ces_sample_size": 115
     },
     {
       "district_id": "PA-15",
       "representative": "Glenn Thompson",
       "party": "R",
-      "alignment_score": 0.7244651150406326,
+      "alignment_score": 0.555632740437903,
       "ces_sample_size": 124
     },
     {
       "district_id": "PA-16",
       "representative": "Mike Kelly",
       "party": "R",
-      "alignment_score": 0.7538941699128988,
+      "alignment_score": 0.6029244464859972,
       "ces_sample_size": 121
     },
     {
       "district_id": "PA-17",
       "representative": "Christopher R. Deluzio",
       "party": "D",
-      "alignment_score": 0.7285680573184906,
+      "alignment_score": 0.5659100090092911,
       "ces_sample_size": 133
     }
   ]

@@ -39,11 +39,12 @@ const INITIAL_VISIBLE = 5;
 // ── Gradient for bar fills (uses alignment blue ramp) ──────────────────
 const BAR_GRADIENT = `linear-gradient(
   90deg,
-  ${alignmentColors.low} 0%,
-  #9BBDD0 25%,
-  ${alignmentColors.partial} 50%,
-  ${alignmentColors.moderate} 75%,
-  ${alignmentColors.high} 100%
+  ${alignmentColors.veryLow}   0%,
+  ${alignmentColors.low}       25%,
+  ${alignmentColors.moderate}  40%,
+  ${alignmentColors.good}      55%,
+  ${alignmentColors.strong}    70%,
+  ${alignmentColors.veryStrong} 100%
 )`;
 
 export default function VoteCastPanel({ data }) {

@@ -2,7 +2,15 @@
   "state_code": "MN",
   "state_name": "Minnesota",
   "total_districts": 8,
-  "overall_alignment": 0.7499826689,
+  "overall_alignment": 0.6084310827,
+  "house_alignment": 0.5347140567,
+  "senate_alignment": 0.6821481087,
+  "delegation_sample": {
+    "house_n": 8,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 4,
     "republican": 4
@@ -12,56 +20,56 @@
       "district_id": "MN-01",
       "representative": "Brad Finstad",
       "party": "R",
-      "alignment_score": 0.7503075665576832,
+      "alignment_score": 0.601664375501854,
       "ces_sample_size": 73
     },
     {
       "district_id": "MN-02",
       "representative": "Angie Craig",
       "party": "D",
-      "alignment_score": 0.7344086641756188,
+      "alignment_score": 0.5715285995400088,
       "ces_sample_size": 73
     },
     {
       "district_id": "MN-03",
       "representative": "Kelly Morrison",
       "party": "D",
-      "alignment_score": 0.893487188434696,
+      "alignment_score": 0.4955874376869393,
       "ces_sample_size": 97
     },
     {
       "district_id": "MN-04",
       "representative": "Betty McCollum",
       "party": "D",
-      "alignment_score": 0.623450747314339,
+      "alignment_score": 0.39567437487178714,
       "ces_sample_size": 112
     },
     {
       "district_id": "MN-05",
       "representative": "Ilhan Omar",
       "party": "D",
-      "alignment_score": 0.6213637552545538,
+      "alignment_score": 0.38817286606659956,
       "ces_sample_size": 101
     },
     {
       "district_id": "MN-06",
       "representative": "Tom Emmer",
       "party": "R",
-      "alignment_score": 0.7851755488089676,
+      "alignment_score": 0.651690175995224,
       "ces_sample_size": 74
     },
     {
       "district_id": "MN-07",
       "representative": "Michelle Fischbach",
       "party": "R",
-      "alignment_score": 0.7483635917795423,
+      "alignment_score": 0.6032924992990766,
       "ces_sample_size": 77
     },
     {
       "district_id": "MN-08",
       "representative": "Pete Stauber",
       "party": "R",
-      "alignment_score": 0.7325992526856608,
+      "alignment_score": 0.5701021243269845,
       "ces_sample_size": 94
     }
   ]

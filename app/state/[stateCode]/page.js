@@ -37,16 +37,12 @@ export default async function StatePage({ params }) {
   const princeton  = loadStateData(stateCode, "princeton.json");
   const votecast   = loadStateData(stateCode, "votecast_salience.json");
   const senators   = loadStateData(stateCode, "senators.json");
-  const alignment  = loadStateData(stateCode, "alignment.json");
   const ces        = loadStateData(stateCode, "ces_summary.json");
-  const keyFacts   = loadKeyFacts(stateCode);
+  const { body: keyFactsBody, sources: keyFactsSources } = loadKeyFacts(stateCode);
 
-  // Statewide average alignment — mean of senator overall_scores from alignment.json
-  const senatorScores = (alignment?.senators ?? [])
-    .map((s) => s.overall_score)
-    .filter((s) => typeof s === "number");
-  const avgAlignment = senatorScores.length
-    ? Math.round((senatorScores.reduce((sum, s) => sum + s, 0) / senatorScores.length) * 100)
+  // House alignment — mean across House delegation, pre-computed by overview.py
+  const avgAlignment = typeof overview?.house_alignment === "number"
+    ? Math.round(overview.house_alignment * 100)
     : null;
 
   // ── Tab content ──────────────────────────────────────────────────────────
@@ -58,7 +54,7 @@ export default async function StatePage({ params }) {
 
       {/* Key Facts (left) + Gerrymandering Grade (right) */}
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px", marginBottom: "28px" }}>
-        <StateKeyFacts content={keyFacts} stateName={overview?.state_name ?? stateCode} />
+        <StateKeyFacts content={keyFactsBody} stateName={overview?.state_name ?? stateCode} sources={keyFactsSources} />
         <PrincetonPanel
           data={princeton}
           planscoreUrl={overview?.external_links?.planscore}

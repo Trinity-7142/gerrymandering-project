@@ -5,10 +5,11 @@ import Link from "next/link";
 import { colors } from "@/lib/constants";
 
 const navLinks = [
-  {label: "Home", href: "/"}, 
-  {label: "Legal", href: "/legal"}, 
-  {label: "Case Studies", href: "/case-studies"}, 
-  {label: "What Now?", href: "/what-now"}, 
+  {label: "Home", href: "/"},
+  {label: "About", href: "/about"},
+  {label: "Legal", href: "/legal"},
+  {label: "Case Studies", href: "/case-studies"},
+  {label: "What Now?", href: "/what-now"},
   {label: "Methodology", href: "/methodology"}
 ];
 

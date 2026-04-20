@@ -2,7 +2,15 @@
   "state_code": "KY",
   "state_name": "Kentucky",
   "total_districts": 6,
-  "overall_alignment": 0.7524725504,
+  "overall_alignment": 0.6412473921,
+  "house_alignment": 0.5633048688,
+  "senate_alignment": 0.7191899154,
+  "delegation_sample": {
+    "house_n": 6,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 1,
     "republican": 5
@@ -12,42 +20,42 @@
       "district_id": "KY-01",
       "representative": "James Comer",
       "party": "R",
-      "alignment_score": 0.7137154340890993,
+      "alignment_score": 0.5414075543764175,
       "ces_sample_size": 85
     },
     {
       "district_id": "KY-02",
       "representative": "Brett Guthrie",
       "party": "R",
-      "alignment_score": 0.7168976058047906,
+      "alignment_score": 0.5519287410493197,
       "ces_sample_size": 90
     },
     {
       "district_id": "KY-03",
       "representative": "Morgan McGarvey",
       "party": "D",
-      "alignment_score": 0.7094624249485815,
+      "alignment_score": 0.5408709513127608,
       "ces_sample_size": 91
     },
     {
       "district_id": "KY-04",
       "representative": "Thomas Massie",
       "party": "R",
-      "alignment_score": 0.7793517565329542,
+      "alignment_score": 0.6464952133672875,
       "ces_sample_size": 71
     },
     {
       "district_id": "KY-05",
       "representative": "Harold Rogers",
       "party": "R",
-      "alignment_score": 0.7295797963291368,
+      "alignment_score": 0.5663598072402406,
       "ces_sample_size": 88
     },
     {
       "district_id": "KY-06",
       "representative": "Andy Barr",
       "party": "R",
-      "alignment_score": 0.7049868165985158,
+      "alignment_score": 0.5327669457132442,
       "ces_sample_size": 86
     }
   ]

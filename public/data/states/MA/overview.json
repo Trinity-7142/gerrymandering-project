@@ -2,7 +2,15 @@
   "state_code": "MA",
   "state_name": "Massachusetts",
   "total_districts": 9,
-  "overall_alignment": 0.6714451798,
+  "overall_alignment": 0.530078273,
+  "house_alignment": 0.4593543501,
+  "senate_alignment": 0.600802196,
+  "delegation_sample": {
+    "house_n": 9,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 9,
     "republican": 0
@@ -12,63 +20,63 @@
       "district_id": "MA-01",
       "representative": "Richard E. Neal",
       "party": "D",
-      "alignment_score": 0.671361808421244,
+      "alignment_score": 0.48283923631724,
       "ces_sample_size": 97
     },
     {
       "district_id": "MA-02",
       "representative": "James P. McGovern",
       "party": "D",
-      "alignment_score": 0.6947019118268866,
+      "alignment_score": 0.5224490351842156,
       "ces_sample_size": 87
     },
     {
       "district_id": "MA-03",
       "representative": "Lori Trahan",
       "party": "D",
-      "alignment_score": 0.639243801281331,
+      "alignment_score": 0.4297209172866024,
       "ces_sample_size": 78
     },
     {
       "district_id": "MA-04",
       "representative": "Jake Auchincloss",
       "party": "D",
-      "alignment_score": 0.6818119226919722,
+      "alignment_score": 0.49939372644889113,
       "ces_sample_size": 81
     },
     {
       "district_id": "MA-05",
       "representative": "Katherine M. Clark",
       "party": "D",
-      "alignment_score": 0.6167777174756607,
+      "alignment_score": 0.40087034763595397,
       "ces_sample_size": 57
     },
     {
       "district_id": "MA-06",
       "representative": "Seth Moulton",
       "party": "D",
-      "alignment_score": 0.6489738006925823,
+      "alignment_score": 0.4415751251109237,
       "ces_sample_size": 88
     },
     {
       "district_id": "MA-07",
       "representative": "Ayanna Pressley",
       "party": "D",
-      "alignment_score": 0.5888393037781596,
+      "alignment_score": 0.34924863974959514,
       "ces_sample_size": 69
     },
     {
       "district_id": "MA-08",
       "representative": "Stephen F. Lynch",
       "party": "D",
-      "alignment_score": 0.6594682322024011,
+      "alignment_score": 0.4661404195557169,
       "ces_sample_size": 78
     },
     {
       "district_id": "MA-09",
       "representative": "William R. Keating",
       "party": "D",
-      "alignment_score": 0.7111720408698491,
+      "alignment_score": 0.5419517035285721,
       "ces_sample_size": 87
     }
   ]

@@ -2,7 +2,15 @@
   "state_code": "OH",
   "state_name": "Ohio",
   "total_districts": 15,
-  "overall_alignment": 0.758304276,
+  "overall_alignment": 0.590060631,
+  "house_alignment": 0.5536060302,
+  "senate_alignment": 0.6265152317,
+  "delegation_sample": {
+    "house_n": 15,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 5,
     "republican": 10
@@ -12,105 +20,105 @@
       "district_id": "OH-01",
       "representative": "Greg Landsman",
       "party": "D",
-      "alignment_score": 0.715896574245339,
+      "alignment_score": 0.5451778329387392,
       "ces_sample_size": 91
     },
     {
       "district_id": "OH-02",
       "representative": "David J. Taylor",
       "party": "R",
-      "alignment_score": 0.9172076218134884,
+      "alignment_score": 0.5644783405204026,
       "ces_sample_size": 79
     },
     {
       "district_id": "OH-03",
       "representative": "Joyce Beatty",
       "party": "D",
-      "alignment_score": 0.6575421756313505,
+      "alignment_score": 0.4559199280090038,
       "ces_sample_size": 111
     },
     {
       "district_id": "OH-04",
       "representative": "Jim Jordan",
       "party": "R",
-      "alignment_score": 0.7472545195817304,
+      "alignment_score": 0.5923936423273876,
       "ces_sample_size": 92
     },
     {
       "district_id": "OH-05",
       "representative": "Robert E. Latta",
       "party": "R",
-      "alignment_score": 0.7645769056426951,
+      "alignment_score": 0.6265655162231967,
       "ces_sample_size": 93
     },
     {
       "district_id": "OH-06",
       "representative": "Michael A. Rulli",
       "party": "R",
-      "alignment_score": 0.9114731243829154,
+      "alignment_score": 0.6050905436488617,
       "ces_sample_size": 138
     },
     {
       "district_id": "OH-07",
       "representative": "Max L. Miller",
       "party": "R",
-      "alignment_score": 0.704248086897011,
+      "alignment_score": 0.5304482734492004,
       "ces_sample_size": 102
     },
     {
       "district_id": "OH-08",
       "representative": "Warren Davidson",
       "party": "R",
-      "alignment_score": 0.7404746840781298,
+      "alignment_score": 0.5923585530953215,
       "ces_sample_size": 85
     },
     {
       "district_id": "OH-09",
       "representative": "Marcy Kaptur",
       "party": "D",
-      "alignment_score": 0.7201751789854001,
+      "alignment_score": 0.5554043622149282,
       "ces_sample_size": 95
     },
     {
       "district_id": "OH-10",
       "representative": "Michael R. Turner",
       "party": "R",
-      "alignment_score": 0.695262520284601,
+      "alignment_score": 0.5111381885666371,
       "ces_sample_size": 87
     },
     {
       "district_id": "OH-11",
       "representative": "Shontel M. Brown",
       "party": "D",
-      "alignment_score": 0.6830553399674459,
+      "alignment_score": 0.49323810536558244,
       "ces_sample_size": 110
     },
     {
       "district_id": "OH-12",
       "representative": "Troy Balderson",
       "party": "R",
-      "alignment_score": 0.7148670121830917,
+      "alignment_score": 0.546442929165882,
       "ces_sample_size": 90
     },
     {
       "district_id": "OH-13",
       "representative": "Emilia Strong Sykes",
       "party": "D",
-      "alignment_score": 0.7040799675076452,
+      "alignment_score": 0.5285828658514711,
       "ces_sample_size": 118
     },
     {
       "district_id": "OH-14",
       "representative": "David P. Joyce",
       "party": "R",
-      "alignment_score": 0.7443791551987768,
+      "alignment_score": 0.5921725134296503,
       "ces_sample_size": 110
     },
     {
       "district_id": "OH-15",
       "representative": "Mike Carey",
       "party": "R",
-      "alignment_score": 0.7254259359894446,
+      "alignment_score": 0.5646788578071331,
       "ces_sample_size": 87
     }
   ]

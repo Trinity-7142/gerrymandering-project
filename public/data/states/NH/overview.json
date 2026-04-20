@@ -2,7 +2,15 @@
   "state_code": "NH",
   "state_name": "New Hampshire",
   "total_districts": 2,
-  "overall_alignment": 0.7933658427,
+  "overall_alignment": 0.5898633073,
+  "house_alignment": 0.5136697917,
+  "senate_alignment": 0.6660568228,
+  "delegation_sample": {
+    "house_n": 2,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 2,
     "republican": 0
@@ -12,14 +20,14 @@
       "district_id": "NH-01",
       "representative": "Chris Pappas",
       "party": "D",
-      "alignment_score": 0.7073636545867953,
+      "alignment_score": 0.531533575754844,
       "ces_sample_size": 97
     },
     {
       "district_id": "NH-02",
       "representative": "Maggie Goodlander",
       "party": "D",
-      "alignment_score": 0.8897147515986227,
+      "alignment_score": 0.4958060076912758,
       "ces_sample_size": 95
     }
   ]

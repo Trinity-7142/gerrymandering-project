@@ -2,7 +2,15 @@
   "state_code": "WY",
   "state_name": "Wyoming",
   "total_districts": 1,
-  "overall_alignment": 0.8473757695,
+  "overall_alignment": 0.7555955342,
+  "house_alignment": 0.7030322313,
+  "senate_alignment": 0.808158837,
+  "delegation_sample": {
+    "house_n": 1,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 0,
     "republican": 1
@@ -12,7 +20,7 @@
       "district_id": "WY-AL",
       "representative": "Harriet M. Hageman",
       "party": "R",
-      "alignment_score": 0.8142881109964034,
+      "alignment_score": 0.7030322312835868,
       "ces_sample_size": 54
     }
   ]

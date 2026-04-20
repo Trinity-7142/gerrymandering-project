@@ -2,7 +2,15 @@
   "state_code": "SC",
   "state_name": "South Carolina",
   "total_districts": 7,
-  "overall_alignment": 0.7789970983,
+  "overall_alignment": 0.6576609491,
+  "house_alignment": 0.5830302701,
+  "senate_alignment": 0.732291628,
+  "delegation_sample": {
+    "house_n": 7,
+    "senate_n": 2,
+    "house_vacant": 0
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 1,
     "republican": 6
@@ -12,49 +20,49 @@
       "district_id": "SC-01",
       "representative": "Nancy Mace",
       "party": "R",
-      "alignment_score": 0.7830606676055097,
+      "alignment_score": 0.6600654186320362,
       "ces_sample_size": 85
     },
     {
       "district_id": "SC-02",
       "representative": "Joe Wilson",
       "party": "R",
-      "alignment_score": 0.7414721911719404,
+      "alignment_score": 0.5894051001588297,
       "ces_sample_size": 97
     },
     {
       "district_id": "SC-03",
       "representative": "Sheri Biggs",
       "party": "R",
-      "alignment_score": 0.9055936829501915,
+      "alignment_score": 0.5421342737722048,
       "ces_sample_size": 76
     },
     {
       "district_id": "SC-04",
       "representative": "William R. Timmons IV",
       "party": "R",
-      "alignment_score": 0.7707519610575678,
+      "alignment_score": 0.6404218909821714,
       "ces_sample_size": 97
     },
     {
       "district_id": "SC-05",
       "representative": "Ralph Norman",
       "party": "R",
-      "alignment_score": 0.7315512962881466,
+      "alignment_score": 0.5758612559161121,
       "ces_sample_size": 95
     },
     {
       "district_id": "SC-06",
       "representative": "James E. Clyburn",
       "party": "D",
-      "alignment_score": 0.6808409641234774,
+      "alignment_score": 0.49586624118667644,
       "ces_sample_size": 54
     },
     {
       "district_id": "SC-07",
       "representative": "Russell Fry",
       "party": "R",
-      "alignment_score": 0.7331564271638623,
+      "alignment_score": 0.5774577097160933,
       "ces_sample_size": 90
     }
   ]

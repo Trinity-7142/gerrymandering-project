@@ -194,16 +194,36 @@ def generate_state_overview(state_code, reps_index):
 
     rep_scores = [d["alignment_score"] for d in districts if d["alignment_score"] is not None]
     sen_scores = _get_senator_scores(state_code)
-    all_scores = rep_scores + sen_scores
-    overall_alignment = round(sum(all_scores) / len(all_scores), 10) if all_scores else None
+
+    house_alignment = round(sum(rep_scores) / len(rep_scores), 10) if rep_scores else None
+    senate_alignment = round(sum(sen_scores) / len(sen_scores), 10) if sen_scores else None
+
+    if house_alignment is not None and senate_alignment is not None:
+        overall_alignment = round((house_alignment + senate_alignment) / 2, 10)
+    elif house_alignment is not None:
+        overall_alignment = house_alignment
+    elif senate_alignment is not None:
+        overall_alignment = senate_alignment
+    else:
+        overall_alignment = None
+
+    delegation_sample = {
+        "house_n":      len(rep_scores),
+        "senate_n":     len(sen_scores),
+        "house_vacant": total - len(rep_scores),
+    }
 
     output = {
-        "state_code":             state_code,
-        "state_name":             STATE_NAMES[state_code],
-        "total_districts":        total,
-        "overall_alignment":      overall_alignment,
-        "delegation_composition": party_counts,
-        "districts":              districts,
+        "state_code":                state_code,
+        "state_name":                STATE_NAMES[state_code],
+        "total_districts":           total,
+        "overall_alignment":         overall_alignment,
+        "house_alignment":           house_alignment,
+        "senate_alignment":          senate_alignment,
+        "delegation_sample":         delegation_sample,
+        "score_methodology_version": "v1.0",
+        "delegation_composition":    party_counts,
+        "districts":                 districts,
     }
 
     out_path = os.path.join(_STATES_ROOT, state_code, "overview.json")

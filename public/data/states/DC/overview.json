@@ -3,6 +3,14 @@
   "state_name": "District of Columbia",
   "total_districts": 1,
   "overall_alignment": null,
+  "house_alignment": null,
+  "senate_alignment": null,
+  "delegation_sample": {
+    "house_n": 0,
+    "senate_n": 0,
+    "house_vacant": 1
+  },
+  "score_methodology_version": "v1.0",
   "delegation_composition": {
     "democrat": 1,
     "republican": 0

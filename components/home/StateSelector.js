@@ -36,18 +36,22 @@ const STATE_NAMES = {
 };
 // level widths could change
 function alignmentLevel(score) {
-  if (score < 0.3) return "Low";
-  if (score < 0.6) return "Partial";
-  if (score < 0.8) return "Moderate";
-  return "High";
+  if (score < 0.25) return "Very Low";
+  if (score < 0.40) return "Low";
+  if (score < 0.55) return "Moderate";
+  if (score < 0.70) return "Good";
+  if (score < 0.85) return "Strong";
+  return "Very Strong";
 }
 
 function getFill(score) {
   if (score == null) return "#D9D7D4";
-  if (score < 0.3) return alignmentColors.low;
-  if (score < 0.6) return alignmentColors.partial;
-  if (score < 0.8) return alignmentColors.moderate;
-  return alignmentColors.high;
+  if (score < 0.25) return alignmentColors.veryLow;
+  if (score < 0.40) return alignmentColors.low;
+  if (score < 0.55) return alignmentColors.moderate;
+  if (score < 0.70) return alignmentColors.good;
+  if (score < 0.85) return alignmentColors.strong;
+  return alignmentColors.veryStrong;
 }
 
 export default function StateSelector({ alignmentScores = {} }) {
