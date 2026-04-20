@@ -19,8 +19,8 @@ import StateKeyFacts   from "@/components/state/StateKeyFacts";
 import StateTabs       from "@/components/state/StateTabs";
 import ZipLookup       from "@/components/state/ZipLookup";
 import AllDistricts    from "@/components/state/AllDistricts";
-import CESStatePanel   from "@/components/state/CESStatePanel";
-import { loadStateData, loadStateContent } from "@/lib/loadData";
+import CESStatePanel   from "@/components/shared/CESStatePanel";
+import { loadStateData, loadKeyFacts } from "@/lib/loadData";
 import { cardStyle, textColors, fonts, pageWidths } from "@/lib/constants";
 
 // States that have district pages live
@@ -39,7 +39,7 @@ export default async function StatePage({ params }) {
   const senators   = loadStateData(stateCode, "senators.json");
   const alignment  = loadStateData(stateCode, "alignment.json");
   const ces        = loadStateData(stateCode, "ces_summary.json");
-  const keyFacts   = loadStateContent(stateCode, "key_facts.md");
+  const keyFacts   = loadKeyFacts(stateCode);
 
   // Statewide average alignment — mean of senator overall_scores from alignment.json
   const senatorScores = (alignment?.senators ?? [])
@@ -58,7 +58,7 @@ export default async function StatePage({ params }) {
 
       {/* Key Facts (left) + Gerrymandering Grade (right) */}
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px", marginBottom: "28px" }}>
-        <StateKeyFacts content={keyFacts} />
+        <StateKeyFacts content={keyFacts} stateName={overview?.state_name ?? stateCode} />
         <PrincetonPanel
           data={princeton}
           planscoreUrl={overview?.external_links?.planscore}
@@ -80,7 +80,7 @@ export default async function StatePage({ params }) {
         <ZipLookup availableStates={AVAILABLE_STATES} />
       </div>
 
-      <AllDistricts data={overview} availableStates={AVAILABLE_STATES} />
+      <AllDistricts data={overview} />
     </div>
   );
 

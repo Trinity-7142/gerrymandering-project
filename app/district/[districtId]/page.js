@@ -4,25 +4,53 @@
 //
 // JSON files consumed:
 //   - public/data/districts/{districtId}/overview.json       → DistrictHeader
-//   - public/data/districts/{districtId}/alignment.json      → AlignmentScore
-//   - public/data/districts/{districtId}/ces_positions.json  → ConstituentPositions
-//   - public/data/districts/{districtId}/representative.json → VotingRecord
+//   - public/data/districts/{districtId}/alignment.json      → DistrictHeader (gauge) + RepresentativePanel
+//   - public/data/districts/{districtId}/ces_positions.json  → CESStatePanel
+//   - public/data/districts/{districtId}/representative.json → RepresentativePanel
 
-// TODO: Import loadData helper from lib/loadData
-// TODO: Import all district panel components
-// TODO: Implement generateStaticParams() to pre-render all CA + TX district pages
-// TODO: Read each JSON file, pass to corresponding component as props
-// TODO: If a JSON file is missing, pass null → component renders DataUnavailable fallback
+import DistrictHeader      from "@/components/district/DistrictHeader";
+import RepresentativePanel from "@/components/district/RepresentativePanel";
+import CESStatePanel       from "@/components/shared/CESStatePanel";
+import { loadDistrictData } from "@/lib/loadData";
+import { pageWidths } from "@/lib/constants";
 
 export async function generateStaticParams() {
+  // TODO: enumerate CA and TX district IDs once data pipeline is complete
   return [];
 }
 
 export default async function DistrictPage({ params }) {
+  const { districtId } = await params;
+
+  const overview   = loadDistrictData(districtId, "overview.json");
+  const alignment  = loadDistrictData(districtId, "alignment.json");
+  const ces        = loadDistrictData(districtId, "ces_positions.json");
+  const repData    = loadDistrictData(districtId, "representative.json");
+
+  const alignmentScore = typeof alignment?.overall_score === "number"
+    ? Math.round(alignment.overall_score * 100)
+    : null;
+
+  const stateCode = districtId.split("-")[0];
+
   return (
-    <div>
-      <h1>District Page</h1>
-      <p>Coming soon</p>
-    </div>
+    <main style={{ background: "#F4F3F1", minHeight: "100vh" }}>
+      <div style={{ maxWidth: pageWidths.state, margin: "0 auto", padding: "0 24px 48px" }}>
+
+        {/* 1. District heading + alignment gauge */}
+        <DistrictHeader data={overview} alignmentScore={alignmentScore} stateCode={stateCode} />
+
+        {/* 2. Where Voters Stand by Issue + Survey Questions */}
+        <CESStatePanel data={ces} />
+
+        {/* 3. Representative profile, stats, and voting record */}
+        <RepresentativePanel
+          overview={overview}
+          repData={repData}
+          alignmentData={alignment}
+        />
+
+      </div>
+    </main>
   );
 }

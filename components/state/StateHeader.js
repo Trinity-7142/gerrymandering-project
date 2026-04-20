@@ -2,7 +2,7 @@
 // Server Component — state name, delegation meta, and alignment gauge
 // Receives: overview.json data + computed alignmentScore (0–100)
 
-import AlignmentGaugeCard from "@/components/state/AlignmentGaugeCard";
+import AlignmentGaugeCard from "@/components/shared/AlignmentGaugeCard";
 import { textColors, fonts } from "@/lib/constants";
 
 export default function StateHeader({ data, alignmentScore }) {

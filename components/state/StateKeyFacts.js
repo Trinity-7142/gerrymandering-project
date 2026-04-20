@@ -6,13 +6,14 @@
 import Markdown from "@/components/shared/Markdown";
 import { cardStyle, textColors, fonts } from "@/lib/constants";
 
-export default function StateKeyFacts({ content }) {
-  if (!content) return null;
-
+export default function StateKeyFacts({ content, stateName }) {
   return (
     <div style={styles.card}>
       <h2 style={styles.title}>Key Facts</h2>
-      <Markdown>{content}</Markdown>
+      {content
+        ? <Markdown>{content}</Markdown>
+        : <p style={styles.placeholder}>Key facts about {stateName} are coming soon.</p>
+      }
     </div>
   );
 }
@@ -28,5 +29,10 @@ const styles = {
     fontWeight: 700,
     color: textColors.primary,
     marginBottom: "16px",
+  },
+  placeholder: {
+    fontFamily: fonts.sans,
+    fontSize: "0.9rem",
+    color: textColors.secondary,
   },
 };

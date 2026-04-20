@@ -19,7 +19,7 @@ function alignmentBadge(score) {
   return               { bg: alignmentColors.high,     color: "#fff",    label: `${pct}%` };
 }
 
-export default function AllDistricts({ data, availableStates = [] }) {
+export default function AllDistricts({ data }) {
   if (!data?.districts?.length) {
     return (
       <p style={{ fontFamily: fonts.sans, color: textColors.muted, fontStyle: "italic" }}>
@@ -28,8 +28,7 @@ export default function AllDistricts({ data, availableStates = [] }) {
     );
   }
 
-  const stateCode = data.state_code;
-  const hasDistrictPages = availableStates.includes(stateCode);
+  const hasDistrictPages = true;
 
   const sorted = [...data.districts].sort(
     (a, b) => districtSortKey(a.district_id) - districtSortKey(b.district_id)
@@ -52,43 +51,26 @@ export default function AllDistricts({ data, availableStates = [] }) {
             {sorted.map((d, i) => {
               const badge   = alignmentBadge(d.alignment_score);
               const pColors = partyColors[d.party] ?? partyColors.I;
-              const row = (
-                <tr key={d.district_id} style={{ background: i % 2 === 0 ? "#fff" : "#FAFAF9" }}>
-                  <td style={{ ...styles.td, fontWeight: 600, color: textColors.primary }}>
-                    {d.district_id}
-                  </td>
-                  <td style={{ ...styles.td, color: textColors.primary }}>
-                    {d.representative ?? "Vacant"}
-                  </td>
-                  <td style={styles.td}>
-                    {d.party ? (
-                      <span style={{ ...styles.partyBadge, color: pColors.text, background: pColors.bg }}>
-                        {d.party}
-                      </span>
-                    ) : "—"}
-                  </td>
-                  <td style={styles.td}>
-                    <span style={{ ...styles.alignBadge, background: badge.bg, color: badge.color }}>
-                      {badge.label}
-                    </span>
-                  </td>
-                  <td style={{ ...styles.td, color: textColors.secondary }}>
-                    {d.ces_sample_size != null ? d.ces_sample_size.toLocaleString() : "—"}
-                  </td>
-                </tr>
-              );
-
-              if (!hasDistrictPages) return row;
+              const href    = hasDistrictPages ? `/district/${d.district_id}` : null;
 
               return (
-                <tr key={d.district_id} style={{ background: i % 2 === 0 ? "#fff" : "#FAFAF9" }}>
+                <tr
+                  key={d.district_id}
+                  style={{ background: i % 2 === 0 ? "#fff" : "#FAFAF9", cursor: href ? "pointer" : "default" }}
+                >
                   <td style={{ ...styles.td, fontWeight: 600 }}>
-                    <Link href={`/district/${d.district_id}`} style={styles.link}>
-                      {d.district_id}
-                    </Link>
+                    {href ? (
+                      <Link href={href} style={styles.link}>{d.district_id}</Link>
+                    ) : (
+                      <span style={{ color: textColors.primary }}>{d.district_id}</span>
+                    )}
                   </td>
                   <td style={{ ...styles.td, color: textColors.primary }}>
-                    {d.representative ?? "Vacant"}
+                    {href ? (
+                      <Link href={href} style={styles.rowLink}>{d.representative ?? "Vacant"}</Link>
+                    ) : (
+                      d.representative ?? "Vacant"
+                    )}
                   </td>
                   <td style={styles.td}>
                     {d.party ? (
@@ -173,5 +155,9 @@ const styles = {
     color: "#194973",
     textDecoration: "none",
     fontWeight: 600,
+  },
+  rowLink: {
+    color: textColors.primary,
+    textDecoration: "none",
   },
 };
