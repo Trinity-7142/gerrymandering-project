@@ -2,6 +2,7 @@
   "state_code": "WI",
   "state_name": "Wisconsin",
   "total_districts": 8,
+  "overall_alignment": 0.7549665481,
   "delegation_composition": {
     "democrat": 2,
     "republican": 6
@@ -11,56 +12,56 @@
       "district_id": "WI-01",
       "representative": "Bryan Steil",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7199222830305276,
       "ces_sample_size": 99
     },
     {
       "district_id": "WI-02",
       "representative": "Mark Pocan",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6358545047583735,
       "ces_sample_size": 131
     },
     {
       "district_id": "WI-03",
       "representative": "Derrick Van Orden",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7154160587072054,
       "ces_sample_size": 88
     },
     {
       "district_id": "WI-04",
       "representative": "Gwen Moore",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6626557195649485,
       "ces_sample_size": 91
     },
     {
       "district_id": "WI-05",
       "representative": "Scott Fitzgerald",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7380617188233838,
       "ces_sample_size": 117
     },
     {
       "district_id": "WI-06",
       "representative": "Glenn Grothman",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7478097504634779,
       "ces_sample_size": 98
     },
     {
       "district_id": "WI-07",
-      "representative": "Thomas Tiffany",
+      "representative": "Thomas P. Tiffany",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7638011762452107,
       "ces_sample_size": 96
     },
     {
       "district_id": "WI-08",
       "representative": "Tony Wied",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.926704973672233,
       "ces_sample_size": 96
     }
   ]

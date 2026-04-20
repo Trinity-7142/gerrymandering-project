@@ -1,0 +1,21 @@
+{
+  "district_id": "IL-16",
+  "state_code": "IL",
+  "representative": {
+    "name": "Darin LaHood",
+    "party": "R",
+    "assumed_office": 2015,
+    "photo_url": "/images/reps/IL-16.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 92,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 92 weighted CES respondents"
+  }
+}

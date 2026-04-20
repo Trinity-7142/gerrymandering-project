@@ -1,0 +1,21 @@
+{
+  "district_id": "OK-01",
+  "state_code": "OK",
+  "representative": {
+    "name": "Kevin Hern",
+    "party": "R",
+    "assumed_office": 2018,
+    "photo_url": "/images/reps/OK-01.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 99,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 99 weighted CES respondents"
+  }
+}

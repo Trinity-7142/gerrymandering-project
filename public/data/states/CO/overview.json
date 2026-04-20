@@ -2,6 +2,7 @@
   "state_code": "CO",
   "state_name": "Colorado",
   "total_districts": 8,
+  "overall_alignment": 0.7694012178,
   "delegation_composition": {
     "democrat": 4,
     "republican": 4
@@ -11,56 +12,56 @@
       "district_id": "CO-01",
       "representative": "Diana DeGette",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6302908408801736,
       "ces_sample_size": 68
     },
     {
       "district_id": "CO-02",
       "representative": "Joe Neguse",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.694253038320485,
       "ces_sample_size": 67
     },
     {
       "district_id": "CO-03",
       "representative": "Jeff Hurd",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.9139950347567032,
       "ces_sample_size": 79
     },
     {
       "district_id": "CO-04",
       "representative": "Lauren Boebert",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7266235836888457,
       "ces_sample_size": 95
     },
     {
       "district_id": "CO-05",
       "representative": "Jeff Crank",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.9115825223435948,
       "ces_sample_size": 77
     },
     {
       "district_id": "CO-06",
       "representative": "Jason Crow",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6591713833794876,
       "ces_sample_size": 90
     },
     {
       "district_id": "CO-07",
       "representative": "Brittany Pettersen",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6964977620188109,
       "ces_sample_size": 97
     },
     {
       "district_id": "CO-08",
       "representative": "Gabe Evans",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.8863295928500496,
       "ces_sample_size": 81
     }
   ]

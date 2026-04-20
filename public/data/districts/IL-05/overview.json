@@ -1,0 +1,21 @@
+{
+  "district_id": "IL-05",
+  "state_code": "IL",
+  "representative": {
+    "name": "Mike Quigley",
+    "party": "D",
+    "assumed_office": 2009,
+    "photo_url": "/images/reps/IL-05.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 94,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 94 weighted CES respondents"
+  }
+}

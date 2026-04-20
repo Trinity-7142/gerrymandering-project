@@ -2,6 +2,7 @@
   "state_code": "MS",
   "state_name": "Mississippi",
   "total_districts": 4,
+  "overall_alignment": 0.7623171722,
   "delegation_composition": {
     "democrat": 1,
     "republican": 3
@@ -11,28 +12,28 @@
       "district_id": "MS-01",
       "representative": "Trent Kelly",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7830590115984052,
       "ces_sample_size": 54
     },
     {
       "district_id": "MS-02",
-      "representative": "Bennie Thompson",
+      "representative": "Bennie G. Thompson",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6840480797390358,
       "ces_sample_size": 53
     },
     {
       "district_id": "MS-03",
       "representative": "Michael Guest",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7422731223269299,
       "ces_sample_size": 58
     },
     {
       "district_id": "MS-04",
       "representative": "Mike Ezell",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7164269101123595,
       "ces_sample_size": 78
     }
   ]

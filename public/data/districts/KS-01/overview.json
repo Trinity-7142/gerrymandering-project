@@ -1,0 +1,21 @@
+{
+  "district_id": "KS-01",
+  "state_code": "KS",
+  "representative": {
+    "name": "Tracey Mann",
+    "party": "R",
+    "assumed_office": 2021,
+    "photo_url": "/images/reps/KS-01.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 88,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 88 weighted CES respondents"
+  }
+}

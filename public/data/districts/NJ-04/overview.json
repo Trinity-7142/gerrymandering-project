@@ -1,0 +1,21 @@
+{
+  "district_id": "NJ-04",
+  "state_code": "NJ",
+  "representative": {
+    "name": "Christopher H. Smith",
+    "party": "R",
+    "assumed_office": 1981,
+    "photo_url": "/images/reps/NJ-04.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 101,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 101 weighted CES respondents"
+  }
+}

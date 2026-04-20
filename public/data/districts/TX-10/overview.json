@@ -1,0 +1,21 @@
+{
+  "district_id": "TX-10",
+  "state_code": "TX",
+  "representative": {
+    "name": "Michael T. McCaul",
+    "party": "R",
+    "assumed_office": 2005,
+    "photo_url": "/images/reps/TX-10.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 60,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 60 weighted CES respondents"
+  }
+}

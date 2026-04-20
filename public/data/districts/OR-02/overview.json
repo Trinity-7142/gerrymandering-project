@@ -1,0 +1,21 @@
+{
+  "district_id": "OR-02",
+  "state_code": "OR",
+  "representative": {
+    "name": "Cliff Bentz",
+    "party": "R",
+    "assumed_office": 2021,
+    "photo_url": "/images/reps/OR-02.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 115,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 115 weighted CES respondents"
+  }
+}

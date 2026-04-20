@@ -1,0 +1,21 @@
+{
+  "district_id": "WI-08",
+  "state_code": "WI",
+  "representative": {
+    "name": "Tony Wied",
+    "party": "R",
+    "assumed_office": 2024,
+    "photo_url": "/images/reps/WI-08.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 96,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 96 weighted CES respondents"
+  }
+}

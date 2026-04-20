@@ -2,6 +2,7 @@
   "state_code": "HI",
   "state_name": "Hawaii",
   "total_districts": 2,
+  "overall_alignment": 0.7445303497,
   "delegation_composition": {
     "democrat": 2,
     "republican": 0
@@ -11,14 +12,14 @@
       "district_id": "HI-01",
       "representative": "Ed Case",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6759784049357894,
       "ces_sample_size": 53
     },
     {
       "district_id": "HI-02",
-      "representative": "Jill Tokuda",
+      "representative": "Jill N. Tokuda",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.694198685851,
       "ces_sample_size": 54
     }
   ]

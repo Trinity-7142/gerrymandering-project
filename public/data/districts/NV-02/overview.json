@@ -1,0 +1,21 @@
+{
+  "district_id": "NV-02",
+  "state_code": "NV",
+  "representative": {
+    "name": "Mark E. Amodei",
+    "party": "R",
+    "assumed_office": 2011,
+    "photo_url": "/images/reps/NV-02.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 103,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 103 weighted CES respondents"
+  }
+}

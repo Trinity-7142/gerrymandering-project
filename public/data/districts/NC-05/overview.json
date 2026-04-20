@@ -1,0 +1,21 @@
+{
+  "district_id": "NC-05",
+  "state_code": "NC",
+  "representative": {
+    "name": "Virginia Foxx",
+    "party": "R",
+    "assumed_office": 2005,
+    "photo_url": "/images/reps/NC-05.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 94,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 94 weighted CES respondents"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "district_id": "OK-03",
+  "state_code": "OK",
+  "representative": {
+    "name": "Frank D. Lucas",
+    "party": "R",
+    "assumed_office": 1993,
+    "photo_url": "/images/reps/OK-03.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 62,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 62 weighted CES respondents"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "district_id": "WV-01",
+  "state_code": "WV",
+  "representative": {
+    "name": "Carol D. Miller",
+    "party": "R",
+    "assumed_office": 2019,
+    "photo_url": "/images/reps/WV-01.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 149,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 149 weighted CES respondents"
+  }
+}

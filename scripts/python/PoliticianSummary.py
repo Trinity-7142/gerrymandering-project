@@ -176,38 +176,29 @@ def _call_with_retry(fn: Callable[[], T], label: str) -> T:
 
 SUMMARY_SYSTEM_PROMPT = textwrap.dedent("""\
     You are a neutral, factual political analyst writing brief legislator profiles
-    for a public-facing educational & informative website. Be balanced, informative, and concise.
+    for a public-facing educational website. Be balanced, informative, and concise.
     Do not editorialize or take political sides.
 
-    You have access to a web_search tool. Use it to gather current, accurate information
-    about the legislator before writing. You may run multiple searches to cover their
-    background, campaign platform, and notable facts.
+    You have access to a web_search tool. Use it to gather current, accurate
+    information about the legislator before writing.
 
-    After gathering information, write a summary with the following structure:
+    Output format — follow exactly:
 
-    - Total Word count: 150 words maximum.
-    - Use **bold** for key terms or important points.
-    - Start with frontmatter in this exact format (district line omitted for senators):
+    1. Frontmatter block (district line omitted for senators):
+       ---
+       name: <full name>
+       state: <two-letter state code>
+       district: <district id like CA-11>
+       ---
 
-        ---
-        name: <full name>
-        state: <two-letter state code>
-        district: <district id like CA-11>   # only for representatives
-        ---
+    2. One body paragraph of 100 words maximum. The paragraph must:
+       - introduce the legislator (hometown, socioeconomic background, ideology)
+       - describe their campaign platform and key policy promises
+       - note distinguishing accomplishments, controversies, or facts
 
-    - Body must be exactly one paragraph.
-    - Body must include all of the following information:
-        1. Introduce the legislator. Use "Sen. [lastName]" for senators or
-           "Rep. [lastName]" for representatives. State what they represent
-           (state, and district if applicable). Explain their ideology,
-           hometown, socioeconomic background, and stated beliefs (2 sentences maximum)
-        2. Campaign platform: what they campaigned on and key policy promises (2 sentences maximum).
-        3. Notable accomplishments, controversies, or distinguishing facts (2 sentences maximum).
-    Final output must be single paragraph. No paragraph breaks, no spacing between paragraph. One continous paragraph.
-    Output ONLY the frontmatter and one paragraph — no preamble, no commentary
-    about your search process, no source list at the end.
+    Output ONLY the frontmatter and the body paragraph. No preamble, no commentary
+    about your search process, no source list, no headings.
 """)
-
 
 
 def _build_user_prompt(name: str, title: str, state: str, district: str | None) -> str:
@@ -219,14 +210,53 @@ def _build_user_prompt(name: str, title: str, state: str, district: str | None) 
 def _extract_text(msg) -> str:
     """
     Concatenate all `text` blocks from the response.
-    With web_search enabled, msg.content also contains server_tool_use and
-    web_search_tool_result blocks that we ignore here.
+
+    When web_search is enabled, Claude's final reply is often split into
+    multiple adjacent `text` blocks — one per citation span. Those blocks
+    are contiguous text in a single paragraph, so we concatenate them
+    directly (no newline between). A newline here would show up as an
+    unwanted line break inside the body paragraph.
+
+    We then normalize whitespace in the body (everything after the closing
+    frontmatter '---') so any stray newlines or runs of spaces Claude
+    emitted get collapsed into single spaces. The frontmatter itself is
+    left untouched because its newlines are YAML-meaningful.
     """
     chunks = [block.text for block in msg.content if block.type == "text"]
     if not chunks:
-        raise RuntimeError(f"No text blocks in response; got types: "
-                           f"{[b.type for b in msg.content]}")
-    return "\n".join(chunks).strip()
+        raise RuntimeError(
+            f"No text blocks in response; got types: "
+            f"{[b.type for b in msg.content]}"
+        )
+    raw = "".join(chunks).strip()
+    return _normalize_body_whitespace(raw)
+
+
+def _normalize_body_whitespace(md: str) -> str:
+    """
+    Collapse all whitespace (including newlines and tabs) inside the body
+    paragraph into single spaces. Leaves the frontmatter alone.
+
+    If there's no recognizable frontmatter, returns the input unchanged so
+    we don't accidentally mangle an already-broken response.
+    """
+    # Match the opening '---\n...\n---\n' frontmatter block.
+    pattern = re.compile(
+        r"\A(---\s*\n(?:(?!^---\s*$).*\n)*?---\s*\n)",
+        re.MULTILINE,
+    )
+    match = pattern.match(md)
+    if not match:
+        return md
+
+    frontmatter = match.group(1)
+    body = md[match.end():]
+
+    # Collapse any run of whitespace (spaces, tabs, newlines) into one space.
+    body_normalized = re.sub(r"\s+", " ", body).strip()
+
+    # Blank line between frontmatter and body keeps markdown parsers happy.
+    return f"{frontmatter}\n{body_normalized}\n"
 
 
 def _extract_debug_info(msg) -> str:

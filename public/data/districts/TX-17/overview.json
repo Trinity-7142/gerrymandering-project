@@ -1,0 +1,21 @@
+{
+  "district_id": "TX-17",
+  "state_code": "TX",
+  "representative": {
+    "name": "Pete Sessions",
+    "party": "R",
+    "assumed_office": 1997,
+    "photo_url": "/images/reps/TX-17.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 78,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 78 weighted CES respondents"
+  }
+}

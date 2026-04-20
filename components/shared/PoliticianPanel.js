@@ -14,8 +14,9 @@
 
 import Markdown from "@/components/shared/Markdown";
 import PoliticianIssueTabs from "@/components/shared/PoliticianIssueTabs";
+import VoteShowMoreList from "@/components/shared/VoteShowMoreList";
 import {
-  cardStyle, textColors, fonts, partyColors, colors, issueLabels, alignmentColors,
+  cardStyle, textColors, fonts, partyColors, issueLabels, alignmentColors,
 } from "@/lib/constants";
 
 // ── Helpers ─────────────────────────────────────────────────────────────────
@@ -55,16 +56,6 @@ function formatDate(raw) {
   }
 }
 
-function formatDirection(d) {
-  if (!d) return "—";
-  return d.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
-}
-
-function formatVote(v) {
-  if (!v) return "—";
-  const map = { yea: "Yea", nay: "Nay", not_voting: "Not Voting", present: "Present" };
-  return map[v.toLowerCase()] ?? v;
-}
 
 function topIssues(issueScores) {
   if (!issueScores?.length) return { highest: null, lowest: null };
@@ -85,53 +76,6 @@ function StatBox({ label, value, valueStyle, noBorder }) {
   );
 }
 
-function BillCard({ vote, chamber }) {
-  const voteLabel = formatVote(vote.vote);
-  const voteColor = vote.vote === "yea" ? "#16a34a" : vote.vote === "nay" ? colors.primarySoftRed : textColors.muted;
-
-  return (
-    <div style={styles.billCard}>
-      {/* Bill title + link */}
-      {vote.source_url ? (
-        <a href={vote.source_url} target="_blank" rel="noopener noreferrer" style={styles.billLink}>
-          {vote.title ?? vote.bill}
-        </a>
-      ) : (
-        <p style={styles.billTitleNoLink}>{vote.title ?? vote.bill}</p>
-      )}
-
-      {/* Vote metadata row */}
-      <div style={styles.billMeta}>
-        <div style={styles.billMetaCol}>
-          <p style={styles.billMetaLabel}>{chamber === "representative" ? "Representative Vote" : "Senator Vote"}</p>
-          <p style={{ ...styles.billMetaValue, color: voteColor, fontWeight: 600 }}>{voteLabel}</p>
-        </div>
-        <div style={styles.billMetaCol}>
-          <p style={styles.billMetaLabel}>Bill Direction</p>
-          <p style={styles.billMetaValue}>{formatDirection(vote.bill_direction)}</p>
-        </div>
-        {(vote.status ?? vote.outcome) && (
-          <div style={styles.billMetaCol}>
-            <p style={styles.billMetaLabel}>Bill Status</p>
-            <p style={styles.billMetaValue}>{vote.status ?? vote.outcome}</p>
-          </div>
-        )}
-        {vote.date && (
-          <div style={styles.billMetaCol}>
-            <p style={styles.billMetaLabel}>Date</p>
-            <p style={styles.billMetaValue}>{formatDate(vote.date)}</p>
-          </div>
-        )}
-      </div>
-
-      {/* Bill description (if provided) */}
-      {vote.description && (
-        <p style={styles.billDescription}>{vote.description}</p>
-      )}
-    </div>
-  );
-}
-
 function IssuePanel({ issueGroup, chamber }) {
   const votes = issueGroup.votes ?? [];
 
@@ -143,18 +87,12 @@ function IssuePanel({ issueGroup, chamber }) {
     );
   }
 
-  return (
-    <div style={styles.issuePanel}>
-      {votes.map((vote, i) => (
-        <BillCard key={`${vote.bill}-${i}`} vote={vote} chamber={chamber} />
-      ))}
-    </div>
-  );
+  return <VoteShowMoreList votes={votes} chamber={chamber} />;
 }
 
 // ── Main Component ───────────────────────────────────────────────────────────
 
-export default function PoliticianPanel({ politician, bio, chamber = "senator" }) {
+export default function PoliticianPanel({ politician, bio, sources, chamber = "senator" }) {
   if (!politician) {
     return (
       <div style={{ ...cardStyle, padding: "32px", marginBottom: "24px" }}>
@@ -250,6 +188,21 @@ export default function PoliticianPanel({ politician, bio, chamber = "senator" }
           <p style={styles.pendingNote}>Voting record pending data pipeline completion.</p>
         </div>
       )}
+
+      {/* ── Sources footer ───────────────────────────────────────── */}
+      {sources?.length > 0 && (
+        <div style={styles.sourcesFooter}>
+          <span style={styles.sourcesLabel}>Sources: </span>
+          {sources.map((s, i) => (
+            <span key={s.url}>
+              <a href={s.url} target="_blank" rel="noopener noreferrer" style={styles.sourceLink}>
+                {s.name}
+              </a>
+              {i < sources.length - 1 && <span style={styles.sourcesLabel}>, </span>}
+            </span>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
@@ -328,7 +281,7 @@ const styles = {
     marginBottom: "6px",
   },
   statValue: {
-    fontFamily: fonts.sans,
+    fontFamily: "Georgia, serif",
     fontSize: "0.95rem",
     color: textColors.secondary,
   },
@@ -345,9 +298,10 @@ const styles = {
   },
   billLink: {
     fontFamily: fonts.sans,
-    fontSize: "0.92rem",
+    fontSize: "0.95rem",
     fontWeight: 600,
-    color: colors.primarySoftRed,
+    color: textColors.primary,
+    // color: colors.primarySoftRed,
     textDecoration: "none",
     display: "block",
     marginBottom: "8px",
@@ -400,5 +354,26 @@ const styles = {
     marginTop: "20px",
     paddingTop: "20px",
     borderTop: "1px solid #E8E6E3",
+  },
+  sourcesFooter: {
+    marginTop: "20px",
+    paddingTop: "16px",
+    borderTop: "1px solid #E8E6E3",
+    fontFamily: fonts.sans,
+    fontSize: "0.78rem",
+    color: textColors.muted,
+  },
+  sourcesLabel: {
+    fontFamily: fonts.sans,
+    fontSize: "0.78rem",
+    color: textColors.muted,
+  },
+  sourceLink: {
+    fontFamily: fonts.sans,
+    fontSize: "0.78rem",
+    color: textColors.muted,
+    textDecoration: "underline",
+    textDecorationColor: textColors.muted,
+    textUnderlineOffset: "2px",
   },
 };

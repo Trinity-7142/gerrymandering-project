@@ -1,0 +1,21 @@
+{
+  "district_id": "NY-25",
+  "state_code": "NY",
+  "representative": {
+    "name": "Joseph D. Morelle",
+    "party": "D",
+    "assumed_office": 2018,
+    "photo_url": "/images/reps/NY-25.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 111,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 111 weighted CES respondents"
+  }
+}

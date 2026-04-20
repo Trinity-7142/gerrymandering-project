@@ -16,7 +16,7 @@ export default function Footer() {
         fontStyle: "italic",
         color: "rgba(0, 0, 0, 0.4)",
       }}>
-        Last updated: March 2026
+        Last updated: April 2026
       </div>
     </footer>
   );

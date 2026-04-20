@@ -1,0 +1,21 @@
+{
+  "district_id": "IL-01",
+  "state_code": "IL",
+  "representative": {
+    "name": "Jonathan L. Jackson",
+    "party": "D",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/IL-01.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 83,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 83 weighted CES respondents"
+  }
+}

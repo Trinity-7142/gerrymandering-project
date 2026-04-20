@@ -1,0 +1,21 @@
+{
+  "district_id": "MO-07",
+  "state_code": "MO",
+  "representative": {
+    "name": "Eric Burlison",
+    "party": "R",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/MO-07.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 122,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 122 weighted CES respondents"
+  }
+}

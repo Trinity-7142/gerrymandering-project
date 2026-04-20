@@ -1,0 +1,21 @@
+{
+  "district_id": "NY-24",
+  "state_code": "NY",
+  "representative": {
+    "name": "Claudia Tenney",
+    "party": "R",
+    "assumed_office": 2017,
+    "photo_url": "/images/reps/NY-24.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 127,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 127 weighted CES respondents"
+  }
+}

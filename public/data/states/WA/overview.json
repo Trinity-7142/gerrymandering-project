@@ -2,6 +2,7 @@
   "state_code": "WA",
   "state_name": "Washington",
   "total_districts": 10,
+  "overall_alignment": 0.7316114612,
   "delegation_composition": {
     "democrat": 8,
     "republican": 2
@@ -9,72 +10,72 @@
   "districts": [
     {
       "district_id": "WA-01",
-      "representative": "Suzan DelBene",
+      "representative": "Suzan K. DelBene",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6741996493492066,
       "ces_sample_size": 78
     },
     {
       "district_id": "WA-02",
       "representative": "Rick Larsen",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6757870188159125,
       "ces_sample_size": 112
     },
     {
       "district_id": "WA-03",
       "representative": "Marie Gluesenkamp Perez",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7243586226896706,
       "ces_sample_size": 120
     },
     {
       "district_id": "WA-04",
       "representative": "Dan Newhouse",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6998359666051785,
       "ces_sample_size": 75
     },
     {
       "district_id": "WA-05",
       "representative": "Michael Baumgartner",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.9086486242299794,
       "ces_sample_size": 119
     },
     {
       "district_id": "WA-06",
       "representative": "Emily Randall",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.8993656673511293,
       "ces_sample_size": 118
     },
     {
       "district_id": "WA-07",
       "representative": "Pramila Jayapal",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.5979323161941374,
       "ces_sample_size": 109
     },
     {
       "district_id": "WA-08",
       "representative": "Kim Schrier",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6615965885017026,
       "ces_sample_size": 73
     },
     {
       "district_id": "WA-09",
       "representative": "Adam Smith",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.677377443963045,
       "ces_sample_size": 68
     },
     {
       "district_id": "WA-10",
       "representative": "Marilyn Strickland",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6858369130845902,
       "ces_sample_size": 84
     }
   ]

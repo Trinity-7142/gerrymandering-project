@@ -1,0 +1,21 @@
+{
+  "district_id": "CA-36",
+  "state_code": "CA",
+  "representative": {
+    "name": "Ted Lieu",
+    "party": "D",
+    "assumed_office": 2015,
+    "photo_url": "/images/reps/CA-36.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 51,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 51 weighted CES respondents"
+  }
+}

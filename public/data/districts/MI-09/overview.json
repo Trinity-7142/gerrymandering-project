@@ -1,0 +1,21 @@
+{
+  "district_id": "MI-09",
+  "state_code": "MI",
+  "representative": {
+    "name": "Lisa C. McClain",
+    "party": "R",
+    "assumed_office": 2021,
+    "photo_url": "/images/reps/MI-09.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 105,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 105 weighted CES respondents"
+  }
+}

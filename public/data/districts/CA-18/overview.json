@@ -1,0 +1,21 @@
+{
+  "district_id": "CA-18",
+  "state_code": "CA",
+  "representative": {
+    "name": "Zoe Lofgren",
+    "party": "D",
+    "assumed_office": 1995,
+    "photo_url": "/images/reps/CA-18.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 28,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 28 weighted CES respondents"
+  }
+}

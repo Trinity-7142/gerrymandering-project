@@ -1,0 +1,21 @@
+{
+  "district_id": "CA-35",
+  "state_code": "CA",
+  "representative": {
+    "name": "Norma J. Torres",
+    "party": "D",
+    "assumed_office": 2015,
+    "photo_url": "/images/reps/CA-35.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 41,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 41 weighted CES respondents"
+  }
+}

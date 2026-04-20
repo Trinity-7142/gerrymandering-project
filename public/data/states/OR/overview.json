@@ -2,6 +2,7 @@
   "state_code": "OR",
   "state_name": "Oregon",
   "total_districts": 6,
+  "overall_alignment": 0.7611653634,
   "delegation_composition": {
     "democrat": 5,
     "republican": 1
@@ -11,42 +12,42 @@
       "district_id": "OR-01",
       "representative": "Suzanne Bonamici",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6806129130385382,
       "ces_sample_size": 122
     },
     {
       "district_id": "OR-02",
       "representative": "Cliff Bentz",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7267955540578228,
       "ces_sample_size": 115
     },
     {
       "district_id": "OR-03",
       "representative": "Maxine Dexter",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.8689667527103769,
       "ces_sample_size": 132
     },
     {
       "district_id": "OR-04",
-      "representative": "Valerie Hoyle",
+      "representative": "Val T. Hoyle",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6614880282090215,
       "ces_sample_size": 142
     },
     {
       "district_id": "OR-05",
-      "representative": "Janelle Bynum",
+      "representative": "Janelle S. Bynum",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.905401541903287,
       "ces_sample_size": 104
     },
     {
       "district_id": "OR-06",
       "representative": "Andrea Salinas",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6714562334087365,
       "ces_sample_size": 117
     }
   ]

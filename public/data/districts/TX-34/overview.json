@@ -1,0 +1,21 @@
+{
+  "district_id": "TX-34",
+  "state_code": "TX",
+  "representative": {
+    "name": "Vicente Gonzalez",
+    "party": "D",
+    "assumed_office": 2017,
+    "photo_url": "/images/reps/TX-34.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 47,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 47 weighted CES respondents"
+  }
+}

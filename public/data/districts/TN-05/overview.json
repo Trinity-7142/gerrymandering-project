@@ -1,0 +1,21 @@
+{
+  "district_id": "TN-05",
+  "state_code": "TN",
+  "representative": {
+    "name": "Andrew Ogles",
+    "party": "R",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/TN-05.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 98,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 98 weighted CES respondents"
+  }
+}

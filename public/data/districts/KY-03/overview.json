@@ -1,0 +1,21 @@
+{
+  "district_id": "KY-03",
+  "state_code": "KY",
+  "representative": {
+    "name": "Morgan McGarvey",
+    "party": "D",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/KY-03.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 91,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 91 weighted CES respondents"
+  }
+}

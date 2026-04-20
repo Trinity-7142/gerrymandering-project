@@ -1,0 +1,21 @@
+{
+  "district_id": "NY-09",
+  "state_code": "NY",
+  "representative": {
+    "name": "Yvette D. Clarke",
+    "party": "D",
+    "assumed_office": 2007,
+    "photo_url": "/images/reps/NY-09.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 49,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 49 weighted CES respondents"
+  }
+}

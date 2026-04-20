@@ -1,0 +1,21 @@
+{
+  "district_id": "AZ-09",
+  "state_code": "AZ",
+  "representative": {
+    "name": "Paul A. Gosar",
+    "party": "R",
+    "assumed_office": 2011,
+    "photo_url": "/images/reps/AZ-09.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 119,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 119 weighted CES respondents"
+  }
+}

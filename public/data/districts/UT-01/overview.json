@@ -1,0 +1,21 @@
+{
+  "district_id": "UT-01",
+  "state_code": "UT",
+  "representative": {
+    "name": "Blake D. Moore",
+    "party": "R",
+    "assumed_office": 2021,
+    "photo_url": "/images/reps/UT-01.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 31,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 31 weighted CES respondents"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "district_id": "IN-09",
+  "state_code": "IN",
+  "representative": {
+    "name": "Erin Houchin",
+    "party": "R",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/IN-09.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 93,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 93 weighted CES respondents"
+  }
+}

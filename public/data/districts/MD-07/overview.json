@@ -1,0 +1,21 @@
+{
+  "district_id": "MD-07",
+  "state_code": "MD",
+  "representative": {
+    "name": "Kweisi Mfume",
+    "party": "D",
+    "assumed_office": 1987,
+    "photo_url": "/images/reps/MD-07.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 76,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 76 weighted CES respondents"
+  }
+}

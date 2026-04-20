@@ -1,0 +1,21 @@
+{
+  "district_id": "CA-22",
+  "state_code": "CA",
+  "representative": {
+    "name": "David G. Valadao",
+    "party": "R",
+    "assumed_office": 2013,
+    "photo_url": "/images/reps/CA-22.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 33,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 33 weighted CES respondents"
+  }
+}

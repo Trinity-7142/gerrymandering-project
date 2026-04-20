@@ -1,0 +1,21 @@
+{
+  "district_id": "NE-03",
+  "state_code": "NE",
+  "representative": {
+    "name": "Adrian Smith",
+    "party": "R",
+    "assumed_office": 2007,
+    "photo_url": "/images/reps/NE-03.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 79,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 79 weighted CES respondents"
+  }
+}

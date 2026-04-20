@@ -1,0 +1,21 @@
+{
+  "district_id": "VA-01",
+  "state_code": "VA",
+  "representative": {
+    "name": "Robert J. Wittman",
+    "party": "R",
+    "assumed_office": 2007,
+    "photo_url": "/images/reps/VA-01.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 120,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 120 weighted CES respondents"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "district_id": "NY-05",
+  "state_code": "NY",
+  "representative": {
+    "name": "Gregory W. Meeks",
+    "party": "D",
+    "assumed_office": 1997,
+    "photo_url": "/images/reps/NY-05.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 44,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 44 weighted CES respondents"
+  }
+}

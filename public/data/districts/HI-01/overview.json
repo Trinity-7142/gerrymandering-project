@@ -1,0 +1,21 @@
+{
+  "district_id": "HI-01",
+  "state_code": "HI",
+  "representative": {
+    "name": "Ed Case",
+    "party": "D",
+    "assumed_office": 2003,
+    "photo_url": "/images/reps/HI-01.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 53,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 53 weighted CES respondents"
+  }
+}

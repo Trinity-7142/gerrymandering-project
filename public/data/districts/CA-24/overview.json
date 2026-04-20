@@ -1,0 +1,21 @@
+{
+  "district_id": "CA-24",
+  "state_code": "CA",
+  "representative": {
+    "name": "Salud O. Carbajal",
+    "party": "D",
+    "assumed_office": 2017,
+    "photo_url": "/images/reps/CA-24.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 59,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 59 weighted CES respondents"
+  }
+}

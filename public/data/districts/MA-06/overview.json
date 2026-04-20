@@ -1,0 +1,21 @@
+{
+  "district_id": "MA-06",
+  "state_code": "MA",
+  "representative": {
+    "name": "Seth Moulton",
+    "party": "D",
+    "assumed_office": 2015,
+    "photo_url": "/images/reps/MA-06.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 88,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 88 weighted CES respondents"
+  }
+}

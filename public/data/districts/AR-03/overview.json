@@ -1,0 +1,21 @@
+{
+  "district_id": "AR-03",
+  "state_code": "AR",
+  "representative": {
+    "name": "Steve Womack",
+    "party": "R",
+    "assumed_office": 2011,
+    "photo_url": "/images/reps/AR-03.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 66,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 66 weighted CES respondents"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "district_id": "CA-06",
+  "state_code": "CA",
+  "representative": {
+    "name": "Ami Bera",
+    "party": "D",
+    "assumed_office": 2013,
+    "photo_url": "/images/reps/CA-06.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 65,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 65 weighted CES respondents"
+  }
+}

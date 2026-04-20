@@ -1,0 +1,21 @@
+{
+  "district_id": "GA-01",
+  "state_code": "GA",
+  "representative": {
+    "name": "Earl L. \"Buddy\" Carter",
+    "party": "R",
+    "assumed_office": 2015,
+    "photo_url": "/images/reps/GA-01.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 64,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 64 weighted CES respondents"
+  }
+}

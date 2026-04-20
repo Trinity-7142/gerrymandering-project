@@ -1,0 +1,21 @@
+{
+  "district_id": "PA-03",
+  "state_code": "PA",
+  "representative": {
+    "name": "Dwight Evans",
+    "party": "D",
+    "assumed_office": 2016,
+    "photo_url": "/images/reps/PA-03.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 114,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 114 weighted CES respondents"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "district_id": "AL-03",
+  "state_code": "AL",
+  "representative": {
+    "name": "Mike Rogers",
+    "party": "R",
+    "assumed_office": 2003,
+    "photo_url": "/images/reps/AL-03.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 84,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 84 weighted CES respondents"
+  }
+}

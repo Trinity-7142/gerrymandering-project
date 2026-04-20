@@ -2,6 +2,7 @@
   "state_code": "PA",
   "state_name": "Pennsylvania",
   "total_districts": 17,
+  "overall_alignment": 0.7461715675,
   "delegation_composition": {
     "democrat": 7,
     "republican": 10
@@ -9,121 +10,121 @@
   "districts": [
     {
       "district_id": "PA-01",
-      "representative": "Brian Fitzpatrick",
+      "representative": "Brian K. Fitzpatrick",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6908963206936967,
       "ces_sample_size": 119
     },
     {
       "district_id": "PA-02",
-      "representative": "Brendan Boyle",
+      "representative": "Brendan F. Boyle",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6617737979214388,
       "ces_sample_size": 75
     },
     {
       "district_id": "PA-03",
       "representative": "Dwight Evans",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6442185317303998,
       "ces_sample_size": 114
     },
     {
       "district_id": "PA-04",
       "representative": "Madeleine Dean",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7060003270548527,
       "ces_sample_size": 105
     },
     {
       "district_id": "PA-05",
-      "representative": "Mary Scanlon",
+      "representative": "Mary Gay Scanlon",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6792571545984641,
       "ces_sample_size": 107
     },
     {
       "district_id": "PA-06",
       "representative": "Chrissy Houlahan",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7533088550405354,
       "ces_sample_size": 95
     },
     {
       "district_id": "PA-07",
       "representative": "Ryan Mackenzie",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.8874731816026554,
       "ces_sample_size": 105
     },
     {
       "district_id": "PA-08",
-      "representative": "Robert Bresnahan",
+      "representative": "Robert P. Bresnahan, Jr.",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.9028647953216375,
       "ces_sample_size": 147
     },
     {
       "district_id": "PA-09",
       "representative": "Daniel Meuser",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7470788622868065,
       "ces_sample_size": 128
     },
     {
       "district_id": "PA-10",
       "representative": "Scott Perry",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7175005643823891,
       "ces_sample_size": 109
     },
     {
       "district_id": "PA-11",
       "representative": "Lloyd Smucker",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7268648125452892,
       "ces_sample_size": 102
     },
     {
       "district_id": "PA-12",
-      "representative": "Summer Lee",
+      "representative": "Summer L. Lee",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6886495258312544,
       "ces_sample_size": 132
     },
     {
       "district_id": "PA-13",
       "representative": "John Joyce",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7484100927425434,
       "ces_sample_size": 136
     },
     {
       "district_id": "PA-14",
       "representative": "Guy Reschenthaler",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.775483472422832,
       "ces_sample_size": 115
     },
     {
       "district_id": "PA-15",
       "representative": "Glenn Thompson",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7244651150406326,
       "ces_sample_size": 124
     },
     {
       "district_id": "PA-16",
       "representative": "Mike Kelly",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7538941699128988,
       "ces_sample_size": 121
     },
     {
       "district_id": "PA-17",
-      "representative": "Chris Deluzio",
+      "representative": "Christopher R. Deluzio",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7285680573184906,
       "ces_sample_size": 133
     }
   ]

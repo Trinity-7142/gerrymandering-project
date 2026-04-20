@@ -2,6 +2,7 @@
   "state_code": "CT",
   "state_name": "Connecticut",
   "total_districts": 5,
+  "overall_alignment": 0.7289043807,
   "delegation_composition": {
     "democrat": 5,
     "republican": 0
@@ -9,37 +10,37 @@
   "districts": [
     {
       "district_id": "CT-01",
-      "representative": "John Larson",
+      "representative": "John B. Larson",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7005960601319092,
       "ces_sample_size": 57
     },
     {
       "district_id": "CT-02",
       "representative": "Joe Courtney",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7058454876838872,
       "ces_sample_size": 81
     },
     {
       "district_id": "CT-03",
-      "representative": "Rosa DeLauro",
+      "representative": "Rosa L. DeLauro",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6908637216645243,
       "ces_sample_size": 82
     },
     {
       "district_id": "CT-04",
-      "representative": "Jim Himes",
+      "representative": "James A. Himes",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6682837949006346,
       "ces_sample_size": 49
     },
     {
       "district_id": "CT-05",
       "representative": "Jahana Hayes",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7209606917962293,
       "ces_sample_size": 69
     }
   ]

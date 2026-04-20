@@ -1,0 +1,21 @@
+{
+  "district_id": "FL-05",
+  "state_code": "FL",
+  "representative": {
+    "name": "John H. Rutherford",
+    "party": "R",
+    "assumed_office": 2017,
+    "photo_url": "/images/reps/FL-05.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 109,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 109 weighted CES respondents"
+  }
+}

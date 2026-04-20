@@ -1,0 +1,21 @@
+{
+  "district_id": "MA-09",
+  "state_code": "MA",
+  "representative": {
+    "name": "William R. Keating",
+    "party": "D",
+    "assumed_office": 2011,
+    "photo_url": "/images/reps/MA-09.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 87,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 87 weighted CES respondents"
+  }
+}

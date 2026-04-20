@@ -1,0 +1,21 @@
+{
+  "district_id": "FL-17",
+  "state_code": "FL",
+  "representative": {
+    "name": "W. Gregory Steube",
+    "party": "R",
+    "assumed_office": 2019,
+    "photo_url": "/images/reps/FL-17.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 135,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 135 weighted CES respondents"
+  }
+}

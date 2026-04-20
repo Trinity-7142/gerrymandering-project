@@ -1,0 +1,21 @@
+{
+  "district_id": "GA-10",
+  "state_code": "GA",
+  "representative": {
+    "name": "Mike Collins",
+    "party": "R",
+    "assumed_office": 2023,
+    "photo_url": "/images/reps/GA-10.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 77,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 77 weighted CES respondents"
+  }
+}

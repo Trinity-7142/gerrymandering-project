@@ -1,0 +1,21 @@
+{
+  "district_id": "VA-08",
+  "state_code": "VA",
+  "representative": {
+    "name": "Donald S. Beyer, Jr.",
+    "party": "D",
+    "assumed_office": 2015,
+    "photo_url": "/images/reps/VA-08.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 95,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 95 weighted CES respondents"
+  }
+}

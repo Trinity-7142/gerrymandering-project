@@ -1,0 +1,21 @@
+{
+  "district_id": "MD-01",
+  "state_code": "MD",
+  "representative": {
+    "name": "Andy Harris",
+    "party": "R",
+    "assumed_office": 2011,
+    "photo_url": "/images/reps/MD-01.jpg"
+  },
+  "demographics": {
+    "population": null,
+    "median_income": null,
+    "urban_pct": null,
+    "cook_pvi": null
+  },
+  "ces_sample": {
+    "n_respondents": 104,
+    "weight_variable": "vvweight_post",
+    "confidence_note": "District estimates based on 104 weighted CES respondents"
+  }
+}

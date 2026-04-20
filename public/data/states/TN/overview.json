@@ -2,6 +2,7 @@
   "state_code": "TN",
   "state_name": "Tennessee",
   "total_districts": 9,
+  "overall_alignment": 0.7788187204,
   "delegation_composition": {
     "democrat": 1,
     "republican": 8
@@ -11,63 +12,63 @@
       "district_id": "TN-01",
       "representative": "Diana Harshbarger",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7800431046123903,
       "ces_sample_size": 130
     },
     {
       "district_id": "TN-02",
       "representative": "Tim Burchett",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7215959460529889,
       "ces_sample_size": 115
     },
     {
       "district_id": "TN-03",
-      "representative": "Chuck Fleischmann",
+      "representative": "Charles J. \"Chuck\" Fleischmann",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7564593601949364,
       "ces_sample_size": 113
     },
     {
       "district_id": "TN-04",
       "representative": "Scott DesJarlais",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7896927049699749,
       "ces_sample_size": 80
     },
     {
       "district_id": "TN-05",
       "representative": "Andrew Ogles",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7638666450405867,
       "ces_sample_size": 98
     },
     {
       "district_id": "TN-06",
-      "representative": "John Rose",
+      "representative": "John W. Rose",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.7207817135776577,
       "ces_sample_size": 99
     },
     {
       "district_id": "TN-07",
       "representative": "Matt Van Epps",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 1.0,
       "ces_sample_size": 74
     },
     {
       "district_id": "TN-08",
       "representative": "David Kustoff",
       "party": "R",
-      "alignment_score": 0.69,
+      "alignment_score": 0.73354393671354,
       "ces_sample_size": 96
     },
     {
       "district_id": "TN-09",
       "representative": "Steve Cohen",
       "party": "D",
-      "alignment_score": 0.69,
+      "alignment_score": 0.6376904579951115,
       "ces_sample_size": 63
     }
   ]
