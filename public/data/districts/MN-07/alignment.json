@@ -1,7 +1,7 @@
 {
   "district_id": "MN-07",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7483635917795423,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6032924992990766,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.869720430107527,
+      "score": 0.6887179487179487,
       "salience_weight": 0.17375058383932743,
-      "weighted_contribution": 0.15111443250817377,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.11966514569036754,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.780396875,
+      "score": 0.6114633431085044,
       "salience_weight": 0.6725829051844932,
-      "weighted_contribution": 0.5248815973843998,
+      "weighted_contribution": 0.4112597917217404,
       "direction": "Moderate Alignment"
     },
     {

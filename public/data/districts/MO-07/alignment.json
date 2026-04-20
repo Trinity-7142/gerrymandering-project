@@ -1,7 +1,7 @@
 {
   "district_id": "MO-07",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7627852706247892,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6245559627057391,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8678881720430107,
+      "score": 0.6847179487179487,
       "salience_weight": 0.11085870059064061,
-      "weighted_contribution": 0.0962129550106745,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.07590694206596069,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7922666666666666,
+      "score": 0.6324457478005864,
       "salience_weight": 0.7378464334393458,
-      "weighted_contribution": 0.5845711343328789,
+      "weighted_contribution": 0.4666478393585426,
       "direction": "Moderate Alignment"
     },
     {

@@ -1,7 +1,7 @@
 {
   "district_id": "TX-11",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7581552038953133,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6128667552726457,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8597956989247313,
+      "score": 0.6670512820512821,
       "salience_weight": 0.08651633686148182,
-      "weighted_contribution": 0.07438637432022525,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.05771083342183204,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7800833333333332,
+      "score": 0.6109090909090907,
       "salience_weight": 0.7602393005062126,
-      "weighted_contribution": 0.5930500076698879,
+      "weighted_contribution": 0.4644370999456134,
       "direction": "Moderate Alignment"
     },
     {

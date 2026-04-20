@@ -1,10 +1,10 @@
 {
   "state_code": "UT",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-19",
   "senators": [
     {
       "name": "John Curtis",
-      "overall_score": 0.7764044748475379,
+      "overall_score": 0.6460558540149581,
       "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
@@ -30,31 +30,31 @@
         },
         {
           "issue_id": "environment",
-          "score": 0.8495399201596807,
+          "score": 0.6504447077409163,
           "salience_weight": 0.07923169267707082,
-          "weighted_contribution": 0.06731048587099511,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.05153583518715543,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9034468571428569,
+          "score": 0.705467711598746,
           "salience_weight": 0.5462184873949579,
-          "weighted_contribution": 0.49347937575029993,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.38533950633544944,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.7129642857142857,
+          "score": 0.6341465517241379,
           "salience_weight": 0.08163265306122448,
-          "weighted_contribution": 0.05820116618075801,
+          "weighted_contribution": 0.0517670654468684,
           "direction": "Moderate Alignment"
         }
       ]
     },
     {
       "name": "Mike Lee",
-      "overall_score": 0.8247718001897506,
-      "overall_label": "Strong Alignment",
+      "overall_score": 0.7264722550232128,
+      "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
           "issue_id": "guns",
@@ -65,37 +65,37 @@
         },
         {
           "issue_id": "immigration",
-          "score": 0.5566,
+          "score": 0.5566000000000001,
           "salience_weight": 0.25447082966871887,
-          "weighted_contribution": 0.14163846379360892,
+          "weighted_contribution": 0.14163846379360895,
           "direction": "Partial Alignment"
         },
         {
           "issue_id": "abortion",
-          "score": 0.9607777777777777,
+          "score": 0.9142222222222223,
           "salience_weight": 0.04632072705951334,
-          "weighted_contribution": 0.0445039252092902,
+          "weighted_contribution": 0.042347438027297304,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "environment",
-          "score": 0.8091543209876544,
+          "score": 0.668972706155633,
           "salience_weight": 0.07739665787159192,
-          "weighted_contribution": 0.06262584014680175,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.05177625166376052,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9452257861635217,
+          "score": 0.7710664879356568,
           "salience_weight": 0.533567868660217,
-          "weighted_contribution": 0.5043421081259483,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.4114163025631473,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.8668676470588235,
+          "score": 0.9625805084745762,
           "salience_weight": 0.07974201114042803,
-          "weighted_contribution": 0.06912576956904133,
+          "weighted_contribution": 0.07675810563033854,
           "direction": "Strong Alignment"
         }
       ]

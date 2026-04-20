@@ -1,8 +1,8 @@
 {
   "district_id": "NY-11",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7078291285888197,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5398826254924566,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.7712365591397851,
+      "score": 0.47371794871794864,
       "salience_weight": 0.15163934426229508,
-      "weighted_contribution": 0.11694980609906577,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.07183427910886926,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7616739583333332,
+      "score": 0.578366568914956,
       "salience_weight": 0.6700819672131147,
-      "weighted_contribution": 0.5103839843749999,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.3875530082688332,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

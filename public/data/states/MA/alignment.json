@@ -1,10 +1,10 @@
 {
   "state_code": "MA",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-19",
   "senators": [
     {
-      "name": "Ed Markey",
-      "overall_score": 0.7367732190621402,
+      "name": "Edward Markey",
+      "overall_score": 0.6008021959865667,
       "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
@@ -23,37 +23,37 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.8565555555555556,
+          "score": 0.7315555555555556,
           "salience_weight": 0.08104738154613467,
-          "weighted_contribution": 0.06942158492657247,
-          "direction": "Strong Alignment"
-        },
-        {
-          "issue_id": "environment",
-          "score": 0.681125514403292,
-          "salience_weight": 0.11221945137157106,
-          "weighted_contribution": 0.07643553154151655,
+          "weighted_contribution": 0.05929066223330563,
           "direction": "Moderate Alignment"
         },
         {
+          "issue_id": "environment",
+          "score": 0.4733060394889662,
+          "salience_weight": 0.11221945137157106,
+          "weighted_contribution": 0.05311414408230294,
+          "direction": "Partial Alignment"
+        },
+        {
           "issue_id": "economy",
-          "score": 0.883051257861635,
+          "score": 0.6530329758713134,
           "salience_weight": 0.399002493765586,
-          "weighted_contribution": 0.35233965400962985,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.2605617858838158,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9473823529411765,
+          "score": 0.8516694915254238,
           "salience_weight": 0.11221945137157106,
-          "weighted_contribution": 0.10631472788616693,
+          "weighted_contribution": 0.09557388308888795,
           "direction": "Strong Alignment"
         }
       ]
     },
     {
       "name": "Elizabeth Warren",
-      "overall_score": 0.7367732190621402,
+      "overall_score": 0.6008021959865667,
       "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
@@ -72,30 +72,30 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.8565555555555556,
+          "score": 0.7315555555555556,
           "salience_weight": 0.08104738154613467,
-          "weighted_contribution": 0.06942158492657247,
-          "direction": "Strong Alignment"
-        },
-        {
-          "issue_id": "environment",
-          "score": 0.681125514403292,
-          "salience_weight": 0.11221945137157106,
-          "weighted_contribution": 0.07643553154151655,
+          "weighted_contribution": 0.05929066223330563,
           "direction": "Moderate Alignment"
         },
         {
+          "issue_id": "environment",
+          "score": 0.4733060394889662,
+          "salience_weight": 0.11221945137157106,
+          "weighted_contribution": 0.05311414408230294,
+          "direction": "Partial Alignment"
+        },
+        {
           "issue_id": "economy",
-          "score": 0.883051257861635,
+          "score": 0.6530329758713134,
           "salience_weight": 0.399002493765586,
-          "weighted_contribution": 0.35233965400962985,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.2605617858838158,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9473823529411765,
+          "score": 0.8516694915254238,
           "salience_weight": 0.11221945137157106,
-          "weighted_contribution": 0.10631472788616693,
+          "weighted_contribution": 0.09557388308888795,
           "direction": "Strong Alignment"
         }
       ]

@@ -1,8 +1,8 @@
 {
   "district_id": "CA-41",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7433119624282527,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5789846048101833,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.7944451612903225,
+      "score": 0.5243846153846153,
       "salience_weight": 0.1958041958041958,
-      "weighted_contribution": 0.15555569591698623,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.10267670790747713,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7829947916666666,
+      "score": 0.6160557184750731,
       "salience_weight": 0.6675990675990676,
-      "weighted_contribution": 0.5227265928515928,
+      "weighted_contribution": 0.41127822324303254,
       "direction": "Moderate Alignment"
     },
     {

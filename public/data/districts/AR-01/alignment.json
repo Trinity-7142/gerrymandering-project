@@ -1,7 +1,7 @@
 {
   "district_id": "AR-01",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7836387823370937,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6508068937474505,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.9088849462365592,
+      "score": 0.7742179487179488,
       "salience_weight": 0.06845107503290918,
-      "weighted_contribution": 0.06221415165112034,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.05299605089951734,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7956708333333333,
+      "score": 0.6384633431085042,
       "salience_weight": 0.7863097849934182,
-      "weighted_contribution": 0.6256437618838672,
+      "weighted_contribution": 0.5020299740458269,
       "direction": "Moderate Alignment"
     },
     {

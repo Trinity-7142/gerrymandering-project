@@ -1,11 +1,11 @@
 {
   "state_code": "OH",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-19",
   "senators": [
     {
       "name": "Bernie Moreno",
-      "overall_score": 0.8270216402677188,
-      "overall_label": "Strong Alignment",
+      "overall_score": 0.6185204707538243,
+      "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
           "issue_id": "immigration",
@@ -23,31 +23,31 @@
         },
         {
           "issue_id": "environment",
-          "score": 0.9571481481481482,
+          "score": 0.6229561403508772,
           "salience_weight": 0.06692406692406692,
-          "weighted_contribution": 0.06405624672291339,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.04169075842760053,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9940302521008404,
+          "score": 0.6629649048625791,
           "salience_weight": 0.5315315315315315,
-          "weighted_contribution": 0.5283584222878341,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.35238675123326274,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.6820833333333334,
+          "score": 0.5795192307692307,
           "salience_weight": 0.09909909909909911,
-          "weighted_contribution": 0.06759384384384386,
-          "direction": "Moderate Alignment"
+          "weighted_contribution": 0.05742983367983368,
+          "direction": "Partial Alignment"
         }
       ]
     },
     {
       "name": "Jon Husted",
-      "overall_score": 0.9182322495411865,
-      "overall_label": "Strong Alignment",
+      "overall_score": 0.6345099926019643,
+      "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
           "issue_id": "abortion",
@@ -58,24 +58,24 @@
         },
         {
           "issue_id": "environment",
-          "score": 0.9571481481481482,
+          "score": 0.6229561403508772,
           "salience_weight": 0.09106830122591944,
-          "weighted_contribution": 0.08716585587338653,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.056731557440009836,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9940302521008404,
+          "score": 0.6629649048625791,
           "salience_weight": 0.7232924693520141,
-          "weighted_contribution": 0.7189745956526219,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.4795175231317779,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.6820833333333334,
+          "score": 0.5795192307692307,
           "salience_weight": 0.13485113835376533,
-          "weighted_contribution": 0.09197971395213078,
-          "direction": "Moderate Alignment"
+          "weighted_contribution": 0.07814882796712919,
+          "direction": "Partial Alignment"
         }
       ]
     }

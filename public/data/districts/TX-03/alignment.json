@@ -1,7 +1,7 @@
 {
   "district_id": "TX-03",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7668948449074415,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6283336810060872,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8435344086021506,
+      "score": 0.631551282051282,
       "salience_weight": 0.08651633686148182,
-      "weighted_contribution": 0.0729795070488745,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.054639503463249424,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7944614583333331,
+      "score": 0.6363255131964809,
       "salience_weight": 0.7602393005062126,
-      "weighted_contribution": 0.6039808233624787,
+      "weighted_contribution": 0.4837596630467494,
       "direction": "Moderate Alignment"
     },
     {

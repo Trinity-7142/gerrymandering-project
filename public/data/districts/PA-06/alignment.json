@@ -1,7 +1,7 @@
 {
   "district_id": "PA-06",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7533088550405354,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6016413744428538,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8280365591397849,
+      "score": 0.5977179487179487,
       "salience_weight": 0.09045680687471733,
-      "weighted_contribution": 0.07490154311531298,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.05406765705273168,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7803520833333333,
+      "score": 0.6113841642228738,
       "salience_weight": 0.7743102668475803,
-      "weighted_contribution": 0.6042346298808985,
+      "weighted_contribution": 0.47340103534579825,
       "direction": "Moderate Alignment"
     },
     {

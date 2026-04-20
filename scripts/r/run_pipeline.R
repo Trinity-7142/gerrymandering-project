@@ -1,5 +1,4 @@
 # scripts/r/run_pipeline.R
-# Master script: runs the full R data pipeline in dependency order
 #
 # TODO: Source each script in order:
 #   source("scripts/r/00_config.R")

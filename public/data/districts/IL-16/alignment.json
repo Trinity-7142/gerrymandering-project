@@ -1,8 +1,8 @@
 {
   "district_id": "IL-16",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7363684374654604,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5803275578097449,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8020795698924731,
+      "score": 0.5410512820512821,
       "salience_weight": 0.1429270680372002,
-      "weighted_contribution": 0.11463888125726977,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.07733087340135798,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7779333333333333,
+      "score": 0.6071085043988269,
       "salience_weight": 0.6950562897699463,
-      "weighted_contribution": 0.5407074563550335,
+      "weighted_contribution": 0.42197458455522974,
       "direction": "Moderate Alignment"
     },
     {

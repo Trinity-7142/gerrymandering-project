@@ -1,10 +1,10 @@
 {
   "state_code": "AZ",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-19",
   "senators": [
     {
       "name": "Ruben Gallego",
-      "overall_score": 0.7373180845969302,
+      "overall_score": 0.6053800852030662,
       "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
@@ -30,31 +30,31 @@
         },
         {
           "issue_id": "environment",
-          "score": 0.8276716566866268,
+          "score": 0.6064447077409163,
           "salience_weight": 0.07974683544303797,
-          "weighted_contribution": 0.06600419540665504,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.04836204631351611,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.8833005714285711,
+          "score": 0.6657228840125389,
           "salience_weight": 0.4936708860759494,
-          "weighted_contribution": 0.4360597757685351,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.32864800603150657,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.6194642857142857,
+          "score": 0.5406465517241379,
           "salience_weight": 0.08734177215189874,
-          "weighted_contribution": 0.05410510849909584,
-          "direction": "Moderate Alignment"
+          "weighted_contribution": 0.04722102793539939,
+          "direction": "Partial Alignment"
         }
       ]
     },
     {
       "name": "Mark Kelly",
-      "overall_score": 0.8183302199192544,
-      "overall_label": "Strong Alignment",
+      "overall_score": 0.704321436279091,
+      "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
           "issue_id": "guns",
@@ -72,30 +72,30 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.9982222222222222,
+          "score": 0.8732222222222222,
           "salience_weight": 0.08077740662010326,
-          "weighted_contribution": 0.08063380234166752,
+          "weighted_contribution": 0.07053662651415461,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "environment",
-          "score": 0.7803641975308642,
+          "score": 0.6249727061556328,
           "salience_weight": 0.07652596416641361,
-          "weighted_contribution": 0.05971812261699902,
+          "weighted_contribution": 0.047826638916252495,
           "direction": "Moderate Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9261081761006285,
+          "score": 0.7347731903485252,
           "salience_weight": 0.47373215912541755,
-          "weighted_contribution": 0.4387272258478531,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.34808568993127825,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9603676470588234,
+          "score": 0.9439194915254238,
           "salience_weight": 0.08381415122988158,
-          "weighted_contribution": 0.08049239920687376,
+          "weighted_contribution": 0.07911381101154479,
           "direction": "Strong Alignment"
         }
       ]

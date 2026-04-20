@@ -1,8 +1,8 @@
 {
   "district_id": "OR-03",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.8689667527103769,
-  "overall_label": "Strong Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.3808501525320318,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,17 +23,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.9195625000000001,
+      "score": 0.35650000000000004,
       "salience_weight": 0.21476510067114093,
-      "weighted_contribution": 0.19748993288590605,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.07656375838926176,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.9221,
+      "score": 0.39289772727272737,
       "salience_weight": 0.6938564790913785,
-      "weighted_contribution": 0.6398050593701601,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.2726146336884593,
+      "direction": "Partial Alignment"
     }
   ],
   "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."

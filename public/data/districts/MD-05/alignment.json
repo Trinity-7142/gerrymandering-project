@@ -1,8 +1,8 @@
 {
   "district_id": "MD-05",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7168420944880272,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5467550789951587,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.815821505376344,
+      "score": 0.571051282051282,
       "salience_weight": 0.1567128523650263,
-      "weighted_contribution": 0.12784971512825652,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.08949107525696154,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7537906249999999,
+      "score": 0.5644310850439882,
       "salience_weight": 0.6956521739130435,
-      "weighted_contribution": 0.5243760869565217,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.3926477113349483,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

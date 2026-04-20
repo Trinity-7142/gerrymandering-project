@@ -1,7 +1,7 @@
 {
   "district_id": "WA-07",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.5979323161941374,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.33735629894202457,
   "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.6536666666666667,
+      "score": 0.21705128205128202,
       "salience_weight": 0.20759250360403653,
-      "weighted_contribution": 0.13569629985583856,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.04505821905149151,
+      "direction": "Low Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.6647,
+      "score": 0.40694428152492657,
       "salience_weight": 0.6592984142239309,
-      "weighted_contribution": 0.4382356559346468,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.26829771948688097,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

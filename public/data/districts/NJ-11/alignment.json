@@ -1,8 +1,8 @@
 {
   "district_id": "NJ-11",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7014746765766909,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5315953915815304,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.778641935483871,
+      "score": 0.48988461538461525,
       "salience_weight": 0.12179797003383278,
-      "weighted_contribution": 0.09483700712515007,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.05966695170465106,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7478988095238095,
+      "score": 0.5595789473684211,
       "salience_weight": 0.7153214113098115,
-      "weighted_contribution": 0.5349880319454993,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.4002788023708377,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

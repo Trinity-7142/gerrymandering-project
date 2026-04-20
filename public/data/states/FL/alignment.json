@@ -1,11 +1,11 @@
 {
   "state_code": "FL",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-19",
   "senators": [
     {
       "name": "Rick Scott",
-      "overall_score": 0.8152462257161938,
-      "overall_label": "Strong Alignment",
+      "overall_score": 0.7021471482260631,
+      "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
           "issue_id": "guns",
@@ -23,38 +23,38 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.9993333333333333,
+          "score": 0.8756666666666667,
           "salience_weight": 0.05555555555555555,
-          "weighted_contribution": 0.055518518518518516,
+          "weighted_contribution": 0.04864814814814815,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "environment",
-          "score": 0.7812366255144032,
+          "score": 0.6263060394889662,
           "salience_weight": 0.06280193236714975,
-          "weighted_contribution": 0.04906316971829584,
+          "weighted_contribution": 0.03933322953312347,
           "direction": "Moderate Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9221746855345908,
+          "score": 0.727305764075067,
           "salience_weight": 0.49033816425120774,
-          "weighted_contribution": 0.452177442423966,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.35662577320589034,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9568676470588234,
+          "score": 0.9474194915254239,
           "salience_weight": 0.10024154589371981,
-          "weighted_contribution": 0.09591789215686274,
+          "weighted_contribution": 0.09497079444035046,
           "direction": "Strong Alignment"
         }
       ]
     },
     {
       "name": "Ashley Moody",
-      "overall_score": 0.918413707141643,
-      "overall_label": "Strong Alignment",
+      "overall_score": 0.6349224554132593,
+      "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
           "issue_id": "abortion",
@@ -65,24 +65,24 @@
         },
         {
           "issue_id": "environment",
-          "score": 0.9547037037037037,
+          "score": 0.6119561403508771,
           "salience_weight": 0.09219858156028367,
-          "weighted_contribution": 0.08802232729183082,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.05642148811745674,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9951773109243697,
+          "score": 0.6662281183932345,
           "salience_weight": 0.7198581560283688,
-          "weighted_contribution": 0.7163865039632874,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.4795897448008035,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.6705833333333334,
+          "score": 0.5680192307692308,
           "salience_weight": 0.14716312056737588,
-          "weighted_contribution": 0.09868513593380615,
-          "direction": "Moderate Alignment"
+          "weighted_contribution": 0.08359148254228041,
+          "direction": "Partial Alignment"
         }
       ]
     }

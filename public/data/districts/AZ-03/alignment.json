@@ -1,8 +1,8 @@
 {
   "district_id": "AZ-03",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.8819225,
-  "overall_label": "Strong Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.45582382352941186,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,17 +23,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.9321250000000002,
+      "score": 0.4570000000000001,
       "salience_weight": 0.12352941176470589,
-      "weighted_contribution": 0.1151448529411765,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.0564529411764706,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.92858,
+      "score": 0.4481250000000001,
       "salience_weight": 0.7647058823529412,
-      "weighted_contribution": 0.7100905882352941,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.34268382352941185,
+      "direction": "Partial Alignment"
     }
   ],
   "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."

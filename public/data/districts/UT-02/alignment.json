@@ -1,8 +1,8 @@
 {
   "district_id": "UT-02",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.8497499016990542,
-  "overall_label": "Strong Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6553905198069462,
+  "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,17 +23,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.9554714285714286,
+      "score": 0.6551896551724138,
       "salience_weight": 0.11473272490221642,
-      "weighted_contribution": 0.10962384056621345,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.0751716944656746,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.8666961904761905,
+      "score": 0.6645277566539924,
       "salience_weight": 0.7909604519774011,
-      "weighted_contribution": 0.6855224105461393,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.5256151747545702,
+      "direction": "Moderate Alignment"
     }
   ],
   "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."

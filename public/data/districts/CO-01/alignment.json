@@ -1,8 +1,8 @@
 {
   "district_id": "CO-01",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6302908408801736,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.4025941500285508,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.6684774193548387,
+      "score": 0.24938461538461532,
       "salience_weight": 0.18932714617169374,
-      "weighted_contribution": 0.12656092208667016,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.04721527752989469,
+      "direction": "Low Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.702996875,
+      "score": 0.47464222873900286,
       "salience_weight": 0.6496519721577726,
-      "weighted_contribution": 0.4567033062645011,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.3083522599696538,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

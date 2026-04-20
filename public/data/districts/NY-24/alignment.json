@@ -1,8 +1,8 @@
 {
   "district_id": "NY-24",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7439488681308389,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5977149406956518,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.794521505376344,
+      "score": 0.524551282051282,
       "salience_weight": 0.15163934426229508,
-      "weighted_contribution": 0.12048072007756036,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.07954261244220259,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7957604166666665,
+      "score": 0.6386217008797652,
       "salience_weight": 0.6700819672131147,
-      "weighted_contribution": 0.5332247054303277,
+      "weighted_contribution": 0.4279288856304984,
       "direction": "Moderate Alignment"
     },
     {

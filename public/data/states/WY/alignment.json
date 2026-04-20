@@ -1,10 +1,10 @@
 {
   "state_code": "WY",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-19",
   "senators": [
     {
       "name": "John Barrasso",
-      "overall_score": 0.8639195987417844,
+      "overall_score": 0.8081588370368478,
       "overall_label": "Strong Alignment",
       "issue_scores": [
         {
@@ -23,37 +23,37 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.8735555555555558,
+          "score": 0.9985555555555556,
           "salience_weight": 0.046394633873672445,
-          "weighted_contribution": 0.04052829016831254,
+          "weighted_contribution": 0.046327619402521586,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "environment",
-          "score": 0.9290041152263374,
+          "score": 0.8521393728222997,
           "salience_weight": 0.0704304080491895,
-          "weighted_contribution": 0.0654301389147672,
+          "weighted_contribution": 0.06001652374265499,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9831226415094336,
+          "score": 0.8430107238605897,
           "salience_weight": 0.4572386808272778,
-          "weighted_contribution": 0.44952169969520217,
+          "weighted_contribution": 0.38545711130126464,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.6631176470588235,
+          "score": 0.7588305084745762,
           "salience_weight": 0.08272778088317495,
-          "weighted_contribution": 0.05485825140564889,
+          "weighted_contribution": 0.06277636403255298,
           "direction": "Moderate Alignment"
         }
       ]
     },
     {
       "name": "Cynthia Lummis",
-      "overall_score": 0.8639195987417844,
+      "overall_score": 0.8081588370368478,
       "overall_label": "Strong Alignment",
       "issue_scores": [
         {
@@ -72,30 +72,30 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.8735555555555558,
+          "score": 0.9985555555555556,
           "salience_weight": 0.046394633873672445,
-          "weighted_contribution": 0.04052829016831254,
+          "weighted_contribution": 0.046327619402521586,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "environment",
-          "score": 0.9290041152263374,
+          "score": 0.8521393728222997,
           "salience_weight": 0.0704304080491895,
-          "weighted_contribution": 0.0654301389147672,
+          "weighted_contribution": 0.06001652374265499,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9831226415094336,
+          "score": 0.8430107238605897,
           "salience_weight": 0.4572386808272778,
-          "weighted_contribution": 0.44952169969520217,
+          "weighted_contribution": 0.38545711130126464,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.6631176470588235,
+          "score": 0.7588305084745762,
           "salience_weight": 0.08272778088317495,
-          "weighted_contribution": 0.05485825140564889,
+          "weighted_contribution": 0.06277636403255298,
           "direction": "Moderate Alignment"
         }
       ]

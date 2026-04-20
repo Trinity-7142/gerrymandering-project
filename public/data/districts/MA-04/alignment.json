@@ -1,8 +1,8 @@
 {
   "district_id": "MA-04",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6818119226919722,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.49939372644889113,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,24 +23,24 @@
     },
     {
       "issue_id": "immigration",
-      "score": 0.48979999999999996,
+      "score": 0.4898,
       "salience_weight": 0.11100049776007966,
-      "weighted_contribution": 0.05436804380288701,
+      "weighted_contribution": 0.05436804380288702,
       "direction": "Partial Alignment"
     },
     {
       "issue_id": "environment",
-      "score": 0.7510817204301076,
+      "score": 0.42971794871794866,
       "salience_weight": 0.1791936286709806,
-      "weighted_contribution": 0.13458905891231396,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.07700271853581958,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7452354166666667,
+      "score": 0.5493079178885629,
       "salience_weight": 0.6371329019412644,
-      "weighted_contribution": 0.4748140036502407,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.3499821477836539,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

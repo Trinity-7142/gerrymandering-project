@@ -1,8 +1,8 @@
 {
   "district_id": "CA-32",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6823462835551546,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.4784536448610415,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.7281021505376345,
+      "score": 0.37955128205128197,
       "salience_weight": 0.1958041958041958,
-      "weighted_contribution": 0.14256545604932705,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.07431773354850277,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7357843749999999,
+      "score": 0.5326011730205277,
       "salience_weight": 0.6675990675990676,
-      "weighted_contribution": 0.4912089627039627,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.35556404651067397,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

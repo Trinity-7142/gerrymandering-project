@@ -1,8 +1,8 @@
 {
   "district_id": "OH-13",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7040799675076452,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5285828658514711,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.7909333333333334,
+      "score": 0.5167179487179487,
       "salience_weight": 0.09541284403669725,
-      "weighted_contribution": 0.07546519877675842,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.04930152905198777,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7437572916666665,
+      "score": 0.5466950146627564,
       "salience_weight": 0.7577981651376148,
-      "weighted_contribution": 0.5636179109327216,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.4142844790013182,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

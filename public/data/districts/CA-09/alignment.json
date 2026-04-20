@@ -1,7 +1,7 @@
 {
   "district_id": "CA-09",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7890826237561722,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6533353673418844,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8420075268817205,
+      "score": 0.6282179487179487,
       "salience_weight": 0.1958041958041958,
-      "weighted_contribution": 0.16486860666215508,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.12300771023847946,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.8172604166666667,
+      "score": 0.6766275659824046,
       "salience_weight": 0.6675990675990676,
-      "weighted_contribution": 0.5456022921522922,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.45171593216167993,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "healthcare",

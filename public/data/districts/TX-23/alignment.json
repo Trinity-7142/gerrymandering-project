@@ -1,8 +1,8 @@
 {
   "district_id": "TX-23",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7330169178554993,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5776036322741829,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8382666666666667,
+      "score": 0.620051282051282,
       "salience_weight": 0.08651633686148182,
-      "weighted_contribution": 0.07252376131308483,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.053644565589342386,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7665114583333332,
+      "score": 0.5869178885630498,
       "salience_weight": 0.7602393005062126,
-      "weighted_contribution": 0.5827321349133302,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.4461980450557562,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

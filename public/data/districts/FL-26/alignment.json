@@ -1,7 +1,7 @@
 {
   "district_id": "FL-26",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7551302156194356,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6096729234021888,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8377322580645162,
+      "score": 0.6188846153846154,
       "salience_weight": 0.09515096065873742,
-      "weighted_contribution": 0.07971102912965204,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.05888746569075937,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7819197916666667,
+      "score": 0.6141554252199413,
       "salience_weight": 0.7429094236047576,
-      "weighted_contribution": 0.5808955817322355,
+      "weighted_contribution": 0.4562618529538814,
       "direction": "Moderate Alignment"
     },
     {

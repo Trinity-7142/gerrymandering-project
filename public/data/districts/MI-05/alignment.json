@@ -1,8 +1,8 @@
 {
   "district_id": "MI-05",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.733419967902787,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5648684071843109,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8409387096774193,
+      "score": 0.6258846153846154,
       "salience_weight": 0.1214868540344515,
-      "weighted_contribution": 0.10216299827450064,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.07603675291163958,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7515062499999999,
+      "score": 0.5603929618768327,
       "salience_weight": 0.7452402538531278,
-      "weighted_contribution": 0.560052708522212,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.41762739316659697,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

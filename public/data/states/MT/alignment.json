@@ -1,11 +1,11 @@
 {
   "state_code": "MT",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-19",
   "senators": [
     {
       "name": "Steve Daines",
-      "overall_score": 0.8307748656644949,
-      "overall_label": "Strong Alignment",
+      "overall_score": 0.7426756286767097,
+      "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
           "issue_id": "guns",
@@ -23,38 +23,38 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.9873333333333334,
+          "score": 0.8876666666666667,
           "salience_weight": 0.059316956261234274,
-          "weighted_contribution": 0.05856560814859198,
+          "weighted_contribution": 0.05265368484122229,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "environment",
-          "score": 0.8221316872427983,
+          "score": 0.6888060394889662,
           "salience_weight": 0.09346914319952067,
-          "weighted_contribution": 0.07684394440376065,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.06438211034168888,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9321564465408803,
+          "score": 0.7462553619302948,
           "salience_weight": 0.42660275614140203,
-          "weighted_contribution": 0.397660509249315,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.3183545941847633,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9096176470588234,
+          "score": 0.9946694915254238,
           "salience_weight": 0.11264230077890952,
-          "weighted_contribution": 0.10246142459380395,
+          "weighted_contribution": 0.11204186004001179,
           "direction": "Strong Alignment"
         }
       ]
     },
     {
       "name": "Tim Sheehy",
-      "overall_score": 0.8303435523676841,
-      "overall_label": "Strong Alignment",
+      "overall_score": 0.6534441836996555,
+      "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
           "issue_id": "immigration",
@@ -72,23 +72,23 @@
         },
         {
           "issue_id": "environment",
-          "score": 0.9685925925925926,
+          "score": 0.6744561403508771,
           "salience_weight": 0.09680421967111387,
-          "weighted_contribution": 0.09376385010514703,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.06529020036905792,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9970882352941177,
+          "score": 0.6882315010570824,
           "salience_weight": 0.44182438721687867,
-          "weighted_contribution": 0.4405378985599825,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.304077461217898,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.7178333333333334,
+          "score": 0.6152692307692308,
           "salience_weight": 0.11666149550108595,
-          "weighted_contribution": 0.08374351018719621,
+          "weighted_contribution": 0.07177822859734123,
           "direction": "Moderate Alignment"
         }
       ]

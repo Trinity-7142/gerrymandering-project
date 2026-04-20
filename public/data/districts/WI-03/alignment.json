@@ -1,8 +1,8 @@
 {
   "district_id": "WI-03",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7154160587072054,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5394863973075495,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.7880322580645162,
+      "score": 0.5103846153846154,
       "salience_weight": 0.13425287356321836,
-      "weighted_contribution": 0.10579559510567295,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.06852060123784261,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7511927083333332,
+      "score": 0.5598387096774192,
       "salience_weight": 0.7245977011494252,
-      "weighted_contribution": 0.5443125095785439,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.40565784204671845,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

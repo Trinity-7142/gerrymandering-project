@@ -1,8 +1,8 @@
 {
   "district_id": "WY-01",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.8142881109964034,
-  "overall_label": "Strong Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.7030322312835868,
+  "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.914916129032258,
+      "score": 0.7873846153846153,
       "salience_weight": 0.11047786058746166,
-      "weighted_contribution": 0.1010779765524459,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.08698856776717366,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.8239791666666667,
+      "score": 0.6885043988269793,
       "salience_weight": 0.71722928540114,
-      "weighted_contribution": 0.5909819888937602,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.49381551796621587,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "healthcare",

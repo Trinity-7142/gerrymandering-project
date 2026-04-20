@@ -1,8 +1,8 @@
 {
   "district_id": "OK-01",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7346176207405388,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5766589287929096,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8362817204301076,
+      "score": 0.6157179487179487,
       "salience_weight": 0.101423487544484,
-      "weighted_contribution": 0.08481860865572267,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.06244826170271011,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7635552083333332,
+      "score": 0.5816920821114369,
       "salience_weight": 0.7455516014234876,
-      "weighted_contribution": 0.5692698083481613,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.4336814633535446,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

@@ -1,11 +1,11 @@
 {
   "state_code": "MI",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-19",
   "senators": [
     {
       "name": "Elissa Slotkin",
-      "overall_score": 0.7376144368089217,
-      "overall_label": "Moderate Alignment",
+      "overall_score": 0.5906305443205057,
+      "overall_label": "Partial Alignment",
       "issue_scores": [
         {
           "issue_id": "guns",
@@ -30,31 +30,31 @@
         },
         {
           "issue_id": "environment",
-          "score": 0.8193053892215569,
+          "score": 0.589611374407583,
           "salience_weight": 0.08524173027989822,
-          "weighted_contribution": 0.06983900900489098,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.050259493747211274,
+          "direction": "Partial Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.8710879999999998,
+          "score": 0.6416297805642631,
           "salience_weight": 0.5229007633587786,
-          "weighted_contribution": 0.4554925801526716,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.33550870205077876,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.6104642857142857,
+          "score": 0.5316465517241379,
           "salience_weight": 0.09414758269720101,
-          "weighted_contribution": 0.05747373682297346,
-          "direction": "Moderate Alignment"
+          "weighted_contribution": 0.050053237694130025,
+          "direction": "Partial Alignment"
         }
       ]
     },
     {
       "name": "Gary Peters",
-      "overall_score": 0.8250281343250073,
-      "overall_label": "Strong Alignment",
+      "overall_score": 0.6971131586412167,
+      "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
           "issue_id": "guns",
@@ -72,30 +72,30 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.9898888888888888,
+          "score": 0.8648888888888888,
           "salience_weight": 0.08526187576126676,
-          "weighted_contribution": 0.08439978346190283,
+          "weighted_contribution": 0.07374204899174448,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "environment",
-          "score": 0.7693497942386832,
+          "score": 0.6081393728222997,
           "salience_weight": 0.08160779537149818,
-          "weighted_contribution": 0.06278494057733469,
+          "weighted_contribution": 0.04962891349463347,
           "direction": "Moderate Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9145191823899368,
+          "score": 0.7127723860589811,
           "salience_weight": 0.5006090133982948,
-          "weighted_contribution": 0.4578165456300414,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.356820280962535,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9693676470588235,
+          "score": 0.9349194915254238,
           "salience_weight": 0.09013398294762485,
-          "weighted_contribution": 0.08737296696997923,
+          "weighted_contribution": 0.08426801750655465,
           "direction": "Strong Alignment"
         }
       ]

@@ -1,8 +1,8 @@
 {
   "district_id": "IA-03",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7374688519917126,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5758611426191623,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8449086021505378,
+      "score": 0.6345512820512821,
       "salience_weight": 0.11287477954144622,
-      "weighted_contribution": 0.09536887220041344,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.07162483606928052,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7608677083333333,
+      "score": 0.576941348973607,
       "salience_weight": 0.7495590828924162,
-      "weighted_contribution": 0.5703153016607877,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.43245162841937035,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

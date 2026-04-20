@@ -1,8 +1,8 @@
 {
   "district_id": "CO-05",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.9115825223435948,
-  "overall_label": "Strong Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6039294574343232,
+  "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,17 +23,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.953,
+      "score": 0.6239999999999999,
       "salience_weight": 0.2025819265143992,
-      "weighted_contribution": 0.19306057596822243,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.1264111221449851,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.94636,
+      "score": 0.5996590909090908,
       "salience_weight": 0.6951340615690169,
-      "weighted_contribution": 0.6578470705064549,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.4168434594204206,
+      "direction": "Partial Alignment"
     }
   ],
   "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."

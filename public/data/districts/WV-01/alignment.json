@@ -1,8 +1,8 @@
 {
   "district_id": "WV-01",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7451236948461254,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5943456588484746,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8889591397849462,
+      "score": 0.7307179487179487,
       "salience_weight": 0.07413793103448275,
-      "weighted_contribution": 0.06590559139784946,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.054173916887709984,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7670041666666666,
+      "score": 0.5877888563049853,
       "salience_weight": 0.7758620689655173,
-      "weighted_contribution": 0.5950894396551725,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.4560430781676611,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

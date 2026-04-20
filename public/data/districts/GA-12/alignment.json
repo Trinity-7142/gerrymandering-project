@@ -1,8 +1,8 @@
 {
   "district_id": "GA-12",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6944190004998971,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5092137386135982,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,24 +23,24 @@
     },
     {
       "issue_id": "immigration",
-      "score": 0.4936000000000001,
+      "score": 0.49360000000000004,
       "salience_weight": 0.08067456700091158,
-      "weighted_contribution": 0.039820966271649966,
+      "weighted_contribution": 0.03982096627164996,
       "direction": "Partial Alignment"
     },
     {
       "issue_id": "environment",
-      "score": 0.7702440860215054,
+      "score": 0.47155128205128205,
       "salience_weight": 0.07292616226071104,
-      "weighted_contribution": 0.05617094519755737,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.03438842530911811,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7326489583333333,
+      "score": 0.5270586510263929,
       "salience_weight": 0.7948951686417502,
-      "weighted_contribution": 0.5823791172895777,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.41895637529171803,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

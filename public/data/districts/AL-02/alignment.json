@@ -1,8 +1,8 @@
 {
   "district_id": "AL-02",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.8861804267425321,
-  "overall_label": "Strong Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.48022939566360623,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,17 +23,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.9367500000000001,
+      "score": 0.494,
       "salience_weight": 0.07396870554765292,
-      "weighted_contribution": 0.06929018492176388,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.03654054054054054,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.9311900000000001,
+      "score": 0.4703693181818182,
       "salience_weight": 0.8098624940730204,
-      "weighted_contribution": 0.7541358558558559,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.3809344691581534,
+      "direction": "Partial Alignment"
     }
   ],
   "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."

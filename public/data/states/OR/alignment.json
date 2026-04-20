@@ -1,10 +1,10 @@
 {
   "state_code": "OR",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-19",
   "senators": [
     {
       "name": "Jeff Merkley",
-      "overall_score": 0.7873009417373367,
+      "overall_score": 0.644763398800482,
       "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
@@ -16,44 +16,44 @@
         },
         {
           "issue_id": "immigration",
-          "score": 0.4907999999999999,
+          "score": 0.49079999999999996,
           "salience_weight": 0.22097378277153557,
-          "weighted_contribution": 0.10845393258426964,
+          "weighted_contribution": 0.10845393258426965,
           "direction": "Partial Alignment"
         },
         {
           "issue_id": "abortion",
-          "score": 0.9146666666666666,
+          "score": 0.7896666666666666,
           "salience_weight": 0.08052434456928839,
-          "weighted_contribution": 0.07365293383270911,
-          "direction": "Strong Alignment"
-        },
-        {
-          "issue_id": "environment",
-          "score": 0.7260555555555556,
-          "salience_weight": 0.12983770287141072,
-          "weighted_contribution": 0.09426938549035926,
+          "weighted_contribution": 0.06358739076154807,
           "direction": "Moderate Alignment"
         },
         {
+          "issue_id": "environment",
+          "score": 0.541972706155633,
+          "salience_weight": 0.12983770287141072,
+          "weighted_contribution": 0.07036849118624947,
+          "direction": "Partial Alignment"
+        },
+        {
           "issue_id": "economy",
-          "score": 0.8861811320754712,
+          "score": 0.6589747989276136,
           "salience_weight": 0.41947565543071164,
-          "weighted_contribution": 0.3717314112076883,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.2764238856924821,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9851323529411765,
+          "score": 0.8894194915254238,
           "salience_weight": 0.13857677902621723,
-          "weighted_contribution": 0.13651646838510686,
+          "weighted_contribution": 0.12325288833872915,
           "direction": "Strong Alignment"
         }
       ]
     },
     {
       "name": "Ron Wyden",
-      "overall_score": 0.7873009417373367,
+      "overall_score": 0.644763398800482,
       "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
@@ -65,37 +65,37 @@
         },
         {
           "issue_id": "immigration",
-          "score": 0.4907999999999999,
+          "score": 0.49079999999999996,
           "salience_weight": 0.22097378277153557,
-          "weighted_contribution": 0.10845393258426964,
+          "weighted_contribution": 0.10845393258426965,
           "direction": "Partial Alignment"
         },
         {
           "issue_id": "abortion",
-          "score": 0.9146666666666666,
+          "score": 0.7896666666666666,
           "salience_weight": 0.08052434456928839,
-          "weighted_contribution": 0.07365293383270911,
-          "direction": "Strong Alignment"
-        },
-        {
-          "issue_id": "environment",
-          "score": 0.7260555555555556,
-          "salience_weight": 0.12983770287141072,
-          "weighted_contribution": 0.09426938549035926,
+          "weighted_contribution": 0.06358739076154807,
           "direction": "Moderate Alignment"
         },
         {
+          "issue_id": "environment",
+          "score": 0.541972706155633,
+          "salience_weight": 0.12983770287141072,
+          "weighted_contribution": 0.07036849118624947,
+          "direction": "Partial Alignment"
+        },
+        {
           "issue_id": "economy",
-          "score": 0.8861811320754712,
+          "score": 0.6589747989276136,
           "salience_weight": 0.41947565543071164,
-          "weighted_contribution": 0.3717314112076883,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.2764238856924821,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9851323529411765,
+          "score": 0.8894194915254238,
           "salience_weight": 0.13857677902621723,
-          "weighted_contribution": 0.13651646838510686,
+          "weighted_contribution": 0.12325288833872915,
           "direction": "Strong Alignment"
         }
       ]

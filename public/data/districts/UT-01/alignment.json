@@ -1,8 +1,8 @@
 {
   "district_id": "UT-01",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7420764490121695,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5828993175708307,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8320827956989247,
+      "score": 0.606551282051282,
       "salience_weight": 0.11009174311926605,
-      "weighted_contribution": 0.09160544539804676,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.06677628793225122,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7698708333333333,
+      "score": 0.5928563049853371,
       "salience_weight": 0.7589658048373644,
-      "weighted_contribution": 0.5843056366416457,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.4499576626661024,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

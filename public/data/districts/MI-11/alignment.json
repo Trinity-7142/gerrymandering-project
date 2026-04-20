@@ -1,8 +1,8 @@
 {
   "district_id": "MI-11",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6888268496719601,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.49885726924982327,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,24 +23,24 @@
     },
     {
       "issue_id": "immigration",
-      "score": 0.44639999999999985,
+      "score": 0.4463999999999999,
       "salience_weight": 0.08703535811423391,
       "weighted_contribution": 0.03885258386219401,
       "direction": "Partial Alignment"
     },
     {
       "issue_id": "environment",
-      "score": 0.7668086021505377,
+      "score": 0.46405128205128204,
       "salience_weight": 0.1214868540344515,
-      "weighted_contribution": 0.09315716472182417,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.05637613036706419,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.73269375,
+      "score": 0.5271378299120235,
       "salience_weight": 0.7452402538531278,
-      "weighted_contribution": 0.5460328762466001,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.39284433017922327,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

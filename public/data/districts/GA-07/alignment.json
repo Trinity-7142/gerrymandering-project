@@ -1,7 +1,7 @@
 {
   "district_id": "GA-07",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7547340812185727,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6103446677627662,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8276548387096775,
+      "score": 0.5968846153846153,
       "salience_weight": 0.07292616226071104,
-      "weighted_contribution": 0.060357691063604564,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.04352850431246056,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.791415625,
+      "score": 0.630941348973607,
       "salience_weight": 0.7948951686417502,
-      "weighted_contribution": 0.6290924567000912,
+      "weighted_contribution": 0.5015322299954287,
       "direction": "Moderate Alignment"
     },
     {

@@ -1,8 +1,8 @@
 {
   "district_id": "VA-07",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.9032095024154588,
-  "overall_label": "Strong Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.527521379007466,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,17 +23,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.9443125000000001,
+      "score": 0.5545,
       "salience_weight": 0.1294685990338164,
-      "weighted_contribution": 0.12225881642512078,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.0717903381642512,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.93707,
+      "score": 0.5204829545454546,
       "salience_weight": 0.7806763285024154,
-      "weighted_contribution": 0.7315483671497583,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.40632872200263503,
+      "direction": "Partial Alignment"
     }
   ],
   "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."

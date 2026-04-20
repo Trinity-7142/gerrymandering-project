@@ -1,7 +1,7 @@
 {
   "district_id": "GA-14",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7805440271050638,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6474941454549704,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8730795698924732,
+      "score": 0.6960512820512821,
       "salience_weight": 0.07292616226071104,
-      "weighted_contribution": 0.0636703423804903,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.05076034873664774,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.8055392857142857,
+      "score": 0.6544,
       "salience_weight": 0.7948951686417502,
-      "weighted_contribution": 0.6403192863654121,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.5201793983591614,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "healthcare",

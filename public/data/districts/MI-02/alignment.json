@@ -1,7 +1,7 @@
 {
   "district_id": "MI-02",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7598434863008022,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6106014938784687,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.828189247311828,
+      "score": 0.598051282051282,
       "salience_weight": 0.1214868540344515,
-      "weighted_contribution": 0.1006141062010743,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.07265536880768068,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.788459375,
+      "score": 0.6257155425219942,
       "salience_weight": 0.7452402538531278,
-      "weighted_contribution": 0.5875916647778784,
+      "weighted_contribution": 0.46630840974893856,
       "direction": "Moderate Alignment"
     },
     {

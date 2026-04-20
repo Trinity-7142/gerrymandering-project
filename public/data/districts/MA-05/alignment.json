@@ -1,8 +1,8 @@
 {
   "district_id": "MA-05",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6167777174756607,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.40087034763595397,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.6869526881720431,
+      "score": 0.28971794871794865,
       "salience_weight": 0.1791936286709806,
-      "weighted_contribution": 0.12309754491883303,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.05191561052188229,
+      "direction": "Low Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7045645833333333,
+      "score": 0.4774134897360703,
       "salience_weight": 0.6371329019412644,
-      "weighted_contribution": 0.4489012775842044,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.3041758421414485,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

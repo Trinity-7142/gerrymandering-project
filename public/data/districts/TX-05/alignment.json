@@ -1,8 +1,8 @@
 {
   "district_id": "TX-05",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.8122994830248058,
-  "overall_label": "Strong Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.702031091260525,
+  "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.9102591397849462,
+      "score": 0.7772179487179487,
       "salience_weight": 0.08651633686148182,
-      "weighted_contribution": 0.07875228636887707,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.06724204986607195,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.8312354166666666,
+      "score": 0.7013313782991202,
       "salience_weight": 0.7602393005062126,
-      "weighted_contribution": 0.6319378317226567,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.533179676461181,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "healthcare",

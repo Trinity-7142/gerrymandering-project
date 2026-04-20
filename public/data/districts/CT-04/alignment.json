@@ -1,8 +1,8 @@
 {
   "district_id": "CT-04",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6682837949006346,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.466153152050353,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.7240559139784947,
+      "score": 0.3707179487179487,
       "salience_weight": 0.14990512333965844,
-      "weighted_contribution": 0.10853969108975536,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.05557251982678928,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7259302083333333,
+      "score": 0.515181818181818,
       "salience_weight": 0.7077798861480076,
-      "weighted_contribution": 0.5137988002055661,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.36463532861825065,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

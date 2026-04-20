@@ -1,10 +1,10 @@
 {
   "state_code": "NY",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-19",
   "senators": [
     {
       "name": "Kirsten Gillibrand",
-      "overall_score": 0.7595210325355402,
+      "overall_score": 0.6256229324322885,
       "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
@@ -16,44 +16,44 @@
         },
         {
           "issue_id": "immigration",
-          "score": 0.4938,
+          "score": 0.49380000000000007,
           "salience_weight": 0.28285437520180823,
           "weighted_contribution": 0.1396734904746529,
           "direction": "Partial Alignment"
         },
         {
           "issue_id": "abortion",
-          "score": 0.908111111111111,
+          "score": 0.783111111111111,
           "salience_weight": 0.07426541814659349,
-          "weighted_contribution": 0.06744125139023427,
-          "direction": "Strong Alignment"
-        },
-        {
-          "issue_id": "environment",
-          "score": 0.6946481481481482,
-          "salience_weight": 0.09557636422344204,
-          "weighted_contribution": 0.06639194441454695,
+          "weighted_contribution": 0.05815807412191009,
           "direction": "Moderate Alignment"
         },
         {
+          "issue_id": "environment",
+          "score": 0.49397270615563305,
+          "salience_weight": 0.09557636422344204,
+          "weighted_contribution": 0.047212115279970095,
+          "direction": "Partial Alignment"
+        },
+        {
           "issue_id": "economy",
-          "score": 0.8892264150943392,
+          "score": 0.6647560321715816,
           "salience_weight": 0.42234420406845335,
-          "weighted_contribution": 0.3755596225196628,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.2807558573072098,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9741323529411765,
+          "score": 0.8784194915254238,
           "salience_weight": 0.11107523409751371,
-          "weighted_contribution": 0.10820197914490304,
+          "weighted_contribution": 0.0975706506570054,
           "direction": "Strong Alignment"
         }
       ]
     },
     {
-      "name": "Chuck Schumer",
-      "overall_score": 0.7595210325355402,
+      "name": "Charles Schumer",
+      "overall_score": 0.6256229324322885,
       "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
@@ -65,37 +65,37 @@
         },
         {
           "issue_id": "immigration",
-          "score": 0.4938,
+          "score": 0.49380000000000007,
           "salience_weight": 0.28285437520180823,
           "weighted_contribution": 0.1396734904746529,
           "direction": "Partial Alignment"
         },
         {
           "issue_id": "abortion",
-          "score": 0.908111111111111,
+          "score": 0.783111111111111,
           "salience_weight": 0.07426541814659349,
-          "weighted_contribution": 0.06744125139023427,
-          "direction": "Strong Alignment"
-        },
-        {
-          "issue_id": "environment",
-          "score": 0.6946481481481482,
-          "salience_weight": 0.09557636422344204,
-          "weighted_contribution": 0.06639194441454695,
+          "weighted_contribution": 0.05815807412191009,
           "direction": "Moderate Alignment"
         },
         {
+          "issue_id": "environment",
+          "score": 0.49397270615563305,
+          "salience_weight": 0.09557636422344204,
+          "weighted_contribution": 0.047212115279970095,
+          "direction": "Partial Alignment"
+        },
+        {
           "issue_id": "economy",
-          "score": 0.8892264150943392,
+          "score": 0.6647560321715816,
           "salience_weight": 0.42234420406845335,
-          "weighted_contribution": 0.3755596225196628,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.2807558573072098,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9741323529411765,
+          "score": 0.8784194915254238,
           "salience_weight": 0.11107523409751371,
-          "weighted_contribution": 0.10820197914490304,
+          "weighted_contribution": 0.0975706506570054,
           "direction": "Strong Alignment"
         }
       ]

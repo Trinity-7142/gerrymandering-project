@@ -1,8 +1,8 @@
 {
   "district_id": "ND-01",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.9091617021276597,
-  "overall_label": "Strong Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6037699134199135,
+  "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,17 +23,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.9603333333333335,
+      "score": 0.6826666666666668,
       "salience_weight": 0.0911854103343465,
-      "weighted_contribution": 0.08756838905775077,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.062249240121580555,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.94435,
+      "score": 0.5825284090909091,
       "salience_weight": 0.7740628166160082,
-      "weighted_contribution": 0.7309862208713274,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.4509135810997513,
+      "direction": "Partial Alignment"
     }
   ],
   "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."

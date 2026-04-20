@@ -1,8 +1,8 @@
 {
   "district_id": "FL-18",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7355957888174012,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5870237027552031,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8395645161290323,
+      "score": 0.6228846153846154,
       "salience_weight": 0.09515096065873742,
-      "weighted_contribution": 0.07988537024466547,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.05926806953339433,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.776096875,
+      "score": 0.6038621700879765,
       "salience_weight": 0.7429094236047576,
-      "weighted_contribution": 0.5765696820677036,
+      "weighted_contribution": 0.44861489671677673,
       "direction": "Moderate Alignment"
     },
     {

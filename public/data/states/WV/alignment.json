@@ -1,11 +1,11 @@
 {
   "state_code": "WV",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-19",
   "senators": [
     {
       "name": "Shelley Capito",
-      "overall_score": 0.8367748881730135,
-      "overall_label": "Strong Alignment",
+      "overall_score": 0.7300959908104702,
+      "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
           "issue_id": "guns",
@@ -23,38 +23,38 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.8880000000000001,
+          "score": 0.9869999999999999,
           "salience_weight": 0.052068267283772056,
-          "weighted_contribution": 0.046236621347989594,
+          "weighted_contribution": 0.05139137980908301,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "environment",
-          "score": 0.8556111111111111,
+          "score": 0.7399727061556329,
           "salience_weight": 0.049754122071159965,
-          "weighted_contribution": 0.042570179667663036,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.03681669235139395,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9231897798742135,
+          "score": 0.729232841823056,
           "salience_weight": 0.5206826728377206,
-          "weighted_contribution": 0.48068892212137243,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.37969890520147553,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9818676470588235,
+          "score": 0.9224194915254237,
           "salience_weight": 0.08562337286664738,
-          "weighted_contribution": 0.08407081964981537,
+          "weighted_contribution": 0.07898066806234463,
           "direction": "Strong Alignment"
         }
       ]
     },
     {
       "name": "Jim Justice",
-      "overall_score": 0.8807033898453265,
-      "overall_label": "Strong Alignment",
+      "overall_score": 0.6476970386467992,
+      "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
           "issue_id": "immigration",
@@ -72,24 +72,24 @@
         },
         {
           "issue_id": "environment",
-          "score": 0.9799629629629629,
+          "score": 0.7256228070175439,
           "salience_weight": 0.06039325842696629,
-          "weighted_contribution": 0.05918315647107781,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.04382272570471121,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9959638655462185,
+          "score": 0.6684657505285411,
           "salience_weight": 0.6320224719101124,
-          "weighted_contribution": 0.6294715442356719,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.42248537603629704,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.6455833333333334,
+          "score": 0.5430192307692308,
           "salience_weight": 0.10393258426966293,
-          "weighted_contribution": 0.06709714419475657,
-          "direction": "Moderate Alignment"
+          "weighted_contribution": 0.05643739196197062,
+          "direction": "Partial Alignment"
         }
       ]
     }

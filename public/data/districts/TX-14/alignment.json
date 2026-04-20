@@ -1,7 +1,7 @@
 {
   "district_id": "TX-14",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7703280706767809,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6379392692055258,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8994946236559139,
+      "score": 0.7537179487179486,
       "salience_weight": 0.08651633686148182,
-      "weighted_contribution": 0.07782097986530685,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.06520891594982711,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7952229166666666,
+      "score": 0.6376715542521993,
       "salience_weight": 0.7602393005062126,
-      "weighted_contribution": 0.6045597139131768,
+      "weighted_contribution": 0.4847829763574014,
       "direction": "Moderate Alignment"
     },
     {

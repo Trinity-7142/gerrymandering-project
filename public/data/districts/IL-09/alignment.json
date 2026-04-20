@@ -1,8 +1,8 @@
 {
   "district_id": "IL-09",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6058384804656868,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.37131919728727325,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.6851204301075269,
+      "score": 0.28571794871794864,
       "salience_weight": 0.1429270680372002,
-      "weighted_contribution": 0.09792225432765436,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.04083682869585953,
+      "direction": "Low Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.667925,
+      "score": 0.4126451612903226,
       "salience_weight": 0.6950562897699463,
-      "weighted_contribution": 0.46424547234459135,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.2868116147979727,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

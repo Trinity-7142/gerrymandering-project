@@ -1,7 +1,7 @@
 {
   "district_id": "KY-04",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7793517565329542,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6464952133672875,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8820881720430108,
+      "score": 0.7157179487179487,
       "salience_weight": 0.06724216265333939,
-      "weighted_contribution": 0.05931351633910295,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.04812642272160673,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7976416666666666,
+      "score": 0.6419472140762462,
       "salience_weight": 0.781462971376647,
-      "weighted_contribution": 0.6233274269271543,
+      "weighted_contribution": 0.5016579773789839,
       "direction": "Moderate Alignment"
     },
     {

@@ -1,7 +1,7 @@
 {
   "district_id": "TN-07",
-  "last_updated": "2026-04-05",
-  "overall_score": 1.0,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.8538214285714285,
   "overall_label": "Strong Alignment",
   "score_range": {
     "min": 0,
@@ -16,9 +16,9 @@
   "issue_scores": [
     {
       "issue_id": "economy",
-      "score": 1.0,
+      "score": 0.8538214285714285,
       "salience_weight": 1.0,
-      "weighted_contribution": 1.0,
+      "weighted_contribution": 0.8538214285714285,
       "direction": "Strong Alignment"
     }
   ],

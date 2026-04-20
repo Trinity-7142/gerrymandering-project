@@ -1,11 +1,11 @@
 {
   "state_code": "NJ",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-19",
   "senators": [
     {
       "name": "Andy Kim",
-      "overall_score": 0.711911785988544,
-      "overall_label": "Moderate Alignment",
+      "overall_score": 0.5731395255079238,
+      "overall_label": "Partial Alignment",
       "issue_scores": [
         {
           "issue_id": "guns",
@@ -30,30 +30,30 @@
         },
         {
           "issue_id": "environment",
-          "score": 0.7862544910179641,
+          "score": 0.5231113744075828,
           "salience_weight": 0.08240680183126227,
-          "weighted_contribution": 0.06479271803025735,
-          "direction": "Moderate Alignment"
+          "weighted_contribution": 0.04310793536648492,
+          "direction": "Partial Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.8839832402234635,
+          "score": 0.6588838461538461,
           "salience_weight": 0.4839764551994768,
-          "weighted_contribution": 0.42782707505909945,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.31888426824973587,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.5789642857142857,
+          "score": 0.5001465517241379,
           "salience_weight": 0.10333551340745586,
-          "weighted_contribution": 0.05982757170886668,
+          "weighted_contribution": 0.05168290070138247,
           "direction": "Partial Alignment"
         }
       ]
     },
     {
       "name": "Cory Booker",
-      "overall_score": 0.7957168814178663,
+      "overall_score": 0.669070609478586,
       "overall_label": "Moderate Alignment",
       "issue_scores": [
         {
@@ -72,30 +72,30 @@
         },
         {
           "issue_id": "abortion",
-          "score": 0.932,
+          "score": 0.8069999999999999,
           "salience_weight": 0.07491344035253383,
-          "weighted_contribution": 0.06981932640856153,
+          "weighted_contribution": 0.0604551463644948,
           "direction": "Strong Alignment"
         },
         {
           "issue_id": "environment",
-          "score": 0.7258374485596707,
+          "score": 0.5416393728222996,
           "salience_weight": 0.07932011331444759,
-          "weighted_contribution": 0.057573508667622605,
-          "direction": "Moderate Alignment"
+          "weighted_contribution": 0.042962896427831125,
+          "direction": "Partial Alignment"
         },
         {
           "issue_id": "economy",
-          "score": 0.9165070754716977,
+          "score": 0.7165462466487933,
           "salience_weight": 0.4658482845451684,
-          "weighted_contribution": 0.4269532488819996,
-          "direction": "Strong Alignment"
+          "weighted_contribution": 0.3338018397986195,
+          "direction": "Moderate Alignment"
         },
         {
           "issue_id": "healthcare",
-          "score": 0.9991323529411765,
+          "score": 0.9034194915254238,
           "salience_weight": 0.0994649039974819,
-          "weighted_contribution": 0.09937860356607232,
+          "weighted_contribution": 0.08985853299403018,
           "direction": "Strong Alignment"
         }
       ]

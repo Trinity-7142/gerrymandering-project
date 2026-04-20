@@ -1,8 +1,8 @@
 {
   "district_id": "OR-04",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6614880282090215,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.4486775873685258,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,24 +23,24 @@
     },
     {
       "issue_id": "immigration",
-      "score": 0.45759999999999995,
+      "score": 0.4576,
       "salience_weight": 0.08501440922190202,
       "weighted_contribution": 0.038902593659942364,
       "direction": "Partial Alignment"
     },
     {
       "issue_id": "environment",
-      "score": 0.7325301075268819,
+      "score": 0.3892179487179487,
       "salience_weight": 0.19980787704130645,
-      "weighted_contribution": 0.1463652856537862,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.07776881203970541,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7094468749999999,
+      "score": 0.4860439882697946,
       "salience_weight": 0.6455331412103748,
-      "weighted_contribution": 0.457971469740634,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.3137575025142191,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

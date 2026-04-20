@@ -1,8 +1,8 @@
 {
   "district_id": "NC-05",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7197658798111891,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5499832709858599,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.813378494623656,
+      "score": 0.5657179487179487,
       "salience_weight": 0.09689213893967094,
-      "weighted_contribution": 0.07880998211161566,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.05481362208784512,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7525364583333333,
+      "score": 0.5622140762463342,
       "salience_weight": 0.7659963436928703,
-      "weighted_contribution": 0.5764401755789154,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.43065392677735664,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

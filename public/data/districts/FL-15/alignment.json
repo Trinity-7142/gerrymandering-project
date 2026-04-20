@@ -1,8 +1,8 @@
 {
   "district_id": "FL-15",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6988459263003078,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5286532777007152,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.7986440860215054,
+      "score": 0.533551282051282,
       "salience_weight": 0.09515096065873742,
-      "weighted_contribution": 0.07599175200936556,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.050767917047880445,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7462656249999998,
+      "score": 0.5511290322580644,
       "salience_weight": 0.7429094236047576,
-      "weighted_contribution": 0.5544077653247941,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.40943895168668654,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

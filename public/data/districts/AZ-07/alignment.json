@@ -1,8 +1,8 @@
 {
   "district_id": "AZ-07",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.9803057395143487,
-  "overall_label": "Strong Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.7701425977355266,
+  "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -16,16 +16,16 @@
   "issue_scores": [
     {
       "issue_id": "environment",
-      "score": 0.858388888888889,
+      "score": 0.5751666666666666,
       "salience_weight": 0.1390728476821192,
-      "weighted_contribution": 0.11937858719646799,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.07999006622516555,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 1.0,
+      "score": 0.8016387096774193,
       "salience_weight": 0.8609271523178808,
-      "weighted_contribution": 0.8609271523178808,
+      "weighted_contribution": 0.690152531510361,
       "direction": "Strong Alignment"
     }
   ],

@@ -175,7 +175,7 @@ fieldnames = [
     "Roll Call Num", "Chamber", "Category", "Vote Type", "Result", "Date", "Question",
 ]
 
-with open(OUTPUT_CSV, "w", newline="") as f:
+with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
     writer = csv.DictWriter(f, fieldnames=fieldnames)
     writer.writeheader()
     writer.writerows(output_rows)

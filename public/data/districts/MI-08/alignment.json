@@ -1,8 +1,8 @@
 {
   "district_id": "MI-08",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.8935253010139417,
-  "overall_label": "Strong Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.48671925697084917,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,17 +23,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.9307083333333335,
+      "score": 0.44566666666666666,
       "salience_weight": 0.12737642585551331,
-      "weighted_contribution": 0.11855030101394172,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.05676742712294043,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.93375,
+      "score": 0.49218750000000006,
       "salience_weight": 0.7813688212927756,
-      "weighted_contribution": 0.7296031368821292,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.384579966730038,
+      "direction": "Partial Alignment"
     }
   ],
   "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."

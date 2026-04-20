@@ -1,8 +1,8 @@
 {
   "district_id": "RI-02",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.6863849294277021,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.5009458253990826,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.7867344086021506,
+      "score": 0.507551282051282,
       "salience_weight": 0.174154701250579,
-      "weighted_contribution": 0.1370134958936585,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.08839244189498938,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7317531250000001,
+      "score": 0.5254750733137831,
       "salience_weight": 0.6632700324224178,
-      "weighted_contribution": 0.4853499189439556,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.3485318689140052,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",

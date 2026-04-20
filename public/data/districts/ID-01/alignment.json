@@ -1,7 +1,7 @@
 {
   "district_id": "ID-01",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7925630379292936,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6717007333621899,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,17 +30,17 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8804849462365592,
+      "score": 0.7122179487179486,
       "salience_weight": 0.08073716542343133,
-      "weighted_contribution": 0.07108785875714212,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.05750245834317795,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.8178427083333333,
+      "score": 0.677656891495601,
       "salience_weight": 0.765247915752523,
-      "weighted_contribution": 0.6258524279654819,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.5185755238123424,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "healthcare",

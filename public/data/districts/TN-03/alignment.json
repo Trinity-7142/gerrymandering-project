@@ -1,7 +1,7 @@
 {
   "district_id": "TN-03",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.7564593601949364,
+  "last_updated": "2026-04-19",
+  "overall_score": 0.6172356253707365,
   "overall_label": "Moderate Alignment",
   "score_range": {
     "min": 0,
@@ -30,16 +30,16 @@
     },
     {
       "issue_id": "environment",
-      "score": 0.8611698924731184,
+      "score": 0.6700512820512821,
       "salience_weight": 0.05612722170252572,
-      "weighted_contribution": 0.048335073478378954,
-      "direction": "Strong Alignment"
+      "weighted_contribution": 0.037608116859753904,
+      "direction": "Moderate Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7859062499999999,
+      "score": 0.6212023460410556,
       "salience_weight": 0.7801683816651076,
-      "weighted_contribution": 0.6131392072029934,
+      "weighted_contribution": 0.48464242899741855,
       "direction": "Moderate Alignment"
     },
     {

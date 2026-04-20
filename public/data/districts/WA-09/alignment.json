@@ -1,8 +1,8 @@
 {
   "district_id": "WA-09",
-  "last_updated": "2026-04-05",
-  "overall_score": 0.677377443963045,
-  "overall_label": "Moderate Alignment",
+  "last_updated": "2026-04-19",
+  "overall_score": 0.46618389705425634,
+  "overall_label": "Partial Alignment",
   "score_range": {
     "min": 0,
     "max": 1
@@ -23,24 +23,24 @@
     },
     {
       "issue_id": "immigration",
-      "score": 0.48199999999999993,
+      "score": 0.482,
       "salience_weight": 0.0691975012013455,
-      "weighted_contribution": 0.03335319557904853,
+      "weighted_contribution": 0.033353195579048533,
       "direction": "Partial Alignment"
     },
     {
       "issue_id": "environment",
-      "score": 0.7303924731182797,
+      "score": 0.3845512820512821,
       "salience_weight": 0.20759250360403653,
-      "weighted_contribution": 0.15162400210816762,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.07982996340516764,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "economy",
-      "score": 0.7250343749999999,
+      "score": 0.5135982404692081,
       "salience_weight": 0.6592984142239309,
-      "weighted_contribution": 0.47801401369533875,
-      "direction": "Moderate Alignment"
+      "weighted_contribution": 0.33861450548955,
+      "direction": "Partial Alignment"
     },
     {
       "issue_id": "healthcare",
