@@ -2,7 +2,7 @@
 
 import Markdown from "@/components/shared/Markdown";
 import { loadContent } from "@/lib/loadData";
-import { fonts, textColors } from "@/lib/constants";
+import { fonts, textColors, pageWidths } from "@/lib/constants";
 
 export const metadata = { title: "Legal — Gerrymandering Project" };
 
@@ -39,7 +39,7 @@ const styles = {
     marginBottom: "32px",
   },
   body: {
-    maxWidth: "720px",
+    maxWidth: pageWidths.legal,
     width: "100%",
   },
 };

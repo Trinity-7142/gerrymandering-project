@@ -10,10 +10,30 @@ import { fonts, textColors, pageWidths } from "@/lib/constants";
 
 export const metadata = { title: "Methodology — Gerrymandering Project" };
 
+const SECTION_FILES = [
+  "methodology-intro.md",
+  "research-design.md",
+  "data-sources.md",
+  "data-analysis-procedures.md",
+  "ethical-considerations.md",
+  "limitations.md",
+  "conclusion.md",
+];
+
 export default function MethodologyPage() {
-  const { body, meta } = loadContentWithMeta("methodology", "methodology.md");
+  const sections = SECTION_FILES.map((file) =>
+    loadContentWithMeta("methodology", file)
+  );
+
+  // Page features and meta come from methodology-intro.md
+  const { meta } = sections[0];
   const features = resolveFeatures(meta);
-  const headings = features.tableOfContents && body ? extractHeadings(body) : [];
+
+  // Build ToC from all section bodies combined
+  const allBodies = sections.map((s) => s.body ?? "").join("\n\n");
+  const headings = features.tableOfContents && allBodies.trim()
+    ? extractHeadings(allBodies)
+    : [];
 
   return (
     <main style={styles.main}>
@@ -21,12 +41,12 @@ export default function MethodologyPage() {
 
       <PageMeta meta={meta} />
 
-      {body && (
-        <div style={styles.body}>
-          {headings.length > 0 && <TableOfContents headings={headings} />}
-          <Markdown>{body}</Markdown>
-        </div>
-      )}
+      <div style={styles.body}>
+        {headings.length > 0 && <TableOfContents headings={headings} />}
+        {sections.map((section, i) =>
+          section.body ? <Markdown key={i}>{section.body}</Markdown> : null
+        )}
+      </div>
     </main>
   );
 }

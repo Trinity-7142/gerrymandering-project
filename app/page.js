@@ -38,7 +38,7 @@ export default function HomePage() {
   return (
     <main
       style={{
-        width: "min(100%, 1000px)",
+        width: `min(100%, ${pageWidths.home})`,
         margin: "0 auto",
         padding: "10px clamp(22px, 5vw, 86px) 56px",
       }}
@@ -89,7 +89,7 @@ export default function HomePage() {
 
         <Markdown
           style={{
-            width: "min(100%, 830px)",
+            width: `min(100%, ${pageWidths.homeIntro})`,
             margin: "0 auto",
             textAlign: "left",
           }}

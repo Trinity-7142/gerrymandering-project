@@ -6,7 +6,7 @@ import TableOfContents from "@/components/shared/TableOfContents";
 import { loadContentWithMeta } from "@/lib/loadData";
 import { resolveFeatures } from "@/lib/contentPageFeatures";
 import { extractHeadings } from "@/lib/slugify";
-import { fonts, textColors } from "@/lib/constants";
+import { fonts, textColors, pageWidths } from "@/lib/constants";
 
 export const metadata = { title: "Case Studies — Gerrymandering Project" };
 
@@ -49,7 +49,7 @@ const styles = {
     marginBottom: "12px",
   },
   body: {
-    maxWidth: "720px",
+    maxWidth: pageWidths.caseStudies,
     width: "100%",
   },
 };

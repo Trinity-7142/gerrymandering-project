@@ -2,10 +2,10 @@
 section: methodology
 date_created: 2026-04-20
 last_edited: 2026-04-20
-author(s): Full Team
+author(s): Trinity Jones
 table_of_contents: True
 ---
-
+`ToDo`: update page with structured methodology page!
 # TL:DR - Alignment Score Methodology
 
 The alignment score measures how closely a member of Congress's voting record matches their constituents' policy preferences on a 0–1 scale. For each of nine issue areas, the script computes two directional averages:
