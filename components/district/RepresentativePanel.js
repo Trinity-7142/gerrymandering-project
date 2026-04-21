@@ -6,7 +6,7 @@ import PoliticianPanel from "@/components/shared/PoliticianPanel";
 import { loadRepBioWithSources } from "@/lib/loadData";
 import { fonts, textColors } from "@/lib/constants";
 
-export default function RepresentativePanel({ overview, repData, alignmentData }) {
+export default function RepresentativePanel({ overview, repData, alignmentData, dirDistrictId }) {
   const rep = overview?.representative;
 
   if (!rep?.name) {
@@ -17,11 +17,7 @@ export default function RepresentativePanel({ overview, repData, alignmentData }
     );
   }
 
-  const districtId = overview.district_id;
-  const districtNum = districtId?.split("-")[1] ?? "0";
-  const stateCode = overview.state_code ?? districtId?.split("-")[0];
-
-  const { body: bio, sources } = loadRepBioWithSources(stateCode, districtNum, rep.name);
+  const { body: bio, sources } = loadRepBioWithSources(dirDistrictId);
 
   const politician = {
     name: rep.name,

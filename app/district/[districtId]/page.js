@@ -48,6 +48,7 @@ export default async function DistrictPage({ params }) {
           overview={overview}
           repData={repData}
           alignmentData={alignment}
+          dirDistrictId={districtId}
         />
 
       </div>

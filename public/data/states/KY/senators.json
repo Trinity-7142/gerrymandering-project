@@ -4,7 +4,7 @@
   "congress": [
     118
   ],
-  "last_updated": "2026-04-19",
+  "last_updated": "2026-04-20",
   "ces_state_sample": {
     "n_respondents": 4900,
     "weight_variable": "vvweight_post",
@@ -39,6 +39,15 @@
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00109",
               "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "H.R. 2872",
+              "title": "Further Additional Continuing Appropriations and Other Extensions Act, 2024",
+              "date": "2024-01-18",
+              "vote": "nay",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00012",
+              "status": "Became Law"
             },
             {
               "bill": "H.J.Res. 98",
@@ -231,9 +240,9 @@
             }
           ],
           "summary": {
-            "total_votes": 23,
+            "total_votes": 24,
             "conservative": 11,
-            "liberal": 4,
+            "liberal": 5,
             "bipartisan": 7,
             "absent": 1
           }
@@ -509,7 +518,7 @@
         }
       ],
       "overall_voting_stats": {
-        "total_tracked_votes": 45,
+        "total_tracked_votes": 46,
         "attendance_rate": 0.95
       }
     },
@@ -541,6 +550,15 @@
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00109",
               "status": "Failed to pass over veto"
+            },
+            {
+              "bill": "H.R. 2872",
+              "title": "Further Additional Continuing Appropriations and Other Extensions Act, 2024",
+              "date": "2024-01-18",
+              "vote": "nay",
+              "bill_direction": "liberal",
+              "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00012",
+              "status": "Became Law"
             },
             {
               "bill": "H.J.Res. 98",
@@ -733,9 +751,9 @@
             }
           ],
           "summary": {
-            "total_votes": 23,
+            "total_votes": 24,
             "conservative": 10,
-            "liberal": 5,
+            "liberal": 6,
             "bipartisan": 6,
             "absent": 2
           }
@@ -1013,7 +1031,7 @@
         }
       ],
       "overall_voting_stats": {
-        "total_tracked_votes": 45,
+        "total_tracked_votes": 46,
         "attendance_rate": 0.96
       }
     }

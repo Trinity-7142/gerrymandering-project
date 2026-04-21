@@ -59,6 +59,18 @@ REP_OUT        = PROJECT_ROOT / "public" / "content" / "rep-info"
 
 CLAUDE_MODEL = "claude-sonnet-4-6"
 WEB_SEARCH_MAX_USES = 5   # ~$0.01 per search -> $0.05 cap per politician.
+
+# Pricing — update if Anthropic changes rates.
+_COST_INPUT_PER_MTOK  = 3.00   # USD per million input tokens  (Sonnet 4.6)
+_COST_OUTPUT_PER_MTOK = 15.00  # USD per million output tokens (Sonnet 4.6)
+_COST_PER_WEB_SEARCH  = 0.01   # USD per web_search tool use
+
+# Accumulated across the whole run; updated in generate_summary().
+_run_stats: dict[str, int] = {
+    "input_tokens":  0,
+    "output_tokens": 0,
+    "web_searches":  0,
+}
                           # Lower this if Tier 1 ITPM (30K/min) is getting saturated —
                           # each search pulls web content that counts as input tokens.
 
@@ -509,6 +521,14 @@ def generate_summary(name: str, title: str, state: str, district: str | None) ->
     msg = _call_with_retry(call, f"Claude summary: {name}")
     time.sleep(CLAUDE_DELAY)
 
+    # Accumulate usage for end-of-run cost report.
+    _run_stats["input_tokens"]  += msg.usage.input_tokens
+    _run_stats["output_tokens"] += msg.usage.output_tokens
+    _run_stats["web_searches"]  += sum(
+        1 for b in msg.content
+        if b.type == "server_tool_use" and getattr(b, "name", None) == "web_search"
+    )
+
     summary_md = _extract_text(msg)
 
     # Inject the sources list into Claude's frontmatter. Dedup by domain label
@@ -675,6 +695,21 @@ def all_state_codes() -> list[str]:
     return sorted(d.name for d in DATA_STATES.iterdir() if d.is_dir())
 
 
+def _print_cost_summary():
+    input_cost  = _run_stats["input_tokens"]  / 1_000_000 * _COST_INPUT_PER_MTOK
+    output_cost = _run_stats["output_tokens"] / 1_000_000 * _COST_OUTPUT_PER_MTOK
+    search_cost = _run_stats["web_searches"]  * _COST_PER_WEB_SEARCH
+    total       = input_cost + output_cost + search_cost
+    print(f"\n{'='*60}")
+    print(f"Run cost estimate ({CLAUDE_MODEL})")
+    print(f"{'='*60}")
+    print(f"  Input tokens:  {_run_stats['input_tokens']:>10,}  →  ${input_cost:.4f}")
+    print(f"  Output tokens: {_run_stats['output_tokens']:>10,}  →  ${output_cost:.4f}")
+    print(f"  Web searches:  {_run_stats['web_searches']:>10,}  →  ${search_cost:.4f}")
+    print(f"  {'─'*38}")
+    print(f"  Total:                         ${total:.4f}")
+
+
 def main():
     args = parse_args()
 
@@ -690,6 +725,7 @@ def main():
             reps_only=args.reps_only,
         )
 
+    _print_cost_summary()
     print("\nDone.")
 
 
