@@ -7,6 +7,8 @@ sources:
     url: "https://redistricting.lls.edu/state/oregon/"
   - name: thearp.org
     url: "https://thearp.org/state/oregon/"
+  - name: oregonlegislature.gov
+    url: "https://www.oregonlegislature.gov/citizen_engagement/Reports/Redistricting.pdf"
 ---
 
 
