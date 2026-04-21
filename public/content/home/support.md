@@ -1,9 +1,15 @@
 ---
 section: right-column
-author: Claude Opus 4.6
-last_edited: 2026-03-22
+author: Ha-eun Lee
+last_edited: 2026-04-20
 ---
 
-**Generated Placeholder Content**: File name: `support.md` A useful civic tool should do more than inform. It should help people move from confusion to clarity. That means making methods transparent, showing where measurements come from, and presenting findings in ways that are legible to non-experts without flattening the nuance out of the research.
+## Democratic Harms
 
-Visitors should be able to move from broad explanation into case studies, methodology, and district-level exploration with minimal friction. The visual system supports that goal by using soft but intentional emphasis, large editorial hierarchy, and a restrained set of symbolic graphics instead of noisy dashboards.
+Gerrymandering is a fundamental assault on democracy that harms not just specific groups, but the entire population. Gerrymandering rolls back the long history of effort to guarantee equal, valid voting rights for all people.
+
+### **One-person, One-vote at Danger**
+
+One-person, one-vote is an important principle in the democratic voting system to ensure political equality, explicitly established through the Supreme Court cases of the 1960s. It guarantees every eligible voter has one vote of equal power. But gerrymandering undermines this by diluting certain voters’ power.
+
+The 2018 state legislative election results of North Carolina is one example. Democrats won majorities in both the state house and state senate in terms of raw votes, yet Republicans still managed to keep control of the legislature. Election outcomes were not determined by how people voted, but by how the state legislature drew the districts.

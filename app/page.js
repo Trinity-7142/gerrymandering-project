@@ -12,12 +12,27 @@ import { loadContent } from "@/lib/loadContent";
 import { loadAllStateAlignments } from "@/lib/loadData";
 import { colors, pageWidths } from "@/lib/constants";
 
+function formatDate(val) {
+  if (!val) return null;
+  const d = new Date(val);
+  if (isNaN(d.getTime())) return String(val);
+  return d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
+}
+
 export default function HomePage() {
   // ── Load content from markdown files at build time ──
   const intro            = loadContent("home/intro.md");
+  const { date_created, last_edited } = intro.metadata ?? {};
+  const authors   = intro.metadata?.["author(s)"];
+  const authorList  = Array.isArray(authors) ? authors.join(", ") : (authors || null);
+  const authorLabel = Array.isArray(authors) && authors.length > 1 ? "Authors" : (authorList?.includes(",") ? "Authors" : "Author");
+  const dateCreated = formatDate(date_created);
+  const lastEdited  = formatDate(last_edited);
+  const hasMeta     = authorList || dateCreated || lastEdited;
   const policyIntro      = loadContent("home/policy-intro.md");
   const explainer        = loadContent("home/explainer.md");
   const support          = loadContent("home/support.md");
+  const conclusion       = loadContent("home/conclusion.md");
   const alignmentScores  = loadAllStateAlignments();
 
   return (
@@ -64,6 +79,14 @@ export default function HomePage() {
           representing you?
         </h1>
 
+        {hasMeta && (
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "0 24px", justifyContent: "center", marginBottom: "16px", fontSize: "0.8rem", color: "#888" }}>
+            {authorList  && <span><span style={{ fontWeight: 600, color: "#555" }}>{authorLabel}</span> {authorList}</span>}
+            {dateCreated && <span><span style={{ fontWeight: 600, color: "#555" }}>Created</span> {dateCreated}</span>}
+            {lastEdited  && <span><span style={{ fontWeight: 600, color: "#555" }}>Last edited</span> {lastEdited}</span>}
+          </div>
+        )}
+
         <Markdown
           style={{
             width: "min(100%, 830px)",
@@ -99,6 +122,12 @@ export default function HomePage() {
         explainerBody={explainer.body}
         supportBody={support.body}
       />
+
+      {conclusion.body && (
+        <section style={{ marginTop: "36px" }}>
+          <Markdown>{conclusion.body}</Markdown>
+        </section>
+      )}
     </main>
   );
 }

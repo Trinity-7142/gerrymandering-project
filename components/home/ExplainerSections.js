@@ -9,10 +9,23 @@
 //
 // Server Component — no client-side JS needed.
 
-"use client";
-
+import fs from "fs";
+import path from "path";
+import Image from "next/image";
 import Markdown from "@/components/shared/Markdown";
 import { colors } from "@/lib/constants";
+
+function resolveInfographic(filename) {
+  // Try the exact filename first, then common alternate extensions
+  const exts = ["", ".png", ".jpg", ".jpeg", ".webp", ".svg"];
+  const base = filename.replace(/\.[^.]+$/, "");
+  const dir = path.join(process.cwd(), "public", "content", "infographics");
+  for (const ext of exts) {
+    const name = ext ? `${base}${ext}` : filename;
+    if (fs.existsSync(path.join(dir, name))) return `/content/infographics/${name}`;
+  }
+  return null;
+}
 
 // ── Placeholder box shown when infographic image isn't ready yet ────────
 function InfographicPlaceholder({ filename, label }) {
@@ -91,63 +104,56 @@ function InfographicPlaceholder({ filename, label }) {
   );
 }
 
+// ── Wired infographic: real image if found, placeholder otherwise ────────
+function Infographic({ filename, label, alt }) {
+  const src = resolveInfographic(filename);
+  if (src) {
+    return (
+      <div style={{ position: "relative", width: "100%", borderRadius: "16px", overflow: "hidden" }}>
+        <Image
+          src={src}
+          alt={alt || label}
+          width={960}
+          height={540}
+          style={{ width: "100%", height: "auto", display: "block" }}
+        />
+      </div>
+    );
+  }
+  return <InfographicPlaceholder filename={filename} label={label} />;
+}
+
 // ── Main component ──────────────────────────────────────────────────────
 export default function ExplainerSections({ explainerBody, supportBody }) {
   return (
     <>
       {/* ════════════════════════════════════════════════════════
-          SECTION 1 — Explainer Grid
-          Left: policy text  |  Right: infographic
+          SECTION 1 — Explainer text
           ════════════════════════════════════════════════════════ */}
-      <section
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1.05fr 0.95fr",
-          gap: "30px",
-          alignItems: "center",
-          marginTop: "44px",
-        }}
-        className="explainer-grid"
-      >
+      <section style={{ marginTop: "44px" }}>
         <Markdown>{explainerBody}</Markdown>
-
-        <InfographicPlaceholder
-          filename="explainer-graphic.png"
-          label="Infographic 1"
-        />
       </section>
 
       {/* ════════════════════════════════════════════════════════
-          SECTION 2 — Feature Row
-          Left: infographic  |  Right: policy text
+          INFOGRAPHIC 1 — Between explainer and support
           ════════════════════════════════════════════════════════ */}
-      <section
-        style={{
-          display: "grid",
-          gridTemplateColumns: "0.9fr 1.15fr",
-          gap: "26px",
-          alignItems: "start",
-          marginTop: "6px",
-        }}
-        className="feature-row"
-      >
-        <InfographicPlaceholder
-          filename="support-graphic.png"
-          label="Infographic 2"
-        />
+      <div style={{ marginTop: "36px" }}>
+        <Infographic filename="explainer-graphic.png" label="Infographic 1" />
+      </div>
 
-        <Markdown style={{ marginTop: "-2px" }}>{supportBody}</Markdown>
+      {/* ════════════════════════════════════════════════════════
+          SECTION 2 — Support text
+          ════════════════════════════════════════════════════════ */}
+      <section style={{ marginTop: "36px" }}>
+        <Markdown>{supportBody}</Markdown>
       </section>
 
-      {/* ── Responsive: collapse to single column on small screens ── */}
-      <style jsx global>{`
-        @media (max-width: 900px) {
-          .explainer-grid,
-          .feature-row {
-            grid-template-columns: 1fr !important;
-          }
-        }
-      `}</style>
+      {/* ════════════════════════════════════════════════════════
+          INFOGRAPHIC 2 — Below support
+          ════════════════════════════════════════════════════════ */}
+      <div style={{ marginTop: "36px" }}>
+        <Infographic filename="support-graphic.png" label="Infographic 2" />
+      </div>
     </>
   );
 }
