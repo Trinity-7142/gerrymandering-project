@@ -5,6 +5,7 @@
 // Import fonts (Source Serif 4, DM Sans) via next/font or Google Fonts link
 import { DM_Sans, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
+import "katex/dist/katex.min.css";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
