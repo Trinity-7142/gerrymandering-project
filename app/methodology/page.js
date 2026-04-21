@@ -14,7 +14,7 @@ const SECTION_FILES = [
   "methodology-intro.md",
   "research-design.md",
   "data-sources.md",
-  "data-analysis-procedures.md",
+  "procedures.md",
   "ethical-considerations.md",
   "limitations.md",
   "conclusion.md",
