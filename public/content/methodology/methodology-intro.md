@@ -3,6 +3,7 @@ section: methodology
 date_created: 2026-04-20
 last_edited: 2026-04-20
 author(s): Trinity Jones
+author_link: "https://www.linkedin.com/in/trinity-jones-347056341/"
 table_of_contents: True
 ---
 `ToDo`: update page with structured methodology page!

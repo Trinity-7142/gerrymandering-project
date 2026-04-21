@@ -14,6 +14,8 @@ export default function PageMeta({ meta = {} }) {
       ? "Authors"
       : "Author";
 
+  const authorLink = PAGE_FEATURES.authorLink ? (meta.author_link ?? null) : null;
+
   const dateCreated = formatDate(meta.date_created);
   const lastEdited  = formatDate(meta.last_edited);
 
@@ -25,9 +27,26 @@ export default function PageMeta({ meta = {} }) {
 
   if (!show.author && !show.created && !show.lastEdited) return null;
 
+  const authorNode = authorLink ? (
+    <>
+      <style>{`.page-meta-author-link:hover .page-meta-author-label { text-decoration: underline; }`}</style>
+      <a
+        href={authorLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="page-meta-author-link"
+        style={styles.authorLink}
+      >
+        <span className="page-meta-author-label">{authorList}</span>
+      </a>
+    </>
+  ) : (
+    authorList
+  );
+
   return (
     <div style={styles.row}>
-      {show.author     && <span style={styles.item}><span style={styles.label}>{authorLabel}</span> {authorList}</span>}
+      {show.author     && <span style={styles.item}><span style={styles.label}>{authorLabel}</span> {authorNode}</span>}
       {show.created    && <span style={styles.item}><span style={styles.label}>Created</span> {dateCreated}</span>}
       {show.lastEdited && <span style={styles.item}><span style={styles.label}>Last edited</span> {lastEdited}</span>}
     </div>
@@ -51,5 +70,10 @@ const styles = {
   label: {
     fontWeight: 600,
     color: textColors.secondary,
+  },
+  authorLink: {
+    color: "inherit",
+    textDecoration: "none",
+    transition: "text-decoration 0.15s",
   },
 };
