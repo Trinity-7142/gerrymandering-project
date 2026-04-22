@@ -3,6 +3,7 @@ section: case-studies
 date_created: 2026-04-20
 last_edited: 2026-04-20
 author(s): Ha-eun Lee
+author_link: "https://www.linkedin.com/in/haeun-lee-a1ba2b309/?locale=en"
 ---
 Gerrymandering is an old maneuvering of the election that dates back to the 1810s. As this strategy has existed over a long period of time all across the nation, there are many interesting cases that are worth looking at. In this page of the website, we selected 3 of those intriguing cases to introduce to you. If any of this sparks further interest, feel free to dive in deeper yourself! After all, this is the tip of an iceberg.
 

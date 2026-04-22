@@ -35,12 +35,18 @@ function annotateHeadings(headings) {
   });
 }
 
+const COLLAPSE_THRESHOLD = 12;
+
 export default function TableOfContents({ headings }) {
   const [open, setOpen] = useState(true);
+  const [expanded, setExpanded] = useState(false);
 
   if (!headings || headings.length === 0) return null;
 
   const annotated = annotateHeadings(headings);
+  const needsToggle = annotated.length > COLLAPSE_THRESHOLD;
+  const visible = needsToggle && !expanded ? annotated.slice(0, COLLAPSE_THRESHOLD) : annotated;
+  const hiddenCount = annotated.length - COLLAPSE_THRESHOLD;
 
   function handleClick(slug) {
     const el = document.getElementById(slug);
@@ -64,7 +70,7 @@ export default function TableOfContents({ headings }) {
       {/* ── Item list ── */}
       {open && (
         <nav style={styles.list}>
-          {annotated.map(({ level, text, slug, isLast, continuations }) => (
+          {visible.map(({ level, text, slug, isLast, continuations }) => (
             <button
               key={slug}
               className="toc-btn"
@@ -116,6 +122,16 @@ export default function TableOfContents({ headings }) {
               <span className="toc-label" style={{ paddingLeft: "4px" }}>{text}</span>
             </button>
           ))}
+
+          {/* ── Show more / Show less toggle ── */}
+          {needsToggle && (
+            <button
+              onClick={() => setExpanded((e) => !e)}
+              style={styles.showMore}
+            >
+              {expanded ? "Show less ▲" : `Show ${hiddenCount} more ▼`}
+            </button>
+          )}
         </nav>
       )}
     </div>
@@ -193,5 +209,20 @@ const styles = {
     flexShrink: 0,
     position: "relative",
     alignSelf: "stretch",
+  },
+  showMore: {
+    display: "block",
+    width: "100%",
+    textAlign: "left",
+    padding: "4px 12px 2px",
+    background: "none",
+    border: "none",
+    cursor: "pointer",
+    fontFamily: fonts.sans,
+    fontSize: "0.78rem",
+    fontWeight: 600,
+    color: textColors.muted,
+    letterSpacing: "0.02em",
+    transition: "color 0.15s",
   },
 };

@@ -6,30 +6,27 @@
 // See components/shared/Markdown.js for how markdown maps to styled elements.
 
 import StateSelector from "../components/home/StateSelector";
-import ExplainerSections from "@/components/home/ExplainerSections";
+import ExplainerSections, { Infographic } from "@/components/home/ExplainerSections";
 import Markdown from "@/components/shared/Markdown";
 import { loadContent } from "@/lib/loadContent";
 import { loadAllStateAlignments } from "@/lib/loadData";
 import { colors, pageWidths } from "@/lib/constants";
-
-function formatDate(val) {
-  if (!val) return null;
-  const d = new Date(val);
-  if (isNaN(d.getTime())) return String(val);
-  return d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
-}
+import { PAGE_FEATURES, formatDate } from "@/lib/contentPageFeatures";
 
 export default function HomePage() {
   // ── Load content from markdown files at build time ──
   const intro            = loadContent("home/intro.md");
   const { date_created, last_edited } = intro.metadata ?? {};
-  const authors   = intro.metadata?.["author(s)"];
+  const authors    = intro.metadata?.["author(s)"];
   const authorList  = Array.isArray(authors) ? authors.join(", ") : (authors || null);
   const authorLabel = Array.isArray(authors) && authors.length > 1 ? "Authors" : (authorList?.includes(",") ? "Authors" : "Author");
+  const authorLink  = PAGE_FEATURES.authorLink ? (intro.metadata?.author_link ?? null) : null;
   const dateCreated = formatDate(date_created);
   const lastEdited  = formatDate(last_edited);
   const hasMeta     = authorList || dateCreated || lastEdited;
-  const policyIntro      = loadContent("home/policy-intro.md");
+  const cracking         = loadContent("home/cracking.md");
+  const packing          = loadContent("home/packing.md");
+  const partisanRacial   = loadContent("home/partisan-racial.md");
   const explainer        = loadContent("home/explainer.md");
   const support          = loadContent("home/support.md");
   const conclusion       = loadContent("home/conclusion.md");
@@ -81,7 +78,17 @@ export default function HomePage() {
 
         {hasMeta && (
           <div style={{ display: "flex", flexWrap: "wrap", gap: "0 24px", justifyContent: "center", marginBottom: "16px", fontSize: "0.8rem", color: "#888" }}>
-            {authorList  && <span><span style={{ fontWeight: 600, color: "#555" }}>{authorLabel}</span> {authorList}</span>}
+            {authorList && (
+              <span>
+                <style>{`.home-author-link:hover .home-author-label { text-decoration: underline; }`}</style>
+                <span style={{ fontWeight: 600, color: "#555" }}>{authorLabel}</span>{" "}
+                {authorLink ? (
+                  <a href={authorLink} target="_blank" rel="noopener noreferrer" className="home-author-link" style={{ color: "inherit", textDecoration: "none" }}>
+                    <span className="home-author-label">{authorList}</span>
+                  </a>
+                ) : authorList}
+              </span>
+            )}
             {dateCreated && <span><span style={{ fontWeight: 600, color: "#555" }}>Created</span> {dateCreated}</span>}
             {lastEdited  && <span><span style={{ fontWeight: 600, color: "#555" }}>Last edited</span> {lastEdited}</span>}
           </div>
@@ -105,12 +112,33 @@ export default function HomePage() {
       <StateSelector alignmentScores={alignmentScores} />
 
       {/* ════════════════════════════════════════════════════════
-          POLICY INTRO
-          Content from /content/home/policy-intro.md
-          *italic* renders as red lead-in, **bold** as blue emphasis
+          CRACKING EXPLAINER + INFOGRAPHIC
+          Content from /content/home/cracking.md
           ════════════════════════════════════════════════════════ */}
       <section style={{ marginTop: "26px" }}>
-        <Markdown>{policyIntro.body}</Markdown>
+        <Markdown>{cracking.body}</Markdown>
+      </section>
+      <div style={{ marginTop: "36px", maxWidth: "65%", margin: "36px auto 0" }}>
+        <Infographic filename="cracking.png" label="Cracking infographic" alt="Diagram illustrating how cracking splits voter groups across districts" />
+      </div>
+
+      {/* ════════════════════════════════════════════════════════
+          PACKING EXPLAINER + INFOGRAPHIC
+          Content from /content/home/packing.md
+          ════════════════════════════════════════════════════════ */}
+      <section style={{ marginTop: "36px" }}>
+        <Markdown>{packing.body}</Markdown>
+      </section>
+      <div style={{ marginTop: "36px", maxWidth: "65%", margin: "36px auto 0" }}>
+        <Infographic filename="packing.png" label="Packing infographic" alt="Diagram illustrating how packing concentrates voters into fewer districts" />
+      </div>
+
+      {/* ════════════════════════════════════════════════════════
+          PARTISAN VS RACIAL GERRYMANDERING
+          Content from /content/home/partisan-racial.md
+          ════════════════════════════════════════════════════════ */}
+      <section style={{ marginTop: "36px" }}>
+        <Markdown>{partisanRacial.body}</Markdown>
       </section>
 
       {/* ════════════════════════════════════════════════════════

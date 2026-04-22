@@ -1,20 +1,30 @@
 // app/legal/page.js
 
 import Markdown from "@/components/shared/Markdown";
-import { loadContent } from "@/lib/loadData";
+import PageMeta from "@/components/shared/PageMeta";
+import TableOfContents from "@/components/shared/TableOfContents";
+import { loadContentWithMeta } from "@/lib/loadData";
+import { resolveFeatures } from "@/lib/contentPageFeatures";
+import { extractHeadings } from "@/lib/slugify";
 import { fonts, textColors, pageWidths } from "@/lib/constants";
 
 export const metadata = { title: "Legal — Gerrymandering Project" };
 
 export default function LegalPage() {
-  const content = loadContent("legal", "legal.md");
+  const { body, meta } = loadContentWithMeta("legal", "legal.md");
+  const features = resolveFeatures(meta);
+  const headings = features.tableOfContents && body ? extractHeadings(body) : [];
 
   return (
     <main style={styles.main}>
       <h1 style={styles.title}>Legal</h1>
-      {content && (
+
+      <PageMeta meta={meta} />
+
+      {body && (
         <div style={styles.body}>
-          <Markdown>{content}</Markdown>
+          {headings.length > 0 && <TableOfContents headings={headings} />}
+          <Markdown>{body}</Markdown>
         </div>
       )}
     </main>
@@ -36,7 +46,7 @@ const styles = {
     fontWeight: 700,
     color: textColors.primary,
     textAlign: "center",
-    marginBottom: "32px",
+    marginBottom: "12px",
   },
   body: {
     maxWidth: pageWidths.legal,

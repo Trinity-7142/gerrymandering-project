@@ -105,7 +105,7 @@ function InfographicPlaceholder({ filename, label }) {
 }
 
 // ── Wired infographic: real image if found, placeholder otherwise ────────
-function Infographic({ filename, label, alt }) {
+export function Infographic({ filename, label, alt }) {
   const src = resolveInfographic(filename);
   if (src) {
     return (
@@ -115,6 +115,7 @@ function Infographic({ filename, label, alt }) {
           alt={alt || label}
           width={960}
           height={540}
+          quality={100}
           style={{ width: "100%", height: "auto", display: "block" }}
         />
       </div>
