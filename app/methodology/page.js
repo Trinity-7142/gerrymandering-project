@@ -3,6 +3,7 @@
 import Markdown from "@/components/shared/Markdown";
 import PageMeta from "@/components/shared/PageMeta";
 import TableOfContents from "@/components/shared/TableOfContents";
+import SourcesToggle from "@/components/shared/SourcesToggle";
 import { loadContentWithMeta } from "@/lib/loadData";
 import { resolveFeatures } from "@/lib/contentPageFeatures";
 import { extractHeadings } from "@/lib/slugify";
@@ -46,6 +47,7 @@ export default function MethodologyPage() {
         {sections.map((section, i) =>
           section.body ? <Markdown key={i}>{section.body}</Markdown> : null
         )}
+        <SourcesToggle sources={meta.sources} />
       </div>
     </main>
   );

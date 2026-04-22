@@ -3,6 +3,7 @@
 import Markdown from "@/components/shared/Markdown";
 import PageMeta from "@/components/shared/PageMeta";
 import TableOfContents from "@/components/shared/TableOfContents";
+import SourcesToggle from "@/components/shared/SourcesToggle";
 import { loadContentWithMeta } from "@/lib/loadData";
 import { resolveFeatures } from "@/lib/contentPageFeatures";
 import { extractHeadings } from "@/lib/slugify";
@@ -25,6 +26,7 @@ export default function CaseStudiesPage() {
         <div style={styles.body}>
           {headings.length > 0 && <TableOfContents headings={headings} />}
           <Markdown>{body}</Markdown>
+          <SourcesToggle sources={meta.sources} />
         </div>
       )}
     </main>
