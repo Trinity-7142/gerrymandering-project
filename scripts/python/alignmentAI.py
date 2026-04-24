@@ -198,134 +198,137 @@ with open(senator_rollcall_votes_path, "r", encoding="utf-8") as f:
             p = Politician.create_politician(line["bioguide_id"], line["name"], line["state"], line["party"])
             p.add_vote(vote_id, issue, bill_dir, conf)
 
+#This means that the below code will only run if this file is directly run, and not if the file is imported.
+#This is necessary for easy access by fetchImages.py to the bioguide IDs of each politician. 
+if __name__ == "__main__":
 
-# --- Generation & File Writing ---
+    # --- Generation & File Writing ---
 
-today_date = str(date.today())
-INTERPRETATION_DICT = {
-    "0.0_to_0.3": "Low Alignment",
-    "0.3_to_0.6": "Partial Alignment",
-    "0.6_to_0.8": "Moderate Alignment",
-    "0.8_to_1.0": "Strong Alignment"
-}
+    today_date = str(date.today())
+    INTERPRETATION_DICT = {
+        "0.0_to_0.3": "Low Alignment",
+        "0.3_to_0.6": "Partial Alignment",
+        "0.6_to_0.8": "Moderate Alignment",
+        "0.8_to_1.0": "Strong Alignment"
+    }
 
-class AlignmentFiles:
-    visited_states = set()
+    class AlignmentFiles:
+        visited_states = set()
 
-    @staticmethod
-    def score_to_alignment(score):
-        if score <= 0.3: return INTERPRETATION_DICT["0.0_to_0.3"]
-        if score <= 0.6: return INTERPRETATION_DICT["0.3_to_0.6"]
-        if score <= 0.8: return INTERPRETATION_DICT["0.6_to_0.8"]
-        return INTERPRETATION_DICT["0.8_to_1.0"]
+        @staticmethod
+        def score_to_alignment(score):
+            if score <= 0.3: return INTERPRETATION_DICT["0.0_to_0.3"]
+            if score <= 0.6: return INTERPRETATION_DICT["0.3_to_0.6"]
+            if score <= 0.8: return INTERPRETATION_DICT["0.6_to_0.8"]
+            return INTERPRETATION_DICT["0.8_to_1.0"]
 
-    @staticmethod
-    def get_issue_scores(politician):
-        scores = []
-        for issue in politician.cpd_dict_by_issue.keys():
-            if issue.lower() in politician.issues_voted_for:
-                score = politician.compute_per_issue_score(issue)
-                weight = politician.renormalized_weight(issue)
-                scores.append({
-                    "issue_id": issue,
-                    "score": score,
-                    "salience_weight": weight,
-                    "weighted_contribution": score * weight,
-                    "direction": AlignmentFiles.score_to_alignment(score)
-                })
-        return scores
+        @staticmethod
+        def get_issue_scores(politician):
+            scores = []
+            for issue in politician.cpd_dict_by_issue.keys():
+                if issue.lower() in politician.issues_voted_for:
+                    score = politician.compute_per_issue_score(issue)
+                    weight = politician.renormalized_weight(issue)
+                    scores.append({
+                        "issue_id": issue,
+                        "score": score,
+                        "salience_weight": weight,
+                        "weighted_contribution": score * weight,
+                        "direction": AlignmentFiles.score_to_alignment(score)
+                    })
+            return scores
 
-    @staticmethod
-    def generate_senator_dict(senator: Politician):
-        score = senator.overall_score()
-        return {
-            "name": AlignmentFiles.get_senator_name(senator) or senator.name,
-            "overall_score": score,
-            "overall_label": AlignmentFiles.score_to_alignment(score),
-            "issue_scores": AlignmentFiles.get_issue_scores(senator)
-        }
-    
-    @staticmethod
-    def generate_state_dict(state: str):
-        senators_data = [
-            AlignmentFiles.generate_senator_dict(p) for p in Politician.politicians.values()
-            if p.role == "sen" and p.state == state and p.is_current and p.term_end >= today_date
-        ]
+        @staticmethod
+        def generate_senator_dict(senator: Politician):
+            score = senator.overall_score()
+            return {
+                "name": AlignmentFiles.get_senator_name(senator) or senator.name,
+                "overall_score": score,
+                "overall_label": AlignmentFiles.score_to_alignment(score),
+                "issue_scores": AlignmentFiles.get_issue_scores(senator)
+            }
         
-        return {
-            "state_code": state,
-            "last_updated": today_date,
-            "senators": senators_data,
-            "interpretation": INTERPRETATION_DICT,
-            "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
-        }
-
-    @staticmethod
-    def generate_district_dict(representative: Politician):
-        score = representative.overall_score()
-        return {
-            "district_id": representative.district,
-            "last_updated": today_date,
-            "overall_score": score,
-            "overall_label": AlignmentFiles.score_to_alignment(score),
-            "score_range": { "min": 0, "max": 1 },
-            "interpretation": INTERPRETATION_DICT,
-            "issue_scores": AlignmentFiles.get_issue_scores(representative),
-            "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
-        }
-    
-    @staticmethod
-    def get_alignment_path(politician: Politician):
-        data_path = os.path.join(home_path, "public", "data")
-        if politician.role == "rep":
-            return os.path.join(data_path, "districts", politician.district, "alignment.json")
-        elif politician.role == "sen":
-            return os.path.join(data_path, "states", politician.state, "alignment.json")
-        return ""
-
-    @staticmethod
-    def populate_alignment_json():
-        reps_by_district = {}
-
-        for p in Politician.politicians.values():
-            if p.role == "sen":
-                if p.state not in AlignmentFiles.visited_states:
-                    path = AlignmentFiles.get_alignment_path(p)
-                    os.makedirs(os.path.dirname(path), exist_ok=True)
-                    with open(path, "w", encoding="utf-8") as f:
-                        json.dump(AlignmentFiles.generate_state_dict(p.state), f, indent=2)
-                    AlignmentFiles.visited_states.add(p.state)
-            elif p.role == "rep":
-                reps_by_district.setdefault(p.district, []).append(p)
-                    
-        for reps in reps_by_district.values():
-            most_recent_rep = reps[0]
-            for rep in reps[1:]:
-                if rep.is_current:
-                    most_recent_rep = rep
+        @staticmethod
+        def generate_state_dict(state: str):
+            senators_data = [
+                AlignmentFiles.generate_senator_dict(p) for p in Politician.politicians.values()
+                if p.role == "sen" and p.state == state and p.is_current and p.term_end >= today_date
+            ]
             
-            path = AlignmentFiles.get_alignment_path(most_recent_rep)
-            os.makedirs(os.path.dirname(path), exist_ok=True)
-            with open(path, "w", encoding="utf-8") as f:
-                json.dump(AlignmentFiles.generate_district_dict(most_recent_rep), f, indent=2)
-    
-    @staticmethod
-    def get_senator_name(senator):
-        try:
-            data = get_cached_json(os.path.join(home_path, "public", "data", "states", senator.state, "senators.json"))
-            this_senator_name = senator.name.split(" ")[0]
-            for s in data.get("senators", []):
-                if this_senator_name in s.get("name", ""):
-                    return s.get("name")
-        except FileNotFoundError:
-            pass
-        return None
+            return {
+                "state_code": state,
+                "last_updated": today_date,
+                "senators": senators_data,
+                "interpretation": INTERPRETATION_DICT,
+                "methodology_note": "Senator alignment scores computed as salience-weighted average of issue-level congruence between CES statewide positions and senator roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+            }
 
-AlignmentFiles.populate_alignment_json()
+        @staticmethod
+        def generate_district_dict(representative: Politician):
+            score = representative.overall_score()
+            return {
+                "district_id": representative.district,
+                "last_updated": today_date,
+                "overall_score": score,
+                "overall_label": AlignmentFiles.score_to_alignment(score),
+                "score_range": { "min": 0, "max": 1 },
+                "interpretation": INTERPRETATION_DICT,
+                "issue_scores": AlignmentFiles.get_issue_scores(representative),
+                "methodology_note": "Score computed as salience-weighted average of issue-level congruence between CES district positions and representative roll-call votes. VoteCast salience weights renormalized to exclude foreign_policy (no CES position data). See methodology page for full details."
+            }
+        
+        @staticmethod
+        def get_alignment_path(politician: Politician):
+            data_path = os.path.join(home_path, "public", "data")
+            if politician.role == "rep":
+                return os.path.join(data_path, "districts", politician.district, "alignment.json")
+            elif politician.role == "sen":
+                return os.path.join(data_path, "states", politician.state, "alignment.json")
+            return ""
+
+        @staticmethod
+        def populate_alignment_json():
+            reps_by_district = {}
+
+            for p in Politician.politicians.values():
+                if p.role == "sen":
+                    if p.state not in AlignmentFiles.visited_states:
+                        path = AlignmentFiles.get_alignment_path(p)
+                        os.makedirs(os.path.dirname(path), exist_ok=True)
+                        with open(path, "w", encoding="utf-8") as f:
+                            json.dump(AlignmentFiles.generate_state_dict(p.state), f, indent=2)
+                        AlignmentFiles.visited_states.add(p.state)
+                elif p.role == "rep":
+                    reps_by_district.setdefault(p.district, []).append(p)
+                        
+            for reps in reps_by_district.values():
+                most_recent_rep = reps[0]
+                for rep in reps[1:]:
+                    if rep.is_current:
+                        most_recent_rep = rep
+                
+                path = AlignmentFiles.get_alignment_path(most_recent_rep)
+                os.makedirs(os.path.dirname(path), exist_ok=True)
+                with open(path, "w", encoding="utf-8") as f:
+                    json.dump(AlignmentFiles.generate_district_dict(most_recent_rep), f, indent=2)
+        
+        @staticmethod
+        def get_senator_name(senator):
+            try:
+                data = get_cached_json(os.path.join(home_path, "public", "data", "states", senator.state, "senators.json"))
+                this_senator_name = senator.name.split(" ")[0]
+                for s in data.get("senators", []):
+                    if this_senator_name in s.get("name", ""):
+                        return s.get("name")
+            except FileNotFoundError:
+                pass
+            return None
+
+    AlignmentFiles.populate_alignment_json()
 
 
-with open(os.path.join(base_path, "alignment_scores.csv"), "w", encoding="utf-8", newline="") as f:
-    writer = csv.writer(f)
-    writer.writerow(["ID", "Name", "Score", "Vote #", "State", "Term End", "Role", "Party"])
-    for politician in Politician.politicians.values():
-        writer.writerow([politician.bioguide_id, politician.name, politician.overall_score(), len(politician.votes), politician.state, politician.term_end, politician.role, politician.party])
+    with open(os.path.join(base_path, "alignment_scores.csv"), "w", encoding="utf-8", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(["ID", "Name", "Score", "Vote #", "State", "Term End", "Role", "Party"])
+        for politician in Politician.politicians.values():
+            writer.writerow([politician.bioguide_id, politician.name, politician.overall_score(), len(politician.votes), politician.state, politician.term_end, politician.role, politician.party])
