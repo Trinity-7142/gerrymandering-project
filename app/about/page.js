@@ -1,22 +1,22 @@
 // app/about/page.js
 
 import Markdown from "@/components/shared/Markdown";
-import { loadContent } from "@/lib/loadData";
+import TeamGrid from "@/components/about/TeamGrid";
+import { loadContentWithMeta } from "@/lib/loadData";
 import { fonts, textColors, pageWidths } from "@/lib/constants";
 
 export const metadata = { title: "About — Gerrymandering Project" };
 
 export default function AboutPage() {
-  const content = loadContent("about", "about.md");
+  const { body, meta } = loadContentWithMeta("about", "about.md");
 
   return (
     <main style={styles.main}>
       <h1 style={styles.title}>About</h1>
-      {content && (
-        <div style={styles.body}>
-          <Markdown>{content}</Markdown>
-        </div>
-      )}
+      <div style={styles.body}>
+        {body && <Markdown>{body}</Markdown>}
+        <TeamGrid members={meta.team} />
+      </div>
     </main>
   );
 }
