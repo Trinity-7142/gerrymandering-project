@@ -13,12 +13,10 @@ export const metadata = { title: "Methodology — Gerrymandering Project" };
 
 const SECTION_FILES = [
   "methodology-intro.md",
-  "research-design.md",
-  "data-sources.md",
-  "procedures.md",
-  "ethical-considerations.md",
-  "limitations.md",
-  "conclusion.md",
+  "methodology-data-sources.md",
+  "methodology-alignment.md",
+  "methodology-limitations.md",
+  "methodology-generated-content.md",
 ];
 
 export default function MethodologyPage() {
