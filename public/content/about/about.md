@@ -7,7 +7,7 @@ author_link: "https://www.linkedin.com/in/trinity-jones-347056341/"
 team:
   - name: Trinity Jones
     role: Project Manager & Tech Lead
-    bio: "Hi! I'm a second year at UC Berkeley studying Computer Science & Public Policy. I became Project Manager Spring 2026 after participating as part of the policy team in the previous semester, Fall 2025."
+    bio: "Hi! I'm a second year at UC Berkeley studying Computer Science & Public Policy. I became Project Manager Spring 2026 after participating as part of the policy team in the previous semester, Fall 2025. I created the Alignment Metric"
     links:
       - label: LinkedIn
         url: "https://www.linkedin.com/in/trinity-jones-347056341/"
@@ -31,7 +31,8 @@ team:
     link: "https://www.linkedin.com/in/emma-chiavegato-b44549354/"
   - name: Coolsjes Singhvi
     role: Policy Team
-    bio: "Freshman at UC Berkeley’s Haas School of Business with interests in finance and economics, and a growing focus on how data and technology can be applied to real-world problems."
+    bio: "Hello! I’m a freshman at UC Berkeley majoring in Business and Conservation & Resource Studies. I joined the project in Spring 2026 as a policy team member to raise awareness about gerrymandering."
+    link: "https://www.linkedin.com/in/coolsjes-singhvi-836588249?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
   - name: Patrick Rivera
     role: Policy Team
     bio: "Junior at UC Berkeley, majoring in History and Political Science and minoring in Middle East Studies"
