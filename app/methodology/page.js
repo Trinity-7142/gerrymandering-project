@@ -12,6 +12,7 @@ import { fonts, textColors, pageWidths } from "@/lib/constants";
 export const metadata = { title: "Methodology — Gerrymandering Project" };
 
 const SECTION_FILES = [
+  "methodology-executive-summary.md",
   "methodology-intro.md",
   "methodology-data-sources.md",
   "methodology-alignment.md",
@@ -25,7 +26,7 @@ export default function MethodologyPage() {
   );
 
   // Page features and meta come from methodology-intro.md
-  const { meta } = sections[0];
+  const { meta } = sections[1];
   const features = resolveFeatures(meta);
 
   // Build ToC from all section bodies combined
