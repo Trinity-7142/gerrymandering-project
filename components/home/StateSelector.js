@@ -1,11 +1,9 @@
 // components/home/StateSelector.js
-// Server Component — renders the state selection UI on the home page
-// Displays clickable cards for all states
+// Client Component — interactive D3 choropleth US map on the home page
 "use client";
 
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-
 import { alignmentColors, colors, alignmentLegend } from "@/lib/constants";
 
 // ── FIPS → state code + name lookup ─────────────────────────────────────
@@ -19,7 +17,7 @@ const FIPS_TO_STATE = {
   "47":"TN","48":"TX","49":"UT","50":"VT","51":"VA","53":"WA","54":"WV",
   "55":"WI","56":"WY",
 };
- 
+
 const STATE_NAMES = {
   "01":"Alabama","02":"Alaska","04":"Arizona","05":"Arkansas","06":"California",
   "08":"Colorado","09":"Connecticut","10":"Delaware","11":"District of Columbia",
@@ -34,7 +32,7 @@ const STATE_NAMES = {
   "47":"Tennessee","48":"Texas","49":"Utah","50":"Vermont","51":"Virginia",
   "53":"Washington","54":"West Virginia","55":"Wisconsin","56":"Wyoming",
 };
-// level widths could change
+
 function alignmentLevel(score) {
   if (score < 0.25) return "Very Low";
   if (score < 0.40) return "Low";
@@ -62,7 +60,6 @@ export default function StateSelector({ alignmentScores = {} }) {
   const [mapReady, setMapReady] = useState(false);
   const [error, setError] = useState(false);
 
-  // getScore returns a 0–1 float or null for a D3 feature id (FIPS integer)
   function getScore(fipsId) {
     const fips = String(fipsId).padStart(2, "0");
     const code = FIPS_TO_STATE[fips];
@@ -71,40 +68,36 @@ export default function StateSelector({ alignmentScores = {} }) {
 
   useEffect(() => {
     let cancelled = false;
- 
+
     async function renderMap() {
-      // Dynamic imports — keeps D3 + topoJSON out of the initial bundle
       const d3 = await import("d3");
       const topojson = await import("topojson-client");
- 
+
       if (cancelled) return;
- 
+
       try {
         const us = await d3.json(
           "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json"
         );
- 
+
         if (cancelled) return;
- 
+
         const svg = d3.select(svgRef.current);
-        const states   = topojson.feature(us, us.objects.states);
-        const nation   = topojson.feature(us, us.objects.nation);
-        const borders  = topojson.mesh(us, us.objects.states, (a, b) => a !== b);
- 
+        const states  = topojson.feature(us, us.objects.states);
+        const nation  = topojson.feature(us, us.objects.nation);
+        const borders = topojson.mesh(us, us.objects.states, (a, b) => a !== b);
+
         const projection = d3.geoAlbersUsa().fitSize([960, 600], states);
         const path = d3.geoPath(projection);
- 
-        // Clear any previous render (React strict-mode double-mounts)
+
         svg.selectAll("*").remove();
- 
-        // Nation outline (subtle silhouette behind states)
+
         svg
           .append("path")
           .datum(nation)
           .attr("class", "nation-outline")
           .attr("d", path);
- 
-        // Individual state paths
+
         svg
           .append("g")
           .attr("aria-label", "States")
@@ -125,8 +118,8 @@ export default function StateSelector({ alignmentScores = {} }) {
               ? `${name}, alignment score ${Math.round(score * 100)}%`
               : `${name}, alignment score not yet available`;
           })
-          // ── Hover / focus → update feedback text ──
-          .on("mouseenter", function (event, d) {
+          .on("pointerenter", function (event, d) {
+            if (event.pointerType === "touch") return; // handled by pointerup
             const fips  = String(d.id).padStart(2, "0");
             const name  = STATE_NAMES[fips] || `State ${d.id}`;
             const score = getScore(d.id);
@@ -146,7 +139,8 @@ export default function StateSelector({ alignmentScores = {} }) {
                 : `<strong>${name}</strong> · Alignment score not yet available`;
             }
           })
-          .on("mouseleave", function () {
+          .on("pointerleave", function (event) {
+            if (event.pointerType === "touch") return;
             if (feedbackRef.current) {
               feedbackRef.current.innerHTML =
                 `<strong>Hover</strong> a state to preview. <strong>Click</strong> to explore.`;
@@ -158,9 +152,24 @@ export default function StateSelector({ alignmentScores = {} }) {
                 `<strong>Hover</strong> a state to preview. <strong>Click</strong> to explore.`;
             }
           })
-          // ── Click → route to state page ──
-          .on("click", function (event, d) {
+          .on("pointerup", function (event, d) {
             const fips = String(d.id).padStart(2, "0");
+            const name  = STATE_NAMES[fips] || `State ${d.id}`;
+            const score = getScore(d.id);
+            // On touch: show feedback first, then navigate after a brief moment
+            if (event.pointerType === "touch") {
+              if (feedbackRef.current) {
+                feedbackRef.current.innerHTML = score != null
+                  ? `<strong>${name}</strong> · ${Math.round(score * 100)}% · ${alignmentLevel(score)} alignment`
+                  : `<strong>${name}</strong> · Alignment score not yet available`;
+              }
+              const code = FIPS_TO_STATE[fips];
+              if (code && code !== "DC") {
+                setTimeout(() => router.push(`/state/${code}`), 80);
+              }
+              return;
+            }
+            // Mouse click
             const code = FIPS_TO_STATE[fips];
             if (code && code !== "DC") {
               router.push(`/state/${code}`);
@@ -176,26 +185,24 @@ export default function StateSelector({ alignmentScores = {} }) {
               }
             }
           });
- 
-        // Internal state borders (drawn last for crispness)
+
         svg
           .append("path")
           .datum(borders)
           .attr("class", "state-borders")
           .attr("d", path);
- 
+
         setMapReady(true);
       } catch (err) {
         console.error("Failed to render US map:", err);
         if (!cancelled) setError(true);
       }
     }
- 
+
     renderMap();
     return () => { cancelled = true; };
   }, [router]);
- 
-  // ── Inline styles matching the mockup exactly ─────────────────────────
+
   return (
     <section
       className="map-wrap"
@@ -208,95 +215,41 @@ export default function StateSelector({ alignmentScores = {} }) {
           position: "relative",
           borderRadius: "44px",
           overflow: "hidden",
-          background:
-            "linear-gradient(180deg, rgba(255,255,255,0.45), rgba(255,255,255,0.12))",
+          background: "linear-gradient(180deg, rgba(255,255,255,0.45), rgba(255,255,255,0.12))",
           border: "1px solid rgba(1, 24, 38, 0.06)",
           padding: "20px 20px 14px",
         }}
       >
         {/* ── Header row: title + legend ── */}
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-            alignItems: "center",
-            gap: "14px 18px",
-            marginBottom: "14px",
-          }}
-        >
+        <div className="map-header">
           <div>
-            <p
-              style={{
-                margin: 0,
-                fontFamily: "var(--font-sans)",
-                fontSize: "0.96rem",
-                fontWeight: 700,
-                color: "rgba(1, 24, 38, 0.85)",
-              }}
-            >
-              State Alignment Overview
-            </p>
-            <p
-              style={{
-                margin: "4px 0 0",
-                fontFamily: "var(--font-sans)",
-                fontSize: "0.9rem",
-                color: "rgba(1, 24, 38, 0.62)",
-              }}
-            >
-              Click a state to view representational alignment details
-            </p>
+            <p className="map-title">State Alignment Overview</p>
+            <p className="map-subtitle">Tap a state to view representational alignment details</p>
           </div>
- 
-          {/* Legend */}
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: "10px 14px",
-              alignItems: "center",
-            }}
-            aria-label="Map legend"
-          >
+
+          {/* Legend — full on desktop, compact on mobile */}
+          <div className="map-legend" aria-label="Map legend">
             {alignmentLegend.map((l) => (
-              <span
-                key={l.key}
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "8px",
-                  fontSize: "0.84rem",
-                  fontFamily: "var(--font-sans)",
-                  color: "rgba(1, 24, 38, 0.78)",
-                }}
-              >
+              <span key={l.key} className="map-legend-item">
                 <span
                   style={{
-                    width: "14px",
-                    height: "14px",
+                    width: "12px",
+                    height: "12px",
                     borderRadius: "999px",
                     background: l.color,
                     border: "1px solid rgba(1, 24, 38, 0.12)",
                     flexShrink: 0,
+                    display: "inline-block",
                   }}
                 />
-                {l.label}
+                <span className="map-legend-label">{l.label}</span>
               </span>
             ))}
           </div>
         </div>
- 
+
         {/* ── Map SVG container ── */}
-        <div
-          style={{
-            position: "relative",
-            width: "100%",
-            maxWidth: "860px",
-            margin: "0 auto",
-          }}
-        >
-          {/* Loading state */}
+        <div style={{ position: "relative", width: "100%", maxWidth: "860px", margin: "0 auto" }}>
           {!mapReady && !error && (
             <div
               style={{
@@ -313,7 +266,6 @@ export default function StateSelector({ alignmentScores = {} }) {
               Loading map…
             </div>
           )}
- 
           <svg
             ref={svgRef}
             viewBox="0 0 960 600"
@@ -325,10 +277,11 @@ export default function StateSelector({ alignmentScores = {} }) {
               overflow: "visible",
               opacity: mapReady ? 1 : 0,
               transition: "opacity 0.4s ease",
+              touchAction: "manipulation",
             }}
           />
         </div>
- 
+
         {/* ── Feedback text ── */}
         <p
           ref={feedbackRef}
@@ -346,17 +299,14 @@ export default function StateSelector({ alignmentScores = {} }) {
             </strong>
           ) : (
             <>
-              <strong style={{ color: colors.ink }}>Hover</strong> a state to
-              preview. <strong style={{ color: colors.ink }}>Click</strong> to
-              explore.
+              <strong style={{ color: colors.ink }}>Tap</strong> a state to explore.
             </>
           )}
         </p>
       </div>
- 
-      {/* ── Scoped CSS for D3-generated elements ── */}
+
+      {/* ── Scoped CSS ── */}
       <style jsx global>{`
-        /* State shapes */
         .state-shape {
           cursor: pointer;
           stroke: rgba(255, 255, 255, 0.88);
@@ -378,8 +328,6 @@ export default function StateSelector({ alignmentScores = {} }) {
           stroke-width: 1.8;
           outline: none;
         }
- 
-        /* Internal borders */
         .state-borders {
           fill: none;
           stroke: rgba(255, 255, 255, 0.58);
@@ -387,8 +335,6 @@ export default function StateSelector({ alignmentScores = {} }) {
           vector-effect: non-scaling-stroke;
           pointer-events: none;
         }
- 
-        /* Nation outline */
         .nation-outline {
           fill: none;
           stroke: rgba(1, 24, 38, 0.14);
@@ -396,8 +342,85 @@ export default function StateSelector({ alignmentScores = {} }) {
           vector-effect: non-scaling-stroke;
           pointer-events: none;
         }
+
+        /* ── Map header layout ── */
+        .map-header {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          gap: 14px 18px;
+          margin-bottom: 14px;
+        }
+        .map-title {
+          margin: 0;
+          font-family: var(--font-sans);
+          font-size: 0.96rem;
+          font-weight: 700;
+          color: rgba(1, 24, 38, 0.85);
+        }
+        .map-subtitle {
+          margin: 4px 0 0;
+          font-family: var(--font-sans);
+          font-size: 0.9rem;
+          color: rgba(1, 24, 38, 0.62);
+        }
+
+        /* ── Legend ── */
+        .map-legend {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px 14px;
+          align-items: center;
+        }
+        .map-legend-item {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          font-size: 0.84rem;
+          font-family: var(--font-sans);
+          color: rgba(1, 24, 38, 0.78);
+        }
+        .map-legend-label { white-space: nowrap; }
+
+        /* ── Mobile overrides ── */
+        @media (max-width: 640px) {
+          .map-card {
+            border-radius: 24px !important;
+            padding: 14px 14px 10px !important;
+          }
+          .map-wrap {
+            padding: 4px 0 0 !important;
+            margin-top: 28px !important;
+          }
+          .map-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+          }
+          .map-subtitle {
+            font-size: 0.82rem;
+          }
+          /* Compact legend: dots only with abbreviated labels on very small screens */
+          .map-legend {
+            gap: 6px 10px;
+          }
+          .map-legend-item {
+            font-size: 0.75rem;
+          }
+        }
+
+        /* Very small phones: hide legend text, show dots only */
+        @media (max-width: 400px) {
+          .map-legend-label {
+            display: none;
+          }
+          .map-legend-item span:first-child {
+            width: 16px !important;
+            height: 16px !important;
+          }
+        }
       `}</style>
     </section>
   );
-  
 }

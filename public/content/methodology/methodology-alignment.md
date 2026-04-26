@@ -21,7 +21,7 @@ $$
 \text{Overall Score} = \sum_{i} w_i' \cdot \text{Per Issue Score}_i
 $$
 
-Where $wᵢ'$ is the renormalized salience weight for issue $i$ (described below in *Salience Weighting*), and $\text{Per-Issue Scoreᵢ}$ is the alignment between the representative's votes and the constituency's preferences on that issue. Both quantities are bounded between 0 and 1, so the overall score is also bounded between 0 and 1.
+Where $w_i'$ is the renormalized salience weight for issue $i$ (described below in *Salience Weighting*), and $\text{Per-Issue Score}_i$ is the alignment between the representative's votes and the constituency's preferences on that issue. Both quantities are bounded between 0 and 1, so the overall score is also bounded between 0 and 1.
 
 Put simply, a representative who votes the way their constituents want on the issues their constituents care about will score close to 1. A representative who votes against their constituents on the issues those constituents prioritize will score close to 0. A representative who votes with their constituents on issues their constituents don't particularly care about, but against them on the issues that matter most, will land somewhere in the middle.
 
@@ -39,12 +39,12 @@ Both are expressed on the same 0-to-1 scale, where 1 represents the fully libera
 The per-issue score combines a directional alignment component with a bipartisan-vote component:
 
 $$
-\text{Per Issue Score}_i = \frac{W_{dir,i} \cdot (1 - |CPD_{avg,i} - RVD_{avg,i}|) + W_{bip,i} \cdot 1.0}{W_{dir,i} + W_{bip,i}}
+\text{Per Issue Score}_i = \\[12pt] \frac{W_{dir,i} \cdot (1 - |CPD_{avg,i} - RVD_{avg,i}|) + W_{bip,i} \cdot 1.0}{W_{dir,i} + W_{bip,i}}
 $$
 
 Where $W_{\text{dir},i}$ is the sum of confidence weights for the representative's directional (liberal/conservative) votes on issue $i$, and $W_{\text{bip},i}$ is the sum of confidence weights for their bipartisan votes for issue $i$. The bipartisan-vote handling is described separately below. The core part is that the formula results in a number between 0 and 1, regardless of how many votes a representative has cast in relation to the given issue.
 
-The directional component, $1 − |CPDᵢ − RVDᵢ|$, is a core aspect of the alignment score. If constituents are 70 percent in the liberal direction (CPD = 0.7) and the representative votes 65 percent in the liberal direction (RVD = 0.65), the gap is 0.05, and the directional alignment is 0.95. If constituents are 70 percent liberal but the representative votes 20 percent liberal (RVD = 0.20), the gap is 0.50, and the directional alignment is 0.50.
+The directional component, $1 - |CPD_i - RVD_i|$, is a core aspect of the alignment score. If constituents are 70 percent in the liberal direction (CPD = 0.7) and the representative votes 65 percent in the liberal direction (RVD = 0.65), the gap is 0.05, and the directional alignment is 0.95. If constituents are 70 percent liberal but the representative votes 20 percent liberal (RVD = 0.20), the gap is 0.50, and the directional alignment is 0.50.
 
 ## Computing CPD: Constituent Preferred Direction
 
@@ -108,13 +108,13 @@ $$
 w_i' = \frac{w_i \cdot p_i}{\sum_{j} w_j \cdot p_j}
 $$
 
-Where $wᵢ$ is the raw VoteCast salience weight for issue $i$ (after dropping foreign policy), $pᵢ$ is the sparse-data penalty for that issue (defined below), and the denominator is the sum across all remaining issues. This ensures that the final weights always sum to 1, no matter how many issues are penalized.
+Where $w_i$ is the raw VoteCast salience weight for issue $i$ (after dropping foreign policy), $p_i$ is the sparse-data penalty for that issue (defined below), and the denominator is the sum across all remaining issues. This ensures that the final weights always sum to 1, no matter how many issues are penalized.
 
 ## The Sparse-Data Penalty
 
 If a representative has cast only one vote on healthcare across both Congresses, the resulting per-issue score for healthcare is not entirely indicative. In part this is a result of filtering to substantive votes specifically, which already decreased the available data points. Additionally, this is because a single data point doesn’t directly correlate to a pattern. If we placed equal weight on that score compared to a score from twenty votes, that would distort the overall calculation.
 
-We address this with a **sparse-data penalty** applied at the per-issue level, based on $nᵢ$, the total number of votes (including bipartisan) the representative has cast on issue $i$:
+We address this with a **sparse-data penalty** applied at the per-issue level, based on $n_i$, the total number of votes (including bipartisan) the representative has cast on issue $i$:
 
 $$
 p_i = \begin{cases} 1.0 & \text{if } n_i \geq 3 \\ 0.5 & \text{if } n_i = 2 \\ 0.25 & \text{if } n_i = 1 \\ 0 & \text{if } n_i = 0 \end{cases}
@@ -131,3 +131,5 @@ The state-level pages display a single **statewide alignment score** as the prim
 We chose House alignment as the primary aggregate for two reasons. First, since House seats are drawn based on district lines, this more closely connects to our aim of framing gerrymandering as a potential cause of the disconnect people feel between their views and what their representatives actually do. Moreover, senators are elected statewide and don't pass through the redistricting process at all, so House alignment more directly answers the question this project is built around. Second, aggregates that mix in Senate scores or weight chambers equally produce systematic biases against larger, more demographically diverse states, where the gap between a representative's two senators and the dozens of district-level representatives can be substantial. The full discussion of this bias is in the **Limitations** section.
 
 The underlying data files include three aggregate variables (house_alignment, senate_alignment, and a chamber-weighted overall_alignment) for any reader or developer working directly with the project's open-source data on GitHub. The choice to surface only the House figure on the public-facing state page is editorial, not a constraint of the data.
+
+---

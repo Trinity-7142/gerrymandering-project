@@ -109,7 +109,25 @@ export default function ZipLookup({ availableStates = [] }) {
 
   return (
     <>
-      <form onSubmit={handleSubmit} style={styles.form}>
+      <style>{`
+        .zip-form {
+          display: flex;
+          gap: 8px;
+        }
+        @media (max-width: 640px) {
+          .zip-form {
+            flex-direction: column;
+            align-items: center;
+          }
+          .zip-form input {
+            width: 100%;
+          }
+          .zip-btn {
+            width: auto;
+          }
+        }
+      `}</style>
+      <form onSubmit={handleSubmit} className="zip-form" style={{ gap: "8px" }}>
         <input
           type="text"
           inputMode="numeric"
@@ -124,7 +142,7 @@ export default function ZipLookup({ availableStates = [] }) {
             opacity: isLoading ? 0.6 : 1,
           }}
         />
-        <button type="submit" disabled={isLoading} style={styles.btn}>
+        <button type="submit" disabled={isLoading} className="zip-btn" style={styles.btn}>
           Find District
         </button>
       </form>
@@ -171,10 +189,7 @@ export default function ZipLookup({ availableStates = [] }) {
 }
 
 const styles = {
-  form: {
-    display: "flex",
-    gap: "8px",
-  },
+  form: {},
   input: {
     flex: 1,
     padding: "10px 14px",

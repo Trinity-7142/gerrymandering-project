@@ -52,3 +52,5 @@ Alongside the alignment score, we display state-level grades from the [Princeton
 Princeton grades are **not** an input to the alignment score. We display them because the two data points describe two related but distinct discussions. Princeton evaluates how fair the maps are, while the alignment score evaluates how well the people elected from those maps represent their constituents. Showing both side by side lets people see whether states with poorly graded maps also result in representatives with low alignment scores, or whether the relationship is more nuanced than a simple cause-and-effect.
 
 The Princeton data was retrieved manually from their public site and stored in our project's data files. It is not updated automatically; if Princeton releases new grades, we will need to refresh the data manually.
+
+---

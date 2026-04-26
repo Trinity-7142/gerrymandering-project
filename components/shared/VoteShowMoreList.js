@@ -90,6 +90,7 @@ export default function VoteShowMoreList({ votes, chamber }) {
       {hiddenCount > 0 && (
         <button
           onClick={() => setShowAll((s) => !s)}
+          onTouchEnd={(e) => { e.preventDefault(); setShowAll((s) => !s); }}
           style={styles.toggleBtn}
           aria-expanded={showAll}
         >
@@ -185,5 +186,6 @@ const styles = {
     cursor: "pointer",
     fontFamily: fonts.sans,
     transition: "background 0.15s ease",
+    touchAction: "manipulation",
   },
 };

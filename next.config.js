@@ -1,6 +1,11 @@
 // next.config.js
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  allowedDevOrigins: ['100.85.96.73'],
+  images: {
+    qualities: [100],
+  },
+};
 
 module.exports = nextConfig;
 

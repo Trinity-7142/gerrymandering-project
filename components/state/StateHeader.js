@@ -15,32 +15,48 @@ export default function StateHeader({ data, alignmentScore }) {
   const repPct = total > 0 ? ((republican / total) * 100).toFixed(1) : "—";
 
   return (
-    <div style={styles.section}>
-      {/* ── Left: state info ────────────────────────────────── */}
-      <div>
-        <p style={styles.stateLabel}>State Profile</p>
-        <h1 style={styles.stateName}>{state_name}</h1>
-        <p style={styles.stateMeta}>
-          {total_districts} congressional districts
-          <span style={styles.dot}> · </span>
-          {demPct}% Dem / {repPct}% Rep
-        </p>
-      </div>
+    <>
+      <style>{`
+        .state-header {
+          padding-top: 48px;
+          display: grid;
+          grid-template-columns: 1fr auto;
+          gap: 32px;
+          align-items: start;
+        }
+        @media (max-width: 640px) {
+          .state-header {
+            grid-template-columns: 1fr;
+            gap: 24px;
+            padding-top: 28px;
+          }
+          .state-header__gauge {
+            justify-self: center;
+          }
+        }
+      `}</style>
+      <div className="state-header">
+        {/* ── Left: state info ────────────────────────────────── */}
+        <div>
+          <p style={styles.stateLabel}>State Profile</p>
+          <h1 style={styles.stateName}>{state_name}</h1>
+          <p style={styles.stateMeta}>
+            {total_districts} congressional districts
+            <span style={styles.dot}> · </span>
+            {demPct}% Dem / {repPct}% Rep
+          </p>
+        </div>
 
-      {/* ── Right: alignment gauge ──────────────────────────── */}
-      <AlignmentGaugeCard score={alignmentScore} />
-    </div>
+        {/* ── Right: alignment gauge ──────────────────────────── */}
+        <div className="state-header__gauge">
+          <AlignmentGaugeCard score={alignmentScore} />
+        </div>
+      </div>
+    </>
   );
 }
 
 const styles = {
-  section: {
-    paddingTop: "48px",
-    display: "grid",
-    gridTemplateColumns: "1fr auto",
-    gap: "32px",
-    alignItems: "start",
-  },
   stateLabel: {
     fontSize: "0.8rem",
     fontWeight: 600,
@@ -52,7 +68,7 @@ const styles = {
   },
   stateName: {
     fontFamily: fonts.serif,
-    fontSize: "3.2rem",
+    fontSize: "clamp(2rem, 7vw, 3.2rem)",
     fontWeight: 700,
     lineHeight: 1.1,
     color: textColors.primary,

@@ -13,53 +13,69 @@ export default function DistrictHeader({ data, alignmentScore, stateCode }) {
   const rep = representative ?? {};
 
   return (
-    <div style={styles.section}>
-      {/* ── Left: back link + district info ─────────────────── */}
-      <div>
-        {stateCode && (
-          <Link href={`/state/${stateCode}`} style={styles.backLink}>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ display: "block", flexShrink: 0 }} aria-hidden="true">
-              <path d="M9 11L5 7L9 3" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-            Back to {stateCode}
-          </Link>
-        )}
-        <p style={styles.districtLabel}>Congressional District</p>
-        <h1 style={styles.districtId}>{district_id}</h1>
-        <div style={styles.metaRow}>
-          {rep.name && (
-            <span style={styles.repName}>{rep.name}</span>
+    <>
+      <style>{`
+        .district-header {
+          padding-top: 48px;
+          margin-bottom: 24px;
+          display: grid;
+          grid-template-columns: 1fr auto;
+          gap: 32px;
+          align-items: start;
+        }
+        @media (max-width: 640px) {
+          .district-header {
+            grid-template-columns: 1fr;
+            gap: 24px;
+            padding-top: 28px;
+          }
+          .district-header__gauge {
+            justify-self: center;
+          }
+        }
+      `}</style>
+      <div className="district-header">
+        {/* ── Left: back link + district info ─────────────────── */}
+        <div>
+          {stateCode && (
+            <Link href={`/state/${stateCode}`} style={styles.backLink}>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ display: "block", flexShrink: 0 }} aria-hidden="true">
+                <path d="M9 11L5 7L9 3" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              Back to {stateCode}
+            </Link>
           )}
-          {demographics?.cook_pvi && (
-            <>
-              <span style={styles.dot}> · </span>
-              <span style={styles.meta}>{demographics.cook_pvi}</span>
-            </>
-          )}
-          {ces_sample?.n_respondents && (
-            <>
-              <span style={styles.dot}> · </span>
-              <span style={styles.meta}>n = {ces_sample.n_respondents.toLocaleString()} survey respondents</span>
-            </>
-          )}
+          <p style={styles.districtLabel}>Congressional District</p>
+          <h1 style={styles.districtId}>{district_id}</h1>
+          <div style={styles.metaRow}>
+            {rep.name && (
+              <span style={styles.repName}>{rep.name}</span>
+            )}
+            {demographics?.cook_pvi && (
+              <>
+                <span style={styles.dot}> · </span>
+                <span style={styles.meta}>{demographics.cook_pvi}</span>
+              </>
+            )}
+            {ces_sample?.n_respondents && (
+              <>
+                <span style={styles.dot}> · </span>
+                <span style={styles.meta}>n = {ces_sample.n_respondents.toLocaleString()} survey respondents</span>
+              </>
+            )}
+          </div>
+        </div>
+
+        {/* ── Right: alignment gauge ──────────────────────────── */}
+        <div className="district-header__gauge">
+          <AlignmentGaugeCard score={alignmentScore} caption="District alignment score" />
         </div>
       </div>
-
-      {/* ── Right: alignment gauge ──────────────────────────── */}
-      <AlignmentGaugeCard score={alignmentScore} caption="District alignment score" />
-    </div>
+    </>
   );
 }
 
 const styles = {
-  section: {
-    paddingTop: "48px",
-    marginBottom: "24px",
-    display: "grid",
-    gridTemplateColumns: "1fr auto",
-    gap: "32px",
-    alignItems: "start",
-  },
   backLink: {
     display: "inline-flex",
     alignItems: "center",
@@ -82,7 +98,7 @@ const styles = {
   },
   districtId: {
     fontFamily: fonts.serif,
-    fontSize: "3.2rem",
+    fontSize: "clamp(2rem, 7vw, 3.2rem)",
     fontWeight: 700,
     lineHeight: 1.1,
     color: textColors.primary,

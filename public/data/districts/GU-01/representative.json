@@ -8,7 +8,7 @@
   "congress": [
     118
   ],
-  "last_updated": "2026-04-14",
+  "last_updated": "2026-04-25",
   "votes_by_issue": [
     {
       "issue_id": "criminal_justice",
@@ -19,7 +19,8 @@
           "date": "2024-06-12",
           "vote": "aye",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2024253"
+          "source_url": "https://clerk.house.gov/Votes/2024253",
+          "chamber": "house"
         }
       ],
       "summary": {
@@ -37,7 +38,8 @@
           "date": "2023-07-19",
           "vote": "aye",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2023355"
+          "source_url": "https://clerk.house.gov/Votes/2023355",
+          "chamber": "house"
         },
         {
           "bill": "H.J.Res. 30",
@@ -45,7 +47,8 @@
           "date": "2024-04-20",
           "vote": "no",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2024149"
+          "source_url": "https://clerk.house.gov/Votes/2024149",
+          "chamber": "house"
         },
         {
           "bill": "H.R. 3746",
@@ -53,7 +56,8 @@
           "date": "2024-06-05",
           "vote": "not voting",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2024243"
+          "source_url": "https://clerk.house.gov/Votes/2024243",
+          "chamber": "house"
         },
         {
           "bill": "H.J.Res. 45",
@@ -61,7 +65,8 @@
           "date": "2024-06-14",
           "vote": "not voting",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2024277"
+          "source_url": "https://clerk.house.gov/Votes/2024277",
+          "chamber": "house"
         }
       ],
       "summary": {
@@ -79,7 +84,8 @@
           "date": "2024-07-23",
           "vote": "not voting",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2024382"
+          "source_url": "https://clerk.house.gov/Votes/2024382",
+          "chamber": "house"
         },
         {
           "bill": "S.J.Res. 9",
@@ -87,7 +93,8 @@
           "date": "2024-07-23",
           "vote": "not voting",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2024381"
+          "source_url": "https://clerk.house.gov/Votes/2024381",
+          "chamber": "house"
         }
       ],
       "summary": {

@@ -118,7 +118,7 @@ export default function HomePage() {
       <section style={{ marginTop: "26px" }}>
         <Markdown>{cracking.body}</Markdown>
       </section>
-      <div style={{ marginTop: "36px", maxWidth: "65%", margin: "36px auto 0" }}>
+      <div className="home-infographic" style={{ marginTop: "36px", maxWidth: "65%", margin: "36px auto 0" }}>
         <Infographic filename="cracking.png" label="Cracking infographic" alt="Diagram illustrating how cracking splits voter groups across districts" />
       </div>
 
@@ -129,7 +129,7 @@ export default function HomePage() {
       <section style={{ marginTop: "36px" }}>
         <Markdown>{packing.body}</Markdown>
       </section>
-      <div style={{ marginTop: "36px", maxWidth: "65%", margin: "36px auto 0" }}>
+      <div className="home-infographic" style={{ marginTop: "36px", maxWidth: "65%", margin: "36px auto 0" }}>
         <Infographic filename="packing.png" label="Packing infographic" alt="Diagram illustrating how packing concentrates voters into fewer districts" />
       </div>
 

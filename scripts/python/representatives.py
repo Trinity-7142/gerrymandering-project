@@ -31,6 +31,7 @@ from datetime import date
 # ── Script parameters ──
 DISTRICT_ID = None  # change to target district before running, e.g. "CA-11"
 STATE_CODES = None  # change to "CA" or ["CA", "TX"] before running
+INCLUDE_CROSS_CHAMBER_VOTES = False  # set True to include Senate votes cast when rep previously served in the Senate
 
 
 # ── Module-level data loads (run once) ──
@@ -55,10 +56,17 @@ with open(
 ) as _bill_to_roll_file:
     _bill_to_roll_rows = list(csv.DictReader(_bill_to_roll_file))
 
+with open(
+    os.path.join(_PROJECT_ROOT, "data-raw", "congress", "senator_rollcall_votes.csv"),
+    encoding="utf-8",
+) as _senate_votes_file:
+    _senate_rollcall_rows = list(csv.DictReader(_senate_votes_file))
+
 
 # ── Lookup indexes ──
 _bioguide_to_representative = {}  # populated during Representative creation
-_seen_votes = set()  # (bioguide_id, bill_id, congress) for dedup
+_lis_to_representative = {}        # populated during Representative creation (cross-chamber)
+_seen_votes = set()                # (id, bill_id, congress) for dedup
 
 
 PARTY_ABBREV = {"Democrat": "D", "Republican": "R", "Independent": "I"}
@@ -129,6 +137,7 @@ class Representative:
     def __init__(
         self,
         bioID,
+        lisID,
         district_id,
         firstName,
         lastName,
@@ -155,6 +164,7 @@ class Representative:
         self.missedVotes = missedVotes
         self.attendanceRate = attendanceRate
         self.bioID = bioID
+        self.lisID = lisID  # LIS ID if rep previously served in the Senate, else None
         self.district_id = district_id
         self.votes_by_issue = []
 
@@ -217,7 +227,7 @@ Vote Class
 class Vote:
     allVotes = []
 
-    def __init__(self, bill, title, date, vote, bill_direction, source_url, issue_id):
+    def __init__(self, bill, title, date, vote, bill_direction, source_url, issue_id, chamber="house"):
         self.bill = bill
         self.title = title
         self.date = date
@@ -225,6 +235,7 @@ class Vote:
         self.bill_direction = bill_direction
         self.source_url = source_url
         self.issue_id = issue_id
+        self.chamber = chamber  # "house" or "senate"
 
         self.allVotes.append(self)
 
@@ -268,9 +279,11 @@ def create_representatives(target_district_ids=None):
             continue
 
         first_rep_term = next(term for term in terms if term["type"] == "rep")
+        lis_id = entry["id"].get("lis")
 
         representative = Representative(
             bioID=bioguide_id,
+            lisID=lis_id,
             district_id=district_id,
             firstName=entry["name"]["first"],
             lastName=entry["name"]["last"],
@@ -280,6 +293,8 @@ def create_representatives(target_district_ids=None):
             photo_url=f"/images/reps/{district_id}.jpg",
         )
         _bioguide_to_representative[bioguide_id] = representative
+        if lis_id:
+            _lis_to_representative[lis_id] = representative
 
 
 def create_votes():
@@ -332,6 +347,74 @@ def create_votes():
                 bill_direction=bill_direction,
                 source_url=_build_house_source_url(row),
                 issue_id=tracked_vote["Issue ID"].lower().replace(" ", "_"),
+                chamber="house",
+            )
+            representativeVotes.setdefault(representative, []).append(vote)
+
+    if not INCLUDE_CROSS_CHAMBER_VOTES:
+        return
+
+    # ── Cross-chamber: Senate votes cast when rep previously served in the Senate ──
+    tracked_senate_votes = {}
+    for row in _bill_to_roll_rows:
+        if row.get("Chamber") != "s":
+            continue
+        if row.get("Category") not in VALID_CATEGORIES:
+            continue
+        congress_match = re.search(r"(\d+)", row.get("Congress", ""))
+        roll_num = row.get("Roll Call Num")
+        if not congress_match or roll_num in (None, ""):
+            continue
+        key = (int(congress_match.group(1)), int(roll_num))
+        tracked_senate_votes.setdefault(key, []).append(row)
+
+    for row in _senate_rollcall_rows:
+        vote_id = row.get("vote_id", "")
+        if not vote_id.startswith("s"):
+            continue
+
+        s_match = re.match(r"s(\d+)-(\d+)\.(\d+)", vote_id)
+        if not s_match:
+            continue
+        roll_num_s   = int(s_match.group(1))
+        congress_num = int(s_match.group(2))
+        year         = int(s_match.group(3))
+
+        bill_number = row.get("bill_number")
+        lis_id      = row.get("bioguide_id")  # senate rollcall stores LIS IDs here
+        if bill_number in (None, "") or not lis_id:
+            continue
+
+        representative = _lis_to_representative.get(lis_id)
+        if representative is None:
+            continue
+
+        for tracked_vote in tracked_senate_votes.get((congress_num, int(bill_number)), []):
+            bill_id        = tracked_vote["Bill ID"]
+            bill_direction = _normalize_bill_direction(tracked_vote.get("Bill Direction"))
+            if bill_direction is None:
+                continue
+
+            dedup_key = (lis_id, bill_id, congress_num)
+            if dedup_key in _seen_votes:
+                continue
+            _seen_votes.add(dedup_key)
+
+            session    = 1 if year % 2 == 1 else 2
+            source_url = (
+                "https://www.senate.gov/legislative/LIS/roll_call_lists/"
+                f"roll_call_vote_cfm.cfm?congress={congress_num}&session={session}&vote={roll_num_s:05d}"
+            )
+
+            vote = Vote(
+                bill=bill_id,
+                title=tracked_vote.get("Question") or row.get("question"),
+                date=(row.get("Date") or "")[:10],
+                vote=(row.get("position") or "").lower(),
+                bill_direction=bill_direction,
+                source_url=source_url,
+                issue_id=tracked_vote["Issue ID"].lower().replace(" ", "_"),
+                chamber="senate",
             )
             representativeVotes.setdefault(representative, []).append(vote)
 
@@ -397,6 +480,7 @@ def build_output(district_id):
                         "vote": vote.vote,
                         "bill_direction": vote.bill_direction,
                         "source_url": vote.source_url,
+                        "chamber": vote.chamber,
                     }
                     for vote in issue_votes.votes
                 ],
@@ -421,6 +505,7 @@ def _reset_state():
     Representative.representatives.clear()
     Vote.allVotes.clear()
     _bioguide_to_representative.clear()
+    _lis_to_representative.clear()
     _seen_votes.clear()
     representativeVotes.clear()
 

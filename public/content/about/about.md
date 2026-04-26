@@ -15,26 +15,26 @@ team:
         url: "https://github.com/Trinity-7142"
   - name: Haeun Lee
     role: Policy Team Lead
-    bio: "[Brief bio: 1–2 sentences about background, role, and whatever you'd like to talk about.]"
+    bio: "Hello! I’m a second year at UC Berkeley double majoring in Philosophy and Political Science. I joined the project in Spring 2026 as the policy team project manager."
     link: "https://www.linkedin.com/in/haeun-lee-a1ba2b309/?locale=en"
-  - name: Janet Padilla
+  - name: Richard Padilla
     role: Tech Team
-    bio: "[Brief bio: 1–2 sentences.]"
+    bio: "Hello! I'm a first year at UC Berkeley majoring in Computer Science. I implemented back-end features like data retrieval and processing, as well as the alignment metric. This project has been quite fun, and I'm glad to raise awareness about these issues."
     links:
+      - label: LinkedIn
+        url: "https://www.linkedin.com/in/richard-padilla-55549b380/"
       - label: GitHub
-        url: "https://github.com/JanetPistachio"
-      - label: GitHub
-        url: "https://github.com/JanetPistachio"
+        url: "https://www.linkedin.com/in/richard-padilla-55549b380/"
   - name: Emma Chiavegato
     role: Policy Team
-    bio: "[Brief bio: 1–2 sentences.]"
+    bio: "Intended Political Science and History double major"
     link: "https://www.linkedin.com/in/emma-chiavegato-b44549354/"
   - name: Coolsjes Singhvi
     role: Policy Team
-    bio: "[Brief bio: 1–2 sentences.]"
+    bio: "Freshman at UC Berkeley’s Haas School of Business with interests in finance and economics, and a growing focus on how data and technology can be applied to real-world problems."
   - name: Patrick Rivera
     role: Policy Team
-    bio: "[Brief bio: 1–2 sentences.]"
+    bio: "Junior at UC Berkeley, majoring in History and Political Science and minoring in Middle East Studies"
 ---
 
 This project began as a collaboration between the [Political Computer Science Club at UC Berkeley](https://pcs.studentorg.berkeley.edu/) and [Indivisible East Bay](https://indivisibleeb.org/), the East Bay chapter of the national [Indivisible](https://indivisible.org/) movement. The Political Computer Science Club is a student organization focused on exploring the intersection of technology and politics, and Indivisible East Bay reached out to the club to propose a joint project to raise awareness about the tangible impacts of gerrymandering. Rather than producing a traditional research paper or presentation, the team chose to build something interactive: a website that could be easily shared, easily understood, and meet readers where they actually engage with information about politics today.

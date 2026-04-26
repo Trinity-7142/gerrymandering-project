@@ -82,3 +82,5 @@ The statewide House alignment is computed across whatever House members have val
 ### **The score does not capture everything that matters about representation**
 
 The alignment score measures the gap between constituent policy preferences and roll-call voting behavior. It does not measure constituent service, responsiveness to individual constituents, the quality or substance of legislation a representative authors, behind-the-scenes negotiation, committee work, oversight, or the many other ways elected officials represent the people who sent them to Congress. A representative with a low alignment score may still be serving their district well in ways the score cannot see, and a representative with a high alignment score may be passive on dimensions that matter to their constituents. The score is one lens, not the whole picture.
+
+---

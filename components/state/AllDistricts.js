@@ -30,17 +30,81 @@ export default function AllDistricts({ data }) {
     );
   }
 
-  const hasDistrictPages = true;
-
   const sorted = [...data.districts].sort(
     (a, b) => districtSortKey(a.district_id) - districtSortKey(b.district_id)
   );
 
   return (
     <div>
+      <style>{`
+        /* ── Mobile card list ── */
+        .districts-table-wrap {
+          overflow-x: auto;
+          border-radius: 10px;
+          border: 1px solid #E8E6E3;
+        }
+        .districts-cards {
+          display: none;
+        }
+
+        @media (max-width: 640px) {
+          .districts-table-wrap {
+            display: none;
+          }
+          .districts-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+          .district-card {
+            background: #fff;
+            border: 1px solid #E8E6E3;
+            border-radius: 10px;
+            padding: 14px 16px;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 6px 12px;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            transition: background 0.15s ease;
+          }
+          .district-card:active {
+            background: #F7F6F4;
+          }
+          .district-card__id {
+            font-family: ${fonts.sans};
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #194973;
+          }
+          .district-card__rep {
+            font-family: ${fonts.sans};
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: ${textColors.primary};
+          }
+          .district-card__meta {
+            font-family: ${fonts.sans};
+            font-size: 0.78rem;
+            color: ${textColors.muted};
+            grid-column: 1;
+          }
+          .district-card__badge-col {
+            grid-row: 1 / 3;
+            grid-column: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 6px;
+          }
+        }
+      `}</style>
+
       <p style={styles.sectionLabel}>All Districts</p>
 
-      <div style={styles.tableWrapper}>
+      {/* ── Desktop / tablet: table ── */}
+      <div className="districts-table-wrap">
         <table style={styles.table}>
           <thead>
             <tr>
@@ -53,26 +117,18 @@ export default function AllDistricts({ data }) {
             {sorted.map((d, i) => {
               const badge   = alignmentBadge(d.alignment_score);
               const pColors = partyColors[d.party] ?? partyColors.I;
-              const href    = hasDistrictPages ? `/district/${d.district_id}` : null;
+              const href    = `/district/${d.district_id}`;
 
               return (
                 <tr
                   key={d.district_id}
-                  style={{ background: i % 2 === 0 ? "#fff" : "#FAFAF9", cursor: href ? "pointer" : "default" }}
+                  style={{ background: i % 2 === 0 ? "#fff" : "#FAFAF9", cursor: "pointer" }}
                 >
                   <td style={{ ...styles.td, fontWeight: 600 }}>
-                    {href ? (
-                      <Link href={href} style={styles.link}>{d.district_id}</Link>
-                    ) : (
-                      <span style={{ color: textColors.primary }}>{d.district_id}</span>
-                    )}
+                    <Link href={href} style={styles.link}>{d.district_id}</Link>
                   </td>
                   <td style={{ ...styles.td, color: textColors.primary }}>
-                    {href ? (
-                      <Link href={href} style={styles.rowLink}>{d.representative ?? "Vacant"}</Link>
-                    ) : (
-                      d.representative ?? "Vacant"
-                    )}
+                    <Link href={href} style={styles.rowLink}>{d.representative ?? "Vacant"}</Link>
                   </td>
                   <td style={styles.td}>
                     {d.party ? (
@@ -95,6 +151,37 @@ export default function AllDistricts({ data }) {
           </tbody>
         </table>
       </div>
+
+      {/* ── Mobile: cards ── */}
+      <div className="districts-cards">
+        {sorted.map((d) => {
+          const badge   = alignmentBadge(d.alignment_score);
+          const pColors = partyColors[d.party] ?? partyColors.I;
+          const href    = `/district/${d.district_id}`;
+
+          return (
+            <Link key={d.district_id} href={href} className="district-card">
+              <div>
+                <div className="district-card__id">{d.district_id}</div>
+                <div className="district-card__rep">{d.representative ?? "Vacant"}</div>
+              </div>
+              <div className="district-card__meta">
+                {d.ces_sample_size != null ? `n = ${d.ces_sample_size.toLocaleString()}` : ""}
+              </div>
+              <div className="district-card__badge-col">
+                {d.party && (
+                  <span style={{ ...styles.partyBadge, color: pColors.text, background: pColors.bg, fontSize: "0.7rem" }}>
+                    {d.party}
+                  </span>
+                )}
+                <span style={{ ...styles.alignBadge, background: badge.bg, color: badge.color }}>
+                  {badge.label}
+                </span>
+              </div>
+            </Link>
+          );
+        })}
+      </div>
     </div>
   );
 }
@@ -108,11 +195,6 @@ const styles = {
     letterSpacing: "0.06em",
     color: textColors.muted,
     marginBottom: "14px",
-  },
-  tableWrapper: {
-    overflowX: "auto",
-    borderRadius: "10px",
-    border: "1px solid #E8E6E3",
   },
   table: {
     width: "100%",

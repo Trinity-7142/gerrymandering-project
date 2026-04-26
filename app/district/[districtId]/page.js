@@ -35,7 +35,7 @@ export default async function DistrictPage({ params }) {
 
   return (
     <main style={{ background: "#F4F3F1", minHeight: "100vh" }}>
-      <div style={{ maxWidth: pageWidths.district, margin: "0 auto", padding: "0 24px 48px" }}>
+      <div style={{ maxWidth: pageWidths.district, margin: "0 auto", padding: "0 clamp(14px, 4vw, 24px) 48px" }}>
 
         {/* 1. District heading + alignment gauge */}
         <DistrictHeader data={overview} alignmentScore={alignmentScore} stateCode={stateCode} />

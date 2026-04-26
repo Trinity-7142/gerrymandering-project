@@ -8,7 +8,7 @@ export default function AlignmentGaugeCard({ score, caption = "Statewide average
   if (score == null) return null;
 
   return (
-    <div style={styles.card}>
+    <div className="gauge-card" style={{ ...cardStyle, textAlign: "center" }}>
       <style>{`
         @keyframes needleSweep {
           from { transform: rotate(-90deg); }
@@ -18,12 +18,31 @@ export default function AlignmentGaugeCard({ score, caption = "Statewide average
           transform-origin: 90px 90px;
           animation: needleSweep 1.4s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
         }
+        .gauge-card {
+          padding: 28px 36px;
+          min-width: 280px;
+        }
+        @media (max-width: 640px) {
+          .gauge-card {
+            padding: 18px 24px;
+            min-width: 0;
+            width: 100%;
+          }
+          .gauge-svg-wrap {
+            width: 140px !important;
+            height: 82px !important;
+          }
+          .gauge-score-text {
+            font-size: 1.6rem !important;
+          }
+        }
       `}</style>
 
       <p style={styles.label}>Alignment Score</p>
 
       {/* ── Gauge SVG ──────────────────────────────────────── */}
       <div
+        className="gauge-svg-wrap"
         style={{ "--gauge-score": score, width: 180, height: 105, margin: "0 auto 8px", position: "relative" }}
       >
         <svg viewBox="0 0 180 110" xmlns="http://www.w3.org/2000/svg" style={{ width: "100%", height: "100%", overflow: "visible" }}>
@@ -69,7 +88,7 @@ export default function AlignmentGaugeCard({ score, caption = "Statewide average
 
       {/* ── Score display ─────────────────────────────────── */}
       <div>
-        <span style={styles.score}>{score}</span>
+        <span className="gauge-score-text" style={styles.score}>{score}</span>
         <span style={styles.outOf}> / 100</span>
       </div>
       <p style={styles.caption}>{caption}</p>
@@ -78,12 +97,6 @@ export default function AlignmentGaugeCard({ score, caption = "Statewide average
 }
 
 const styles = {
-  card: {
-    ...cardStyle,
-    padding: "28px 36px",
-    textAlign: "center",
-    minWidth: "280px",
-  },
   label: {
     fontSize: "0.78rem",
     fontWeight: 600,

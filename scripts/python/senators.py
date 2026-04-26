@@ -26,6 +26,7 @@ import pandas as pd
 
 # ── Script parameters ──
 STATE_CODE = None  # change to target state before running
+INCLUDE_CROSS_CHAMBER_VOTES = False  # set True to include House votes cast when senator previously served in the House
 
 CES_STATE_SAMPLE = {
     "n_respondents": 4900,
@@ -45,6 +46,9 @@ _rollcall_df = pd.read_csv(
 )
 _bill_to_roll_df = pd.read_csv(
     os.path.join(_PROJECT_ROOT, "data-raw", "congress", "bill_to_roll.csv")
+)
+_house_rollcall_df = pd.read_csv(
+    os.path.join(_PROJECT_ROOT, "data-raw", "congress", "house_roll_call_votes.csv")
 )
 
 # Notion Tagging DB — keyed by (bill_id, congress_str) for clean titles and final bill status
@@ -223,7 +227,7 @@ Vote Class
 class Vote:
     allVotes = []
 
-    def __init__(self, bill, title, date, vote, bill_direction, source_url, issue_id, status=None):
+    def __init__(self, bill, title, date, vote, bill_direction, source_url, issue_id, status=None, chamber="senate"):
         # bill identifier, e.g. "S. 2938"
         self.bill = bill
 
@@ -239,7 +243,7 @@ class Vote:
         # direction tag from the taxonomy, e.g. "conservative/liberal"
         self.bill_direction = bill_direction
 
-        # senate.gov roll-call URL
+        # senate.gov or clerk.house.gov roll-call URL
         self.source_url = source_url
 
         # one of the 9 taxonomy issue_ids, e.g. "guns", "criminal_justice"
@@ -247,6 +251,9 @@ class Vote:
 
         # final bill outcome, e.g. "Became Law", "Failed Senate" (from Notion Tagging DB)
         self.status = status
+
+        # "senate" or "house" — identifies which chamber cast this vote
+        self.chamber = chamber
 
         self.allVotes.append(self)
 
@@ -374,6 +381,73 @@ def create_votes():
             source_url     = source_url,
             issue_id       = row["Issue ID"].lower().replace(" ", "_"),
             status         = notion.get("bill_status"),
+            chamber        = "senate",
+        )
+        senatorVotes.setdefault(senator, []).append(v)
+
+    if not INCLUDE_CROSS_CHAMBER_VOTES:
+        return
+
+    # ── Cross-chamber: House votes cast when senator previously served in the House ──
+    bioguide_to_senator = {s.bioID: s for s in Senator.senators}
+
+    house_bills = _bill_to_roll_df[
+        (_bill_to_roll_df["Chamber"] == "h") &
+        (_bill_to_roll_df["Category"].isin(VALID_CATEGORIES))
+    ].copy()
+    house_bills["congress"] = house_bills["Congress"].str.extract(r"(\d+)")[0].astype(int)
+    house_bills["Roll Call Num"] = house_bills["Roll Call Num"].astype(int)
+
+    house_rollcall = _house_rollcall_df[
+        _house_rollcall_df["vote_id"].str.startswith("h")
+    ].copy()
+    house_rollcall["congress"] = house_rollcall["vote_id"].str.extract(r"h\d+-(\d+)\.")[0].astype(int)
+    house_rollcall["bill_number"] = house_rollcall["bill_number"].astype(int)
+
+    house_merged = house_rollcall.merge(
+        house_bills,
+        left_on=["bill_number", "congress"],
+        right_on=["Roll Call Num", "congress"],
+        how="inner",
+    )
+
+    for _, row in house_merged.iterrows():
+        bioguide_id    = row["bioguide_id"]
+        senator        = bioguide_to_senator.get(bioguide_id)
+        if senator is None:
+            continue
+
+        bill_id        = row["Bill ID"]
+        congress       = int(row["congress"])
+        bill_direction = _normalize_bill_direction(row.get("Bill Direction"))
+        if bill_direction is None:
+            continue
+
+        dedup_key = (bioguide_id, bill_id, congress)
+        if dedup_key in _seen_votes:
+            continue
+        _seen_votes.add(dedup_key)
+
+        h_match = re.match(r"h(\d+)-(\d+)\.(\d+)", str(row["vote_id"]))
+        if h_match:
+            roll_num   = int(h_match.group(1))
+            year       = int(h_match.group(3))
+            source_url = f"https://clerk.house.gov/Votes/{year}{roll_num:03d}"
+        else:
+            source_url = None
+
+        notion    = _notion_lookup.get((bill_id, row["Congress"]), {})
+        date_raw  = str(row.get("vote_date") or row.get("Date") or "")
+        v = Vote(
+            bill           = bill_id,
+            title          = notion.get("title") or row.get("Question") or row.get("question"),
+            date           = date_raw[:10],
+            vote           = str(row["position"]).lower(),
+            bill_direction = bill_direction,
+            source_url     = source_url,
+            issue_id       = row["Issue ID"].lower().replace(" ", "_"),
+            status         = notion.get("bill_status"),
+            chamber        = "house",
         )
         senatorVotes.setdefault(senator, []).append(v)
 
@@ -443,6 +517,7 @@ def build_output(state_code, ces_state_sample):
                             "vote":           v.vote,
                             "bill_direction": v.bill_direction,
                             "source_url":     v.source_url,
+                            "chamber":        v.chamber,
                             **( {"status": v.status} if v.status else {} ),
                         }
                         for v in iv.votes

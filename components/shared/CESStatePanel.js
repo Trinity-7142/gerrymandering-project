@@ -175,18 +175,88 @@ export default function CESStatePanel({ data }) {
 
       {/* ── Box 1: Issue Summary (liberal / conservative lean) ─────────────── */}
       <div style={{ ...cardStyle, padding: "32px", marginBottom: "24px" }}>
+        <style>{`
+          .box1-legend-desktop { display: block; }
+          .box1-legend-mobile  { display: none; }
+          .box1-issue-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+          .box1-issue-label {
+            width: 160px;
+            flex-shrink: 0;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: ${textColors.secondary};
+            font-family: ${fonts.sans};
+          }
+          .box1-bar-wrap { flex: 1; }
+
+          @media (max-width: 640px) {
+            .box1-legend-desktop { display: none; }
+            .box1-legend-mobile {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 16px;
+            }
+            .box1-legend-mobile__item {
+              display: flex;
+              align-items: center;
+              gap: 6px;
+            }
+            .box1-legend-mobile__swatch {
+              width: 12px;
+              height: 12px;
+              border-radius: 3px;
+              flex-shrink: 0;
+            }
+            .box1-legend-mobile__label {
+              font-size: 0.78rem;
+              font-weight: 600;
+              font-family: ${fonts.sans};
+            }
+            .box1-issue-row {
+              flex-direction: column;
+              align-items: stretch;
+              gap: 6px;
+            }
+            .box1-issue-label {
+              width: auto;
+            }
+            .box1-bar-wrap { width: 100%; }
+          }
+        `}</style>
+
         <h2 style={headingStyle}>Where Voters Stand by Issue</h2>
-        <BarLegend leftLabel="Liberal" rightLabel="Conservative" leftColor={BOX1.leftColor} rightColor={BOX1.rightColor} prefixWidth="160px" prefixGap="12px" />
+
+        {/* Desktop: inline legend aligned to bars */}
+        <div className="box1-legend-desktop">
+          <BarLegend leftLabel="Liberal" rightLabel="Conservative" leftColor={BOX1.leftColor} rightColor={BOX1.rightColor} prefixWidth="160px" prefixGap="12px" />
+        </div>
+
+        {/* Mobile: swatch legend below heading */}
+        <div className="box1-legend-mobile">
+          <span className="box1-legend-mobile__item">
+            <span className="box1-legend-mobile__swatch" style={{ background: BOX1.leftColor }} />
+            <span className="box1-legend-mobile__label" style={{ color: BOX1.leftColor }}>Liberal</span>
+          </span>
+          <span className="box1-legend-mobile__item">
+            <span className="box1-legend-mobile__swatch" style={{ background: BOX1.rightColor }} />
+            <span className="box1-legend-mobile__label" style={{ color: BOX1.rightColor }}>Conservative</span>
+          </span>
+        </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
           {scorableIssues.map((issue) => {
             const libPct = avgIssueLean(issue.questions);
             return (
-              <div key={issue.issue_id} style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                <span style={issueLabelStyle}>
+              <div key={issue.issue_id} className="box1-issue-row">
+                <span className="box1-issue-label">
                   {issueLabels[issue.issue_id] || issue.issue_id}
                 </span>
-                <div style={{ flex: 1 }}>
+                <div className="box1-bar-wrap">
                   <DivergingBar
                     leftPct={libPct}
                     rightPct={1 - libPct}

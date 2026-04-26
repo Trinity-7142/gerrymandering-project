@@ -1,14 +1,14 @@
 {
   "district_id": "PA-08",
   "representative": "Robert Bresnahan",
-  "age": 35,
+  "age": 36,
   "party": "R",
   "assumed_office": 2025,
   "photo_url": "/images/reps/PA-08.jpg",
   "congress": [
     118
   ],
-  "last_updated": "2026-04-14",
+  "last_updated": "2026-04-25",
   "votes_by_issue": [],
   "overall_voting_stats": {
     "total_tracked_votes": 0,

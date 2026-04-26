@@ -8,7 +8,7 @@
   "congress": [
     118
   ],
-  "last_updated": "2026-04-14",
+  "last_updated": "2026-04-25",
   "votes_by_issue": [
     {
       "issue_id": "criminal_justice",
@@ -19,7 +19,8 @@
           "date": "2023-02-09",
           "vote": "nay",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2023119"
+          "source_url": "https://clerk.house.gov/Votes/2023119",
+          "chamber": "house"
         },
         {
           "bill": "H.R. 7888",
@@ -27,7 +28,8 @@
           "date": "2023-02-09",
           "vote": "nay",
           "bill_direction": "bipartisan",
-          "source_url": "https://clerk.house.gov/Votes/2023119"
+          "source_url": "https://clerk.house.gov/Votes/2023119",
+          "chamber": "house"
         },
         {
           "bill": "H.J.Res. 42",
@@ -35,7 +37,8 @@
           "date": "2023-04-19",
           "vote": "nay",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2023188"
+          "source_url": "https://clerk.house.gov/Votes/2023188",
+          "chamber": "house"
         }
       ],
       "summary": {
@@ -54,7 +57,8 @@
           "date": "2023-01-05",
           "vote": "jeffries",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2023010"
+          "source_url": "https://clerk.house.gov/Votes/2023010",
+          "chamber": "house"
         },
         {
           "bill": "H.J.Res. 30",
@@ -62,7 +66,8 @@
           "date": "2023-02-28",
           "vote": "nay",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2023124"
+          "source_url": "https://clerk.house.gov/Votes/2023124",
+          "chamber": "house"
         },
         {
           "bill": "H.J.Res. 109",
@@ -70,7 +75,8 @@
           "date": "2023-04-19",
           "vote": "yea",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2023189"
+          "source_url": "https://clerk.house.gov/Votes/2023189",
+          "chamber": "house"
         },
         {
           "bill": "H.J.Res. 39",
@@ -78,7 +84,8 @@
           "date": "2023-04-28",
           "vote": "nay",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2023202"
+          "source_url": "https://clerk.house.gov/Votes/2023202",
+          "chamber": "house"
         },
         {
           "bill": "H.J.Res. 45",
@@ -86,7 +93,8 @@
           "date": "2023-05-24",
           "vote": "not voting",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2023234"
+          "source_url": "https://clerk.house.gov/Votes/2023234",
+          "chamber": "house"
         },
         {
           "bill": "H.R. 3746",
@@ -94,7 +102,8 @@
           "date": "2023-05-31",
           "vote": "aye",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2023243"
+          "source_url": "https://clerk.house.gov/Votes/2023243",
+          "chamber": "house"
         },
         {
           "bill": "H.R. 4366",
@@ -102,7 +111,8 @@
           "date": "2023-07-27",
           "vote": "nay",
           "bill_direction": "bipartisan",
-          "source_url": "https://clerk.house.gov/Votes/2023380"
+          "source_url": "https://clerk.house.gov/Votes/2023380",
+          "chamber": "house"
         },
         {
           "bill": "S.J.Res. 32",
@@ -110,7 +120,8 @@
           "date": "2023-12-01",
           "vote": "nay",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2023690"
+          "source_url": "https://clerk.house.gov/Votes/2023690",
+          "chamber": "house"
         }
       ],
       "summary": {
@@ -129,7 +140,8 @@
           "date": "2023-01-04",
           "vote": "nay",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2023008"
+          "source_url": "https://clerk.house.gov/Votes/2023008",
+          "chamber": "house"
         },
         {
           "bill": "H.J.Res. 27",
@@ -137,7 +149,8 @@
           "date": "2023-03-09",
           "vote": "nay",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2023142"
+          "source_url": "https://clerk.house.gov/Votes/2023142",
+          "chamber": "house"
         },
         {
           "bill": "S.J.Res. 11",
@@ -145,7 +158,8 @@
           "date": "2023-05-23",
           "vote": "not voting",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2023232"
+          "source_url": "https://clerk.house.gov/Votes/2023232",
+          "chamber": "house"
         },
         {
           "bill": "S.J.Res. 24",
@@ -153,7 +167,8 @@
           "date": "2023-07-27",
           "vote": "nay",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2023382"
+          "source_url": "https://clerk.house.gov/Votes/2023382",
+          "chamber": "house"
         },
         {
           "bill": "S.J.Res. 9",
@@ -161,7 +176,8 @@
           "date": "2023-07-27",
           "vote": "nay",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2023381"
+          "source_url": "https://clerk.house.gov/Votes/2023381",
+          "chamber": "house"
         }
       ],
       "summary": {
@@ -179,7 +195,8 @@
           "date": "2023-06-13",
           "vote": "nay",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2023252"
+          "source_url": "https://clerk.house.gov/Votes/2023252",
+          "chamber": "house"
         }
       ],
       "summary": {
@@ -197,7 +214,8 @@
           "date": "2023-02-01",
           "vote": "nay",
           "bill_direction": "conservative",
-          "source_url": "https://clerk.house.gov/Votes/2023104"
+          "source_url": "https://clerk.house.gov/Votes/2023104",
+          "chamber": "house"
         }
       ],
       "summary": {

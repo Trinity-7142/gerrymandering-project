@@ -8,15 +8,16 @@ import { useState, useRef, useLayoutEffect } from "react";
 import { colors, fonts, textColors } from "@/lib/constants";
 
 const TABS = [
-  { id: "overview",    label: "Overview",             controls: "panel-overview" },
-  { id: "districts",  label: "All Districts",          controls: "panel-districts" },
-  { id: "methodology",label: "Policy Preferences",   controls: "panel-methodology" },
+  { id: "overview",    label: "Overview",           controls: "panel-overview" },
+  { id: "districts",  label: "All Districts",       controls: "panel-districts" },
+  { id: "methodology",label: "Policy Preferences",  controls: "panel-methodology" },
 ];
 
 export default function StateTabs({ overviewContent, districtsContent, methodologyContent }) {
   const [activeTab, setActiveTab] = useState("overview");
   const [indicator, setIndicator] = useState({ left: 0, width: 0 });
   const tabRefs = useRef([]);
+  const touchStartX = useRef(0);
 
   useLayoutEffect(() => {
     const idx = TABS.findIndex((t) => t.id === activeTab);
@@ -44,8 +45,42 @@ export default function StateTabs({ overviewContent, districtsContent, methodolo
 
   return (
     <div>
+      <style>{`
+        .state-tablist {
+          display: flex;
+          border-bottom: 2px solid #E8E6E3;
+          margin: 32px 0 28px;
+          position: relative;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+          scrollbar-width: none;
+        }
+        .state-tablist::-webkit-scrollbar { display: none; }
+        .state-tab {
+          background: none;
+          border: none;
+          font-family: ${fonts.sans};
+          font-size: 0.9rem;
+          padding: 12px 20px;
+          cursor: pointer;
+          transition: color 0.25s;
+          white-space: nowrap;
+          flex-shrink: 0;
+          touch-action: manipulation;
+        }
+        @media (max-width: 640px) {
+          .state-tablist {
+            margin: 20px 0 20px;
+          }
+          .state-tab {
+            padding: 10px 16px;
+            font-size: 0.85rem;
+          }
+        }
+      `}</style>
+
       {/* ── Tab bar ──────────────────────────────────────────── */}
-      <div role="tablist" aria-label="State profile sections" style={styles.tabList}>
+      <div role="tablist" aria-label="State profile sections" className="state-tablist">
         {TABS.map((tab, idx) => {
           const isActive = activeTab === tab.id;
           return (
@@ -58,9 +93,16 @@ export default function StateTabs({ overviewContent, districtsContent, methodolo
               aria-controls={tab.controls}
               tabIndex={isActive ? 0 : -1}
               onClick={() => setActiveTab(tab.id)}
+              onTouchStart={(e) => { touchStartX.current = e.touches[0].clientX; }}
+              onTouchEnd={(e) => {
+                if (Math.abs(e.changedTouches[0].clientX - touchStartX.current) < 10) {
+                  e.preventDefault();
+                  setActiveTab(tab.id);
+                }
+              }}
               onKeyDown={(e) => handleKeyDown(e, idx)}
+              className="state-tab"
               style={{
-                ...styles.tab,
                 color:      isActive ? colors.primarySoftRed : textColors.muted,
                 fontWeight: isActive ? 600 : 500,
               }}
@@ -73,7 +115,17 @@ export default function StateTabs({ overviewContent, districtsContent, methodolo
         {/* Sliding indicator */}
         <div
           aria-hidden="true"
-          style={{ ...styles.indicator, left: indicator.left, width: indicator.width }}
+          style={{
+            position: "absolute",
+            bottom: 0,
+            height: 2,
+            background: colors.primarySoftRed,
+            borderRadius: 1,
+            left: indicator.left,
+            width: indicator.width,
+            transition: "left 0.35s cubic-bezier(0.22, 1, 0.36, 1), width 0.35s cubic-bezier(0.22, 1, 0.36, 1)",
+            pointerEvents: "none",
+          }}
         />
       </div>
 
@@ -92,30 +144,3 @@ export default function StateTabs({ overviewContent, districtsContent, methodolo
     </div>
   );
 }
-
-const styles = {
-  tabList: {
-    display: "flex",
-    borderBottom: "2px solid #E8E6E3",
-    margin: "32px 0 28px",
-    position: "relative",
-  },
-  tab: {
-    background: "none",
-    border: "none",
-    fontFamily: fonts.sans,
-    fontSize: "0.9rem",
-    padding: "12px 20px",
-    cursor: "pointer",
-    transition: "color 0.25s",
-  },
-  indicator: {
-    position: "absolute",
-    bottom: -2,
-    height: 2,
-    background: colors.primarySoftRed,
-    borderRadius: 1,
-    transition: "left 0.35s cubic-bezier(0.22, 1, 0.36, 1), width 0.35s cubic-bezier(0.22, 1, 0.36, 1)",
-    pointerEvents: "none",
-  },
-};

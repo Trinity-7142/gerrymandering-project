@@ -1,14 +1,14 @@
 {
   "district_id": "FL-06",
   "representative": "Randall Fine",
-  "age": 51,
+  "age": 52,
   "party": "R",
   "assumed_office": 2025,
   "photo_url": "/images/reps/FL-06.jpg",
   "congress": [
     118
   ],
-  "last_updated": "2026-04-14",
+  "last_updated": "2026-04-25",
   "votes_by_issue": [],
   "overall_voting_stats": {
     "total_tracked_votes": 0,

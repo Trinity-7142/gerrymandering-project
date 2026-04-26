@@ -122,6 +122,7 @@ const styles = {
   card: {
     ...cardStyle,
     padding: "28px",
+    width: "100%",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",

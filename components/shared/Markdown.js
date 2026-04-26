@@ -16,6 +16,7 @@ import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import { colors, fonts, markdownTypography, textColors } from "@/lib/constants";
+import EquationContainer from "@/components/shared/EquationContainer";
 import { slugify } from "@/lib/slugify";
 
 // ── Main component ──────────────────────────────────────────────────────
@@ -163,14 +164,14 @@ export default function Markdown({ children, className, style }) {
   };
 
   return (
-    <div className={className} style={style}>
+    <EquationContainer className={className} style={style}>
       <ReactMarkdown
         remarkPlugins={[remarkMath]}
-        rehypePlugins={[rehypeKatex]}
+        rehypePlugins={[[rehypeKatex, { strict: (code) => code === "newLineInDisplayMode" ? "ignore" : "warn" }]]}
         components={components}
       >
         {children}
       </ReactMarkdown>
-    </div>
+    </EquationContainer>
   );
 }

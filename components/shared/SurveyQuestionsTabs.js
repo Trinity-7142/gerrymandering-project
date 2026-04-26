@@ -34,6 +34,7 @@ export default function SurveyQuestionsTabs({
 
   const tabRefs = useRef([]);
   const tabListRef = useRef(null);
+  const touchStartX = useRef(0);
 
   // Keep active tab valid when tabs change
   useLayoutEffect(() => {
@@ -123,13 +124,57 @@ export default function SurveyQuestionsTabs({
 
   return (
     <div style={{ ...cardStyle, padding: "32px" }}>
+      <style>{`
+        .sqt-tablist {
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: stretch;
+          column-gap: ${TAB_GAP_PX}px;
+          border-bottom: 2px solid #E8E6E3;
+          margin-bottom: 20px;
+          position: relative;
+        }
+        .sqt-tab {
+          background: none;
+          border: none;
+          font-family: ${fonts.sans};
+          padding-top: 10px;
+          padding-bottom: 10px;
+          flex: 1 1 0;
+          text-align: center;
+          min-width: 0;
+          cursor: pointer;
+          transition: color 0.25s;
+          white-space: nowrap;
+          touch-action: manipulation;
+        }
+        @media (max-width: 640px) {
+          .sqt-tablist {
+            flex-direction: column;
+            border-bottom: none;
+            column-gap: 0;
+            margin-bottom: 12px;
+          }
+          .sqt-tab {
+            flex: none !important;
+            text-align: left !important;
+            padding: 10px 0 !important;
+            border-bottom: 1px solid #F0EFED;
+            white-space: normal !important;
+          }
+          .sqt-indicator {
+            display: none;
+          }
+        }
+      `}</style>
+
       <h2 style={headingStyle}>Survey Questions</h2>
 
       <div
         ref={tabListRef}
         role="tablist"
         aria-label="Filter survey questions by issue"
-        style={styles.tabList}
+        className="sqt-tablist"
       >
         {tabs.map((tab, idx) => {
           const isActive = activeTab === tab.issue_id;
@@ -144,9 +189,16 @@ export default function SurveyQuestionsTabs({
               aria-controls={`survey-panel-${tab.issue_id}`}
               tabIndex={isActive ? 0 : -1}
               onClick={() => setActiveTab(tab.issue_id)}
+              onTouchStart={(e) => { touchStartX.current = e.touches[0].clientX; }}
+              onTouchEnd={(e) => {
+                if (Math.abs(e.changedTouches[0].clientX - touchStartX.current) < 10) {
+                  e.preventDefault();
+                  setActiveTab(tab.issue_id);
+                }
+              }}
               onKeyDown={(e) => handleKeyDown(e, idx)}
+              className="sqt-tab"
               style={{
-                ...styles.tab,
                 fontSize: `${tabFontRem}rem`,
                 paddingLeft: DEFAULT_PAD_PX,
                 paddingRight: DEFAULT_PAD_PX,
@@ -161,6 +213,7 @@ export default function SurveyQuestionsTabs({
 
         <div
           aria-hidden="true"
+          className="sqt-indicator"
           style={{
             ...styles.indicator,
             left: indicator.left,
@@ -226,28 +279,6 @@ const headingStyle = {
 };
 
 const styles = {
-  tabList: {
-    display: "flex",
-    flexWrap: "nowrap",
-    alignItems: "stretch",
-    columnGap: `${TAB_GAP_PX}px`,
-    borderBottom: "2px solid #E8E6E3",
-    marginBottom: "20px",
-    position: "relative",
-  },
-  tab: {
-    background: "none",
-    border: "none",
-    fontFamily: fonts.sans,
-    paddingTop: 10,
-    paddingBottom: 10,
-    flex: "1 1 0",
-    textAlign: "center",
-    minWidth: 0,
-    cursor: "pointer",
-    transition: "color 0.25s",
-    whiteSpace: "nowrap",
-  },
   indicator: {
     position: "absolute",
     bottom: -2,

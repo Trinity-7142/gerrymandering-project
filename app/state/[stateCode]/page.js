@@ -52,13 +52,41 @@ export default async function StatePage({ params }) {
       {/* Top Voter Concerns — full width */}
       <VoteCastPanel data={votecast} />
 
-      {/* Key Facts (left) + Gerrymandering Grade (right) */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px", marginBottom: "28px" }}>
-        <StateKeyFacts content={keyFactsBody} stateName={overview?.state_name ?? stateCode} sources={keyFactsSources} />
-        <PrincetonPanel
-          data={princeton}
-          planscoreUrl={overview?.external_links?.planscore}
-        />
+      {/* Key Facts (left) + Gerrymandering Grade (right)
+          On mobile: grade appears first, key facts below */}
+      <style>{`
+        .state-two-col {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          align-items: stretch;
+          gap: 24px;
+          margin-bottom: 28px;
+        }
+        .state-two-col__grade  { order: 2; display: flex; }
+        .state-two-col__facts  { order: 1; display: flex; }
+        .state-two-col__grade > *,
+        .state-two-col__facts > * { flex: 1; }
+        @media (max-width: 640px) {
+          .state-two-col {
+            grid-template-columns: 1fr;
+            gap: 16px;
+          }
+          .state-two-col__grade { order: 1; display: block; }
+          .state-two-col__facts { order: 2; display: block; }
+          .state-two-col__grade > *,
+          .state-two-col__facts > * { flex: unset; }
+        }
+      `}</style>
+      <div className="state-two-col">
+        <div className="state-two-col__facts">
+          <StateKeyFacts content={keyFactsBody} stateName={overview?.state_name ?? stateCode} sources={keyFactsSources} />
+        </div>
+        <div className="state-two-col__grade">
+          <PrincetonPanel
+            data={princeton}
+            planscoreUrl={overview?.external_links?.planscore}
+          />
+        </div>
       </div>
 
       {/* Senators */}
@@ -84,7 +112,7 @@ export default async function StatePage({ params }) {
 
   return (
     <main style={{ background: "#F4F3F1", minHeight: "100vh" }}>
-      <div style={{ maxWidth: pageWidths.state, margin: "0 auto", padding: "0 24px 48px" }}>
+      <div style={{ maxWidth: pageWidths.state, margin: "0 auto", padding: "0 clamp(14px, 4vw, 24px) 48px" }}>
         <StateHeader data={overview} alignmentScore={avgAlignment} />
         <StateTabs
           overviewContent={overviewContent}

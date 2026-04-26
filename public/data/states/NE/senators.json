@@ -4,7 +4,7 @@
   "congress": [
     118
   ],
-  "last_updated": "2026-04-20",
+  "last_updated": "2026-04-25",
   "ces_state_sample": {
     "n_respondents": 4900,
     "weight_variable": "vvweight_post",
@@ -29,6 +29,7 @@
               "vote": "nay",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00105",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -38,6 +39,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00109",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -47,6 +49,7 @@
               "vote": "nay",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00012",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -56,6 +59,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00122",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -65,6 +69,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00135",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -74,6 +79,7 @@
               "vote": "nay",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00146",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -83,6 +89,7 @@
               "vote": "nay",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00152",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -92,6 +99,7 @@
               "vote": "nay",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00168",
+              "chamber": "senate",
               "status": "Failed Senate"
             },
             {
@@ -101,6 +109,7 @@
               "vote": "nay",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00169",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -110,6 +119,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00188",
+              "chamber": "senate",
               "status": "Passed Senate"
             },
             {
@@ -119,6 +129,7 @@
               "vote": "yea",
               "bill_direction": "bipartisan",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00200",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -128,6 +139,7 @@
               "vote": "nay",
               "bill_direction": "bipartisan",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00219",
+              "chamber": "senate",
               "status": "Resolving Differences"
             },
             {
@@ -137,6 +149,7 @@
               "vote": "yea",
               "bill_direction": "bipartisan",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00227",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -146,6 +159,7 @@
               "vote": "nay",
               "bill_direction": "bipartisan",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00230",
+              "chamber": "senate",
               "status": "Passed House"
             },
             {
@@ -155,6 +169,7 @@
               "vote": "yea",
               "bill_direction": "bipartisan",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00247",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -164,6 +179,7 @@
               "vote": "nay",
               "bill_direction": "bipartisan",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00255",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -173,6 +189,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00260",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -182,6 +199,7 @@
               "vote": "yea",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00285",
+              "chamber": "senate",
               "status": "Failed Senate"
             },
             {
@@ -191,6 +209,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00310",
+              "chamber": "senate",
               "status": "Failed Senate"
             },
             {
@@ -200,6 +219,7 @@
               "vote": "yea",
               "bill_direction": "bipartisan",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00312",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -209,6 +229,7 @@
               "vote": "yea",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00326",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -218,6 +239,7 @@
               "vote": "yea",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00339",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -227,6 +249,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00035",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -236,6 +259,7 @@
               "vote": "nay",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00067",
+              "chamber": "senate",
               "status": "Became Law"
             }
           ],
@@ -257,6 +281,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00110",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -266,6 +291,7 @@
               "vote": "nay",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00121",
+              "chamber": "senate",
               "status": "Passed Senate"
             },
             {
@@ -275,6 +301,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00122",
+              "chamber": "senate",
               "status": "Passed Senate"
             },
             {
@@ -284,6 +311,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00123",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -293,6 +321,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00142",
+              "chamber": "senate",
               "status": "Failed Senate"
             },
             {
@@ -302,6 +331,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00167",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -311,6 +341,7 @@
               "vote": "nay",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00176",
+              "chamber": "senate",
               "status": "Passed Senate"
             },
             {
@@ -320,6 +351,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00303",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -329,6 +361,7 @@
               "vote": "nay",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00327",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -338,6 +371,7 @@
               "vote": "yea",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00075",
+              "chamber": "senate",
               "status": "Passed Senate"
             },
             {
@@ -347,6 +381,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00079",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             }
           ],
@@ -367,6 +402,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00126",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -376,6 +412,7 @@
               "vote": "yea",
               "bill_direction": "bipartisan",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00141",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -385,6 +422,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00049",
+              "chamber": "senate",
               "status": "Became Law"
             }
           ],
@@ -405,6 +443,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00130",
+              "chamber": "senate",
               "status": "Passed Senate"
             },
             {
@@ -414,6 +453,7 @@
               "vote": "nay",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00182",
+              "chamber": "senate",
               "status": "Introduced"
             }
           ],
@@ -433,6 +473,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00171",
+              "chamber": "senate",
               "status": "Failed Senate"
             }
           ],
@@ -452,6 +493,7 @@
               "vote": "nay",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00190",
+              "chamber": "senate",
               "status": "Introduced"
             },
             {
@@ -461,6 +503,7 @@
               "vote": "yea",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00197",
+              "chamber": "senate",
               "status": "Introduced"
             },
             {
@@ -470,6 +513,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00080",
+              "chamber": "senate",
               "status": "Became Law"
             }
           ],
@@ -490,6 +534,7 @@
               "vote": "yea",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00211",
+              "chamber": "senate",
               "status": "Introduced"
             }
           ],
@@ -509,6 +554,7 @@
               "vote": "nay",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00061",
+              "chamber": "senate",
               "status": "Passed Senate"
             }
           ],
@@ -542,6 +588,7 @@
               "vote": "nay",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00105",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -551,6 +598,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00109",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -560,6 +608,7 @@
               "vote": "nay",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00012",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -569,6 +618,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00122",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -578,6 +628,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00135",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -587,6 +638,7 @@
               "vote": "nay",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00146",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -596,6 +648,7 @@
               "vote": "nay",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00152",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -605,6 +658,7 @@
               "vote": "nay",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00168",
+              "chamber": "senate",
               "status": "Failed Senate"
             },
             {
@@ -614,6 +668,7 @@
               "vote": "nay",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00169",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -623,6 +678,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00188",
+              "chamber": "senate",
               "status": "Passed Senate"
             },
             {
@@ -632,6 +688,7 @@
               "vote": "yea",
               "bill_direction": "bipartisan",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00200",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -641,6 +698,7 @@
               "vote": "nay",
               "bill_direction": "bipartisan",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00219",
+              "chamber": "senate",
               "status": "Resolving Differences"
             },
             {
@@ -650,6 +708,7 @@
               "vote": "nay",
               "bill_direction": "bipartisan",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00227",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -659,6 +718,7 @@
               "vote": "nay",
               "bill_direction": "bipartisan",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00230",
+              "chamber": "senate",
               "status": "Passed House"
             },
             {
@@ -668,6 +728,7 @@
               "vote": "yea",
               "bill_direction": "bipartisan",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00247",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -677,6 +738,7 @@
               "vote": "nay",
               "bill_direction": "bipartisan",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00255",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -686,6 +748,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00260",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -695,6 +758,7 @@
               "vote": "nay",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00285",
+              "chamber": "senate",
               "status": "Failed Senate"
             },
             {
@@ -704,6 +768,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00310",
+              "chamber": "senate",
               "status": "Failed Senate"
             },
             {
@@ -713,6 +778,7 @@
               "vote": "yea",
               "bill_direction": "bipartisan",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00312",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -722,6 +788,7 @@
               "vote": "yea",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00326",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -731,6 +798,7 @@
               "vote": "yea",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00339",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -740,6 +808,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00035",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -749,6 +818,7 @@
               "vote": "nay",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00067",
+              "chamber": "senate",
               "status": "Became Law"
             }
           ],
@@ -770,6 +840,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00110",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -779,6 +850,7 @@
               "vote": "nay",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00121",
+              "chamber": "senate",
               "status": "Passed Senate"
             },
             {
@@ -788,6 +860,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00122",
+              "chamber": "senate",
               "status": "Passed Senate"
             },
             {
@@ -797,6 +870,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00123",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -806,6 +880,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00142",
+              "chamber": "senate",
               "status": "Failed Senate"
             },
             {
@@ -815,6 +890,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00167",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -824,6 +900,7 @@
               "vote": "not voting",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00176",
+              "chamber": "senate",
               "status": "Passed Senate"
             },
             {
@@ -833,6 +910,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00303",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -842,6 +920,7 @@
               "vote": "nay",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00327",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -851,6 +930,7 @@
               "vote": "nay",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00075",
+              "chamber": "senate",
               "status": "Passed Senate"
             },
             {
@@ -860,6 +940,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00079",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             }
           ],
@@ -880,6 +961,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00126",
+              "chamber": "senate",
               "status": "Failed to pass over veto"
             },
             {
@@ -889,6 +971,7 @@
               "vote": "nay",
               "bill_direction": "bipartisan",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00141",
+              "chamber": "senate",
               "status": "Became Law"
             },
             {
@@ -898,6 +981,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00049",
+              "chamber": "senate",
               "status": "Became Law"
             }
           ],
@@ -918,6 +1002,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00130",
+              "chamber": "senate",
               "status": "Passed Senate"
             },
             {
@@ -927,6 +1012,7 @@
               "vote": "nay",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00182",
+              "chamber": "senate",
               "status": "Introduced"
             }
           ],
@@ -946,6 +1032,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00171",
+              "chamber": "senate",
               "status": "Failed Senate"
             }
           ],
@@ -965,6 +1052,7 @@
               "vote": "nay",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00190",
+              "chamber": "senate",
               "status": "Introduced"
             },
             {
@@ -974,6 +1062,7 @@
               "vote": "yea",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00197",
+              "chamber": "senate",
               "status": "Introduced"
             },
             {
@@ -983,6 +1072,7 @@
               "vote": "yea",
               "bill_direction": "conservative",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00080",
+              "chamber": "senate",
               "status": "Became Law"
             }
           ],
@@ -1003,6 +1093,7 @@
               "vote": "yea",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00211",
+              "chamber": "senate",
               "status": "Introduced"
             }
           ],
@@ -1022,6 +1113,7 @@
               "vote": "nay",
               "bill_direction": "liberal",
               "source_url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=118&session=1&vote=00061",
+              "chamber": "senate",
               "status": "Passed Senate"
             }
           ],

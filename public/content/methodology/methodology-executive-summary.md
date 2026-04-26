@@ -54,3 +54,5 @@ The state pages display the **House alignment** as the primary statewide aggrega
 The score is one measurement of one dimension of representation. It does not capture constituent service, the substance of legislation a representative authors, committee work, or the many other ways elected officials represent their districts. The underlying data has known limitations: CES respondents skew more politically engaged than the general public, VoteCast salience is measured at the state level rather than the district level, and constituent preferences are treated as static even though they shift over time. The methodology itself reflects design choices (confidence weights, penalty thresholds, the bipartisan-vote treatment) that reasonable people could have made differently.
 
 A representative's score should be read as one piece of evidence about how well they represent their constituents, not the final word. The full **Limitations** section discusses these caveats in detail, and we welcome others building on, critiquing, and improving the methodology.
+
+---

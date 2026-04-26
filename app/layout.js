@@ -23,6 +23,7 @@ const sourceSerif = Source_Serif_4({
 // Import Navbar and Footer from components/shared
 import Footer from '../components/shared/Footer';
 import Navbar from '../components/shared/Navbar';
+import BackToTop from '../components/shared/BackToTop';
 
 export const metadata = {
   // Set metadata (title, description, og tags)
@@ -34,10 +35,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${dmSans.variable} ${sourceSerif.variable}`}>
       
-      <body>
+      <body suppressHydrationWarning>
           <Navbar />
           {children}
           <Footer />
+          <BackToTop />
       </body>
       
     </html>
