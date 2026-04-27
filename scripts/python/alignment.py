@@ -24,13 +24,14 @@ import json
 import re
 import copy
 from datetime import date
+import unicodedata
 
 base_path = os.path.dirname(os.path.abspath(__file__))
 home_path = os.path.join(base_path, "..", "..")
 votes_path = os.path.join(home_path, "votes")
 
 senator_rollcall_votes_path = os.path.join(home_path, "data-raw", "congress", "senator_rollcall_votes.csv")
-bill_to_roll_path = os.path.join(home_path, "data-raw", "bill_to_roll.csv")
+bill_to_roll_path = os.path.join(home_path, "data-raw", "congress", "bill_to_roll.csv")
 legislators_historical_path = os.path.join(home_path, "data-raw", "congress-legislators", "legislators-historical.json")
 legislators_current_path = os.path.join(home_path, "data-raw", "congress-legislators", "legislators-current.json")
 
@@ -209,7 +210,7 @@ class Politician:
                     w_bip += confidence_to_num[vote.direction_confidence]
 
         #If the politician has cast no votes on the issue, then we will say that the RVD equals 0
-        return (numerator_total/denominator_total if denominator_total > 0 else 0, w_dir, w_bip)
+        return (numerator_total/denominator_total if denominator_total > 0 else 0.5, w_dir, w_bip)
     
     def compute_per_issue_score(self, issue):
         result = self.compute_rvd_wdir_wbip(issue)
@@ -264,13 +265,17 @@ class Politician:
                         else:
                             #print("heyoo")
                             #print(issue)
-                            self.cpd_dict_by_issue[issue["issue_id"]] = 0
+                            self.cpd_dict_by_issue[issue["issue_id"]] = 0.5
             
     def renormalized_weight(self, issue):
         numerator = self.non_normalized_weight(issue) * self.penalty(issue)
         denominator = 0
         for each_issue in self.cpd_dict_by_issue.keys():
             denominator += self.non_normalized_weight(each_issue) * self.penalty(each_issue)
+
+        #Methodology choice!
+        if denominator == 0:
+            return 0.5
         
         return numerator / denominator
     
@@ -350,7 +355,7 @@ class Vote:
         Vote.votes[str(self)] = self
 
     def __str__(self):
-        return str(self.chamber) + str(self.roll_call_num)
+        return str(self.chamber) + str(self.roll_call_num) + str(self.vote_date)
     
     def __eq__(self, value):
         return str(self) == str(value)
@@ -434,6 +439,14 @@ issue_template = {
           "weighted_contribution": 0.123,
           "direction": "Senator generally matches constituent preferences"
         }
+
+
+#AI Generated function to normalize politician's names for easy comparison
+def remove_accents(text):
+    # Normalize to NFD (Decomposition)
+    normalized = unicodedata.normalize('NFD', text)
+    # Encode to ASCII and ignore non-ASCII characters, then decode back to string
+    return normalized.encode('ascii', 'ignore').decode('utf-8')
 
 class AlignmentFiles:
 
@@ -577,9 +590,18 @@ class AlignmentFiles:
             this_senator_name = senator.name.split(" ")[0]
 
             for s in all_senators:
-                if this_senator_name in s.get("name"):
+                if remove_accents(this_senator_name) in remove_accents(s.get("name")):
                     return s.get("name")
-        return None and print("Couldn't find a valid name")
+        
+        print("Couldn't find a valid name")
+        return None
         #raise LookupError(f"The senator we're looking for is from {senator.state}.\n            Could not find a senator with the last name {this_senator_name} out of names {[person.get("name") for person in all_senators]}")         
 
 AlignmentFiles.populate_alignment_json()
+
+
+with open(os.path.join(base_path, "alignment_scores.csv"), "w", encoding="utf-8", newline="") as f:
+    writer = csv.writer(f)
+    writer.writerow(["ID", "Name", "Score", "Vote #", "State", "Term End", "Role", "Party"])
+    for politician in Politician.politicians.values():
+        writer.writerow([politician.bioguide_id, politician.name, politician.overall_score(), len(politician.votes), politician.state, politician.term_end, politician.role, politician.party])

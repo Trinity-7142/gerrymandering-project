@@ -23,7 +23,7 @@ images_path = os.path.join(home_path, "data-raw", "images", "congress", "450x550
 #Filled with the bioguide_id's of the politicians who do not have corresponding photos.
 imageless_politicians = []
 
-#AI Generated file to normalize politician's names for easy comparison
+#AI Generated function to normalize politician's names for easy comparison
 def remove_accents(text):
     # Normalize to NFD (Decomposition)
     normalized = unicodedata.normalize('NFD', text)
