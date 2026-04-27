@@ -224,7 +224,7 @@ export default function StateSelector({ alignmentScores = {} }) {
         <div className="map-header">
           <div>
             <p className="map-title">State Alignment Overview</p>
-            <p className="map-subtitle">Tap a state to view representational alignment details</p>
+            <p className="map-subtitle">Tap a state to view representational alignment details (based on house averages)</p>
           </div>
 
           {/* Legend — full on desktop, compact on mobile */}
