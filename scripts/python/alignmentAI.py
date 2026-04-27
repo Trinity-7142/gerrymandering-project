@@ -3,6 +3,7 @@ import os
 import csv
 import json
 from datetime import date
+import unicodedata
 
 base_path = os.path.dirname(os.path.abspath(__file__))
 home_path = os.path.join(base_path, "..", "..")
@@ -11,6 +12,14 @@ senator_rollcall_votes_path = os.path.join(home_path, "data-raw", "congress", "s
 bill_to_roll_path = os.path.join(home_path, "data-raw", "congress", "bill_to_roll.csv")
 legislators_historical_path = os.path.join(home_path, "data-raw", "congress-legislators", "legislators-historical.json")
 legislators_current_path = os.path.join(home_path, "data-raw", "congress-legislators", "legislators-current.json")
+
+
+#AI Generated function to normalize politician's names for easy comparison
+def remove_accents(text):
+    # Normalize to NFD (Decomposition)
+    normalized = unicodedata.normalize('NFD', text)
+    # Encode to ASCII and ignore non-ASCII characters, then decode back to string
+    return normalized.encode('ascii', 'ignore').decode('utf-8')
 
 # --- Global Cache ---
 JSON_CACHE = {}
@@ -115,7 +124,7 @@ class Politician:
                 else:
                     w_bip += conf_val
 
-        rvd_avg = numerator_total / denominator_total if denominator_total > 0 else 0
+        rvd_avg = numerator_total / denominator_total if denominator_total > 0 else 0.5
         return (rvd_avg, w_dir, w_bip)
     
     def compute_per_issue_score(self, issue):
@@ -145,7 +154,7 @@ class Politician:
                         valid_questions += 1
                         total_pct += liberal_pct
                 
-                self.cpd_dict_by_issue[issue["issue_id"]] = (total_pct / valid_questions) if valid_questions > 0 else 0
+                self.cpd_dict_by_issue[issue["issue_id"]] = (total_pct / valid_questions) if valid_questions > 0 else 0.5
             
     def renormalized_weight(self, issue):
         if self._weight_denominator_cache is None:
@@ -154,7 +163,7 @@ class Politician:
                 for e_issue in self.cpd_dict_by_issue.keys()
             )
             
-        if self._weight_denominator_cache == 0: return 0
+        if self._weight_denominator_cache == 0: return 0.5
         return (self.non_normalized_weight(issue) * self.penalty(issue)) / self._weight_denominator_cache
     
     def non_normalized_weight(self, issue):
@@ -318,7 +327,7 @@ if __name__ == "__main__":
                 data = get_cached_json(os.path.join(home_path, "public", "data", "states", senator.state, "senators.json"))
                 this_senator_name = senator.name.split(" ")[0]
                 for s in data.get("senators", []):
-                    if this_senator_name in s.get("name", ""):
+                    if remove_accents(this_senator_name) in remove_accents(s.get("name", "")):
                         return s.get("name")
             except FileNotFoundError:
                 pass
