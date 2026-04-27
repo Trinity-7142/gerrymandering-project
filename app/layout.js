@@ -6,6 +6,7 @@
 import { DM_Sans, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import "katex/dist/katex.min.css";
+import { Analytics } from "@vercel/analytics/react"
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
           {children}
           <Footer />
           <BackToTop />
+          <Analytics />
       </body>
       
     </html>
