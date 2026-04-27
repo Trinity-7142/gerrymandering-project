@@ -83,6 +83,9 @@ sources:
     url: "https://www.pewresearch.org/short-reads/2018/05/31/u-s-population-keeps-growing-but-house-of-representatives-is-same-size-as-in-taft-era/"
 ---
 
+# Introduction
+**Section Author**: Trinity Jones
+
 Gerrymandering and alignment do not exist in a vacuum. The scores displayed on this site that measure how closely a representative's votes track their constituents' policy preferences are influenced by a legal system built up over more than a century of court decisions, constitutional amendments, and structural choices about how Congress is composed. Understanding that system is important to understanding why misalignment happens, where it concentrates, and what (if anything) can be done about it.
 
 There are two main forms of gerrymandering, both of which have been discussed on the home page. The first form is **Racial gerrymandering**, where districts are drawn using race as the primary factor. This method has been subject to strict judicial scrutiny since *Shaw v. Reno* (1993) and *Miller v. Johnson* (1995), and is unconstitutional under the Equal Protection Clause and the Voting Rights Act. The second form is **Partisan gerrymandering**, where districts are drawn to advantage one political party. Over the decades, there have been major disagreements over the ability of the judiciary to effectively measure gerrymandering and whether or not it was even a question meant for the judicial branch. In *Rucho v. Common Cause* (2019), the Supreme Court finally made a definitive decision by declaring partisan gerrymandering claims nonjusticiable in federal court, leaving state courts, state legislatures, and independent redistricting commissions as the primary venues for challenge. This disconnect is important as a representative whose district was drawn for partisan advantage now has effectively no federal legal recourse, even if the resulting misalignment between their votes and their constituents' preferences is severe.
@@ -93,7 +96,10 @@ The effects of this variation can be seen in the alignment scores. A district of
 
 This short overview is designed to help contextualize the legal landscape that shapes the patterns you see throughout this site. The cases below identify and explain the ways courts have (or haven't) addressed the structural forces causing misalignment. Continue reading to learn how individual court decisions can cause ripple effects through the system in ways that may not be obvious at first glance.
 
-# The "One Person, One Vote" Doctrine Established in **Baker v. Carr (1962)**
+---
+# Cases
+**Section Author**: Emma Chiavegato
+## The "One Person, One Vote" Doctrine Established in **Baker v. Carr (1962)**
 
 Congressional district boundaries, prior to the landmark 1962 Supreme Court case of Baker v. Carr, were supposed to be redrawn every ten years in accordance with the census report. However, many states ignored this requirement for decades. Following the rapid industrialization of the WWI era, the US population shifted from rural areas to concentrated urban centers. Because voting systems remained stagnant despite significant changes in population concentration, individuals in urban areas felt their votes were diluted compared to those in rural districts.
 
@@ -101,17 +107,17 @@ Charles Baker, an urban Tennessee resident, sued his state official arguing that
 
 The "one person, one vote" doctrine, established as a judicial principle in Baker v. Carr (1962), ensures that every individual's vote carries equal weight regardless of where they live. This principle was cemented through two Georgia cases: Gray v. Sanders (1963) and Wesberry v. Sanders (1964). In Gray, the Court struck down a system that gave rural areas disproportionate power. This was extended to federal elections in Wesberry, where the Court ruled that huge population gaps between congressional districts, example being an urban district having three times the residents of a rural one but having the same amount of voting power unconstitutionally diluted the right to vote of the individuals in the urban area. Together, these cases mandated that all districts be drawn where each individual's vote weighed the same as another.
 
-# Population-Based Allocation of Votes Overturned in **Reynolds v. Sims (1964)**
+## Population-Based Allocation of Votes Overturned in **Reynolds v. Sims (1964)**
 
 The Supreme Court in Reynolds v. Sims ruled that a citizen's vote cannot be diluted by where they happen to live. The Equal Protection clause extends to state legislative districts and requires that each district is composed of equal population levels, so each individual has the right to direct representation within their district to eliminate unconstitutionality caused by unequal population concentrations that result in delusion of an individual's vote.
 
-# **Davis v. Bandemer (1986)** Rules that Courts Can Hear Partisan Redistricting Claims
+## **Davis v. Bandemer (1986)** Rules that Courts Can Hear Partisan Redistricting Claims
 
 Twenty years after Baker v. Carr, Indiana Democrats challenged a Republican-drawn congressional map, arguing it diluted their votes. In the 1982 elections under the specific redistricting plan, Democrats won 51.9% of statewide House votes, but only 43 of 100 seats. The Supreme Court ruled that partisan gerrymandering claims are justiciable, which means that courts can hear them.
 
 However, the Court also stated that single election's results are not sufficient to prove unconstitutional discrimination. Meaning that courts must find evidence that a redistricting plan will weaken a group's influence politically across multiple elections and census cycles.
 
-# Race Cannot Be the Predominant Factor in the shaping or reshaping of congressional Districts in **Shaw v. Reno (1993)**
+## Race Cannot Be the Predominant Factor in the shaping or reshaping of congressional Districts in **Shaw v. Reno (1993)**
 
 The 1990 census granted North Carolina a 12th congressional seat, to comply with the Department of Justice the state submitted a redistricting plan with one majority-Black district. The Department of Justice rejected it, requiring at least two districts with minority populations as the majority. So, North Carolina created District 12, a narrow, winding district stretching roughly 160 miles, little wider than a highway in places.
 
@@ -119,7 +125,7 @@ A group of white voters challenged the district, arguing the district was drawn 
 
 The Supreme Court ruled 5-4 that racial classifications in redistricting are inherently suspicious and must withstand strict scrutiny, meaning they must undergo demanding legal evaluation prior to being approved. Furthermore, the decision illustrated that even when the intent is to help minority communities, race-based districting cannot form irrational districts.
 
-# Strengthening the Shaw Standard in **Miller v. Johnson (1995)**
+## Strengthening the Shaw Standard in **Miller v. Johnson (1995)**
 
 Following the 1990 census, Georgia gained an 11th congressional seat. Despite roughly 27% of the state's population being Black, only one of Georgia's ten existing districts was a majority-minority district. When Georgia submitted its redistricting plans for federal pre-clearance under the Voting Rights Act, the Department of Justice rejected the first two submissions because they stated there needed to be at least three majority-minority districts. Georgia drew the 11th District, creating an irregular shape spanning from the Coast all the way to Atlanta, connecting scattered Black neighborhoods across the state.
 
@@ -127,7 +133,7 @@ White voters sued, arguing that the district's irregular shape was caused due to
 
 The Supreme Court ruled 5-4 that Georgia's 11th District was unconstitutional, because race as a predominant factor is not a justifiable in the redrawing of district lines. This is because race cannot override traditional redistricting principles such as compactness, contiguity, and respect for political subdivisions. The Court found that Georgia had subordinated all traditional principles to satisfy the DOJ's demand for a specific number of majority-minority districts, stating that if race was used as a factor to redraw legislative districts it would face immense scrutiny to ensure it was not the primary reason for the shape or construction of the district. 
 
-# Preclearance Formula **Shelby County v. Holder (2013)**
+## Preclearance Formula **Shelby County v. Holder (2013)**
 
 Under Section 5 of the Voting Rights Act, certain states and jurisdictions with documented histories of racial discrimination were required to obtain "preclearance," from the U.S. Attorney General or Washington D.C. federal court before making changes to voting laws or redistricting maps, to prevent discriminatory.
 
@@ -137,13 +143,13 @@ In a 5-4 decision, the Supreme Court struck down Section 4(b) as unconstitutiona
 
 Shortly after the ruling, Texas announced it would enforce a previously blocked Voter ID law. States could now redraw maps and change voting procedures without federal review or approval. 
 
-# Specific District Level Harm is Necessary **Gill v. Whitford (2018)**
+## Specific District Level Harm is Necessary **Gill v. Whitford (2018)**
 
 Wisconsin Democrats challenged Act 43, a 2011 redistricting plan because of its partsian gerrymandering. They used the Efficiency Gap tool, a mathematical metric used to measure how much partisan advantage is built into a district map. It was thought that because of the quantitative evidence that this case would finally produce a workable judicial standard for partisan gerrymandering.
 
 The Supreme Court declined, stating there was not evidence because the plantiff brought statewide statistical evidence rather than data on specific district boundaries, meaning the evidence could not show individual harm to specific voters.
 
-# Partisan Gerrymandering Beyond Federal Reach in **Rucho v. Common Cause (2019)**
+## Partisan Gerrymandering Beyond Federal Reach in **Rucho v. Common Cause (2019)**
 
 Rucho v. Common Cause, combined North Carolina voters arguing a Republican-drawn map discriminated against Democrats, and Maryland voters arguing a Democrat-drawn map discriminated against Republicans. Both lower courts found the maps unconstitutional. The Supreme Court reversed both.
 
@@ -151,11 +157,11 @@ The supreme court's 5–4 decision ruled that partisan gerrymandering claims are
 
 Despite the decision of Runcho v. Common Cause esentially removing federal jurisdiction on cases of partsian gerrymandering, state courts, congress, and state legislatures still can address partisan gerrymandering through state constitutions, statutes, and independent redistricting commissions.
 
-# What is the **14th amendment?**
+## What is the **14th amendment?**
 
 The 14th amendment ratified in 1868 granted the rights of national citizenship to all persons born or naturalized in the United States. The Equal Protection Clause within the 14th amendment means that the government has to apply the laws fairly and cannot treat people differently without a valid reason.
 
-# What is the **Voting Rights Act of 1965?**
+## What is the **Voting Rights Act of 1965?**
 
 The Voting Rights act of 1965 was passed by congress to support and uplift the 14th and 15th amendments. Furthermore, congress amended the VRA five times after initial enactment, in 1970, 1975, 1982, 1992, and finally in 2006.
 
